@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>acme.helpers.Zookeeper.Zookeeper</title>
+    <meta name="generator" content="pydoctor 25.10.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    <link rel="canonical" href="https://acmecse.net/api/acme.helpers.Zookeeper.Zookeeper.html" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="acme.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="This class"><wbr></wbr>Zookeeper</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#addKeyValue" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.addKeyValue">add<wbr></wbr>Key<wbr></wbr>Value</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#connect" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.connect">connect</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#delete" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.delete">delete</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#disconnect" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.disconnect">disconnect</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#exists" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.exists">exists</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#listNode" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.listNode">list<wbr></wbr>Node</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#retrieveIniConfig" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.retrieveIniConfig">retrieve<wbr></wbr>Ini<wbr></wbr>Config</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#storeIniConfig" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.storeIniConfig">store<wbr></wbr>Ini<wbr></wbr>Config</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#updateKeyValue" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.updateKeyValue">update<wbr></wbr>Key<wbr></wbr>Value</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#upsertKeyValue" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.upsertKeyValue">upsert<wbr></wbr>Key<wbr></wbr>Value</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_normalizeKey" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper._normalizeKey">_normalize<wbr></wbr>Key</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#caseSensitive" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.caseSensitive">case<wbr></wbr>Sensitive</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#host" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.host">host</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#logger" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.logger">logger</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#normalizedRootNode" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.normalizedRootNode">normalized<wbr></wbr>Root<wbr></wbr>Node</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#port" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.port">port</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#rootNode" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.rootNode">root<wbr></wbr>Node</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#verbose" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.verbose">verbose</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#zk" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.zk">zk</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="acme.helpers.Zookeeper.html" class="internal-link" title="The parent of this class"><wbr></wbr>Zookeeper</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper"><wbr></wbr>Zookeeper</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.Zookeeper.ZookeperNode.html" class="internal-link" title="acme.helpers.Zookeeper.ZookeperNode"><wbr></wbr>Zookeper<wbr></wbr>Node</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.Zookeeper.html#console" class="internal-link" title="acme.helpers.Zookeeper.console">console</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.Zookeeper.html#zookeeperDefaultPort" class="internal-link" title="acme.helpers.Zookeeper.zookeeperDefaultPort">zookeeper<wbr></wbr>Default<wbr></wbr>Port</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <main class="">
+        
+
+        
+
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">acme</a></code><wbr></wbr>.<code><a href="acme.helpers.html" class="internal-link" title="acme.helpers">helpers</a></code><wbr></wbr>.<code><a href="acme.helpers.Zookeeper.html" class="internal-link" title="acme.helpers.Zookeeper">Zookeeper</a></code><wbr></wbr>.<code><a href="acme.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper">Zookeeper</a></code></code></h1>
+          <div id="show-private">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">Zookeeper</span>:</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.__init__">Zookeeper(host, port, rootNode, logger, ...)</a></code></p><p><a href="classIndex.html#acme.helpers.Zookeeper.Zookeeper">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Class to manage Zookeeper configurations.</p>
+<p>This class provides methods to connect to a Zookeeper server, list nodes, retrieve and store INI configurations,
+add, update, delete key-value pairs, and manage the Zookeeper client connection.</p>
+</div>
+        </div>
+
+        <div id="split-tables">
+          <table class="children sortable" id="id254">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.__init__">__init__</a></code></td>
+    <td>Initialize the Zookeeper client.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#addKeyValue" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.addKeyValue">add<wbr></wbr>Key<wbr></wbr>Value</a></code></td>
+    <td>Add a key-value pair to the Zookeeper node.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#connect" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.connect">connect</a></code></td>
+    <td>Connect to the Zookeeper server.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#delete" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.delete">delete</a></code></td>
+    <td>Delete the specified key from the Zookeeper node.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#disconnect" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.disconnect">disconnect</a></code></td>
+    <td>Disconnect from the Zookeeper server.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#exists" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.exists">exists</a></code></td>
+    <td>Check if the specified Zookeeper node exists.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#listNode" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.listNode">list<wbr></wbr>Node</a></code></td>
+    <td>List the contents of the Zookeeper node.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#retrieveIniConfig" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.retrieveIniConfig">retrieve<wbr></wbr>Ini<wbr></wbr>Config</a></code></td>
+    <td>Retrieve the Zookeeper node as an INI configuration string.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#storeIniConfig" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.storeIniConfig">store<wbr></wbr>Ini<wbr></wbr>Config</a></code></td>
+    <td>Store the INI configuration in the Zookeeper node.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#updateKeyValue" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.updateKeyValue">update<wbr></wbr>Key<wbr></wbr>Value</a></code></td>
+    <td>Update the value of the specified key in the Zookeeper node.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#upsertKeyValue" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.upsertKeyValue">upsert<wbr></wbr>Key<wbr></wbr>Value</a></code></td>
+    <td>Upsert a key-value pair to the Zookeeper node.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#caseSensitive" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.caseSensitive">case<wbr></wbr>Sensitive</a></code></td>
+    <td>Flag to indicate if the keys are case-sensitive.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#host" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.host">host</a></code></td>
+    <td>The hostname of the Zookeeper server.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#logger" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.logger">logger</a></code></td>
+    <td>The logger function to use for logging. If None, the default print function is used.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#normalizedRootNode" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.normalizedRootNode">normalized<wbr></wbr>Root<wbr></wbr>Node</a></code></td>
+    <td>The normalized root node, which is always an absolute path.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#port" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.port">port</a></code></td>
+    <td>The port of the Zookeeper server.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#rootNode" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.rootNode">root<wbr></wbr>Node</a></code></td>
+    <td>The root node of the Zookeeper server. This is always an absolute path.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#verbose" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.verbose">verbose</a></code></td>
+    <td>Flag to enable verbose output. If True, the logger will be used to print messages.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#zk" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper.zk">zk</a></code></td>
+    <td>The Zookeeper client instance.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_normalizeKey" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper._normalizeKey">_normalize<wbr></wbr>Key</a></code></td>
+    <td>Normalize the key to be case-sensitive or not.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="child-list">
+          <div class="basemethod">
+  
+  
+  <a name="acme.helpers.Zookeeper.Zookeeper.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">__init__</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">host: <code>str</code>, </span><span class="rst-sig-param">port: <code>int | None</code> = <a href="acme.helpers.Zookeeper.html#zookeeperDefaultPort" class="internal-link" title="acme.helpers.Zookeeper.zookeeperDefaultPort">zookeeperDefaultPort</a>, </span><span class="rst-sig-param">rootNode: <code>str | None</code> = <span class="rst-variable-quote">'</span><span class="rst-variable-string">/</span><span class="rst-variable-quote">'</span>, </span><span class="rst-sig-param">logger: <code>Callable | None</code> = print, </span><span class="rst-sig-param">verbose: <code>bool | None</code> = False, </span><span class="rst-sig-param">caseSensitive: <code>bool | None</code> = True</span>):</span>
+    
+    <a class="headerLink" href="#__init__" title="acme.helpers.Zookeeper.Zookeeper.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Initialize the Zookeeper client.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">host:</span><code>str</code></td><td class="fieldArgDesc">The hostname of the Zookeeper server.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">port:</span><code>int | None</code></td><td class="fieldArgDesc">The port of the Zookeeper server.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">root<wbr></wbr>Node:</span><code>str | None</code></td><td class="fieldArgDesc">The root node of the Zookeeper server.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">logger:</span><code>Callable | None</code></td><td class="fieldArgDesc">The logger function to use for logging.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">verbose:</span><code>bool | None</code></td><td class="fieldArgDesc">Flag to enable verbose output.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">case<wbr></wbr>Sensitive:</span><code>bool | None</code></td><td class="fieldArgDesc">Flag to enable case-sensitive key names.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.Zookeeper.Zookeeper.addKeyValue">
+    
+  </a>
+  <a name="addKeyValue">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">addKeyValue</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">key: <code>str</code>, </span><span class="rst-sig-param">value: <code>str</code> = <span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span></span>) -&gt; <code><a href="acme.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper">Zookeeper</a></code>:</span>
+    
+    <a class="headerLink" href="#addKeyValue" title="acme.helpers.Zookeeper.Zookeeper.addKeyValue">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Add a key-value pair to the Zookeeper node.</p>
+<p>Section that are stored in multiple levels in the Zookeeper tree will be flattened and stored as a single section,
+separated by dots (.) in the section name.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">key:</span><code>str</code></td><td class="fieldArgDesc">The key to add. This can be node relative to the root node, or an absolute path.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">value:</span><code>str</code></td><td class="fieldArgDesc">The value to add. This is optional and defaults the root node.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper">Zookeeper</a></code></td><td class="fieldArgDesc">The Zookeeper instance.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>Exception</code></td><td>If the Zookeeper client is not connected or if the key already exists.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.Zookeeper.Zookeeper.connect">
+    
+  </a>
+  <a name="connect">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">connect</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">createRoot: <code>bool | None</code> = True</span>) -&gt; <code><a href="acme.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper">Zookeeper</a></code>:</span>
+    
+    <a class="headerLink" href="#connect" title="acme.helpers.Zookeeper.Zookeeper.connect">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Connect to the Zookeeper server.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">create<wbr></wbr>Root:</span><code>bool | None</code></td><td class="fieldArgDesc">Flag to create the root node if it doesn't exist.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper">Zookeeper</a></code></td><td class="fieldArgDesc">The Zookeeper instance.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>Exception</code></td><td>If the Zookeeper client cannot be created or connected.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.Zookeeper.Zookeeper.delete">
+    
+  </a>
+  <a name="delete">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">delete</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">key: <code>str</code></span>) -&gt; <code><a href="acme.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper">Zookeeper</a></code>:</span>
+    
+    <a class="headerLink" href="#delete" title="acme.helpers.Zookeeper.Zookeeper.delete">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Delete the specified key from the Zookeeper node.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">key:</span><code>str</code></td><td class="fieldArgDesc">The key to delete. This can be node relative to the root node, or an absolute path.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper">Zookeeper</a></code></td><td class="fieldArgDesc">The Zookeeper instance.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>Exception</code></td><td>If the Zookeeper client is not connected or if the key does not exist.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.Zookeeper.Zookeeper.disconnect">
+    
+  </a>
+  <a name="disconnect">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">disconnect</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code><a href="acme.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper">Zookeeper</a></code>:</span>
+    
+    <a class="headerLink" href="#disconnect" title="acme.helpers.Zookeeper.Zookeeper.disconnect">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Disconnect from the Zookeeper server.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper">Zookeeper</a></code></td><td class="fieldArgDesc">The Zookeeper instance.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.Zookeeper.Zookeeper.exists">
+    
+  </a>
+  <a name="exists">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">exists</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">node: <code>str | None</code> = None</span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#exists" title="acme.helpers.Zookeeper.Zookeeper.exists">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check if the specified Zookeeper node exists.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">node:</span><code>str | None</code></td><td class="fieldArgDesc">The node to check. This must be an absolute path.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if the node exists, False otherwise.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>Exception</code></td><td>If the Zookeeper client is not connected.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.Zookeeper.Zookeeper.listNode">
+    
+  </a>
+  <a name="listNode">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">listNode</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">node: <code>str</code></span>) -&gt; <code>list[<wbr></wbr><a href="acme.helpers.Zookeeper.ZookeperNode.html" class="internal-link" title="acme.helpers.Zookeeper.ZookeperNode">ZookeperNode</a>]</code>:</span>
+    
+    <a class="headerLink" href="#listNode" title="acme.helpers.Zookeeper.Zookeeper.listNode">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>List the contents of the Zookeeper node.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">node:</span><code>str</code></td><td class="fieldArgDesc">The node to list. This can be node relative to the root node, or an absolute path.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acme.helpers.Zookeeper.ZookeperNode.html" class="internal-link" title="acme.helpers.Zookeeper.ZookeperNode">ZookeperNode</a>]</code></td><td class="fieldArgDesc">A list of Zookeeper nodes.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.Zookeeper.Zookeeper.retrieveIniConfig">
+    
+  </a>
+  <a name="retrieveIniConfig">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">retrieveIniConfig</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">node: <code>str | None</code> = None</span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#retrieveIniConfig" title="acme.helpers.Zookeeper.Zookeeper.retrieveIniConfig">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Retrieve the Zookeeper node as an INI configuration string.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">node:</span><code>str | None</code></td><td class="fieldArgDesc">The node to convert. This can be node relative to the root node, or an absolute path. The default is the root node.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>str</code></td><td class="fieldArgDesc">A multi-line string representing the INI configuration for the Zookeeper node.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.Zookeeper.Zookeeper.storeIniConfig">
+    
+  </a>
+  <a name="storeIniConfig">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">storeIniConfig</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">config: <code>ConfigParser | list[<wbr></wbr>ConfigParser] | str</code>, </span><span class="rst-sig-param">node: <code>str | None</code> = None</span>) -&gt; <code><a href="acme.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper">Zookeeper</a></code>:</span>
+    
+    <a class="headerLink" href="#storeIniConfig" title="acme.helpers.Zookeeper.Zookeeper.storeIniConfig">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Store the INI configuration in the Zookeeper node.</p>
+<p>Dots (.) in the section names will be replaced with slashes (/) and be stored as a path in Zookeeper.
+For example, the section name 'section.subsection' will be stored as 'section/subsection'.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">config:</span><code>ConfigParser | list[<wbr></wbr>ConfigParser] | str</code></td><td class="fieldArgDesc">The INI configuration to store. This can be a single ConfigParser object, a list of ConfigParser objects, or a string. If the configuration is a string it will be parsed. The order of the list is important, as entries in the first ConfigParser will be overwritten by entries in the second ConfigParser if they have the same section and key.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">node:</span><code>str | None</code></td><td class="fieldArgDesc">The node to store the configuration in. This can be node relative to the root node, or an absolute path.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper">Zookeeper</a></code></td><td class="fieldArgDesc">The Zookeeper instance.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>Exception</code></td><td>If the Zookeeper client is not connected or if the configuration is empty.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.Zookeeper.Zookeeper.updateKeyValue">
+    
+  </a>
+  <a name="updateKeyValue">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">updateKeyValue</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">key: <code>str</code>, </span><span class="rst-sig-param">value: <code>str</code></span>) -&gt; <code><a href="acme.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper">Zookeeper</a></code>:</span>
+    
+    <a class="headerLink" href="#updateKeyValue" title="acme.helpers.Zookeeper.Zookeeper.updateKeyValue">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Update the value of the specified key in the Zookeeper node.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">key:</span><code>str</code></td><td class="fieldArgDesc">The key to update. This can be node relative to the root node, or an absolute path.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">value:</span><code>str</code></td><td class="fieldArgDesc">The new value to set for the key.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper">Zookeeper</a></code></td><td class="fieldArgDesc">The Zookeeper instance.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>Exception</code></td><td>If the Zookeeper client is not connected or if the key does not exist.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.Zookeeper.Zookeeper.upsertKeyValue">
+    
+  </a>
+  <a name="upsertKeyValue">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">upsertKeyValue</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">key: <code>str</code>, </span><span class="rst-sig-param">value: <code>str</code></span>) -&gt; <code><a href="acme.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper">Zookeeper</a></code>:</span>
+    
+    <a class="headerLink" href="#upsertKeyValue" title="acme.helpers.Zookeeper.Zookeeper.upsertKeyValue">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Upsert a key-value pair to the Zookeeper node.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">key:</span><code>str</code></td><td class="fieldArgDesc">The key to upsert. This can be node relative to the root node, or an absolute path.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">value:</span><code>str</code></td><td class="fieldArgDesc">The value to upsert. This is optional and defaults to an empty string.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acme.helpers.Zookeeper.Zookeeper">Zookeeper</a></code></td><td class="fieldArgDesc">The Zookeeper instance.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>Exception</code></td><td>If the Zookeeper client is not connected.</td></tr></table></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acme.helpers.Zookeeper.Zookeeper.caseSensitive">
+    
+  </a>
+  <a name="caseSensitive">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">caseSensitive</span> =
+    
+    <a class="headerLink" href="#caseSensitive" title="acme.helpers.Zookeeper.Zookeeper.caseSensitive">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Flag to indicate if the keys are case-sensitive.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acme.helpers.Zookeeper.Zookeeper.host">
+    
+  </a>
+  <a name="host">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">host</span> =
+    
+    <a class="headerLink" href="#host" title="acme.helpers.Zookeeper.Zookeeper.host">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The hostname of the Zookeeper server.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acme.helpers.Zookeeper.Zookeeper.logger">
+    
+  </a>
+  <a name="logger">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">logger</span> =
+    
+    <a class="headerLink" href="#logger" title="acme.helpers.Zookeeper.Zookeeper.logger">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The logger function to use for logging. If None, the default print function is used.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acme.helpers.Zookeeper.Zookeeper.normalizedRootNode">
+    
+  </a>
+  <a name="normalizedRootNode">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">normalizedRootNode</span> =
+    
+    <a class="headerLink" href="#normalizedRootNode" title="acme.helpers.Zookeeper.Zookeeper.normalizedRootNode">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The normalized root node, which is always an absolute path.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acme.helpers.Zookeeper.Zookeeper.port">
+    
+  </a>
+  <a name="port">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">port</span> =
+    
+    <a class="headerLink" href="#port" title="acme.helpers.Zookeeper.Zookeeper.port">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The port of the Zookeeper server.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acme.helpers.Zookeeper.Zookeeper.rootNode">
+    
+  </a>
+  <a name="rootNode">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">rootNode</span> =
+    
+    <a class="headerLink" href="#rootNode" title="acme.helpers.Zookeeper.Zookeeper.rootNode">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The root node of the Zookeeper server. This is always an absolute path.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acme.helpers.Zookeeper.Zookeeper.verbose">
+    
+  </a>
+  <a name="verbose">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">verbose</span> =
+    
+    <a class="headerLink" href="#verbose" title="acme.helpers.Zookeeper.Zookeeper.verbose">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Flag to enable verbose output. If True, the logger will be used to print messages.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acme.helpers.Zookeeper.Zookeeper.zk">
+    
+  </a>
+  <a name="zk">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">zk</span> =
+    
+    <a class="headerLink" href="#zk" title="acme.helpers.Zookeeper.Zookeeper.zk">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The Zookeeper client instance.</p></div>
+    
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acme.helpers.Zookeeper.Zookeeper._normalizeKey">
+    
+  </a>
+  <a name="_normalizeKey">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_normalizeKey</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">key: <code>str</code></span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#_normalizeKey" title="acme.helpers.Zookeeper.Zookeeper._normalizeKey">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Normalize the key to be case-sensitive or not.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">key:</span><code>str</code></td><td class="fieldArgDesc">The key to normalize.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>str</code></td><td class="fieldArgDesc">The normalized key.</td></tr></table></div>
+  </div>
+</div>
+        </div>
+      
+      </main>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container-fluid">
+      <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      25.10.1 at 2026-05-13 12:48:06.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

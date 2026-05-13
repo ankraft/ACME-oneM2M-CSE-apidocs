@@ -1,0 +1,2456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>acme.services.Dispatcher.Dispatcher</title>
+    <meta name="generator" content="pydoctor 25.10.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    <link rel="canonical" href="https://acmecse.net/api/acme.services.Dispatcher.Dispatcher.html" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="acme.services.Dispatcher.Dispatcher.html" class="internal-link" title="This class"><wbr></wbr>Dispatcher</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#checkRequestExpiration" class="internal-link" title="acme.services.Dispatcher.Dispatcher.checkRequestExpiration">check<wbr></wbr>Request<wbr></wbr>Expiration</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#checkResultExpiration" class="internal-link" title="acme.services.Dispatcher.Dispatcher.checkResultExpiration">check<wbr></wbr>Result<wbr></wbr>Expiration</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#countDirectChildResources" class="internal-link" title="acme.services.Dispatcher.Dispatcher.countDirectChildResources">count<wbr></wbr>Direct<wbr></wbr>Child<wbr></wbr>Resources</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#countResources" class="internal-link" title="acme.services.Dispatcher.Dispatcher.countResources">count<wbr></wbr>Resources</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#createLocalResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher.createLocalResource">create<wbr></wbr>Local<wbr></wbr>Resource</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#createResourceFromDict" class="internal-link" title="acme.services.Dispatcher.Dispatcher.createResourceFromDict">create<wbr></wbr>Resource<wbr></wbr>From<wbr></wbr>Dict</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#deleteChildResources" class="internal-link" title="acme.services.Dispatcher.Dispatcher.deleteChildResources">delete<wbr></wbr>Child<wbr></wbr>Resources</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#deleteLocalResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher.deleteLocalResource">delete<wbr></wbr>Local<wbr></wbr>Resource</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#deleteResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher.deleteResource">delete<wbr></wbr>Resource</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#directChildResourcesRI" class="internal-link" title="acme.services.Dispatcher.Dispatcher.directChildResourcesRI">direct<wbr></wbr>Child<wbr></wbr>Resources<wbr></wbr>RI</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#discoverChildren" class="internal-link" title="acme.services.Dispatcher.Dispatcher.discoverChildren">discover<wbr></wbr>Children</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#discoverResources" class="internal-link" title="acme.services.Dispatcher.Dispatcher.discoverResources">discover<wbr></wbr>Resources</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#handleOperationExecutionTime" class="internal-link" title="acme.services.Dispatcher.Dispatcher.handleOperationExecutionTime">handle<wbr></wbr>Operation<wbr></wbr>Execution<wbr></wbr>Time</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#hasDirectChildResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher.hasDirectChildResource">has<wbr></wbr>Direct<wbr></wbr>Child<wbr></wbr>Resource</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#initialize" class="internal-link" title="acme.services.Dispatcher.Dispatcher.initialize">initialize</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#notifyLocalResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher.notifyLocalResource">notify<wbr></wbr>Local<wbr></wbr>Resource</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#processCreateRequest" class="internal-link" title="acme.services.Dispatcher.Dispatcher.processCreateRequest">process<wbr></wbr>Create<wbr></wbr>Request</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#processDeleteRequest" class="internal-link" title="acme.services.Dispatcher.Dispatcher.processDeleteRequest">process<wbr></wbr>Delete<wbr></wbr>Request</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#processNotifyRequest" class="internal-link" title="acme.services.Dispatcher.Dispatcher.processNotifyRequest">process<wbr></wbr>Notify<wbr></wbr>Request</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#processRetrieveRequest" class="internal-link" title="acme.services.Dispatcher.Dispatcher.processRetrieveRequest">process<wbr></wbr>Retrieve<wbr></wbr>Request</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#processUpdateRequest" class="internal-link" title="acme.services.Dispatcher.Dispatcher.processUpdateRequest">process<wbr></wbr>Update<wbr></wbr>Request</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#resourceTreeDict" class="internal-link" title="acme.services.Dispatcher.Dispatcher.resourceTreeDict">resource<wbr></wbr>Tree<wbr></wbr>Dict</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#retrieveDirectChildResources" class="internal-link" title="acme.services.Dispatcher.Dispatcher.retrieveDirectChildResources">retrieve<wbr></wbr>Direct<wbr></wbr>Child<wbr></wbr>Resources</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#retrieveLatestOldestInstance" class="internal-link" title="acme.services.Dispatcher.Dispatcher.retrieveLatestOldestInstance">retrieve<wbr></wbr>Latest<wbr></wbr>Oldest<wbr></wbr>Instance</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#retrieveLocalResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher.retrieveLocalResource">retrieve<wbr></wbr>Local<wbr></wbr>Resource</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#retrieveResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher.retrieveResource">retrieve<wbr></wbr>Resource</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#retrieveResourcesByType" class="internal-link" title="acme.services.Dispatcher.Dispatcher.retrieveResourcesByType">retrieve<wbr></wbr>Resources<wbr></wbr>By<wbr></wbr>Type</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#retrieveResourceWithPermission" class="internal-link" title="acme.services.Dispatcher.Dispatcher.retrieveResourceWithPermission">retrieve<wbr></wbr>Resource<wbr></wbr>With<wbr></wbr>Permission</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#shutdown" class="internal-link" title="acme.services.Dispatcher.Dispatcher.shutdown">shutdown</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#updateLocalResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher.updateLocalResource">update<wbr></wbr>Local<wbr></wbr>Resource</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#updateResourceFromDict" class="internal-link" title="acme.services.Dispatcher.Dispatcher.updateResourceFromDict">update<wbr></wbr>Resource<wbr></wbr>From<wbr></wbr>Dict</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_checkActiveCSESchedule" class="internal-link" title="acme.services.Dispatcher.Dispatcher._checkActiveCSESchedule">_check<wbr></wbr>Active<wbr></wbr>CSESchedule</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_checkHybridID" class="internal-link" title="acme.services.Dispatcher.Dispatcher._checkHybridID">_check<wbr></wbr>Hybrid<wbr></wbr>ID</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_childResourceTree" class="internal-link" title="acme.services.Dispatcher.Dispatcher._childResourceTree">_child<wbr></wbr>Resource<wbr></wbr>Tree</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_discoverResources" class="internal-link" title="acme.services.Dispatcher.Dispatcher._discoverResources">_discover<wbr></wbr>Resources</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_getFanoutPointResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher._getFanoutPointResource">_get<wbr></wbr>Fanout<wbr></wbr>Point<wbr></wbr>Resource</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_getNotificationTargetSelfReferenceResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher._getNotificationTargetSelfReferenceResource">_get<wbr></wbr>Notification<wbr></wbr>Target<wbr></wbr>Self<wbr></wbr>Reference<wbr></wbr>Resource</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_getPollingChannelURIResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher._getPollingChannelURIResource">_get<wbr></wbr>Polling<wbr></wbr>Channel<wbr></wbr>URIResource</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_getVirtualResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher._getVirtualResource">_get<wbr></wbr>Virtual<wbr></wbr>Resource</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_latestOldestResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher._latestOldestResource">_latest<wbr></wbr>Oldest<wbr></wbr>Resource</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_matchResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher._matchResource">_match<wbr></wbr>Resource</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_resourcesToURIList" class="internal-link" title="acme.services.Dispatcher.Dispatcher._resourcesToURIList">_resources<wbr></wbr>To<wbr></wbr>URIList</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_resourceTreeReferences" class="internal-link" title="acme.services.Dispatcher.Dispatcher._resourceTreeReferences">_resource<wbr></wbr>Tree<wbr></wbr>References</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__slots__" class="internal-link" title="acme.services.Dispatcher.Dispatcher.__slots__">__slots__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#factory" class="internal-link" title="acme.services.Dispatcher.Dispatcher.factory">factory</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#locationManager" class="internal-link" title="acme.services.Dispatcher.Dispatcher.locationManager">location<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#registrationManager" class="internal-link" title="acme.services.Dispatcher.Dispatcher.registrationManager">registration<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#remoteCSEManager" class="internal-link" title="acme.services.Dispatcher.Dispatcher.remoteCSEManager">remote<wbr></wbr>CSEManager</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#requestManager" class="internal-link" title="acme.services.Dispatcher.Dispatcher.requestManager">request<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#scriptManager" class="internal-link" title="acme.services.Dispatcher.Dispatcher.scriptManager">script<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#security" class="internal-link" title="acme.services.Dispatcher.Dispatcher.security">security</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#semanticManager" class="internal-link" title="acme.services.Dispatcher.Dispatcher.semanticManager">semantic<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#storage" class="internal-link" title="acme.services.Dispatcher.Dispatcher.storage">storage</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#timeManager" class="internal-link" title="acme.services.Dispatcher.Dispatcher.timeManager">time<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#validator" class="internal-link" title="acme.services.Dispatcher.Dispatcher.validator">validator</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#sortDiscoveryResources" class="internal-link" title="acme.services.Dispatcher.Dispatcher.sortDiscoveryResources">sort<wbr></wbr>Discovery<wbr></wbr>Resources</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="acme.services.Dispatcher.html" class="internal-link" title="The parent of this class"><wbr></wbr>Dispatcher</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.services.Dispatcher.Dispatcher.html" class="internal-link" title="acme.services.Dispatcher.Dispatcher"><wbr></wbr>Dispatcher</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <main class="">
+        
+
+        
+
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">acme</a></code><wbr></wbr>.<code><a href="acme.services.html" class="internal-link" title="acme.services">services</a></code><wbr></wbr>.<code><a href="acme.services.Dispatcher.html" class="internal-link" title="acme.services.Dispatcher">Dispatcher</a></code><wbr></wbr>.<code><a href="acme.services.Dispatcher.Dispatcher.html" class="internal-link" title="acme.services.Dispatcher.Dispatcher">Dispatcher</a></code></code></h1>
+          <div id="show-private">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">Dispatcher</span>:</code></p><p><a href="classIndex.html#acme.services.Dispatcher.Dispatcher">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Dispatcher class. Handles all requests and dispatches them to the
+appropriate handlers. This includes requests for resources, requests
+for resource creation, and requests for resource deletion.</p></div>
+        </div>
+
+        <div id="split-tables">
+          <table class="children sortable" id="id689">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#checkRequestExpiration" class="internal-link" title="acme.services.Dispatcher.Dispatcher.checkRequestExpiration">check<wbr></wbr>Request<wbr></wbr>Expiration</a></code></td>
+    <td>Check request expiration timeout if a request timeout is give.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#checkResultExpiration" class="internal-link" title="acme.services.Dispatcher.Dispatcher.checkResultExpiration">check<wbr></wbr>Result<wbr></wbr>Expiration</a></code></td>
+    <td>Check result expiration timeout if a result timeout is given.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#countDirectChildResources" class="internal-link" title="acme.services.Dispatcher.Dispatcher.countDirectChildResources">count<wbr></wbr>Direct<wbr></wbr>Child<wbr></wbr>Resources</a></code></td>
+    <td>Return the number of all child resources of resource, optionally filtered by type.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#countResources" class="internal-link" title="acme.services.Dispatcher.Dispatcher.countResources">count<wbr></wbr>Resources</a></code></td>
+    <td>Return total number of resources. Optional filter by type.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#createLocalResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher.createLocalResource">create<wbr></wbr>Local<wbr></wbr>Resource</a></code></td>
+    <td>Create a resource locally.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#createResourceFromDict" class="internal-link" title="acme.services.Dispatcher.Dispatcher.createResourceFromDict">create<wbr></wbr>Resource<wbr></wbr>From<wbr></wbr>Dict</a></code></td>
+    <td>Create a resource from a JSON dictionary.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#deleteChildResources" class="internal-link" title="acme.services.Dispatcher.Dispatcher.deleteChildResources">delete<wbr></wbr>Child<wbr></wbr>Resources</a></code></td>
+    <td>Remove all child resources of a parent recursively.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#deleteLocalResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher.deleteLocalResource">delete<wbr></wbr>Local<wbr></wbr>Resource</a></code></td>
+    <td>Delete a resource from the CSE. Call deactivate() and deleted() callbacks on the resource.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#deleteResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher.deleteResource">delete<wbr></wbr>Resource</a></code></td>
+    <td>Delete a resource from the CSE.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#directChildResourcesRI" class="internal-link" title="acme.services.Dispatcher.Dispatcher.directChildResourcesRI">direct<wbr></wbr>Child<wbr></wbr>Resources<wbr></wbr>RI</a></code></td>
+    <td>Return the resourceIdentifiers of all child resources of a resource, optionally filtered by type. An empty list is returned if no child resource could be found.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#discoverChildren" class="internal-link" title="acme.services.Dispatcher.Dispatcher.discoverChildren">discover<wbr></wbr>Children</a></code></td>
+    <td>Discover child resources of a resource.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#discoverResources" class="internal-link" title="acme.services.Dispatcher.Dispatcher.discoverResources">discover<wbr></wbr>Resources</a></code></td>
+    <td>Discover resources. This is the main function for resource discovery.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#handleOperationExecutionTime" class="internal-link" title="acme.services.Dispatcher.Dispatcher.handleOperationExecutionTime">handle<wbr></wbr>Operation<wbr></wbr>Execution<wbr></wbr>Time</a></code></td>
+    <td>Handle operation execution time and request expiration. If the OET is set then wait until the provided timestamp is reached.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#hasDirectChildResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher.hasDirectChildResource">has<wbr></wbr>Direct<wbr></wbr>Child<wbr></wbr>Resource</a></code></td>
+    <td>Check if a resource has a direct child resource with a given resourceID</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#initialize" class="internal-link" title="acme.services.Dispatcher.Dispatcher.initialize">initialize</a></code></td>
+    <td>Initialize the Dispatcher.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#notifyLocalResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher.notifyLocalResource">notify<wbr></wbr>Local<wbr></wbr>Resource</a></code></td>
+    <td>Notify a local resource.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#processCreateRequest" class="internal-link" title="acme.services.Dispatcher.Dispatcher.processCreateRequest">process<wbr></wbr>Create<wbr></wbr>Request</a></code></td>
+    <td>Process a CREATE request. Create and register resource(s).</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#processDeleteRequest" class="internal-link" title="acme.services.Dispatcher.Dispatcher.processDeleteRequest">process<wbr></wbr>Delete<wbr></wbr>Request</a></code></td>
+    <td>Process a DELETE request. Delete resource(s).</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#processNotifyRequest" class="internal-link" title="acme.services.Dispatcher.Dispatcher.processNotifyRequest">process<wbr></wbr>Notify<wbr></wbr>Request</a></code></td>
+    <td>Process a NOTIFY request. Send notifications to resource(s).</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#processRetrieveRequest" class="internal-link" title="acme.services.Dispatcher.Dispatcher.processRetrieveRequest">process<wbr></wbr>Retrieve<wbr></wbr>Request</a></code></td>
+    <td>Process a RETRIEVE request. Retrieve and discover resource(s).</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#processUpdateRequest" class="internal-link" title="acme.services.Dispatcher.Dispatcher.processUpdateRequest">process<wbr></wbr>Update<wbr></wbr>Request</a></code></td>
+    <td>Process a UPDATE request. Update resource(s).</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#resourceTreeDict" class="internal-link" title="acme.services.Dispatcher.Dispatcher.resourceTreeDict">resource<wbr></wbr>Tree<wbr></wbr>Dict</a></code></td>
+    <td>Recursively walk the results and build a sub-resource tree for each resource type.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#retrieveDirectChildResources" class="internal-link" title="acme.services.Dispatcher.Dispatcher.retrieveDirectChildResources">retrieve<wbr></wbr>Direct<wbr></wbr>Child<wbr></wbr>Resources</a></code></td>
+    <td>Return all child resources of a resource, optionally filtered by type. An empty list is returned if no child resource could be found.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#retrieveLatestOldestInstance" class="internal-link" title="acme.services.Dispatcher.Dispatcher.retrieveLatestOldestInstance">retrieve<wbr></wbr>Latest<wbr></wbr>Oldest<wbr></wbr>Instance</a></code></td>
+    <td>Get the latest or oldest x-Instance resource for a parent.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#retrieveLocalResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher.retrieveLocalResource">retrieve<wbr></wbr>Local<wbr></wbr>Resource</a></code></td>
+    <td>Retrieve a resource locally.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#retrieveResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher.retrieveResource">retrieve<wbr></wbr>Resource</a></code></td>
+    <td>Retrieve a resource locally or from remote CSE.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#retrieveResourcesByType" class="internal-link" title="acme.services.Dispatcher.Dispatcher.retrieveResourcesByType">retrieve<wbr></wbr>Resources<wbr></wbr>By<wbr></wbr>Type</a></code></td>
+    <td>Retrieve all resources of a type.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#retrieveResourceWithPermission" class="internal-link" title="acme.services.Dispatcher.Dispatcher.retrieveResourceWithPermission">retrieve<wbr></wbr>Resource<wbr></wbr>With<wbr></wbr>Permission</a></code></td>
+    <td>Retrieve a resource and check access for an originator.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#shutdown" class="internal-link" title="acme.services.Dispatcher.Dispatcher.shutdown">shutdown</a></code></td>
+    <td>Shutdown the Dispatcher servide.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#updateLocalResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher.updateLocalResource">update<wbr></wbr>Local<wbr></wbr>Resource</a></code></td>
+    <td>Update a resource in the CSE. Call update() and updated() callbacks on the resource.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#updateResourceFromDict" class="internal-link" title="acme.services.Dispatcher.Dispatcher.updateResourceFromDict">update<wbr></wbr>Resource<wbr></wbr>From<wbr></wbr>Dict</a></code></td>
+    <td>Update a resource from a JSON dictionary.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#__slots__" class="internal-link" title="acme.services.Dispatcher.Dispatcher.__slots__">__slots__</a></code></td>
+    <td>Slots of class attributes.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#factory" class="internal-link" title="acme.services.Dispatcher.Dispatcher.factory">factory</a></code></td>
+    <td>Injected Factory instance.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#locationManager" class="internal-link" title="acme.services.Dispatcher.Dispatcher.locationManager">location<wbr></wbr>Manager</a></code></td>
+    <td>Injected LocationManager instance.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#registrationManager" class="internal-link" title="acme.services.Dispatcher.Dispatcher.registrationManager">registration<wbr></wbr>Manager</a></code></td>
+    <td>Injected RegistrationManager instance.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#remoteCSEManager" class="internal-link" title="acme.services.Dispatcher.Dispatcher.remoteCSEManager">remote<wbr></wbr>CSEManager</a></code></td>
+    <td>Injected RemoteCSEManager instance.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#requestManager" class="internal-link" title="acme.services.Dispatcher.Dispatcher.requestManager">request<wbr></wbr>Manager</a></code></td>
+    <td>Injected RequestManager instance.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#scriptManager" class="internal-link" title="acme.services.Dispatcher.Dispatcher.scriptManager">script<wbr></wbr>Manager</a></code></td>
+    <td>Injected ScriptManager instance.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#security" class="internal-link" title="acme.services.Dispatcher.Dispatcher.security">security</a></code></td>
+    <td>Injected SecurityManager instance.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#semanticManager" class="internal-link" title="acme.services.Dispatcher.Dispatcher.semanticManager">semantic<wbr></wbr>Manager</a></code></td>
+    <td>Injected SemanticManager instance.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#storage" class="internal-link" title="acme.services.Dispatcher.Dispatcher.storage">storage</a></code></td>
+    <td>Injected Storage instance.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#timeManager" class="internal-link" title="acme.services.Dispatcher.Dispatcher.timeManager">time<wbr></wbr>Manager</a></code></td>
+    <td>Injected TimeManager instance.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#validator" class="internal-link" title="acme.services.Dispatcher.Dispatcher.validator">validator</a></code></td>
+    <td>Injected Validator instance.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#sortDiscoveryResources" class="internal-link" title="acme.services.Dispatcher.Dispatcher.sortDiscoveryResources">sort<wbr></wbr>Discovery<wbr></wbr>Resources</a></code></td>
+    <td>Sort the discovered resources.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_checkActiveCSESchedule" class="internal-link" title="acme.services.Dispatcher.Dispatcher._checkActiveCSESchedule">_check<wbr></wbr>Active<wbr></wbr>CSESchedule</a></code></td>
+    <td>Check if the CSE is currently active according to its schedule.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_checkHybridID" class="internal-link" title="acme.services.Dispatcher.Dispatcher._checkHybridID">_check<wbr></wbr>Hybrid<wbr></wbr>ID</a></code></td>
+    <td>Return a corrected <em>id</em> and <em>srn</em> in case this is a hybrid ID.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_childResourceTree" class="internal-link" title="acme.services.Dispatcher.Dispatcher._childResourceTree">_child<wbr></wbr>Resource<wbr></wbr>Tree</a></code></td>
+    <td>Retrieve child resources of a resource and add them to a <strong>new</strong> target resource instance as "children"</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_discoverResources" class="internal-link" title="acme.services.Dispatcher.Dispatcher._discoverResources">_discover<wbr></wbr>Resources</a></code></td>
+    <td>Discover resources recursively. This is a helper function for discoverResources().</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_getFanoutPointResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher._getFanoutPointResource">_get<wbr></wbr>Fanout<wbr></wbr>Point<wbr></wbr>Resource</a></code></td>
+    <td>Check whether the target resource contains a fanoutPoint along its path is a fanoutPoint.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_getNotificationTargetSelfReferenceResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher._getNotificationTargetSelfReferenceResource">_get<wbr></wbr>Notification<wbr></wbr>Target<wbr></wbr>Self<wbr></wbr>Reference<wbr></wbr>Resource</a></code></td>
+    <td>Check whether the target is a notificationTargetSelfReference virtual resource and return it.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_getPollingChannelURIResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher._getPollingChannelURIResource">_get<wbr></wbr>Polling<wbr></wbr>Channel<wbr></wbr>URIResource</a></code></td>
+    <td>Check whether the target is a PollingChannelURI resource and return it.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_getVirtualResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher._getVirtualResource">_get<wbr></wbr>Virtual<wbr></wbr>Resource</a></code></td>
+    <td>Check whether the target is a virtual resource and return it.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_latestOldestResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher._latestOldestResource">_latest<wbr></wbr>Oldest<wbr></wbr>Resource</a></code></td>
+    <td>Check whether the target is a latest or oldest virtual resource and return it.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_matchResource" class="internal-link" title="acme.services.Dispatcher.Dispatcher._matchResource">_match<wbr></wbr>Resource</a></code></td>
+    <td>Match a filter to a resource.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_resourcesToURIList" class="internal-link" title="acme.services.Dispatcher.Dispatcher._resourcesToURIList">_resources<wbr></wbr>To<wbr></wbr>URIList</a></code></td>
+    <td>Create a m2m:uril structure from a list of resources.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_resourceTreeReferences" class="internal-link" title="acme.services.Dispatcher.Dispatcher._resourceTreeReferences">_resource<wbr></wbr>Tree<wbr></wbr>References</a></code></td>
+    <td>Retrieve child resource references of a resource and add them to a <strong>new</strong> target resource instance as "children"</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="child-list">
+          <div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.checkRequestExpiration">
+    
+  </a>
+  <a name="checkRequestExpiration">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">checkRequestExpiration</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code></span>):</span>
+    
+    <a class="headerLink" href="#checkRequestExpiration" title="acme.services.Dispatcher.Dispatcher.checkRequestExpiration">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check request expiration timeout if a request timeout is give.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">The request to check.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.REQUEST_TIMEOUT.html" class="internal-link" title="acme.etc.ResponseStatusCodes.REQUEST_TIMEOUT">REQUEST_TIMEOUT</a></code></td><td>In case the request is expired</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.checkResultExpiration">
+    
+  </a>
+  <a name="checkResultExpiration">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">checkResultExpiration</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code></span>):</span>
+    
+    <a class="headerLink" href="#checkResultExpiration" title="acme.services.Dispatcher.Dispatcher.checkResultExpiration">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check result expiration timeout if a result timeout is given.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">The request to check.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.REQUEST_TIMEOUT.html" class="internal-link" title="acme.etc.ResponseStatusCodes.REQUEST_TIMEOUT">REQUEST_TIMEOUT</a></code></td><td>In case the result is expired</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.BAD_REQUEST.html" class="internal-link" title="acme.etc.ResponseStatusCodes.BAD_REQUEST">BAD_REQUEST</a></code></td><td>In case the request expiration timestamp is greater than the result expiration timestamp.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.countDirectChildResources">
+    
+  </a>
+  <a name="countDirectChildResources">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">countDirectChildResources</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pi: <code>str</code>, </span><span class="rst-sig-param">ty: <code><a href="acme.etc.Types.ResourceTypes.html" class="internal-link" title="acme.etc.Types.ResourceTypes">ResourceTypes</a> | None</code> = None</span>) -&gt; <code>int</code>:</span>
+    
+    <a class="headerLink" href="#countDirectChildResources" title="acme.services.Dispatcher.Dispatcher.countDirectChildResources">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Return the number of all child resources of resource, optionally filtered by type.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">pi:</span><code>str</code></td><td class="fieldArgDesc">The parent's resourceIdentifier.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ty:</span><code><a href="acme.etc.Types.ResourceTypes.html" class="internal-link" title="acme.etc.Types.ResourceTypes">ResourceTypes</a> | None</code></td><td class="fieldArgDesc">The resource type to filter for.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>int</code></td><td class="fieldArgDesc">Number of child resources.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.countResources">
+    
+  </a>
+  <a name="countResources">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">countResources</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ty: <code><a href="acme.etc.Types.ResourceTypes.html" class="internal-link" title="acme.etc.Types.ResourceTypes">ResourceTypes</a> | tuple[<wbr></wbr><a href="acme.etc.Types.ResourceTypes.html" class="internal-link" title="acme.etc.Types.ResourceTypes">ResourceTypes</a>, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code> = None</span>) -&gt; <code>int</code>:</span>
+    
+    <a class="headerLink" href="#countResources" title="acme.services.Dispatcher.Dispatcher.countResources">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Return total number of resources.
+Optional filter by type.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.createLocalResource">
+    
+  </a>
+  <a name="createLocalResource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">createLocalResource</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">parentResource: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str | None</code> = None, </span><span class="rst-sig-param">rvi: <code>str | None</code> = None</span>) -&gt; <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>:</span>
+    
+    <a class="headerLink" href="#createLocalResource" title="acme.services.Dispatcher.Dispatcher.createLocalResource">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Create a resource locally.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The resource to create.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">parent<wbr></wbr>Resource:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The parent resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str | None</code></td><td class="fieldArgDesc">The originator of the request.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">rvi:</span><code>str | None</code></td><td class="fieldArgDesc">The release version identifier. This is only be present in a real CREATE request.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The created resource.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.TARGET_NOT_SUBSCRIBABLE.html" class="internal-link" title="acme.etc.ResponseStatusCodes.TARGET_NOT_SUBSCRIBABLE">TARGET_NOT_SUBSCRIBABLE</a></code></td><td>If the parent resource is not subscribable.</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.INVALID_CHILD_RESOURCE_TYPE.html" class="internal-link" title="acme.etc.ResponseStatusCodes.INVALID_CHILD_RESOURCE_TYPE">INVALID_CHILD_RESOURCE_TYPE</a></code></td><td>If the child resource type is invalid.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.createResourceFromDict">
+    
+  </a>
+  <a name="createResourceFromDict">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">createResourceFromDict</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">dct: <code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">parent: <code>str | <a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">ty: <code><a href="acme.etc.Types.ResourceTypes.html" class="internal-link" title="acme.etc.Types.ResourceTypes">ResourceTypes</a></code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">checkCreation: <code>bool</code> = True, </span><span class="rst-sig-param">trustedSource: <code>bool</code> = False, </span><span class="rst-sig-param">preCreateCB: <code>Callable[<wbr></wbr>[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a>], <wbr></wbr>None] | None</code> = None</span>) -&gt; <code>tuple[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | None, <wbr></wbr>str, <wbr></wbr>str, <wbr></wbr>str]</code>:</span>
+    
+    <a class="headerLink" href="#createResourceFromDict" title="acme.services.Dispatcher.Dispatcher.createResourceFromDict">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Create a resource from a JSON dictionary.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dct:</span><code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The dictionary.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">parent:</span><code>str | <a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The parent ID or parent resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ty:</span><code><a href="acme.etc.Types.ResourceTypes.html" class="internal-link" title="acme.etc.Types.ResourceTypes">ResourceTypes</a></code></td><td class="fieldArgDesc">The resource type.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">check<wbr></wbr>Creation:</span><code>bool</code></td><td class="fieldArgDesc">If True, then perform the resource creation check.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">trusted<wbr></wbr>Source:</span><code>bool</code></td><td class="fieldArgDesc">If True, then the resource is created from a trusted source and some checks can be skipped. <strong>Note</strong>: Also access control is ignores.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">pre<wbr></wbr>Create<wbr></wbr>CB:</span><code>Callable[<wbr></wbr>[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a>], <wbr></wbr>None] | None</code></td><td class="fieldArgDesc">A callback function that is called before the resource is created. The function takes the resource as an argument and can be used to modify the resource before it is created.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>tuple[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | None, <wbr></wbr>str, <wbr></wbr>str, <wbr></wbr>str]</code></td><td class="fieldArgDesc">A tuple of (resource or None, resource ID, CSE-ID, parent ID).</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.INTERNAL_SERVER_ERROR.html" class="internal-link" title="acme.etc.ResponseStatusCodes.INTERNAL_SERVER_ERROR">INTERNAL_SERVER_ERROR</a></code></td><td>If an unknown/unsupported RSC is returned.</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.ORIGINATOR_HAS_NO_PRIVILEGE.html" class="internal-link" title="acme.etc.ResponseStatusCodes.ORIGINATOR_HAS_NO_PRIVILEGE">ORIGINATOR_HAS_NO_PRIVILEGE</a></code></td><td>If the originator has no privilege.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.deleteChildResources">
+    
+  </a>
+  <a name="deleteChildResources">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">deleteChildResources</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">parentResource: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">ty: <code><a href="acme.etc.Types.ResourceTypes.html" class="internal-link" title="acme.etc.Types.ResourceTypes">ResourceTypes</a> | None</code> = None, </span><span class="rst-sig-param">doDeleteCheck: <code>bool | None</code> = True</span>):</span>
+    
+    <a class="headerLink" href="#deleteChildResources" title="acme.services.Dispatcher.Dispatcher.deleteChildResources">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Remove all child resources of a parent recursively.</p>
+<p>If <em>ty</em> is set only the resources of this type are removed.</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.deleteLocalResource">
+    
+  </a>
+  <a name="deleteLocalResource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">deleteLocalResource</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str | None</code> = None, </span><span class="rst-sig-param">withDeregistration: <code>bool | None</code> = False, </span><span class="rst-sig-param">parentResource: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | None</code> = None, </span><span class="rst-sig-param">doDeleteCheck: <code>bool | None</code> = True</span>):</span>
+    
+    <a class="headerLink" href="#deleteLocalResource" title="acme.services.Dispatcher.Dispatcher.deleteLocalResource">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Delete a resource from the CSE. Call deactivate() and deleted() callbacks on the resource.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The resource to delete.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str | None</code></td><td class="fieldArgDesc">The originator of the request.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">with<wbr></wbr>Deregistration:</span><code>bool | None</code></td><td class="fieldArgDesc">If True, deregister the resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">parent<wbr></wbr>Resource:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | None</code></td><td class="fieldArgDesc">The parent resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">do<wbr></wbr>Delete<wbr></wbr>Check:</span><code>bool | None</code></td><td class="fieldArgDesc">If True, call childRemoved() on the parent resource. Also, will call willbeDeactivated() on the resource.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.deleteResource">
+    
+  </a>
+  <a name="deleteResource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">deleteResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">id: <code>str</code>, </span><span class="rst-sig-param">originator: <code>str | None</code> = None</span>):</span>
+    
+    <a class="headerLink" href="#deleteResource" title="acme.services.Dispatcher.Dispatcher.deleteResource">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Delete a resource from the CSE.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">id:</span><code>str</code></td><td class="fieldArgDesc">The resource ID to delete.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str | None</code></td><td class="fieldArgDesc">The originator of the request. Defaults to None.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.OPERATION_NOT_ALLOWED.html" class="internal-link" title="acme.etc.ResponseStatusCodes.OPERATION_NOT_ALLOWED">OPERATION_NOT_ALLOWED</a></code></td><td>If the resource is a CSEBase resource.</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.NOT_FOUND.html" class="internal-link" title="acme.etc.ResponseStatusCodes.NOT_FOUND">NOT_FOUND</a></code></td><td>If the resource is not found.</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.ORIGINATOR_HAS_NO_PRIVILEGE.html" class="internal-link" title="acme.etc.ResponseStatusCodes.ORIGINATOR_HAS_NO_PRIVILEGE">ORIGINATOR_HAS_NO_PRIVILEGE</a></code></td><td>If the originator has no DELETE access to the resource.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.directChildResourcesRI">
+    
+  </a>
+  <a name="directChildResourcesRI">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">directChildResourcesRI</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pi: <code>str</code>, </span><span class="rst-sig-param">ty: <code><a href="acme.etc.Types.ResourceTypes.html" class="internal-link" title="acme.etc.Types.ResourceTypes">ResourceTypes</a> | list[<wbr></wbr><a href="acme.etc.Types.ResourceTypes.html" class="internal-link" title="acme.etc.Types.ResourceTypes">ResourceTypes</a>] | None</code> = None</span>) -&gt; <code>list[<wbr></wbr>str]</code>:</span>
+    
+    <a class="headerLink" href="#directChildResourcesRI" title="acme.services.Dispatcher.Dispatcher.directChildResourcesRI">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Return the resourceIdentifiers of all child resources of a resource, optionally filtered by type.
+An empty list is returned if no child resource could be found.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">pi:</span><code>str</code></td><td class="fieldArgDesc">The parent's resourceIdentifier.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ty:</span><code><a href="acme.etc.Types.ResourceTypes.html" class="internal-link" title="acme.etc.Types.ResourceTypes">ResourceTypes</a> | list[<wbr></wbr><a href="acme.etc.Types.ResourceTypes.html" class="internal-link" title="acme.etc.Types.ResourceTypes">ResourceTypes</a>] | None</code></td><td class="fieldArgDesc">The resource type or list of resource types to filter for.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr>str]</code></td><td class="fieldArgDesc">A list of retrieved resourceIdentifiers. This list might be empty.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.discoverChildren">
+    
+  </a>
+  <a name="discoverChildren">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">discoverChildren</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">id: <code>str</code>, </span><span class="rst-sig-param">resource: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">filterCriteria: <code><a href="acme.etc.Types.FilterCriteria.html" class="internal-link" title="acme.etc.Types.FilterCriteria">FilterCriteria</a></code>, </span><span class="rst-sig-param">permission: <code><a href="acme.etc.Types.Permission.html" class="internal-link" title="acme.etc.Types.Permission">Permission</a></code></span>) -&gt; <code>list[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a>] | None</code>:</span>
+    
+    <a class="headerLink" href="#discoverChildren" title="acme.services.Dispatcher.Dispatcher.discoverChildren">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Discover child resources of a resource.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">id:</span><code>str</code></td><td class="fieldArgDesc">The resourceIdentifier of the resource to discover the children for.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The resource to discover the children for.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator of the request.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">filter<wbr></wbr>Criteria:</span><code><a href="acme.etc.Types.FilterCriteria.html" class="internal-link" title="acme.etc.Types.FilterCriteria">FilterCriteria</a></code></td><td class="fieldArgDesc">The filter criteria to use.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">permission:</span><code><a href="acme.etc.Types.Permission.html" class="internal-link" title="acme.etc.Types.Permission">Permission</a></code></td><td class="fieldArgDesc">The permission to check.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a>] | None</code></td><td class="fieldArgDesc">A list of child resources. This list might be empty.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.discoverResources">
+    
+  </a>
+  <a name="discoverResources">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">discoverResources</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">id: <code>str</code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">filterCriteria: <code><a href="acme.etc.Types.FilterCriteria.html" class="internal-link" title="acme.etc.Types.FilterCriteria">FilterCriteria</a> | None</code> = None, </span><span class="rst-sig-param">rootResource: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | None</code> = None, </span><span class="rst-sig-param">permission: <code><a href="acme.etc.Types.Permission.html" class="internal-link" title="acme.etc.Types.Permission">Permission</a> | None</code> = <a href="acme.etc.Types.Permission.html#DISCOVERY" class="internal-link" title="acme.etc.Types.Permission.DISCOVERY">Permission.DISCOVERY</a></span>) -&gt; <code>list[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a>]</code>:</span>
+    
+    <a class="headerLink" href="#discoverResources" title="acme.services.Dispatcher.Dispatcher.discoverResources">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Discover resources. This is the main function for resource discovery.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">id:</span><code>str</code></td><td class="fieldArgDesc">The ID of the resource to start discovery from.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator of the request.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">filter<wbr></wbr>Criteria:</span><code><a href="acme.etc.Types.FilterCriteria.html" class="internal-link" title="acme.etc.Types.FilterCriteria">FilterCriteria</a> | None</code></td><td class="fieldArgDesc">The filter criteria.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">root<wbr></wbr>Resource:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | None</code></td><td class="fieldArgDesc">The root resource for discovery.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">permission:</span><code><a href="acme.etc.Types.Permission.html" class="internal-link" title="acme.etc.Types.Permission">Permission</a> | None</code></td><td class="fieldArgDesc">The permission to use.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a>]</code></td><td class="fieldArgDesc">A list of discovered resources.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.handleOperationExecutionTime">
+    
+  </a>
+  <a name="handleOperationExecutionTime">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">handleOperationExecutionTime</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code></span>):</span>
+    
+    <a class="headerLink" href="#handleOperationExecutionTime" title="acme.services.Dispatcher.Dispatcher.handleOperationExecutionTime">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle operation execution time and request expiration. If the OET is set then
+wait until the provided timestamp is reached.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">The request to check.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.hasDirectChildResource">
+    
+  </a>
+  <a name="hasDirectChildResource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">hasDirectChildResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pi: <code>str</code>, </span><span class="rst-sig-param">ri: <code>str</code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#hasDirectChildResource" title="acme.services.Dispatcher.Dispatcher.hasDirectChildResource">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check if a resource has a direct child resource with a given resourceID</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">pi:</span><code>str</code></td><td class="fieldArgDesc">The parent's resourceIdentifier.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str</code></td><td class="fieldArgDesc">The resourceIdentifier to check for.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if a direct child resource with the given resourceIdentifier exists, False otherwise.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.initialize">
+    
+  </a>
+  <a name="initialize">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">initialize</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#initialize" title="acme.services.Dispatcher.Dispatcher.initialize">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Initialize the Dispatcher.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.notifyLocalResource">
+    
+  </a>
+  <a name="notifyLocalResource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">notifyLocalResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">content: <code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></span>) -&gt; <code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code>:</span>
+    
+    <a class="headerLink" href="#notifyLocalResource" title="acme.services.Dispatcher.Dispatcher.notifyLocalResource">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Notify a local resource.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str</code></td><td class="fieldArgDesc">The resourceIdentifier of the resource to notify.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator of the request.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">content:</span><code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The notification content.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code></td><td class="fieldArgDesc">Result object.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.ORIGINATOR_HAS_NO_PRIVILEGE.html" class="internal-link" title="acme.etc.ResponseStatusCodes.ORIGINATOR_HAS_NO_PRIVILEGE">ORIGINATOR_HAS_NO_PRIVILEGE</a></code></td><td>If the originator has no NOTIFY access to the resource.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.processCreateRequest">
+    
+  </a>
+  <a name="processCreateRequest">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">processCreateRequest</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">originator: <code>str | None</code> = None, </span><span class="rst-sig-param">id: <code>str | None</code> = None</span>) -&gt; <code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code>:</span>
+    
+    <a class="headerLink" href="#processCreateRequest" title="acme.services.Dispatcher.Dispatcher.processCreateRequest">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Process a CREATE request. Create and register resource(s).</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">The incoming request.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str | None</code></td><td class="fieldArgDesc">The requests originator.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">id:</span><code>str | None</code></td><td class="fieldArgDesc">Optional ID of the request.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code></td><td class="fieldArgDesc">Result object.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.BAD_REQUEST.html" class="internal-link" title="acme.etc.ResponseStatusCodes.BAD_REQUEST">BAD_REQUEST</a></code></td><td>If the request is invalid.</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.NOT_FOUND.html" class="internal-link" title="acme.etc.ResponseStatusCodes.NOT_FOUND">NOT_FOUND</a></code></td><td>If the resource cannot be found.</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.OPERATION_NOT_ALLOWED.html" class="internal-link" title="acme.etc.ResponseStatusCodes.OPERATION_NOT_ALLOWED">OPERATION_NOT_ALLOWED</a></code></td><td>If the operation is not allowed.</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.SECURITY_ASSOCIATION_REQUIRED.html" class="internal-link" title="acme.etc.ResponseStatusCodes.SECURITY_ASSOCIATION_REQUIRED">SECURITY_ASSOCIATION_REQUIRED</a></code></td><td>If a security association is required.</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.ORIGINATOR_HAS_NO_PRIVILEGE.html" class="internal-link" title="acme.etc.ResponseStatusCodes.ORIGINATOR_HAS_NO_PRIVILEGE">ORIGINATOR_HAS_NO_PRIVILEGE</a></code></td><td>If the originator has no privilege.</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.CONFLICT.html" class="internal-link" title="acme.etc.ResponseStatusCodes.CONFLICT">CONFLICT</a></code></td><td>If the resource already exists.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.processDeleteRequest">
+    
+  </a>
+  <a name="processDeleteRequest">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">processDeleteRequest</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">id: <code>str | None</code> = None</span>) -&gt; <code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code>:</span>
+    
+    <a class="headerLink" href="#processDeleteRequest" title="acme.services.Dispatcher.Dispatcher.processDeleteRequest">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Process a DELETE request. Delete resource(s).</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">The incoming request.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The requests originator.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">id:</span><code>str | None</code></td><td class="fieldArgDesc">Optional ID of the request.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code></td><td class="fieldArgDesc">Result object.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.NOT_FOUND.html" class="internal-link" title="acme.etc.ResponseStatusCodes.NOT_FOUND">NOT_FOUND</a></code></td><td>If the resource cannot be found.</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.ORIGINATOR_HAS_NO_PRIVILEGE.html" class="internal-link" title="acme.etc.ResponseStatusCodes.ORIGINATOR_HAS_NO_PRIVILEGE">ORIGINATOR_HAS_NO_PRIVILEGE</a></code></td><td>If the originator has no privilege.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.processNotifyRequest">
+    
+  </a>
+  <a name="processNotifyRequest">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">processNotifyRequest</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">originator: <code>str | None</code>, </span><span class="rst-sig-param">id: <code>str | None</code> = None</span>) -&gt; <code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code>:</span>
+    
+    <a class="headerLink" href="#processNotifyRequest" title="acme.services.Dispatcher.Dispatcher.processNotifyRequest">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Process a NOTIFY request. Send notifications to resource(s).</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">The incoming request.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str | None</code></td><td class="fieldArgDesc">The requests originator.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">id:</span><code>str | None</code></td><td class="fieldArgDesc">Optional ID of the request.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code></td><td class="fieldArgDesc">Result object.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.BAD_REQUEST.html" class="internal-link" title="acme.etc.ResponseStatusCodes.BAD_REQUEST">BAD_REQUEST</a></code></td><td>If the request is invalid.</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.ORIGINATOR_HAS_NO_PRIVILEGE.html" class="internal-link" title="acme.etc.ResponseStatusCodes.ORIGINATOR_HAS_NO_PRIVILEGE">ORIGINATOR_HAS_NO_PRIVILEGE</a></code></td><td>If the originator has no privilege.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.processRetrieveRequest">
+    
+  </a>
+  <a name="processRetrieveRequest">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">processRetrieveRequest</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">id: <code>str | None</code> = None</span>) -&gt; <code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code>:</span>
+    
+    <a class="headerLink" href="#processRetrieveRequest" title="acme.services.Dispatcher.Dispatcher.processRetrieveRequest">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Process a RETRIEVE request. Retrieve and discover resource(s).</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">The incoming request.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The requests originator.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">id:</span><code>str | None</code></td><td class="fieldArgDesc">Optional ID of the request.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code></td><td class="fieldArgDesc">Result object.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.BAD_REQUEST.html" class="internal-link" title="acme.etc.ResponseStatusCodes.BAD_REQUEST">BAD_REQUEST</a></code></td><td>If the request is invalid.</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.ORIGINATOR_HAS_NO_PRIVILEGE.html" class="internal-link" title="acme.etc.ResponseStatusCodes.ORIGINATOR_HAS_NO_PRIVILEGE">ORIGINATOR_HAS_NO_PRIVILEGE</a></code></td><td>If the originator has no privilege.</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.INTERNAL_SERVER_ERROR.html" class="internal-link" title="acme.etc.ResponseStatusCodes.INTERNAL_SERVER_ERROR">INTERNAL_SERVER_ERROR</a></code></td><td>If an internal error occurred.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.processUpdateRequest">
+    
+  </a>
+  <a name="processUpdateRequest">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">processUpdateRequest</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">id: <code>str | None</code> = None</span>) -&gt; <code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code>:</span>
+    
+    <a class="headerLink" href="#processUpdateRequest" title="acme.services.Dispatcher.Dispatcher.processUpdateRequest">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Process a UPDATE request. Update resource(s).</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">The incoming request.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The requests originator.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">id:</span><code>str | None</code></td><td class="fieldArgDesc">Optional ID of the request.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code></td><td class="fieldArgDesc">Result object.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.BAD_REQUEST.html" class="internal-link" title="acme.etc.ResponseStatusCodes.BAD_REQUEST">BAD_REQUEST</a></code></td><td>If the request is invalid.</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.NOT_FOUND.html" class="internal-link" title="acme.etc.ResponseStatusCodes.NOT_FOUND">NOT_FOUND</a></code></td><td>If the resource cannot be found.</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.OPERATION_NOT_ALLOWED.html" class="internal-link" title="acme.etc.ResponseStatusCodes.OPERATION_NOT_ALLOWED">OPERATION_NOT_ALLOWED</a></code></td><td>If the operation is not allowed.</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.ORIGINATOR_HAS_NO_PRIVILEGE.html" class="internal-link" title="acme.etc.ResponseStatusCodes.ORIGINATOR_HAS_NO_PRIVILEGE">ORIGINATOR_HAS_NO_PRIVILEGE</a></code></td><td>If the originator has no privilege.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.resourceTreeDict">
+    
+  </a>
+  <a name="resourceTreeDict">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">resourceTreeDict</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resources: <code>list[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a>]</code>, </span><span class="rst-sig-param">targetResource: <code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></span>) -&gt; <code>list[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a>]</code>:</span>
+    
+    <a class="headerLink" href="#resourceTreeDict" title="acme.services.Dispatcher.Dispatcher.resourceTreeDict">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Recursively walk the results and build a sub-resource tree for each resource type.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.retrieveDirectChildResources">
+    
+  </a>
+  <a name="retrieveDirectChildResources">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">retrieveDirectChildResources</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pi: <code>str</code>, </span><span class="rst-sig-param">ty: <code><a href="acme.etc.Types.ResourceTypes.html" class="internal-link" title="acme.etc.Types.ResourceTypes">ResourceTypes</a> | list[<wbr></wbr><a href="acme.etc.Types.ResourceTypes.html" class="internal-link" title="acme.etc.Types.ResourceTypes">ResourceTypes</a>] | None</code> = None</span>) -&gt; <code>list[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a>]</code>:</span>
+    
+    <a class="headerLink" href="#retrieveDirectChildResources" title="acme.services.Dispatcher.Dispatcher.retrieveDirectChildResources">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Return all child resources of a resource, optionally filtered by type.
+An empty list is returned if no child resource could be found.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">pi:</span><code>str</code></td><td class="fieldArgDesc">The parent's resourceIdentifier. This is the resourceID of resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ty:</span><code><a href="acme.etc.Types.ResourceTypes.html" class="internal-link" title="acme.etc.Types.ResourceTypes">ResourceTypes</a> | list[<wbr></wbr><a href="acme.etc.Types.ResourceTypes.html" class="internal-link" title="acme.etc.Types.ResourceTypes">ResourceTypes</a>] | None</code></td><td class="fieldArgDesc">The resource type or list of resource types to filter for.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a>]</code></td><td class="fieldArgDesc">A list of retrieved <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code> objects. This list might be empty.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.retrieveLatestOldestInstance">
+    
+  </a>
+  <a name="retrieveLatestOldestInstance">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">retrieveLatestOldestInstance</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pi: <code>str</code>, </span><span class="rst-sig-param">ty: <code><a href="acme.etc.Types.ResourceTypes.html" class="internal-link" title="acme.etc.Types.ResourceTypes">ResourceTypes</a></code>, </span><span class="rst-sig-param">oldest: <code>bool | None</code> = False</span>) -&gt; <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | None</code>:</span>
+    
+    <a class="headerLink" href="#retrieveLatestOldestInstance" title="acme.services.Dispatcher.Dispatcher.retrieveLatestOldestInstance">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the latest or oldest x-Instance resource for a parent.</p>
+<p>This is done by searching through all resources once to find the fitting resource
+(parent + type) with the latest or oldest <em>ct</em> attribute.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">pi:</span><code>str</code></td><td class="fieldArgDesc">parent resourceIdentifier</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ty:</span><code><a href="acme.etc.Types.ResourceTypes.html" class="internal-link" title="acme.etc.Types.ResourceTypes">ResourceTypes</a></code></td><td class="fieldArgDesc">resource type to look for</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">oldest:</span><code>bool | None</code></td><td class="fieldArgDesc">switch between oldest and latest search</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | None</code></td><td class="fieldArgDesc">Resource</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.retrieveLocalResource">
+    
+  </a>
+  <a name="retrieveLocalResource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">retrieveLocalResource</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str | None</code> = None, </span><span class="rst-sig-param">srn: <code>str | None</code> = None, </span><span class="rst-sig-param">originator: <code>str | None</code> = None, </span><span class="rst-sig-param">request: <code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a> | None</code> = None</span>) -&gt; <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>:</span>
+    
+    <a class="headerLink" href="#retrieveLocalResource" title="acme.services.Dispatcher.Dispatcher.retrieveLocalResource">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Retrieve a resource locally.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str | None</code></td><td class="fieldArgDesc">The resource ID.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">srn:</span><code>str | None</code></td><td class="fieldArgDesc">The structured resource name.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str | None</code></td><td class="fieldArgDesc">The originator of the request.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a> | None</code></td><td class="fieldArgDesc">The request.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The retrieved resource.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.NOT_FOUND.html" class="internal-link" title="acme.etc.ResponseStatusCodes.NOT_FOUND">NOT_FOUND</a></code></td><td>If the resource cannot be found.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.retrieveResource">
+    
+  </a>
+  <a name="retrieveResource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">retrieveResource</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">id: <code>str</code>, </span><span class="rst-sig-param">originator: <code>str | None</code> = None, </span><span class="rst-sig-param">request: <code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a> | None</code> = None, </span><span class="rst-sig-param">postRetrieveHook: <code>bool | None</code> = False</span>) -&gt; <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>:</span>
+    
+    <a class="headerLink" href="#retrieveResource" title="acme.services.Dispatcher.Dispatcher.retrieveResource">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Retrieve a resource locally or from remote CSE.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">id:</span><code>str</code></td><td class="fieldArgDesc">If the <em>id</em> is in SP-relative format then first check whether this is for the local CSE.
+If yes, then adjust the ID and try to retrieve it.
+If no, then try to retrieve the resource from a connected (!) remote CSE.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str | None</code></td><td class="fieldArgDesc">The originator of the request.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a> | None</code></td><td class="fieldArgDesc"><span class="undocumented">Undocumented</span></td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">post<wbr></wbr>Retrieve<wbr></wbr>Hook:</span><code>bool | None</code></td><td class="fieldArgDesc">Only when retrieving localls, invoke the Resource's <em>willBeRetrieved()</em> callback.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">Result instance.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.NOT_FOUND.html" class="internal-link" title="acme.etc.ResponseStatusCodes.NOT_FOUND">NOT_FOUND</a></code></td><td>If the resource cannot be found.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.retrieveResourcesByType">
+    
+  </a>
+  <a name="retrieveResourcesByType">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">retrieveResourcesByType</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ty: <code><a href="acme.etc.Types.ResourceTypes.html" class="internal-link" title="acme.etc.Types.ResourceTypes">ResourceTypes</a></code></span>) -&gt; <code>list[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a>]</code>:</span>
+    
+    <a class="headerLink" href="#retrieveResourcesByType" title="acme.services.Dispatcher.Dispatcher.retrieveResourcesByType">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Retrieve all resources of a type.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ty:</span><code><a href="acme.etc.Types.ResourceTypes.html" class="internal-link" title="acme.etc.Types.ResourceTypes">ResourceTypes</a></code></td><td class="fieldArgDesc">Resouce type to search for.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a>]</code></td><td class="fieldArgDesc">A list of retrieved <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code> objects. This list might be empty.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.retrieveResourceWithPermission">
+    
+  </a>
+  <a name="retrieveResourceWithPermission">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">retrieveResourceWithPermission</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">permission: <code><a href="acme.etc.Types.Permission.html" class="internal-link" title="acme.etc.Types.Permission">Permission</a></code></span>) -&gt; <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>:</span>
+    
+    <a class="headerLink" href="#retrieveResourceWithPermission" title="acme.services.Dispatcher.Dispatcher.retrieveResourceWithPermission">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Retrieve a resource and check access for an originator.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str</code></td><td class="fieldArgDesc">Resource ID of the resource to be retrieved.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator to check the permission for.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">permission:</span><code><a href="acme.etc.Types.Permission.html" class="internal-link" title="acme.etc.Types.Permission">Permission</a></code></td><td class="fieldArgDesc">The permission to check.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The retrieved resource.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.NOT_FOUND.html" class="internal-link" title="acme.etc.ResponseStatusCodes.NOT_FOUND">NOT_FOUND</a></code></td><td>In case the resource could not be found.</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.ORIGINATOR_HAS_NO_PRIVILEGE.html" class="internal-link" title="acme.etc.ResponseStatusCodes.ORIGINATOR_HAS_NO_PRIVILEGE">ORIGINATOR_HAS_NO_PRIVILEGE</a></code></td><td>In case the originator has not the required permission to the resoruce.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.shutdown">
+    
+  </a>
+  <a name="shutdown">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">shutdown</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#shutdown" title="acme.services.Dispatcher.Dispatcher.shutdown">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Shutdown the Dispatcher servide.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">Boolean indicating the success.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.updateLocalResource">
+    
+  </a>
+  <a name="updateLocalResource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">updateLocalResource</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">dct: <code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a> | None</code> = None, </span><span class="rst-sig-param">doUpdateCheck: <code>bool | None</code> = True, </span><span class="rst-sig-param">originator: <code>str | None</code> = None</span>) -&gt; <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>:</span>
+    
+    <a class="headerLink" href="#updateLocalResource" title="acme.services.Dispatcher.Dispatcher.updateLocalResource">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Update a resource in the CSE. Call update() and updated() callbacks on the resource.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">Resource to update.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dct:</span><code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a> | None</code></td><td class="fieldArgDesc">JSON dictionary with the updated attributes.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">do<wbr></wbr>Update<wbr></wbr>Check:</span><code>bool | None</code></td><td class="fieldArgDesc">Enable/disable a call to update().</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str | None</code></td><td class="fieldArgDesc">The request's originator.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">Updated resource.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.updateResourceFromDict">
+    
+  </a>
+  <a name="updateResourceFromDict">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">updateResourceFromDict</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">dct: <code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">id: <code>str</code>, </span><span class="rst-sig-param">originator: <code>str | None</code> = None, </span><span class="rst-sig-param">resource: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | None</code> = None</span>) -&gt; <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>:</span>
+    
+    <a class="headerLink" href="#updateResourceFromDict" title="acme.services.Dispatcher.Dispatcher.updateResourceFromDict">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Update a resource from a JSON dictionary.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dct:</span><code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The dictionary.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">id:</span><code>str</code></td><td class="fieldArgDesc">The resource ID.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str | None</code></td><td class="fieldArgDesc">The originator.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | None</code></td><td class="fieldArgDesc">The resource to update.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The updated resource.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.INTERNAL_SERVER_ERROR.html" class="internal-link" title="acme.etc.ResponseStatusCodes.INTERNAL_SERVER_ERROR">INTERNAL_SERVER_ERROR</a></code></td><td>If the resource cannot be updated.</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.ORIGINATOR_HAS_NO_PRIVILEGE.html" class="internal-link" title="acme.etc.ResponseStatusCodes.ORIGINATOR_HAS_NO_PRIVILEGE">ORIGINATOR_HAS_NO_PRIVILEGE</a></code></td><td>If the originator has no UPDATE privileges.</td></tr></table></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.__slots__">
+    
+  </a>
+  <a name="__slots__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__slots__</span>: <code>tuple[<wbr></wbr>str, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code> =
+    
+    <a class="headerLink" href="#__slots__" title="acme.services.Dispatcher.Dispatcher.__slots__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Slots of class attributes.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.factory">
+    
+  </a>
+  <a name="factory">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">factory</span>: <code><a href="acme.runtime.Factory.Factory.html" class="internal-link" title="acme.runtime.Factory.Factory">Factory</a></code> =
+    
+    <a class="headerLink" href="#factory" title="acme.services.Dispatcher.Dispatcher.factory">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected Factory instance.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.locationManager">
+    
+  </a>
+  <a name="locationManager">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">locationManager</span>: <code><a href="acme.plugins.services.LocationManager.LocationManager.html" class="internal-link" title="acme.plugins.services.LocationManager.LocationManager">LocationManager</a> | None</code> =
+    
+    <a class="headerLink" href="#locationManager" title="acme.services.Dispatcher.Dispatcher.locationManager">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected LocationManager instance.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.registrationManager">
+    
+  </a>
+  <a name="registrationManager">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">registrationManager</span>: <code><a href="acme.services.RegistrationManager.RegistrationManager.html" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager">RegistrationManager</a></code> =
+    
+    <a class="headerLink" href="#registrationManager" title="acme.services.Dispatcher.Dispatcher.registrationManager">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected RegistrationManager instance.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.remoteCSEManager">
+    
+  </a>
+  <a name="remoteCSEManager">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">remoteCSEManager</span>: <code><a href="acme.plugins.services.RemoteCSEManager.RemoteCSEManager.html" class="internal-link" title="acme.plugins.services.RemoteCSEManager.RemoteCSEManager">RemoteCSEManager</a> | None</code> =
+    
+    <a class="headerLink" href="#remoteCSEManager" title="acme.services.Dispatcher.Dispatcher.remoteCSEManager">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected RemoteCSEManager instance.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.requestManager">
+    
+  </a>
+  <a name="requestManager">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">requestManager</span>: <code><a href="acme.services.RequestManager.RequestManager.html" class="internal-link" title="acme.services.RequestManager.RequestManager">RequestManager</a></code> =
+    
+    <a class="headerLink" href="#requestManager" title="acme.services.Dispatcher.Dispatcher.requestManager">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected RequestManager instance.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.scriptManager">
+    
+  </a>
+  <a name="scriptManager">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">scriptManager</span>: <code><a href="acme.runtime.ScriptManager.ScriptManager.html" class="internal-link" title="acme.runtime.ScriptManager.ScriptManager">ScriptManager</a></code> =
+    
+    <a class="headerLink" href="#scriptManager" title="acme.services.Dispatcher.Dispatcher.scriptManager">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected ScriptManager instance.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.security">
+    
+  </a>
+  <a name="security">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">security</span>: <code><a href="acme.services.SecurityManager.SecurityManager.html" class="internal-link" title="acme.services.SecurityManager.SecurityManager">SecurityManager</a></code> =
+    
+    <a class="headerLink" href="#security" title="acme.services.Dispatcher.Dispatcher.security">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected SecurityManager instance.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.semanticManager">
+    
+  </a>
+  <a name="semanticManager">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">semanticManager</span>: <code><a href="acme.plugins.services.SemanticManager.SemanticManager.html" class="internal-link" title="acme.plugins.services.SemanticManager.SemanticManager">SemanticManager</a> | None</code> =
+    
+    <a class="headerLink" href="#semanticManager" title="acme.services.Dispatcher.Dispatcher.semanticManager">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected SemanticManager instance.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.storage">
+    
+  </a>
+  <a name="storage">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">storage</span>: <code><a href="acme.runtime.Storage.Storage.html" class="internal-link" title="acme.runtime.Storage.Storage">Storage</a></code> =
+    
+    <a class="headerLink" href="#storage" title="acme.services.Dispatcher.Dispatcher.storage">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected Storage instance.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.timeManager">
+    
+  </a>
+  <a name="timeManager">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">timeManager</span>: <code><a href="acme.plugins.services.TimeManager.TimeManager.html" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager">TimeManager</a> | None</code> =
+    
+    <a class="headerLink" href="#timeManager" title="acme.services.Dispatcher.Dispatcher.timeManager">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected TimeManager instance.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.validator">
+    
+  </a>
+  <a name="validator">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">validator</span>: <code><a href="acme.services.Validator.Validator.html" class="internal-link" title="acme.services.Validator.Validator">Validator</a></code> =
+    
+    <a class="headerLink" href="#validator" title="acme.services.Dispatcher.Dispatcher.validator">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected Validator instance.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher.sortDiscoveryResources">
+    
+  </a>
+  <a name="sortDiscoveryResources">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">sortDiscoveryResources</span> =
+    
+    <a class="headerLink" href="#sortDiscoveryResources" title="acme.services.Dispatcher.Dispatcher.sortDiscoveryResources">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Sort the discovered resources.</p></div>
+    
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher._checkActiveCSESchedule">
+    
+  </a>
+  <a name="_checkActiveCSESchedule">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_checkActiveCSESchedule</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#_checkActiveCSESchedule" title="acme.services.Dispatcher.Dispatcher._checkActiveCSESchedule">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check if the CSE is currently active according to its schedule.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.TARGET_NOT_REACHABLE.html" class="internal-link" title="acme.etc.ResponseStatusCodes.TARGET_NOT_REACHABLE">TARGET_NOT_REACHABLE</a></code></td><td>In case the CSE is not active.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher._checkHybridID">
+    
+  </a>
+  <a name="_checkHybridID">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_checkHybridID</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">id: <code>str</code></span>) -&gt; <code>tuple[<wbr></wbr>str, <wbr></wbr>str]</code>:</span>
+    
+    <a class="headerLink" href="#_checkHybridID" title="acme.services.Dispatcher.Dispatcher._checkHybridID">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Return a corrected <em>id</em> and <em>srn</em> in case this is a hybrid ID.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">A request object that provides <em>id</em> and <em>srn</em>. <em>srn</em> might be None.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">id:</span><code>str</code></td><td class="fieldArgDesc">An ID which might be None. If it is not None, then it will be taken to generate the <em>srn</em>.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>tuple[<wbr></wbr>str, <wbr></wbr>str]</code></td><td class="fieldArgDesc">Tuple of <em>srn</em> and <em>id</em></td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher._childResourceTree">
+    
+  </a>
+  <a name="_childResourceTree">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_childResourceTree</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resources: <code>list[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a>]</code>, </span><span class="rst-sig-param">targetResource: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | <a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></span>):</span>
+    
+    <a class="headerLink" href="#_childResourceTree" title="acme.services.Dispatcher.Dispatcher._childResourceTree">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Retrieve child resources of a resource and add them to
+a <strong>new</strong> target resource instance as "children"</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resources:</span><code>list[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a>]</code></td><td class="fieldArgDesc">A list of resources to retrieve the child resources from.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">target<wbr></wbr>Resource:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | <a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The target resource to add the child resources to.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher._discoverResources">
+    
+  </a>
+  <a name="_discoverResources">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_discoverResources</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">rootResource: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">level: <code>int</code>, </span><span class="rst-sig-param">fo: <code>int</code>, </span><span class="rst-sig-param">allLen: <code>int</code>, </span><span class="rst-sig-param">dcrs: <code>list[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a>] | None</code> = None, </span><span class="rst-sig-param">filterCriteria: <code><a href="acme.etc.Types.FilterCriteria.html" class="internal-link" title="acme.etc.Types.FilterCriteria">FilterCriteria</a> | None</code> = None, </span><span class="rst-sig-param">permission: <code><a href="acme.etc.Types.Permission.html" class="internal-link" title="acme.etc.Types.Permission">Permission</a> | None</code> = <a href="acme.etc.Types.Permission.html#DISCOVERY" class="internal-link" title="acme.etc.Types.Permission.DISCOVERY">Permission.DISCOVERY</a></span>) -&gt; <code>list[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a>]</code>:</span>
+    
+    <a class="headerLink" href="#_discoverResources" title="acme.services.Dispatcher.Dispatcher._discoverResources">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Discover resources recursively. This is a helper function for discoverResources().</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">root<wbr></wbr>Resource:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The root resource for discovery.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator of the request.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">level:</span><code>int</code></td><td class="fieldArgDesc">The level of discovery.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">fo:</span><code>int</code></td><td class="fieldArgDesc">The filter operation.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">all<wbr></wbr>Len:</span><code>int</code></td><td class="fieldArgDesc">The length of all filter criteria.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dcrs:</span><code>list[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a>] | None</code></td><td class="fieldArgDesc">The direct child resources of the root resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">filter<wbr></wbr>Criteria:</span><code><a href="acme.etc.Types.FilterCriteria.html" class="internal-link" title="acme.etc.Types.FilterCriteria">FilterCriteria</a> | None</code></td><td class="fieldArgDesc">The filter criteria.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">permission:</span><code><a href="acme.etc.Types.Permission.html" class="internal-link" title="acme.etc.Types.Permission">Permission</a> | None</code></td><td class="fieldArgDesc">The permission to use.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a>]</code></td><td class="fieldArgDesc">A list of discovered resources.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher._getFanoutPointResource">
+    
+  </a>
+  <a name="_getFanoutPointResource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_getFanoutPointResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">id: <code>str</code></span>) -&gt; <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | None</code>:</span>
+    
+    <a class="headerLink" href="#_getFanoutPointResource" title="acme.services.Dispatcher.Dispatcher._getFanoutPointResource">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check whether the target resource contains a fanoutPoint along its path is a fanoutPoint.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">id:</span><code>str</code></td><td class="fieldArgDesc">the target's resource ID.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | None</code></td><td class="fieldArgDesc">Return either the virtual fanoutPoint resource, or None in case of an error.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher._getNotificationTargetSelfReferenceResource">
+    
+  </a>
+  <a name="_getNotificationTargetSelfReferenceResource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_getNotificationTargetSelfReferenceResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">id: <code>str</code></span>) -&gt; <code><a href="acme.resources.NTSR.NTSR.html" class="internal-link" title="acme.resources.NTSR.NTSR">NTSR</a> | None</code>:</span>
+    
+    <a class="headerLink" href="#_getNotificationTargetSelfReferenceResource" title="acme.services.Dispatcher.Dispatcher._getNotificationTargetSelfReferenceResource">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check whether the target is a notificationTargetSelfReference virtual resource and return it.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">id:</span><code>str</code></td><td class="fieldArgDesc">Target resource ID</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.resources.NTSR.NTSR.html" class="internal-link" title="acme.resources.NTSR.NTSR">NTSR</a> | None</code></td><td class="fieldArgDesc">Return either the virtual resource, or None in case of an error.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher._getPollingChannelURIResource">
+    
+  </a>
+  <a name="_getPollingChannelURIResource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_getPollingChannelURIResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">id: <code>str</code></span>) -&gt; <code><a href="acme.resources.PCH_PCU.PCH_PCU.html" class="internal-link" title="acme.resources.PCH_PCU.PCH_PCU">PCH_PCU</a> | None</code>:</span>
+    
+    <a class="headerLink" href="#_getPollingChannelURIResource" title="acme.services.Dispatcher.Dispatcher._getPollingChannelURIResource">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check whether the target is a PollingChannelURI resource and return it.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">id:</span><code>str</code></td><td class="fieldArgDesc">Target resource ID</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.resources.PCH_PCU.PCH_PCU.html" class="internal-link" title="acme.resources.PCH_PCU.PCH_PCU">PCH_PCU</a> | None</code></td><td class="fieldArgDesc">Return either the virtual PollingChannelURI resource or None.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher._getVirtualResource">
+    
+  </a>
+  <a name="_getVirtualResource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_getVirtualResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">id: <code>str</code>, </span><span class="rst-sig-param">rn: <code>str | tuple[<wbr></wbr>str, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code></span>) -&gt; <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | None</code>:</span>
+    
+    <a class="headerLink" href="#_getVirtualResource" title="acme.services.Dispatcher.Dispatcher._getVirtualResource">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check whether the target is a virtual resource and return it.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">id:</span><code>str</code></td><td class="fieldArgDesc">Target resource ID</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">rn:</span><code>str | tuple[<wbr></wbr>str, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code></td><td class="fieldArgDesc">The resource name to check for. Can be a tuple of names. Must begin with a slash.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | None</code></td><td class="fieldArgDesc">Return either the virtual resource or None.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher._latestOldestResource">
+    
+  </a>
+  <a name="_latestOldestResource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_latestOldestResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">id: <code>str</code></span>) -&gt; <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | None</code>:</span>
+    
+    <a class="headerLink" href="#_latestOldestResource" title="acme.services.Dispatcher.Dispatcher._latestOldestResource">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check whether the target is a latest or oldest virtual resource and return it.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">id:</span><code>str</code></td><td class="fieldArgDesc">Target resource ID</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | None</code></td><td class="fieldArgDesc">Return either the virtual resource, or None in case of an error.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher._matchResource">
+    
+  </a>
+  <a name="_matchResource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_matchResource</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">r: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">fo: <code>int</code>, </span><span class="rst-sig-param">allLen: <code>int</code>, </span><span class="rst-sig-param">filterCriteria: <code><a href="acme.etc.Types.FilterCriteria.html" class="internal-link" title="acme.etc.Types.FilterCriteria">FilterCriteria</a></code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#_matchResource" title="acme.services.Dispatcher.Dispatcher._matchResource">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Match a filter to a resource.</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher._resourcesToURIList">
+    
+  </a>
+  <a name="_resourcesToURIList">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_resourcesToURIList</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resources: <code>list[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a>]</code>, </span><span class="rst-sig-param">drt: <code>int</code></span>) -&gt; <code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code>:</span>
+    
+    <a class="headerLink" href="#_resourcesToURIList" title="acme.services.Dispatcher.Dispatcher._resourcesToURIList">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Create a m2m:uril structure from a list of resources.</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acme.services.Dispatcher.Dispatcher._resourceTreeReferences">
+    
+  </a>
+  <a name="_resourceTreeReferences">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_resourceTreeReferences</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resources: <code>list[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a>]</code>, </span><span class="rst-sig-param">targetResource: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | <a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">drt: <code><a href="acme.etc.Types.DesiredIdentifierResultType.html" class="internal-link" title="acme.etc.Types.DesiredIdentifierResultType">DesiredIdentifierResultType</a> | None</code> = <a href="acme.etc.Types.DesiredIdentifierResultType.html#structured" class="internal-link" title="acme.etc.Types.DesiredIdentifierResultType.structured">DesiredIdentifierResultType.structured</a>, </span><span class="rst-sig-param">tp: <code>str | None</code> = <span class="rst-variable-quote">'</span><span class="rst-variable-string">m2m:rrl</span><span class="rst-variable-quote">'</span></span>) -&gt; <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | <a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code>:</span>
+    
+    <a class="headerLink" href="#_resourceTreeReferences" title="acme.services.Dispatcher.Dispatcher._resourceTreeReferences">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Retrieve child resource references of a resource and add them to
+a <strong>new</strong> target resource instance as "children"</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resources:</span><code>list[<wbr></wbr><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a>]</code></td><td class="fieldArgDesc">A list of resources to retrieve the child resource references from.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">target<wbr></wbr>Resource:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | <a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The target resource to add the child resource references to.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">drt:</span><code><a href="acme.etc.Types.DesiredIdentifierResultType.html" class="internal-link" title="acme.etc.Types.DesiredIdentifierResultType">DesiredIdentifierResultType</a> | None</code></td><td class="fieldArgDesc">Either structured or unstructured. Defaults to structured.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tp:</span><code>str | None</code></td><td class="fieldArgDesc">The type of the target resource. Defaults to 'm2m:rrl'.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | <a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The target resource with the added child resource references.</td></tr></table></div>
+  </div>
+</div>
+        </div>
+      
+      </main>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container-fluid">
+      <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      25.10.1 at 2026-05-13 12:48:06.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

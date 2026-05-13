@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>acme.webui.webUI</title>
+    <meta name="generator" content="pydoctor 25.10.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    <link rel="canonical" href="https://acmecse.net/api/acme.webui.webUI.html" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code class="thisobject"><a href="acme.webui.webUI.html" class="internal-link" title="This module">web<wbr></wbr>UI</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.webui.webUI.ACMERequestHandler.html" class="internal-link" title="acme.webui.webUI.ACMERequestHandler"><wbr></wbr>ACMERequest<wbr></wbr>Handler</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.webui.webUI.WebUI.html" class="internal-link" title="acme.webui.webUI.WebUI"><wbr></wbr>Web<wbr></wbr>UI</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getOAuthToken" class="internal-link" title="acme.webui.webUI.getOAuthToken">get<wbr></wbr>OAuth<wbr></wbr>Token</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#runServer" class="internal-link" title="acme.webui.webUI.runServer">run<wbr></wbr>Server</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#FlaskHandler" class="internal-link" title="acme.webui.webUI.FlaskHandler"><wbr></wbr>Flask<wbr></wbr>Handler</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#console" class="internal-link" title="acme.webui.webUI.console">console</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#doLogging" class="internal-link" title="acme.webui.webUI.doLogging">do<wbr></wbr>Logging</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#doOauth" class="internal-link" title="acme.webui.webUI.doOauth">do<wbr></wbr>Oauth</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#Token" class="internal-link" title="acme.webui.webUI.Token"><wbr></wbr>Token</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_expirationLeeway" class="internal-link" title="acme.webui.webUI._expirationLeeway">_expiration<wbr></wbr>Leeway</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Package</span>
+        <code><a href="acme.webui.html" class="internal-link" title="The parent of this module">webui</a></code> 
+      </div>
+      
+      <div>
+        
+
+        <div class="childrenKindTitle">Modules</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.webui.webUI.html" class="internal-link" title="acme.webui.webUI">web<wbr></wbr>UI</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+        
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <main class="">
+        
+
+        
+
+
+        <div class="page-header">
+          <h1 class="module"><code><code><a href="index.html" class="internal-link">acme</a></code><wbr></wbr>.<code><a href="acme.webui.html" class="internal-link" title="acme.webui">webui</a></code><wbr></wbr>.<code><a href="acme.webui.webUI.html" class="internal-link" title="acme.webui.webUI">webUI</a></code></code></h1>
+          <div id="show-private">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          module documentation
+        </div>
+
+        <div class="extrasDocstring">
+          
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>This module defines the web user interface for the ACME CSE.</p></div>
+        </div>
+
+        <div id="split-tables">
+          <table class="children sortable" id="id757">
+  
+  
+  <tr class="class">
+    
+    <td>Class</td>
+    <td><code><a href="acme.webui.webUI.ACMERequestHandler.html" class="internal-link" title="acme.webui.webUI.ACMERequestHandler"><wbr></wbr>ACMERequest<wbr></wbr>Handler</a></code></td>
+    <td>Own request handler to redirect some logging of the http server.</td>
+  </tr><tr class="class">
+    
+    <td>Class</td>
+    <td><code><a href="acme.webui.webUI.WebUI.html" class="internal-link" title="acme.webui.webUI.WebUI"><wbr></wbr>Web<wbr></wbr>UI</a></code></td>
+    <td>The web user interface for the ACME CSE.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#getOAuthToken" class="internal-link" title="acme.webui.webUI.getOAuthToken">get<wbr></wbr>OAuth<wbr></wbr>Token</a></code></td>
+    <td>Retrieve and return a oauth2 token. If there is a provided token that is still valid, then that token is returned.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#runServer" class="internal-link" title="acme.webui.webUI.runServer">run<wbr></wbr>Server</a></code></td>
+    <td>Run the web server.</td>
+  </tr><tr class="typealias">
+    
+    <td>Type Alias</td>
+    <td><code><a href="#FlaskHandler" class="internal-link" title="acme.webui.webUI.FlaskHandler"><wbr></wbr>Flask<wbr></wbr>Handler</a></code></td>
+    <td>Type definition for flask handler.</td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#console" class="internal-link" title="acme.webui.webUI.console">console</a></code></td>
+    <td>The ACME console for logging.</td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#doLogging" class="internal-link" title="acme.webui.webUI.doLogging">do<wbr></wbr>Logging</a></code></td>
+    <td>Whether to do logging.</td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#doOauth" class="internal-link" title="acme.webui.webUI.doOauth">do<wbr></wbr>Oauth</a></code></td>
+    <td>Whether to use OAuth2.</td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#Token" class="internal-link" title="acme.webui.webUI.Token"><wbr></wbr>Token</a></code></td>
+    <td>Named tuple for a token.</td>
+  </tr><tr class="variable private">
+    
+    <td>Variable</td>
+    <td><code><a href="#_expirationLeeway" class="internal-link" title="acme.webui.webUI._expirationLeeway">_expiration<wbr></wbr>Leeway</a></code></td>
+    <td>Leeway for token expiration.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="child-list">
+          <div class="basefunction">
+  
+  
+  <a name="acme.webui.webUI.getOAuthToken">
+    
+  </a>
+  <a name="getOAuthToken">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">getOAuthToken</span><span class="function-signature">(<span class="rst-sig-param">token: <code><a href="#Token" class="internal-link" title="acme.webui.webUI.Token">Token</a> | None</code> = None, </span><span class="rst-sig-param">kind: <code>str | None</code> = <span class="rst-variable-quote">'</span><span class="rst-variable-string">keycloak</span><span class="rst-variable-quote">'</span></span>) -&gt; <code><a href="#Token" class="internal-link" title="acme.webui.webUI.Token">Token</a> | None</code>:</span>
+    
+    <a class="headerLink" href="#getOAuthToken" title="acme.webui.webUI.getOAuthToken">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Retrieve and return a oauth2 token. If there is a provided token that is still valid, then that token
+is returned.</p>
+<p>This function returns a new named tuple Token(token, expiration), or None in case of an error. The expiration
+is in epoch seconds.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">token:</span><code><a href="#Token" class="internal-link" title="acme.webui.webUI.Token">Token</a> | None</code></td><td class="fieldArgDesc">The token to check. If None, a new token is retrieved.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">kind:</span><code>str | None</code></td><td class="fieldArgDesc">The kind of token to retrieve. Currently only 'keycloak' is supported.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="#Token" class="internal-link" title="acme.webui.webUI.Token">Token</a> | None</code></td><td class="fieldArgDesc">The token, or None in case of an error.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="acme.webui.webUI.runServer">
+    
+  </a>
+  <a name="runServer">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">runServer</span><span class="function-signature long-signature">(<span class="rst-sig-param">flaskApp: <code>Flask</code>, </span><span class="rst-sig-param">host: <code>str</code>, </span><span class="rst-sig-param">port: <code>int</code>, </span><span class="rst-sig-param">useTLS: <code>bool</code>, </span><span class="rst-sig-param">certFile: <code>str | None</code> = None, </span><span class="rst-sig-param">privateKey: <code>str | None</code> = None</span>):</span>
+    
+    <a class="headerLink" href="#runServer" title="acme.webui.webUI.runServer">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Run the web server.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">flask<wbr></wbr>App:</span><code>Flask</code></td><td class="fieldArgDesc">The flask app to run.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">host:</span><code>str</code></td><td class="fieldArgDesc">The host to bind to.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">port:</span><code>int</code></td><td class="fieldArgDesc">The port to bind to.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">use<wbr></wbr>TLS:</span><code>bool</code></td><td class="fieldArgDesc">Whether to use TLS.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">cert<wbr></wbr>File:</span><code>str | None</code></td><td class="fieldArgDesc">The certificate file.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">private<wbr></wbr>Key:</span><code>str | None</code></td><td class="fieldArgDesc">The private key file.</td></tr></table></div>
+  </div>
+</div><div class="basetypealias">
+  
+  
+  <a name="acme.webui.webUI.FlaskHandler">
+    
+  </a>
+  <a name="FlaskHandler">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">FlaskHandler</span> =
+    
+    <a class="headerLink" href="#FlaskHandler" title="acme.webui.webUI.FlaskHandler">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Type definition for flask handler.</p></div>
+    <table class="valueTable"><tr class="fieldStart"><td class="fieldName">Value</td></tr><tr><td><pre class="constant-value"><code>Callable[<wbr></wbr>[<wbr></wbr>str], <wbr></wbr>Response]</code></pre></td></tr></table>
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="acme.webui.webUI.console">
+    
+  </a>
+  <a name="console">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">console</span>: <code>Console</code> =
+    
+    <a class="headerLink" href="#console" title="acme.webui.webUI.console">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The ACME console for logging.</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="acme.webui.webUI.doLogging">
+    
+  </a>
+  <a name="doLogging">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">doLogging</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#doLogging" title="acme.webui.webUI.doLogging">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Whether to do logging.</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="acme.webui.webUI.doOauth">
+    
+  </a>
+  <a name="doOauth">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">doOauth</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#doOauth" title="acme.webui.webUI.doOauth">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Whether to use OAuth2.</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="acme.webui.webUI.Token">
+    
+  </a>
+  <a name="Token">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">Token</span> =
+    
+    <a class="headerLink" href="#Token" title="acme.webui.webUI.Token">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Named tuple for a token.</p></div>
+    
+  </div>
+</div><div class="basevariable private">
+  
+  
+  <a name="acme.webui.webUI._expirationLeeway">
+    
+  </a>
+  <a name="_expirationLeeway">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_expirationLeeway</span>: <code>float</code> =
+    
+    <a class="headerLink" href="#_expirationLeeway" title="acme.webui.webUI._expirationLeeway">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Leeway for token expiration.</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </main>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container-fluid">
+      <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      25.10.1 at 2026-05-13 12:48:06.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

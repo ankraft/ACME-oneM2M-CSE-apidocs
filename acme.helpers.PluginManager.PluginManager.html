@@ -1,0 +1,1733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>acme.helpers.PluginManager.PluginManager</title>
+    <meta name="generator" content="pydoctor 25.10.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    <link rel="canonical" href="https://acmecse.net/api/acme.helpers.PluginManager.PluginManager.html" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="acme.helpers.PluginManager.PluginManager.html" class="internal-link" title="This class"><wbr></wbr>Plugin<wbr></wbr>Manager</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__delattr__" class="internal-link" title="acme.helpers.PluginManager.PluginManager.__delattr__">__delattr__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__getattr__" class="internal-link" title="acme.helpers.PluginManager.PluginManager.__getattr__">__getattr__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#callService" class="internal-link" title="acme.helpers.PluginManager.PluginManager.callService">call<wbr></wbr>Service</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#configurePlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.configurePlugins">configure<wbr></wbr>Plugins</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dependencyGraph" class="internal-link" title="acme.helpers.PluginManager.PluginManager.dependencyGraph">dependency<wbr></wbr>Graph</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dependencyGraphProvidedInstances" class="internal-link" title="acme.helpers.PluginManager.PluginManager.dependencyGraphProvidedInstances">dependency<wbr></wbr>Graph<wbr></wbr>Provided<wbr></wbr>Instances</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getPluginsByTag" class="internal-link" title="acme.helpers.PluginManager.PluginManager.getPluginsByTag">get<wbr></wbr>Plugins<wbr></wbr>By<wbr></wbr>Tag</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#has" class="internal-link" title="acme.helpers.PluginManager.PluginManager.has">has</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#isProvidedFunction" class="internal-link" title="acme.helpers.PluginManager.PluginManager.isProvidedFunction">is<wbr></wbr>Provided<wbr></wbr>Function</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#loadPlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.loadPlugins">load<wbr></wbr>Plugins</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#pausePlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.pausePlugins">pause<wbr></wbr>Plugins</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#provide" class="internal-link" title="acme.helpers.PluginManager.PluginManager.provide">provide</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#resolvePlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.resolvePlugins">resolve<wbr></wbr>Plugins</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#restartPlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.restartPlugins">restart<wbr></wbr>Plugins</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#setupFinished" class="internal-link" title="acme.helpers.PluginManager.PluginManager.setupFinished">setup<wbr></wbr>Finished</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#startPlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.startPlugins">start<wbr></wbr>Plugins</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#stopPlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.stopPlugins">stop<wbr></wbr>Plugins</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#unloadPlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.unloadPlugins">unload<wbr></wbr>Plugins</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#unpausePlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.unpausePlugins">unpause<wbr></wbr>Plugins</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#unresolvePlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.unresolvePlugins">unresolve<wbr></wbr>Plugins</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#validatePlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.validatePlugins">validate<wbr></wbr>Plugins</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_checkPluginTags" class="internal-link" title="acme.helpers.PluginManager.PluginManager._checkPluginTags">_check<wbr></wbr>Plugin<wbr></wbr>Tags</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_transition" class="internal-link" title="acme.helpers.PluginManager.PluginManager._transition">_transition</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#plugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.plugins">plugins</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#unloadedPlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.unloadedPlugins">unloaded<wbr></wbr>Plugins</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_pluginInstances" class="internal-link" title="acme.helpers.PluginManager.PluginManager._pluginInstances">_plugin<wbr></wbr>Instances</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_providedInstances" class="internal-link" title="acme.helpers.PluginManager.PluginManager._providedInstances">_provided<wbr></wbr>Instances</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_tagsPluginMap" class="internal-link" title="acme.helpers.PluginManager.PluginManager._tagsPluginMap">_tags<wbr></wbr>Plugin<wbr></wbr>Map</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="acme.helpers.PluginManager.html" class="internal-link" title="The parent of this class"><wbr></wbr>Plugin<wbr></wbr>Manager</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.Dependency.html" class="internal-link" title="acme.helpers.PluginManager.Dependency"><wbr></wbr>Dependency</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.PluginInfo.html" class="internal-link" title="acme.helpers.PluginManager.PluginInfo"><wbr></wbr>Plugin<wbr></wbr>Info</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.PluginManager.html" class="internal-link" title="acme.helpers.PluginManager.PluginManager"><wbr></wbr>Plugin<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.PluginState.html" class="internal-link" title="acme.helpers.PluginManager.PluginState"><wbr></wbr>Plugin<wbr></wbr>State</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.Service.html" class="internal-link" title="acme.helpers.PluginManager.Service"><wbr></wbr>Service</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.DependencyError.html" class="internal-link" title="acme.helpers.PluginManager.DependencyError"><wbr></wbr>Dependency<wbr></wbr>Error</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.PluginConfigurationError.html" class="internal-link" title="acme.helpers.PluginManager.PluginConfigurationError"><wbr></wbr>Plugin<wbr></wbr>Configuration<wbr></wbr>Error</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.PluginError.html" class="internal-link" title="acme.helpers.PluginManager.PluginError"><wbr></wbr>Plugin<wbr></wbr>Error</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#configure" class="internal-link" title="acme.helpers.PluginManager.configure">configure</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#endpoint" class="internal-link" title="acme.helpers.PluginManager.endpoint">endpoint</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#finish" class="internal-link" title="acme.helpers.PluginManager.finish">finish</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#init" class="internal-link" title="acme.helpers.PluginManager.init">init</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#onResolved" class="internal-link" title="acme.helpers.PluginManager.onResolved">on<wbr></wbr>Resolved</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#onUnresolved" class="internal-link" title="acme.helpers.PluginManager.onUnresolved">on<wbr></wbr>Unresolved</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#pause" class="internal-link" title="acme.helpers.PluginManager.pause">pause</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#plugin" class="internal-link" title="acme.helpers.PluginManager.plugin">plugin</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#provide" class="internal-link" title="acme.helpers.PluginManager.provide">provide</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#requires" class="internal-link" title="acme.helpers.PluginManager.requires">requires</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#restart" class="internal-link" title="acme.helpers.PluginManager.restart">restart</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#start" class="internal-link" title="acme.helpers.PluginManager.start">start</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#stop" class="internal-link" title="acme.helpers.PluginManager.stop">stop</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#unpause" class="internal-link" title="acme.helpers.PluginManager.unpause">unpause</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#validate" class="internal-link" title="acme.helpers.PluginManager.validate">validate</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#_wrap" class="internal-link" title="acme.helpers.PluginManager._wrap">_wrap</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#DependencyGraph" class="internal-link" title="acme.helpers.PluginManager.DependencyGraph"><wbr></wbr>Dependency<wbr></wbr>Graph</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#dependencies" class="internal-link" title="acme.helpers.PluginManager.dependencies">dependencies</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#dependentClasses" class="internal-link" title="acme.helpers.PluginManager.dependentClasses">dependent<wbr></wbr>Classes</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#providedFunctions" class="internal-link" title="acme.helpers.PluginManager.providedFunctions">provided<wbr></wbr>Functions</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#serviceClasses" class="internal-link" title="acme.helpers.PluginManager.serviceClasses">service<wbr></wbr>Classes</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#_tagEndpointMap" class="internal-link" title="acme.helpers.PluginManager._tagEndpointMap">_tag<wbr></wbr>Endpoint<wbr></wbr>Map</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#_tagEnpoints" class="internal-link" title="acme.helpers.PluginManager._tagEnpoints">_tag<wbr></wbr>Enpoints</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#_tagInstanceName" class="internal-link" title="acme.helpers.PluginManager._tagInstanceName">_tag<wbr></wbr>Instance<wbr></wbr>Name</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#_tagInstancePriority" class="internal-link" title="acme.helpers.PluginManager._tagInstancePriority">_tag<wbr></wbr>Instance<wbr></wbr>Priority</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#_tagInstanceTags" class="internal-link" title="acme.helpers.PluginManager._tagInstanceTags">_tag<wbr></wbr>Instance<wbr></wbr>Tags</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#_tagNoRestartWhilePaused" class="internal-link" title="acme.helpers.PluginManager._tagNoRestartWhilePaused">_tag<wbr></wbr>No<wbr></wbr>Restart<wbr></wbr>While<wbr></wbr>Paused</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.helpers.PluginManager.html#_tagType" class="internal-link" title="acme.helpers.PluginManager._tagType">_tag<wbr></wbr>Type</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <main class="">
+        
+
+        
+
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">acme</a></code><wbr></wbr>.<code><a href="acme.helpers.html" class="internal-link" title="acme.helpers">helpers</a></code><wbr></wbr>.<code><a href="acme.helpers.PluginManager.html" class="internal-link" title="acme.helpers.PluginManager">PluginManager</a></code><wbr></wbr>.<code><a href="acme.helpers.PluginManager.PluginManager.html" class="internal-link" title="acme.helpers.PluginManager.PluginManager">PluginManager</a></code></code></h1>
+          <div id="show-private">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">PluginManager</span>:</code></p><p>Known subclasses: <code><a href="acme.runtime.PluginManager.PluginManager.html" class="internal-link">acme.runtime.PluginManager.PluginManager</a></code></p><p><a href="classIndex.html#acme.helpers.PluginManager.PluginManager">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>PluginManager class.</p>
+<p>This class manages the loading and registration of plugins.</p>
+</div>
+        </div>
+
+        <div id="split-tables">
+          <table class="children sortable" id="id233">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__delattr__" class="internal-link" title="acme.helpers.PluginManager.PluginManager.__delattr__">__delattr__</a></code></td>
+    <td>Delete the plugin by name.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__getattr__" class="internal-link" title="acme.helpers.PluginManager.PluginManager.__getattr__">__getattr__</a></code></td>
+    <td>Get the instance or plugin by name.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#callService" class="internal-link" title="acme.helpers.PluginManager.PluginManager.callService">call<wbr></wbr>Service</a></code></td>
+    <td>Call a service plugin endpoint.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#configurePlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.configurePlugins">configure<wbr></wbr>Plugins</a></code></td>
+    <td>Configure the specified plugins.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#dependencyGraph" class="internal-link" title="acme.helpers.PluginManager.PluginManager.dependencyGraph">dependency<wbr></wbr>Graph</a></code></td>
+    <td>Get the dependency graph of the plugins and other classes.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#dependencyGraphProvidedInstances" class="internal-link" title="acme.helpers.PluginManager.PluginManager.dependencyGraphProvidedInstances">dependency<wbr></wbr>Graph<wbr></wbr>Provided<wbr></wbr>Instances</a></code></td>
+    <td>Get the provided instances that are not plugins, and who is using them.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getPluginsByTag" class="internal-link" title="acme.helpers.PluginManager.PluginManager.getPluginsByTag">get<wbr></wbr>Plugins<wbr></wbr>By<wbr></wbr>Tag</a></code></td>
+    <td>Get the names of the plugins that have the given tag.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#has" class="internal-link" title="acme.helpers.PluginManager.PluginManager.has">has</a></code></td>
+    <td>Check if a plugin instance with the given name exists.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#isProvidedFunction" class="internal-link" title="acme.helpers.PluginManager.PluginManager.isProvidedFunction">is<wbr></wbr>Provided<wbr></wbr>Function</a></code></td>
+    <td>Check if a provided instance with the given name is a function provided by the @provide decorator.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#loadPlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.loadPlugins">load<wbr></wbr>Plugins</a></code></td>
+    <td>Load plugins from the specified directory.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#pausePlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.pausePlugins">pause<wbr></wbr>Plugins</a></code></td>
+    <td>Pause the specified plugins.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#provide" class="internal-link" title="acme.helpers.PluginManager.PluginManager.provide">provide</a></code></td>
+    <td>Provide a instance of any non-plugin class to be injected as a dependency. This can be used to provide instances of classes that are not plugins, but are required as dependencies by plugins or other classes.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#resolvePlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.resolvePlugins">resolve<wbr></wbr>Plugins</a></code></td>
+    <td>Resolve the dependencies of all plugins and other classes. This is called before starting the plugins to ensure that all dependencies are resolved and the plugin instances have all the required attributes injected.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#restartPlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.restartPlugins">restart<wbr></wbr>Plugins</a></code></td>
+    <td>Restart the specified plugins.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#setupFinished" class="internal-link" title="acme.helpers.PluginManager.PluginManager.setupFinished">setup<wbr></wbr>Finished</a></code></td>
+    <td>Check if all required dependencies are resolved. This can be called after the resolvePlugins method to check if there are any unresolved dependencies that are required and not provided. This is a separate step because sometimes, we might want to resolve the plugins first and then check for missing dependencies, so that we can provide the missing dependencies before starting the plugins...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#startPlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.startPlugins">start<wbr></wbr>Plugins</a></code></td>
+    <td>Start the specified plugins.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#stopPlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.stopPlugins">stop<wbr></wbr>Plugins</a></code></td>
+    <td>Shutdown the specified plugins. Plugins are stopped in reverse order of their priority.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#unloadPlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.unloadPlugins">unload<wbr></wbr>Plugins</a></code></td>
+    <td>Unload a plugin by name. If running, stop it first.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#unpausePlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.unpausePlugins">unpause<wbr></wbr>Plugins</a></code></td>
+    <td>Unpause the specified plugins. Plugins are unpaused in reverse order of their priority.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#unresolvePlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.unresolvePlugins">unresolve<wbr></wbr>Plugins</a></code></td>
+    <td>Unresolve the plugins. This is called when plugins are unloaded to clean up the injected dependencies and set the plugin instances to None.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#validatePlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.validatePlugins">validate<wbr></wbr>Plugins</a></code></td>
+    <td>Validate the specified plugins.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#plugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.plugins">plugins</a></code></td>
+    <td>Dictionary to hold the loaded plugins. The keys are the plugin names, the values are PluginInfo objects.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#unloadedPlugins" class="internal-link" title="acme.helpers.PluginManager.PluginManager.unloadedPlugins">unloaded<wbr></wbr>Plugins</a></code></td>
+    <td>List to hold the names of the plugins that were <em>not</em> loaded due to filtering.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_checkPluginTags" class="internal-link" title="acme.helpers.PluginManager.PluginManager._checkPluginTags">_check<wbr></wbr>Plugin<wbr></wbr>Tags</a></code></td>
+    <td>Check if a plugin matches the specified tags and excluded tags.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_transition" class="internal-link" title="acme.helpers.PluginManager.PluginManager._transition">_transition</a></code></td>
+    <td>Transition the state of a plugin. This will happen in the order of the plugin priority, but can be reversed if necessary (e.g. for stopping plugins, which should happen in reverse order of starting).</td>
+  </tr><tr class="classvariable private">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#_pluginInstances" class="internal-link" title="acme.helpers.PluginManager.PluginManager._pluginInstances">_plugin<wbr></wbr>Instances</a></code></td>
+    <td>Dictionary for the mapping between instance attribute names and the instances itself.</td>
+  </tr><tr class="classvariable private">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#_providedInstances" class="internal-link" title="acme.helpers.PluginManager.PluginManager._providedInstances">_provided<wbr></wbr>Instances</a></code></td>
+    <td>Dictionary to hold instances that are extra provided class instances. The keys are the names of the instances, ie. the  module name, the values are the instances themselves.</td>
+  </tr><tr class="classvariable private">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#_tagsPluginMap" class="internal-link" title="acme.helpers.PluginManager.PluginManager._tagsPluginMap">_tags<wbr></wbr>Plugin<wbr></wbr>Map</a></code></td>
+    <td>Dictionary to map tags to plugin names and instances for easier lookup by tag.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="child-list">
+          <div class="basemethod">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.__delattr__">
+    
+  </a>
+  <a name="__delattr__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">__delattr__</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">name: <code>str</code></span>):</span>
+    
+    <a class="headerLink" href="#__delattr__" title="acme.helpers.PluginManager.PluginManager.__delattr__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Delete the plugin by name.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.__getattr__">
+    
+  </a>
+  <a name="__getattr__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">__getattr__</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">name: <code>str</code></span>) -&gt; <code>Any</code>:</span>
+    
+    <a class="headerLink" href="#__getattr__" title="acme.helpers.PluginManager.PluginManager.__getattr__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the instance or plugin by name.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">name:</span><code>str</code></td><td class="fieldArgDesc">The name of the instance orplugin.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>Any</code></td><td class="fieldArgDesc">The instance or plugin module, or None if not found.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.callService">
+    
+  </a>
+  <a name="callService">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">callService</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">endpoint: <code>str</code>, </span><span class="rst-sig-param">tag: <code>str</code>, </span><span class="rst-sig-param">*args: <code>Any</code>, </span><span class="rst-sig-param">**kwargs: <code>Any</code></span>) -&gt; <code>Any</code>:</span>
+    
+    <a class="headerLink" href="#callService" title="acme.helpers.PluginManager.PluginManager.callService">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Call a service plugin endpoint.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">endpoint:</span><code>str</code></td><td class="fieldArgDesc">The endpoint of the plugin to call. This is used to identify the method to call on the plugin instance. The endpoint must be defined in the plugin class using the <code><a href="acme.helpers.PluginManager.html#endpoint" class="internal-link" title="acme.helpers.PluginManager.endpoint">endpoint</a></code> decorator.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tag:</span><code>str</code></td><td class="fieldArgDesc">The tag of the plugin to call. This is used to identify the plugin to call. If multiple plugins with the same tag are found, the one with the highest priority is called.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">*args:</span><code>Any</code></td><td class="fieldArgDesc">Positional arguments to pass to the endpoint method.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">**kwargs:</span><code>Any</code></td><td class="fieldArgDesc">Keyword arguments to pass to the endpoint method.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>Any</code></td><td class="fieldArgDesc">The result of the endpoint method call.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>ValueError</code></td><td>If no plugin with the given tag and endpoint is found, or if multiple plugins with the same tag and endpoint are found.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.configurePlugins">
+    
+  </a>
+  <a name="configurePlugins">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">configurePlugins</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginNames: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">tags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">excludedTags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">*args: <code>Any</code>, </span><span class="rst-sig-param">**kwargs: <code>Any</code></span>):</span>
+    
+    <a class="headerLink" href="#configurePlugins" title="acme.helpers.PluginManager.PluginManager.configurePlugins">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Configure the specified plugins.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">plugin<wbr></wbr>Names:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The name(s) of the plugin(s) to configure. Configure all if None.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tags:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The tags of the plugins to match. Match all if None.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">excluded<wbr></wbr>Tags:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The tags of the plugins to exclude. Exclude none if None.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">*args:</span><code>Any</code></td><td class="fieldArgDesc">Positional arguments to pass to the configure method.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">**kwargs:</span><code>Any</code></td><td class="fieldArgDesc">Keyword arguments to pass to the configure method.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>KeyError</code></td><td>If a specified plugin is not found.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.dependencyGraph">
+    
+  </a>
+  <a name="dependencyGraph">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">dependencyGraph</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">name: <code>str | None</code> = None</span>) -&gt; <code>dict[<wbr></wbr>str, <wbr></wbr>list[<wbr></wbr><a href="acme.helpers.PluginManager.Dependency.html" class="internal-link" title="acme.helpers.PluginManager.Dependency">Dependency</a>]]</code>:</span>
+    
+    <a class="headerLink" href="#dependencyGraph" title="acme.helpers.PluginManager.PluginManager.dependencyGraph">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the dependency graph of the plugins and other classes.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">name:</span><code>str | None</code></td><td class="fieldArgDesc">Optional name of the plugin to get the dependency graph for. If None, returns the entire graph.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>dict[<wbr></wbr>str, <wbr></wbr>list[<wbr></wbr><a href="acme.helpers.PluginManager.Dependency.html" class="internal-link" title="acme.helpers.PluginManager.Dependency">Dependency</a>]]</code></td><td class="fieldArgDesc">The dependency graph as a dictionary where the keys are the class names and the values are lists of dependencies (module name, optional instance name).</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.dependencyGraphProvidedInstances">
+    
+  </a>
+  <a name="dependencyGraphProvidedInstances">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">dependencyGraphProvidedInstances</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>dict[<wbr></wbr>tuple[<wbr></wbr>str, <wbr></wbr>bool], <wbr></wbr>list[<wbr></wbr>tuple[<wbr></wbr>str, <wbr></wbr>str, <wbr></wbr>str]]]</code>:</span>
+    
+    <a class="headerLink" href="#dependencyGraphProvidedInstances" title="acme.helpers.PluginManager.PluginManager.dependencyGraphProvidedInstances">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the provided instances that are not plugins, and who is using them.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>dict[<wbr></wbr>tuple[<wbr></wbr>str, <wbr></wbr>bool], <wbr></wbr>list[<wbr></wbr>tuple[<wbr></wbr>str, <wbr></wbr>str, <wbr></wbr>str]]]</code></td><td class="fieldArgDesc"><dl class="rst-docutils">
+<dt>A dictionary where the keys are tuples of the form</dt>
+<dd>(provided instance name, isFunction flag) and the values are
+a list of tuples of the form (dependent module name, class name, attribute name)
+that are using the provided instance as a dependency.</dd>
+</dl>
+</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.getPluginsByTag">
+    
+  </a>
+  <a name="getPluginsByTag">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">getPluginsByTag</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">tags: <code>str | list[<wbr></wbr>str]</code>, </span><span class="rst-sig-param">byPriority: <code>bool</code> = False</span>) -&gt; <code>list[<wbr></wbr>tuple[<wbr></wbr>str, <wbr></wbr>Any]]</code>:</span>
+    
+    <a class="headerLink" href="#getPluginsByTag" title="acme.helpers.PluginManager.PluginManager.getPluginsByTag">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the names of the plugins that have the given tag.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tags:</span><code>str | list[<wbr></wbr>str]</code></td><td class="fieldArgDesc">The tag or tags to search for.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">by<wbr></wbr>Priority:</span><code>bool</code></td><td class="fieldArgDesc">Whether to sort the plugins by their priority. If True, the plugins are returned sorted by their priority, with the highest priority first (0 = highest priority).</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr>tuple[<wbr></wbr>str, <wbr></wbr>Any]]</code></td><td class="fieldArgDesc">A list of plugin names that have the given tag.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.has">
+    
+  </a>
+  <a name="has">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">has</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">instanceName: <code>str</code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#has" title="acme.helpers.PluginManager.PluginManager.has">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check if a plugin instance with the given name exists.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">instance<wbr></wbr>Name:</span><code>str</code></td><td class="fieldArgDesc">The name of the plugin instance to check.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if a plugin instance with the given name exists, False otherwise.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.isProvidedFunction">
+    
+  </a>
+  <a name="isProvidedFunction">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">isProvidedFunction</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">name: <code>str</code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#isProvidedFunction" title="acme.helpers.PluginManager.PluginManager.isProvidedFunction">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check if a provided instance with the given name is a function provided by the @provide decorator.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">name:</span><code>str</code></td><td class="fieldArgDesc">The name of the provided instance to check.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if a provided instance with the given name is a function provided by the @provide decorator, False otherwise.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.loadPlugins">
+    
+  </a>
+  <a name="loadPlugins">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">loadPlugins</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">directory: <code>str</code>, </span><span class="rst-sig-param">packagePath: <code>str</code>, </span><span class="rst-sig-param">pluginFilter: <code>Callable[<wbr></wbr>[<wbr></wbr>str], <wbr></wbr>bool] | None</code> = None, </span><span class="rst-sig-param">replace: <code>bool</code> = False, </span><span class="rst-sig-param">*args: <code>Any</code>, </span><span class="rst-sig-param">**kwargs: <code>Any</code></span>):</span>
+    
+    <a class="headerLink" href="#loadPlugins" title="acme.helpers.PluginManager.PluginManager.loadPlugins">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Load plugins from the specified directory.</p>
+<p>Plugins are initialized after loading according to their priority.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">directory:</span><code>str</code></td><td class="fieldArgDesc">The directory from which to load plugins.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">package<wbr></wbr>Path:</span><code>str</code></td><td class="fieldArgDesc">The package path to use for the plugins.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">plugin<wbr></wbr>Filter:</span><code>Callable[<wbr></wbr>[<wbr></wbr>str], <wbr></wbr>bool] | None</code></td><td class="fieldArgDesc">A callback function to filter plugins. The function should take a plugin name as input and return True if the plugin should be loaded, False otherwise.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">replace:</span><code>bool</code></td><td class="fieldArgDesc">Whether to replace already loaded plugins.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">*args:</span><code>Any</code></td><td class="fieldArgDesc">Positional arguments to pass to the plugin init methods.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">**kwargs:</span><code>Any</code></td><td class="fieldArgDesc">Keyword arguments to pass to the plugin init methods.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>NotADirectoryError</code></td><td>If the directory does not exist.</td></tr><tr><td class="fieldArgContainer"><code>KeyError</code></td><td>If a plugin is already loaded.</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.helpers.PluginManager.PluginConfigurationError.html" class="internal-link" title="acme.helpers.PluginManager.PluginConfigurationError">PluginConfigurationError</a></code></td><td>If the plugin is not valid.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.pausePlugins">
+    
+  </a>
+  <a name="pausePlugins">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">pausePlugins</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginNames: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">tags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">excludedTags: <code>str | list[<wbr></wbr>str] | None</code> = None</span>):</span>
+    
+    <a class="headerLink" href="#pausePlugins" title="acme.helpers.PluginManager.PluginManager.pausePlugins">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Pause the specified plugins.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">plugin<wbr></wbr>Names:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The name(s) of the plugin(s) to pause. Pause all if None.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tags:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The tags of the plugins to match. Match all if None.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">excluded<wbr></wbr>Tags:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The tags of the plugins to exclude. Exclude none if None.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>KeyError</code></td><td>If a specified plugin is not found.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.provide">
+    
+  </a>
+  <a name="provide">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">provide</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">moduleName: <code>str</code>, </span><span class="rst-sig-param">instance: <code>Any</code></span>):</span>
+    
+    <a class="headerLink" href="#provide" title="acme.helpers.PluginManager.PluginManager.provide">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Provide a instance of any non-plugin class to be injected as a dependency.
+This can be used to provide instances of classes that are not plugins,
+but are required as dependencies by plugins or other classes.</p>
+<p>The provided instances are injected into the dependent classes during the dependency
+resolution phase, just like plugin instances.</p>
+<p>The provided instances are not managed by the plugin manager, so they are not started,
+stopped, etc. They are simply injected as attributes into the dependent classes.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">module<wbr></wbr>Name:</span><code>str</code></td><td class="fieldArgDesc">The name of the module that provides the instance. This is used to identify the instance in the dependency graph and to inject it into the dependent classes.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">instance:</span><code>Any</code></td><td class="fieldArgDesc">The instance to provide. This can be any instance of any class, as long as it is not a plugin class (i.e. it does not have the @pluginClass decorator).</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.resolvePlugins">
+    
+  </a>
+  <a name="resolvePlugins">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">resolvePlugins</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">tags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">excludedTags: <code>str | list[<wbr></wbr>str] | None</code> = None</span>):</span>
+    
+    <a class="headerLink" href="#resolvePlugins" title="acme.helpers.PluginManager.PluginManager.resolvePlugins">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Resolve the dependencies of all plugins and other classes.
+This is called before starting the plugins to ensure that all dependencies are resolved
+and the plugin instances have all the required attributes injected.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tags:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The tags of the plugins to match for dependency resolution. Match all if None.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">excluded<wbr></wbr>Tags:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The tags of the plugins to exclude from dependency resolution. Exclude none</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.helpers.PluginManager.DependencyError.html" class="internal-link" title="acme.helpers.PluginManager.DependencyError">DependencyError</a></code></td><td>If a required dependency cannot be resolved.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.restartPlugins">
+    
+  </a>
+  <a name="restartPlugins">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">restartPlugins</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginNames: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">tags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">excludedTags: <code>str | list[<wbr></wbr>str] | None</code> = None</span>):</span>
+    
+    <a class="headerLink" href="#restartPlugins" title="acme.helpers.PluginManager.PluginManager.restartPlugins">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Restart the specified plugins.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">plugin<wbr></wbr>Names:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The name(s) of the plugin(s) to restart. Restart all if None.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tags:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The tags of the plugins to match. Match all if None.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">excluded<wbr></wbr>Tags:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The tags of the plugins to exclude. Exclude none if None.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>KeyError</code></td><td>If a specified plugin is not found.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.setupFinished">
+    
+  </a>
+  <a name="setupFinished">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">setupFinished</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#setupFinished" title="acme.helpers.PluginManager.PluginManager.setupFinished">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check if all required dependencies are resolved. This can be called after the resolvePlugins method to check if there are any unresolved dependencies that are required and not provided.
+This is a separate step because sometimes, we might want to resolve the plugins first and then check for missing dependencies, so that we can provide the missing dependencies before starting the plugins.
+For example, we might want to provide some extra instances that are not plugins, but are required by some plugins or other classes.
+In this case, we can call resolvePlugins first, then setupFinished to see if there are any missing dependencies, then provide the missing instances, and then start the plugins.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.startPlugins">
+    
+  </a>
+  <a name="startPlugins">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">startPlugins</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginNames: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">tags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">excludedTags: <code>str | list[<wbr></wbr>str] | None</code> = None</span>):</span>
+    
+    <a class="headerLink" href="#startPlugins" title="acme.helpers.PluginManager.PluginManager.startPlugins">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Start the specified plugins.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">plugin<wbr></wbr>Names:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The name(s) of the plugin(s) to start. Start all if None.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tags:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The tags of the plugins to match. Match all if None.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">excluded<wbr></wbr>Tags:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The tags of the plugins to exclude. Exclude none if None.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>KeyError</code></td><td>If a specified plugin is not found.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.stopPlugins">
+    
+  </a>
+  <a name="stopPlugins">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">stopPlugins</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginNames: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">tags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">excludedTags: <code>str | list[<wbr></wbr>str] | None</code> = None</span>):</span>
+    
+    <a class="headerLink" href="#stopPlugins" title="acme.helpers.PluginManager.PluginManager.stopPlugins">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Shutdown the specified plugins. Plugins are stopped in reverse order of their priority.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">plugin<wbr></wbr>Names:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The name(s) of the plugin(s) to shutdown. Shutdown all if None.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tags:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The tags of the plugins to match. Match all if None.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">excluded<wbr></wbr>Tags:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The tags of the plugins to exclude. Exclude none if None.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>KeyError</code></td><td>If a specified plugin is not found.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.unloadPlugins">
+    
+  </a>
+  <a name="unloadPlugins">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">unloadPlugins</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginNames: <code>list[<wbr></wbr>str] | str | None</code> = None</span>):</span>
+    
+    <a class="headerLink" href="#unloadPlugins" title="acme.helpers.PluginManager.PluginManager.unloadPlugins">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Unload a plugin by name. If running, stop it first.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">plugin<wbr></wbr>Names:</span><code>list[<wbr></wbr>str] | str | None</code></td><td class="fieldArgDesc">The name(s) of the plugin(s) to remove.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>KeyError</code></td><td>If the plugin is not found.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.unpausePlugins">
+    
+  </a>
+  <a name="unpausePlugins">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">unpausePlugins</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginNames: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">tags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">excludedTags: <code>str | list[<wbr></wbr>str] | None</code> = None</span>):</span>
+    
+    <a class="headerLink" href="#unpausePlugins" title="acme.helpers.PluginManager.PluginManager.unpausePlugins">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Unpause the specified plugins. Plugins are unpaused in reverse order of their priority.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">plugin<wbr></wbr>Names:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The name(s) of the plugin(s) to unpause. Unpause all if None.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tags:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The tags of the plugins to match. Match all if None.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">excluded<wbr></wbr>Tags:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The tags of the plugins to exclude. Exclude none if None.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>KeyError</code></td><td>If a specified plugin is not found.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.unresolvePlugins">
+    
+  </a>
+  <a name="unresolvePlugins">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">unresolvePlugins</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#unresolvePlugins" title="acme.helpers.PluginManager.PluginManager.unresolvePlugins">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Unresolve the plugins. This is called when plugins are unloaded to clean up the injected dependencies
+and set the plugin instances to None.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.validatePlugins">
+    
+  </a>
+  <a name="validatePlugins">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">validatePlugins</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginNames: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">tags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">excludedTags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">*args: <code>Any</code>, </span><span class="rst-sig-param">**kwargs: <code>Any</code></span>):</span>
+    
+    <a class="headerLink" href="#validatePlugins" title="acme.helpers.PluginManager.PluginManager.validatePlugins">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Validate the specified plugins.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">plugin<wbr></wbr>Names:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The name(s) of the plugin(s) to validate.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tags:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The tags of the plugins to match. Match all if None.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">excluded<wbr></wbr>Tags:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The tags of the plugins to exclude. Exclude none if None.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">*args:</span><code>Any</code></td><td class="fieldArgDesc">Positional arguments to pass to the validate method.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">**kwargs:</span><code>Any</code></td><td class="fieldArgDesc">Keyword arguments to pass to the validate method.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>KeyError</code></td><td>If a specified plugin is not found.</td></tr></table></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.plugins">
+    
+  </a>
+  <a name="plugins">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">plugins</span>: <code>dict[<wbr></wbr>str, <wbr></wbr><a href="acme.helpers.PluginManager.PluginInfo.html" class="internal-link" title="acme.helpers.PluginManager.PluginInfo">PluginInfo</a>]</code> =
+    
+    <a class="headerLink" href="#plugins" title="acme.helpers.PluginManager.PluginManager.plugins">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Dictionary to hold the loaded plugins. The keys are the plugin names, the values are PluginInfo objects.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager.unloadedPlugins">
+    
+  </a>
+  <a name="unloadedPlugins">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">unloadedPlugins</span>: <code>list[<wbr></wbr>str]</code> =
+    
+    <a class="headerLink" href="#unloadedPlugins" title="acme.helpers.PluginManager.PluginManager.unloadedPlugins">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>List to hold the names of the plugins that were <em>not</em> loaded due to filtering.</p></div>
+    
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager._checkPluginTags">
+    
+  </a>
+  <a name="_checkPluginTags">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_checkPluginTags</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginName: <code>str</code>, </span><span class="rst-sig-param">tags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">excludedTags: <code>str | list[<wbr></wbr>str] | None</code> = None</span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#_checkPluginTags" title="acme.helpers.PluginManager.PluginManager._checkPluginTags">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check if a plugin matches the specified tags and excluded tags.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">plugin<wbr></wbr>Name:</span><code>str</code></td><td class="fieldArgDesc">The name of the plugin to check.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tags:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The tags to match. Match all if None.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">excluded<wbr></wbr>Tags:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The tags to exclude. Exclude none if None.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc"><em>True</em> if the plugin matches the tags and excluded tags, False otherwise.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager._transition">
+    
+  </a>
+  <a name="_transition">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_transition</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginNames: <code>str | list[<wbr></wbr>str] | None</code>, </span><span class="rst-sig-param">action: <code>Callable[<wbr></wbr>[<wbr></wbr><a href="acme.helpers.PluginManager.PluginInfo.html" class="internal-link" title="acme.helpers.PluginManager.PluginInfo">PluginInfo</a>], <wbr></wbr>None]</code>, </span><span class="rst-sig-param">tags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">excludedTags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">reverse: <code>bool</code> = False</span>):</span>
+    
+    <a class="headerLink" href="#_transition" title="acme.helpers.PluginManager.PluginManager._transition">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Transition the state of a plugin. This will happen in the order of the plugin priority,
+but can be reversed if necessary (e.g. for stopping plugins, which should happen in reverse order of starting).</p>
+<p>Plugins can be filtered by name, pattern and/or tags. If no filters are provided, the action will be applied to all plugins.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">plugin<wbr></wbr>Names:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The name(s) of the plugin(s) to transition. If None, all plugins are transitioned. If a string is provided, it is treated as a pattern to match plugin names.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">action:</span><code>Callable[<wbr></wbr>[<wbr></wbr><a href="acme.helpers.PluginManager.PluginInfo.html" class="internal-link" title="acme.helpers.PluginManager.PluginInfo">PluginInfo</a>], <wbr></wbr>None]</code></td><td class="fieldArgDesc">The action to perform during the state transition.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tags:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The tags to match for the plugins to transition. If None, all plugins are transitioned.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">excluded<wbr></wbr>Tags:</span><code>str | list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">The tags to exclude from the plugins to transition. If None, no plugins are excluded.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">reverse:</span><code>bool</code></td><td class="fieldArgDesc">Whether to process the plugins in reverse order.</td></tr></table></div>
+  </div>
+</div><div class="baseclassvariable private">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager._pluginInstances">
+    
+  </a>
+  <a name="_pluginInstances">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_pluginInstances</span>: <code>dict[<wbr></wbr>str, <wbr></wbr>Any]</code> =
+    
+    <a class="headerLink" href="#_pluginInstances" title="acme.helpers.PluginManager.PluginManager._pluginInstances">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Dictionary for the mapping between instance attribute names and the instances itself.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable private">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager._providedInstances">
+    
+  </a>
+  <a name="_providedInstances">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_providedInstances</span>: <code>dict[<wbr></wbr>str, <wbr></wbr>Any]</code> =
+    
+    <a class="headerLink" href="#_providedInstances" title="acme.helpers.PluginManager.PluginManager._providedInstances">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Dictionary to hold instances that are extra provided class instances.
+The keys are the names of the instances, ie. the  module name,
+the values are the instances themselves.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable private">
+  
+  
+  <a name="acme.helpers.PluginManager.PluginManager._tagsPluginMap">
+    
+  </a>
+  <a name="_tagsPluginMap">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_tagsPluginMap</span>: <code>dict[<wbr></wbr>str, <wbr></wbr>list[<wbr></wbr>tuple[<wbr></wbr>str, <wbr></wbr>Any]]]</code> =
+    
+    <a class="headerLink" href="#_tagsPluginMap" title="acme.helpers.PluginManager.PluginManager._tagsPluginMap">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Dictionary to map tags to plugin names and instances for easier lookup by tag.</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </main>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container-fluid">
+      <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      25.10.1 at 2026-05-13 12:48:06.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>plugins.services.LocationManager.LocationManager</title>
+    <meta name="generator" content="pydoctor 25.10.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    <link rel="canonical" href="https://acmecse.net/api/plugins.services.LocationManager.LocationManager.html" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="plugins.services.LocationManager.LocationManager.html" class="internal-link" title="This class"><wbr></wbr>Location<wbr></wbr>Manager</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#addLocationPolicy" class="internal-link" title="plugins.services.LocationManager.LocationManager.addLocationPolicy">add<wbr></wbr>Location<wbr></wbr>Policy</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#checkGeofence" class="internal-link" title="plugins.services.LocationManager.LocationManager.checkGeofence">check<wbr></wbr>Geofence</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#checkGeoLocation" class="internal-link" title="plugins.services.LocationManager.LocationManager.checkGeoLocation">check<wbr></wbr>Geo<wbr></wbr>Location</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#configure" class="internal-link" title="plugins.services.LocationManager.LocationManager.configure">configure</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getGeoPolygon" class="internal-link" title="plugins.services.LocationManager.LocationManager.getGeoPolygon">get<wbr></wbr>Geo<wbr></wbr>Polygon</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getNewLocation" class="internal-link" title="plugins.services.LocationManager.LocationManager.getNewLocation">get<wbr></wbr>New<wbr></wbr>Location</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#handleLatestRetrieve" class="internal-link" title="plugins.services.LocationManager.LocationManager.handleLatestRetrieve">handle<wbr></wbr>Latest<wbr></wbr>Retrieve</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#init" class="internal-link" title="plugins.services.LocationManager.LocationManager.init">init</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#locationWorker" class="internal-link" title="plugins.services.LocationManager.LocationManager.locationWorker">location<wbr></wbr>Worker</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#removeLocationPolicy" class="internal-link" title="plugins.services.LocationManager.LocationManager.removeLocationPolicy">remove<wbr></wbr>Location<wbr></wbr>Policy</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#restart" class="internal-link" title="plugins.services.LocationManager.LocationManager.restart">restart</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#stop" class="internal-link" title="plugins.services.LocationManager.LocationManager.stop">stop</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#updateLocationEvent" class="internal-link" title="plugins.services.LocationManager.LocationManager.updateLocationEvent">update<wbr></wbr>Location<wbr></wbr>Event</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#updateLocationPolicy" class="internal-link" title="plugins.services.LocationManager.LocationManager.updateLocationPolicy">update<wbr></wbr>Location<wbr></wbr>Policy</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__slots__" class="internal-link" title="plugins.services.LocationManager.LocationManager.__slots__">__slots__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dispatcher" class="internal-link" title="plugins.services.LocationManager.LocationManager.dispatcher">dispatcher</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#deviceDefaultPosition" class="internal-link" title="plugins.services.LocationManager.LocationManager.deviceDefaultPosition">device<wbr></wbr>Default<wbr></wbr>Position</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#locationPolicyInfos" class="internal-link" title="plugins.services.LocationManager.LocationManager.locationPolicyInfos">location<wbr></wbr>Policy<wbr></wbr>Infos</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="plugins.services.LocationManager.html" class="internal-link" title="The parent of this class"><wbr></wbr>Location<wbr></wbr>Manager</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="plugins.services.LocationManager.LocationInformation.html" class="internal-link" title="plugins.services.LocationManager.LocationInformation"><wbr></wbr>Location<wbr></wbr>Information</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="plugins.services.LocationManager.LocationManager.html" class="internal-link" title="plugins.services.LocationManager.LocationManager"><wbr></wbr>Location<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="plugins.services.LocationManager.html#GeofencePositionType" class="internal-link" title="plugins.services.LocationManager.GeofencePositionType"><wbr></wbr>Geofence<wbr></wbr>Position<wbr></wbr>Type</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="plugins.services.LocationManager.html#LocationType" class="internal-link" title="plugins.services.LocationManager.LocationType"><wbr></wbr>Location<wbr></wbr>Type</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <main class="">
+        
+
+        
+
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="plugins.html" class="internal-link">plugins</a></code><wbr></wbr>.<code><a href="plugins.services.html" class="internal-link" title="plugins.services">services</a></code><wbr></wbr>.<code><a href="plugins.services.LocationManager.html" class="internal-link" title="plugins.services.LocationManager">LocationManager</a></code><wbr></wbr>.<code><a href="plugins.services.LocationManager.LocationManager.html" class="internal-link" title="plugins.services.LocationManager.LocationManager">LocationManager</a></code></code></h1>
+          <div id="show-private">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">LocationManager</span>(object):</code></p><p><a href="classIndex.html#plugins.services.LocationManager.LocationManager">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>The LocationManager class implements the location service and helper functions.</p></div>
+        </div>
+
+        <div id="split-tables">
+          <table class="children sortable" id="id811">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#addLocationPolicy" class="internal-link" title="plugins.services.LocationManager.LocationManager.addLocationPolicy">add<wbr></wbr>Location<wbr></wbr>Policy</a></code></td>
+    <td>Add a location policy.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#checkGeofence" class="internal-link" title="plugins.services.LocationManager.LocationManager.checkGeofence">check<wbr></wbr>Geofence</a></code></td>
+    <td>Check if a location is inside or outside the polygon of a location policy.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#checkGeoLocation" class="internal-link" title="plugins.services.LocationManager.LocationManager.checkGeoLocation">check<wbr></wbr>Geo<wbr></wbr>Location</a></code></td>
+    <td>Check if a resource's location confirms to a geo location.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#configure" class="internal-link" title="plugins.services.LocationManager.LocationManager.configure">configure</a></code></td>
+    <td>Configure the WebSocket server.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getGeoPolygon" class="internal-link" title="plugins.services.LocationManager.LocationManager.getGeoPolygon">get<wbr></wbr>Geo<wbr></wbr>Polygon</a></code></td>
+    <td>Get the geo-polygon from a geoJSON object. This is just a wrapper for the getGeoPolygon function in GeoTools.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getNewLocation" class="internal-link" title="plugins.services.LocationManager.LocationManager.getNewLocation">get<wbr></wbr>New<wbr></wbr>Location</a></code></td>
+    <td>Get the new location for a location policy. Also, update the internal policy info if necessary.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#handleLatestRetrieve" class="internal-link" title="plugins.services.LocationManager.LocationManager.handleLatestRetrieve">handle<wbr></wbr>Latest<wbr></wbr>Retrieve</a></code></td>
+    <td>Handle a latest RETRIEVE request for a CNT with a location policy.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#init" class="internal-link" title="plugins.services.LocationManager.LocationManager.init">init</a></code></td>
+    <td>Initialization of the LocationManager module.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#locationWorker" class="internal-link" title="plugins.services.LocationManager.LocationManager.locationWorker">location<wbr></wbr>Worker</a></code></td>
+    <td>Worker function for location policies. This will be called periodically to update the location.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#removeLocationPolicy" class="internal-link" title="plugins.services.LocationManager.LocationManager.removeLocationPolicy">remove<wbr></wbr>Location<wbr></wbr>Policy</a></code></td>
+    <td>Remove a location policy. This will stop the worker and remove the LCP from the internal list.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#restart" class="internal-link" title="plugins.services.LocationManager.LocationManager.restart">restart</a></code></td>
+    <td>Restart the LocationManager.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#stop" class="internal-link" title="plugins.services.LocationManager.LocationManager.stop">stop</a></code></td>
+    <td>Shutdown the LocationManager.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#updateLocationEvent" class="internal-link" title="plugins.services.LocationManager.LocationManager.updateLocationEvent">update<wbr></wbr>Location<wbr></wbr>Event</a></code></td>
+    <td>Update the location event for a location policy if the location has changed and/or the event criteria is met.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#updateLocationPolicy" class="internal-link" title="plugins.services.LocationManager.LocationManager.updateLocationPolicy">update<wbr></wbr>Location<wbr></wbr>Policy</a></code></td>
+    <td>Update a location policy. This will remove the old location policy and add a new one.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#__slots__" class="internal-link" title="plugins.services.LocationManager.LocationManager.__slots__">__slots__</a></code></td>
+    <td>Slots for LocationManager class.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#dispatcher" class="internal-link" title="plugins.services.LocationManager.LocationManager.dispatcher">dispatcher</a></code></td>
+    <td>Injected IDispatcher instance.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#deviceDefaultPosition" class="internal-link" title="plugins.services.LocationManager.LocationManager.deviceDefaultPosition">device<wbr></wbr>Default<wbr></wbr>Position</a></code></td>
+    <td>The default position type for device-based location sources. This is used when the location information type is not set.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#locationPolicyInfos" class="internal-link" title="plugins.services.LocationManager.LocationManager.locationPolicyInfos">location<wbr></wbr>Policy<wbr></wbr>Infos</a></code></td>
+    <td>A dictionary of location policy information, keyed by the location policy resource ID.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="child-list">
+          <div class="basemethod">
+  
+  
+  <a name="plugins.services.LocationManager.LocationManager.addLocationPolicy">
+    
+  </a>
+  <a name="addLocationPolicy">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">addLocationPolicy</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">lcp: <code><a href="acme.resources.LCP.LCP.html" class="internal-link" title="acme.resources.LCP.LCP">LCP</a></code></span>):</span>
+    
+    <a class="headerLink" href="#addLocationPolicy" title="plugins.services.LocationManager.LocationManager.addLocationPolicy">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Add a location policy.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">lcp:</span><code><a href="acme.resources.LCP.LCP.html" class="internal-link" title="acme.resources.LCP.LCP">LCP</a></code></td><td class="fieldArgDesc">The location policy to add.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.services.LocationManager.LocationManager.checkGeofence">
+    
+  </a>
+  <a name="checkGeofence">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">checkGeofence</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">lcpRi: <code>str</code>, </span><span class="rst-sig-param">location: <code>tuple[<wbr></wbr>float, <wbr></wbr>float]</code></span>) -&gt; <code><a href="plugins.services.LocationManager.html#GeofencePositionType" class="internal-link" title="plugins.services.LocationManager.GeofencePositionType">GeofencePositionType</a></code>:</span>
+    
+    <a class="headerLink" href="#checkGeofence" title="plugins.services.LocationManager.LocationManager.checkGeofence">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check if a location is inside or outside the polygon of a location policy.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">lcp<wbr></wbr>Ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the location policy</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">location:</span><code>tuple[<wbr></wbr>float, <wbr></wbr>float]</code></td><td class="fieldArgDesc">The location to check</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="plugins.services.LocationManager.html#GeofencePositionType" class="internal-link" title="plugins.services.LocationManager.GeofencePositionType">GeofencePositionType</a></code></td><td class="fieldArgDesc">The geofence position of the location. Either <em>inside</em> or <em>outside</em>.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.services.LocationManager.LocationManager.checkGeoLocation">
+    
+  </a>
+  <a name="checkGeoLocation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">checkGeoLocation</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">r: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">gmty: <code><a href="acme.etc.Types.GeometryType.html" class="internal-link" title="acme.etc.Types.GeometryType">GeometryType</a></code>, </span><span class="rst-sig-param">geom: <code>list</code>, </span><span class="rst-sig-param">gsf: <code><a href="acme.etc.Types.GeoSpatialFunctionType.html" class="internal-link" title="acme.etc.Types.GeoSpatialFunctionType">GeoSpatialFunctionType</a></code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#checkGeoLocation" title="plugins.services.LocationManager.LocationManager.checkGeoLocation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check if a resource's location confirms to a geo location.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">r:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The resource to check.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">gmty:</span><code><a href="acme.etc.Types.GeometryType.html" class="internal-link" title="acme.etc.Types.GeometryType">GeometryType</a></code></td><td class="fieldArgDesc">The geometry type.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">geom:</span><code>list</code></td><td class="fieldArgDesc">The geometry.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">gsf:</span><code><a href="acme.etc.Types.GeoSpatialFunctionType.html" class="internal-link" title="acme.etc.Types.GeoSpatialFunctionType">GeoSpatialFunctionType</a></code></td><td class="fieldArgDesc">The geo spatial function.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if the resource's location confirms to the geo location, False otherwise.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.services.LocationManager.LocationManager.configure">
+    
+  </a>
+  <a name="configure">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#configure" class="internal-link" title="plugins.services.LocationManager.LocationManager.configure">configure</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">configure</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">config: <code><a href="acme.runtime.Configuration.Configuration.html" class="internal-link" title="acme.runtime.Configuration.Configuration">Configuration</a></code></span>):</span>
+    
+    <a class="headerLink" href="#configure" title="plugins.services.LocationManager.LocationManager.configure">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Configure the WebSocket server.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">config:</span><code><a href="acme.runtime.Configuration.Configuration.html" class="internal-link" title="acme.runtime.Configuration.Configuration">Configuration</a></code></td><td class="fieldArgDesc">The configuration object to update with the location manager configuration.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.services.LocationManager.LocationManager.getGeoPolygon">
+    
+  </a>
+  <a name="getGeoPolygon">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">getGeoPolygon</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">jsn: <code>dict | str | None</code></span>) -&gt; <code>list[<wbr></wbr>tuple[<wbr></wbr>float, <wbr></wbr>float]] | None</code>:</span>
+    
+    <a class="headerLink" href="#getGeoPolygon" title="plugins.services.LocationManager.LocationManager.getGeoPolygon">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the geo-polygon from a geoJSON object. This is just a wrapper for the getGeoPolygon
+function in GeoTools.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">jsn:</span><code>dict | str | None</code></td><td class="fieldArgDesc">The geoJSON object as a dictionary or a string.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr>tuple[<wbr></wbr>float, <wbr></wbr>float]] | None</code></td><td class="fieldArgDesc">A list of tuples of the geo-polygon (latitude, longitude). None if not found.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.services.LocationManager.LocationManager.getNewLocation">
+    
+  </a>
+  <a name="getNewLocation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">getNewLocation</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">lcpRi: <code>str</code>, </span><span class="rst-sig-param">content: <code>str | None</code> = None</span>) -&gt; <code>tuple[<wbr></wbr><a href="plugins.services.LocationManager.html#LocationType" class="internal-link" title="plugins.services.LocationManager.LocationType">LocationType</a>, <wbr></wbr><a href="plugins.services.LocationManager.html#LocationType" class="internal-link" title="plugins.services.LocationManager.LocationType">LocationType</a>] | None</code>:</span>
+    
+    <a class="headerLink" href="#getNewLocation" title="plugins.services.LocationManager.LocationManager.getNewLocation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the new location for a location policy. Also, update the internal policy info if necessary.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">lcp<wbr></wbr>Ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the location policy</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">content:</span><code>str | None</code></td><td class="fieldArgDesc">The content of the latest CIN of the location policy's container resource</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>tuple[<wbr></wbr><a href="plugins.services.LocationManager.html#LocationType" class="internal-link" title="plugins.services.LocationManager.LocationType">LocationType</a>, <wbr></wbr><a href="plugins.services.LocationManager.html#LocationType" class="internal-link" title="plugins.services.LocationManager.LocationType">LocationType</a>] | None</code></td><td class="fieldArgDesc">The new and old locations as a tuple of (latitude, longitude), or None if the location is invalid or not found</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.services.LocationManager.LocationManager.handleLatestRetrieve">
+    
+  </a>
+  <a name="handleLatestRetrieve">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">handleLatestRetrieve</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">latest: <code><a href="acme.resources.CIN.CIN.html" class="internal-link" title="acme.resources.CIN.CIN">CIN</a></code>, </span><span class="rst-sig-param">lcpRi: <code>str</code></span>):</span>
+    
+    <a class="headerLink" href="#handleLatestRetrieve" title="plugins.services.LocationManager.LocationManager.handleLatestRetrieve">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle a latest RETRIEVE request for a CNT with a location policy.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">latest:</span><code><a href="acme.resources.CIN.CIN.html" class="internal-link" title="acme.resources.CIN.CIN">CIN</a></code></td><td class="fieldArgDesc">The latest CIN</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">lcp<wbr></wbr>Ri:</span><code>str</code></td><td class="fieldArgDesc">The location policy resource ID</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.services.LocationManager.LocationManager.init">
+    
+  </a>
+  <a name="init">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#init" class="internal-link" title="plugins.services.LocationManager.LocationManager.init">init</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">init</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#init" title="plugins.services.LocationManager.LocationManager.init">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Initialization of the LocationManager module.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.services.LocationManager.LocationManager.locationWorker">
+    
+  </a>
+  <a name="locationWorker">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">locationWorker</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">lcpRi: <code>str</code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#locationWorker" title="plugins.services.LocationManager.LocationManager.locationWorker">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Worker function for location policies. This will be called periodically to update the location.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">lcp<wbr></wbr>Ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the location policy</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if the worker should be continued, False otherwise.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.services.LocationManager.LocationManager.removeLocationPolicy">
+    
+  </a>
+  <a name="removeLocationPolicy">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">removeLocationPolicy</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">lcp: <code><a href="acme.resources.LCP.LCP.html" class="internal-link" title="acme.resources.LCP.LCP">LCP</a></code></span>):</span>
+    
+    <a class="headerLink" href="#removeLocationPolicy" title="plugins.services.LocationManager.LocationManager.removeLocationPolicy">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Remove a location policy. This will stop the worker and remove the LCP from the internal list.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">lcp:</span><code><a href="acme.resources.LCP.LCP.html" class="internal-link" title="acme.resources.LCP.LCP">LCP</a></code></td><td class="fieldArgDesc">The LCP to remove.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.services.LocationManager.LocationManager.restart">
+    
+  </a>
+  <a name="restart">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#restart" class="internal-link" title="plugins.services.LocationManager.LocationManager.restart">restart</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">restart</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#restart" title="plugins.services.LocationManager.LocationManager.restart">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Restart the LocationManager.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.services.LocationManager.LocationManager.stop">
+    
+  </a>
+  <a name="stop">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#stop" class="internal-link" title="plugins.services.LocationManager.LocationManager.stop">stop</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">stop</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#stop" title="plugins.services.LocationManager.LocationManager.stop">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Shutdown the LocationManager.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">Boolean that indicates the success of the operation</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.services.LocationManager.LocationManager.updateLocationEvent">
+    
+  </a>
+  <a name="updateLocationEvent">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">updateLocationEvent</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">newLocation: <code><a href="plugins.services.LocationManager.html#LocationType" class="internal-link" title="plugins.services.LocationManager.LocationType">LocationType</a></code>, </span><span class="rst-sig-param">oldLocation: <code><a href="plugins.services.LocationManager.html#LocationType" class="internal-link" title="plugins.services.LocationManager.LocationType">LocationType</a></code>, </span><span class="rst-sig-param">lcpRi: <code>str</code></span>):</span>
+    
+    <a class="headerLink" href="#updateLocationEvent" title="plugins.services.LocationManager.LocationManager.updateLocationEvent">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Update the location event for a location policy if the location has changed and/or the event criteria is met.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">new<wbr></wbr>Location:</span><code><a href="plugins.services.LocationManager.html#LocationType" class="internal-link" title="plugins.services.LocationManager.LocationType">LocationType</a></code></td><td class="fieldArgDesc">The new location</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">old<wbr></wbr>Location:</span><code><a href="plugins.services.LocationManager.html#LocationType" class="internal-link" title="plugins.services.LocationManager.LocationType">LocationType</a></code></td><td class="fieldArgDesc">The old location</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">lcp<wbr></wbr>Ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the location policy</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.services.LocationManager.LocationManager.updateLocationPolicy">
+    
+  </a>
+  <a name="updateLocationPolicy">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">updateLocationPolicy</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">lcp: <code><a href="acme.resources.LCP.LCP.html" class="internal-link" title="acme.resources.LCP.LCP">LCP</a></code></span>):</span>
+    
+    <a class="headerLink" href="#updateLocationPolicy" title="plugins.services.LocationManager.LocationManager.updateLocationPolicy">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Update a location policy. This will remove the old location policy and add a new one.</p></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="plugins.services.LocationManager.LocationManager.__slots__">
+    
+  </a>
+  <a name="__slots__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__slots__</span>: <code>tuple[<wbr></wbr>str, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code> =
+    
+    <a class="headerLink" href="#__slots__" title="plugins.services.LocationManager.LocationManager.__slots__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Slots for LocationManager class.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="plugins.services.LocationManager.LocationManager.dispatcher">
+    
+  </a>
+  <a name="dispatcher">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dispatcher</span>: <code><a href="acme.services.Dispatcher.Dispatcher.html" class="internal-link" title="acme.services.Dispatcher.Dispatcher">Dispatcher</a></code> =
+    
+    <a class="headerLink" href="#dispatcher" title="plugins.services.LocationManager.LocationManager.dispatcher">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected IDispatcher instance.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="plugins.services.LocationManager.LocationManager.deviceDefaultPosition">
+    
+  </a>
+  <a name="deviceDefaultPosition">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">deviceDefaultPosition</span>: <code><a href="plugins.services.LocationManager.html#GeofencePositionType" class="internal-link" title="plugins.services.LocationManager.GeofencePositionType">GeofencePositionType</a></code> =
+    
+    <a class="headerLink" href="#deviceDefaultPosition" title="plugins.services.LocationManager.LocationManager.deviceDefaultPosition">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The default position type for device-based location sources. This is used when the location information type is not set.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="plugins.services.LocationManager.LocationManager.locationPolicyInfos">
+    
+  </a>
+  <a name="locationPolicyInfos">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">locationPolicyInfos</span>: <code>dict[<wbr></wbr>str, <wbr></wbr><a href="plugins.services.LocationManager.LocationInformation.html" class="internal-link" title="plugins.services.LocationManager.LocationInformation">LocationInformation</a>]</code> =
+    
+    <a class="headerLink" href="#locationPolicyInfos" title="plugins.services.LocationManager.LocationManager.locationPolicyInfos">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>A dictionary of location policy information, keyed by the location policy resource ID.</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </main>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container-fluid">
+      <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      25.10.1 at 2026-05-13 00:16:54.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

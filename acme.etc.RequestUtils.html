@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>acme.etc.RequestUtils</title>
+    <meta name="generator" content="pydoctor 25.10.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    <link rel="canonical" href="https://acmecse.net/api/acme.etc.RequestUtils.html" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code class="thisobject"><a href="acme.etc.RequestUtils.html" class="internal-link" title="This module"><wbr></wbr>Request<wbr></wbr>Utils</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#contentAsString" class="internal-link" title="acme.etc.RequestUtils.contentAsString">content<wbr></wbr>As<wbr></wbr>String</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#createPositiveResponseResult" class="internal-link" title="acme.etc.RequestUtils.createPositiveResponseResult">create<wbr></wbr>Positive<wbr></wbr>Response<wbr></wbr>Result</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#createRawRequest" class="internal-link" title="acme.etc.RequestUtils.createRawRequest">create<wbr></wbr>Raw<wbr></wbr>Request</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#createRequestResultFromURI" class="internal-link" title="acme.etc.RequestUtils.createRequestResultFromURI">create<wbr></wbr>Request<wbr></wbr>Result<wbr></wbr>From<wbr></wbr>URI</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#curlFromRequest" class="internal-link" title="acme.etc.RequestUtils.curlFromRequest">curl<wbr></wbr>From<wbr></wbr>Request</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#deserializeContent" class="internal-link" title="acme.etc.RequestUtils.deserializeContent">deserialize<wbr></wbr>Content</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#deserializeData" class="internal-link" title="acme.etc.RequestUtils.deserializeData">deserialize<wbr></wbr>Data</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#determineSerialization" class="internal-link" title="acme.etc.RequestUtils.determineSerialization">determine<wbr></wbr>Serialization</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#fillRequestWithArguments" class="internal-link" title="acme.etc.RequestUtils.fillRequestWithArguments">fill<wbr></wbr>Request<wbr></wbr>With<wbr></wbr>Arguments</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#filterAttributes" class="internal-link" title="acme.etc.RequestUtils.filterAttributes">filter<wbr></wbr>Attributes</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#fromHttpURL" class="internal-link" title="acme.etc.RequestUtils.fromHttpURL">from<wbr></wbr>Http<wbr></wbr>URL</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#removeNoneValuesFromDict" class="internal-link" title="acme.etc.RequestUtils.removeNoneValuesFromDict">remove<wbr></wbr>None<wbr></wbr>Values<wbr></wbr>From<wbr></wbr>Dict</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#serializeData" class="internal-link" title="acme.etc.RequestUtils.serializeData">serialize<wbr></wbr>Data</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#toCoAPPath" class="internal-link" title="acme.etc.RequestUtils.toCoAPPath">to<wbr></wbr>Co<wbr></wbr>APPath</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#toHttpUrl" class="internal-link" title="acme.etc.RequestUtils.toHttpUrl">to<wbr></wbr>Http<wbr></wbr>Url</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Package</span>
+        <code><a href="acme.etc.html" class="internal-link" title="The parent of this module">etc</a></code> 
+      </div>
+      
+      <div>
+        
+
+        <div class="childrenKindTitle">Modules</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.etc.ACMEUtils.html" class="internal-link" title="acme.etc.ACMEUtils"><wbr></wbr>ACMEUtils</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.etc.Constants.html" class="internal-link" title="acme.etc.Constants"><wbr></wbr>Constants</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.etc.DateUtils.html" class="internal-link" title="acme.etc.DateUtils"><wbr></wbr>Date<wbr></wbr>Utils</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.etc.GeoTools.html" class="internal-link" title="acme.etc.GeoTools"><wbr></wbr>Geo<wbr></wbr>Tools</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.etc.IDUtils.html" class="internal-link" title="acme.etc.IDUtils"><wbr></wbr>IDUtils</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.etc.JSONUtils.html" class="internal-link" title="acme.etc.JSONUtils"><wbr></wbr>JSONUtils</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.etc.RequestUtils.html" class="internal-link" title="acme.etc.RequestUtils"><wbr></wbr>Request<wbr></wbr>Utils</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.etc.ResponseStatusCodes.html" class="internal-link" title="acme.etc.ResponseStatusCodes"><wbr></wbr>Response<wbr></wbr>Status<wbr></wbr>Codes</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.etc.RichUtils.html" class="internal-link" title="acme.etc.RichUtils"><wbr></wbr>Rich<wbr></wbr>Utils</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.etc.Types.html" class="internal-link" title="acme.etc.Types"><wbr></wbr>Types</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.etc.Utils.html" class="internal-link" title="acme.etc.Utils"><wbr></wbr>Utils</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+        
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <main class="">
+        
+
+        
+
+
+        <div class="page-header">
+          <h1 class="module"><code><code><a href="index.html" class="internal-link">acme</a></code><wbr></wbr>.<code><a href="acme.etc.html" class="internal-link" title="acme.etc">etc</a></code><wbr></wbr>.<code><a href="acme.etc.RequestUtils.html" class="internal-link" title="acme.etc.RequestUtils">RequestUtils</a></code></code></h1>
+          <div id="show-private">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          module documentation
+        </div>
+
+        <div class="extrasDocstring">
+          
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>This module contains various utilty functions that are used to work with requests and responses.</p></div>
+        </div>
+
+        <div id="split-tables">
+          <table class="children sortable" id="id12">
+  
+  
+  <tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#contentAsString" class="internal-link" title="acme.etc.RequestUtils.contentAsString">content<wbr></wbr>As<wbr></wbr>String</a></code></td>
+    <td>Convert a content to a string. If the content is a string, it is returned as is. If the content is a byte array, it is decoded to a string. If the content is neither a string nor a byte array, it is converted to a hex string.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#createPositiveResponseResult" class="internal-link" title="acme.etc.RequestUtils.createPositiveResponseResult">create<wbr></wbr>Positive<wbr></wbr>Response<wbr></wbr>Result</a></code></td>
+    <td>Create a positive <code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code> object with a request.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#createRawRequest" class="internal-link" title="acme.etc.RequestUtils.createRawRequest">create<wbr></wbr>Raw<wbr></wbr>Request</a></code></td>
+    <td>Create a dictionary with a couple of pre-initialized fields. No validation is done.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#createRequestResultFromURI" class="internal-link" title="acme.etc.RequestUtils.createRequestResultFromURI">create<wbr></wbr>Request<wbr></wbr>Result<wbr></wbr>From<wbr></wbr>URI</a></code></td>
+    <td>Create a <code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code> object from a URI. The URI is unquoted, parsed and the request is created.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#curlFromRequest" class="internal-link" title="acme.etc.RequestUtils.curlFromRequest">curl<wbr></wbr>From<wbr></wbr>Request</a></code></td>
+    <td>Create a cURL command from a request.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#deserializeContent" class="internal-link" title="acme.etc.RequestUtils.deserializeContent">deserialize<wbr></wbr>Content</a></code></td>
+    <td>Deserialize a data structure. Supported media serialization types are JSON and cbor.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#deserializeData" class="internal-link" title="acme.etc.RequestUtils.deserializeData">deserialize<wbr></wbr>Data</a></code></td>
+    <td>Deserialize data into a dictionary, depending on the serialization type.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#determineSerialization" class="internal-link" title="acme.etc.RequestUtils.determineSerialization">determine<wbr></wbr>Serialization</a></code></td>
+    <td>Determine the type of serialization for a notification from either the <em>url</em>'s <em>ct</em> query parameter, or the given list of <em>csz</em> (contentSerializations, attribute of a target AE/CSE), or the CSE's default serialization.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#fillRequestWithArguments" class="internal-link" title="acme.etc.RequestUtils.fillRequestWithArguments">fill<wbr></wbr>Request<wbr></wbr>With<wbr></wbr>Arguments</a></code></td>
+    <td>Fill a request with arguments from a <code><a href="acme.helpers.MultiDict.MultiDict.html" class="internal-link" title="acme.helpers.MultiDict.MultiDict">MultiDict</a></code>. The <code><a href="acme.helpers.MultiDict.MultiDict.html" class="internal-link" title="acme.helpers.MultiDict.MultiDict">MultiDict</a></code> contains the arguments from a request.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#filterAttributes" class="internal-link" title="acme.etc.RequestUtils.filterAttributes">filter<wbr></wbr>Attributes</a></code></td>
+    <td>Filter a dictionary by a list of attributes to include.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#fromHttpURL" class="internal-link" title="acme.etc.RequestUtils.fromHttpURL">from<wbr></wbr>Http<wbr></wbr>URL</a></code></td>
+    <td>Make the <em>path</em> a valid oneM2M ID (unescape /~/ and /_/) and return it. This is valid of CoAP URL paths as well.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#removeNoneValuesFromDict" class="internal-link" title="acme.etc.RequestUtils.removeNoneValuesFromDict">remove<wbr></wbr>None<wbr></wbr>Values<wbr></wbr>From<wbr></wbr>Dict</a></code></td>
+    <td>Remove Null/None-values from a dictionary, but ignore the ones specified in <em>allowedNull</em>.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#serializeData" class="internal-link" title="acme.etc.RequestUtils.serializeData">serialize<wbr></wbr>Data</a></code></td>
+    <td>Serialize a dictionary, depending on the serialization type.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#toCoAPPath" class="internal-link" title="acme.etc.RequestUtils.toCoAPPath">to<wbr></wbr>Co<wbr></wbr>APPath</a></code></td>
+    <td>Make the <em>path</em> a valid CoAP URL path (escape / and //) and return it.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#toHttpUrl" class="internal-link" title="acme.etc.RequestUtils.toHttpUrl">to<wbr></wbr>Http<wbr></wbr>Url</a></code></td>
+    <td>Make the <em>url</em> a valid http URL (escape // and ///) and return it.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="child-list">
+          <div class="basefunction">
+  
+  
+  <a name="acme.etc.RequestUtils.contentAsString">
+    
+  </a>
+  <a name="contentAsString">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">contentAsString</span><span class="function-signature">(<span class="rst-sig-param">content: <code>bytes | str | Any</code>, </span><span class="rst-sig-param">ct: <code><a href="acme.etc.Types.ContentSerializationType.html" class="internal-link" title="acme.etc.Types.ContentSerializationType">ContentSerializationType</a></code></span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#contentAsString" title="acme.etc.RequestUtils.contentAsString">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Convert a content to a string.
+If the content is a string, it is returned as is.
+If the content is a byte array, it is decoded to a string.
+If the content is neither a string nor a byte array, it is converted to a hex string.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">content:</span><code>bytes | str | Any</code></td><td class="fieldArgDesc">The content to convert.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ct:</span><code><a href="acme.etc.Types.ContentSerializationType.html" class="internal-link" title="acme.etc.Types.ContentSerializationType">ContentSerializationType</a></code></td><td class="fieldArgDesc">The content serialization type.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>str</code></td><td class="fieldArgDesc">The content as a string.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="acme.etc.RequestUtils.createPositiveResponseResult">
+    
+  </a>
+  <a name="createPositiveResponseResult">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">createPositiveResponseResult</span><span class="function-signature">() -&gt; <code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code>:</span>
+    
+    <a class="headerLink" href="#createPositiveResponseResult" title="acme.etc.RequestUtils.createPositiveResponseResult">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Create a positive <code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code> object with a request.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code></td><td class="fieldArgDesc">A <code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code> object with a positive response.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="acme.etc.RequestUtils.createRawRequest">
+    
+  </a>
+  <a name="createRawRequest">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">createRawRequest</span><span class="function-signature">(<span class="rst-sig-param">**kwargs: <code>Any</code></span>) -&gt; <code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code>:</span>
+    
+    <a class="headerLink" href="#createRawRequest" title="acme.etc.RequestUtils.createRawRequest">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Create a dictionary with a couple of pre-initialized fields. No validation is done.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">**kwargs:</span><code>Any</code></td><td class="fieldArgDesc">individual attributes to set in the request.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">JSON dictionary with the request.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="acme.etc.RequestUtils.createRequestResultFromURI">
+    
+  </a>
+  <a name="createRequestResultFromURI">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">createRequestResultFromURI</span><span class="function-signature long-signature">(<span class="rst-sig-param">request: <code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">url: <code>str</code></span>) -&gt; <code>tuple[<wbr></wbr><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a>, <wbr></wbr>str, <wbr></wbr>ParseResult]</code>:</span>
+    
+    <a class="headerLink" href="#createRequestResultFromURI" title="acme.etc.RequestUtils.createRequestResultFromURI">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Create a <code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code> object from a URI. The URI is unquoted, parsed and the request is created.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">The request to create.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">url:</span><code>str</code></td><td class="fieldArgDesc">The URL to parse.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>tuple[<wbr></wbr><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a>, <wbr></wbr>str, <wbr></wbr>ParseResult]</code></td><td class="fieldArgDesc">A tuple with the <code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code> object, the URL and the parsed URL.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="acme.etc.RequestUtils.curlFromRequest">
+    
+  </a>
+  <a name="curlFromRequest">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">curlFromRequest</span><span class="function-signature">(<span class="rst-sig-param">request: <code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#curlFromRequest" title="acme.etc.RequestUtils.curlFromRequest">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Create a cURL command from a request.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The request to create the cURL command from.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>str</code></td><td class="fieldArgDesc">A cURL command.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="acme.etc.RequestUtils.deserializeContent">
+    
+  </a>
+  <a name="deserializeContent">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">deserializeContent</span><span class="function-signature">(<span class="rst-sig-param">data: <code>bytes</code>, </span><span class="rst-sig-param">contentType: <code><a href="acme.etc.Types.ContentSerializationType.html" class="internal-link" title="acme.etc.Types.ContentSerializationType">ContentSerializationType</a></code></span>) -&gt; <code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code>:</span>
+    
+    <a class="headerLink" href="#deserializeContent" title="acme.etc.RequestUtils.deserializeContent">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Deserialize a data structure.
+Supported media serialization types are JSON and cbor.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">data:</span><code>bytes</code></td><td class="fieldArgDesc">The data to deserialize.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">content<wbr></wbr>Type:</span><code><a href="acme.etc.Types.ContentSerializationType.html" class="internal-link" title="acme.etc.Types.ContentSerializationType">ContentSerializationType</a></code></td><td class="fieldArgDesc">The content type of the data.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The deserialized data structure.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>*UNSUPPORTED_MEDIA_TYPE* if the content type is not supported.</code></td><td></td></tr><tr><td class="fieldArgContainer"><code>*BAD_REQUEST* if the data is malformed.</code></td><td></td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="acme.etc.RequestUtils.deserializeData">
+    
+  </a>
+  <a name="deserializeData">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">deserializeData</span><span class="function-signature">(<span class="rst-sig-param">data: <code>bytes</code>, </span><span class="rst-sig-param">ct: <code><a href="acme.etc.Types.ContentSerializationType.html" class="internal-link" title="acme.etc.Types.ContentSerializationType">ContentSerializationType</a></code></span>) -&gt; <code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a> | None</code>:</span>
+    
+    <a class="headerLink" href="#deserializeData" title="acme.etc.RequestUtils.deserializeData">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Deserialize data into a dictionary, depending on the serialization type.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">data:</span><code>bytes</code></td><td class="fieldArgDesc">The data to deserialize.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ct:</span><code><a href="acme.etc.Types.ContentSerializationType.html" class="internal-link" title="acme.etc.Types.ContentSerializationType">ContentSerializationType</a></code></td><td class="fieldArgDesc">The <em>data</em> content serialization format.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a> | None</code></td><td class="fieldArgDesc">If the <em>data</em> is not <em>None</em>, but has a length of 0 then an empty dictionary is returned. If an unknown content serialization is specified then <em>None</em> is returned. Otherwise, a <code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code> object is returned.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="acme.etc.RequestUtils.determineSerialization">
+    
+  </a>
+  <a name="determineSerialization">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">determineSerialization</span><span class="function-signature long-signature">(<span class="rst-sig-param">url: <code>str</code>, </span><span class="rst-sig-param">csz: <code>list[<wbr></wbr>str]</code>, </span><span class="rst-sig-param">defaultSerialization: <code><a href="acme.etc.Types.ContentSerializationType.html" class="internal-link" title="acme.etc.Types.ContentSerializationType">ContentSerializationType</a></code></span>) -&gt; <code><a href="acme.etc.Types.ContentSerializationType.html" class="internal-link" title="acme.etc.Types.ContentSerializationType">ContentSerializationType</a> | None</code>:</span>
+    
+    <a class="headerLink" href="#determineSerialization" title="acme.etc.RequestUtils.determineSerialization">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Determine the type of serialization for a notification from either the <em>url</em>'s <em>ct</em> query parameter,
+or the given list of <em>csz</em> (contentSerializations, attribute of a target AE/CSE), or the CSE's default serialization.</p>
+<p>As a side effect this function also validates the allowed URL scheme.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">url:</span><code>str</code></td><td class="fieldArgDesc">The <em>URL</em> to parse.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">csz:</span><code>list[<wbr></wbr>str]</code></td><td class="fieldArgDesc">The fallback content serialization.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">default<wbr></wbr>Serialization:</span><code><a href="acme.etc.Types.ContentSerializationType.html" class="internal-link" title="acme.etc.Types.ContentSerializationType">ContentSerializationType</a></code></td><td class="fieldArgDesc">The CSE's defaults serialization.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.Types.ContentSerializationType.html" class="internal-link" title="acme.etc.Types.ContentSerializationType">ContentSerializationType</a> | None</code></td><td class="fieldArgDesc">The determined content serialization, or <em>None</em> if none could be determined.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="acme.etc.RequestUtils.fillRequestWithArguments">
+    
+  </a>
+  <a name="fillRequestWithArguments">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">fillRequestWithArguments</span><span class="function-signature long-signature">(<span class="rst-sig-param">arguments: <code><a href="acme.helpers.MultiDict.MultiDict.html" class="internal-link" title="acme.helpers.MultiDict.MultiDict">MultiDict</a></code>, </span><span class="rst-sig-param">dct: <code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">cseRequest: <code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">sep: <code>str | None</code> = None</span>) -&gt; <code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code>:</span>
+    
+    <a class="headerLink" href="#fillRequestWithArguments" title="acme.etc.RequestUtils.fillRequestWithArguments">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Fill a request with arguments from a <code><a href="acme.helpers.MultiDict.MultiDict.html" class="internal-link" title="acme.helpers.MultiDict.MultiDict">MultiDict</a></code>. The <code><a href="acme.helpers.MultiDict.MultiDict.html" class="internal-link" title="acme.helpers.MultiDict.MultiDict">MultiDict</a></code> contains the arguments from a request.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">arguments:</span><code><a href="acme.helpers.MultiDict.MultiDict.html" class="internal-link" title="acme.helpers.MultiDict.MultiDict">MultiDict</a></code></td><td class="fieldArgDesc">The <code><a href="acme.helpers.MultiDict.MultiDict.html" class="internal-link" title="acme.helpers.MultiDict.MultiDict">MultiDict</a></code> with the arguments.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dct:</span><code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The dictionary to fill.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">cse<wbr></wbr>Request:</span><code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">The <code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code> object to fill.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">sep:</span><code>str | None</code></td><td class="fieldArgDesc">The separator for the attribute list.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">The filled <code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code> object.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="acme.etc.RequestUtils.filterAttributes">
+    
+  </a>
+  <a name="filterAttributes">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">filterAttributes</span><span class="function-signature">(<span class="rst-sig-param">dct: <code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">attributesToInclude: <code>list[<wbr></wbr>str]</code></span>) -&gt; <code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code>:</span>
+    
+    <a class="headerLink" href="#filterAttributes" title="acme.etc.RequestUtils.filterAttributes">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Filter a dictionary by a list of attributes to include.</p>
+<p>Return:</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dct:</span><code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">Dictionary to filter.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">attributes<wbr></wbr>To<wbr></wbr>Include:</span><code>list[<wbr></wbr>str]</code></td><td class="fieldArgDesc">List of attributes to include.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc"><span class="undocumented">Undocumented</span></td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="acme.etc.RequestUtils.fromHttpURL">
+    
+  </a>
+  <a name="fromHttpURL">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">fromHttpURL</span><span class="function-signature">(<span class="rst-sig-param">path: <code>str</code></span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#fromHttpURL" title="acme.etc.RequestUtils.fromHttpURL">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Make the <em>path</em> a valid oneM2M ID (unescape /~/ and /_/) and return it.
+This is valid of CoAP URL paths as well.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">path:</span><code>str</code></td><td class="fieldArgDesc">The path to convert.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>str</code></td><td class="fieldArgDesc">A valid ID with unescaped special characters.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="acme.etc.RequestUtils.removeNoneValuesFromDict">
+    
+  </a>
+  <a name="removeNoneValuesFromDict">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">removeNoneValuesFromDict</span><span class="function-signature">(<span class="rst-sig-param">jsn: <code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">allowedNull: <code>list[<wbr></wbr>str] | None</code> = []</span>) -&gt; <code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code>:</span>
+    
+    <a class="headerLink" href="#removeNoneValuesFromDict" title="acme.etc.RequestUtils.removeNoneValuesFromDict">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Remove Null/None-values from a dictionary, but ignore the ones specified in <em>allowedNull</em>.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">jsn:</span><code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">JSON dictionary.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">allowed<wbr></wbr>Null:</span><code>list[<wbr></wbr>str] | None</code></td><td class="fieldArgDesc">Optional list of attribute names to ignore.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">Return a new dictionary with None-value attributes removed.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="acme.etc.RequestUtils.serializeData">
+    
+  </a>
+  <a name="serializeData">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">serializeData</span><span class="function-signature">(<span class="rst-sig-param">data: <code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">ct: <code><a href="acme.etc.Types.ContentSerializationType.html" class="internal-link" title="acme.etc.Types.ContentSerializationType">ContentSerializationType</a></code></span>) -&gt; <code>str | bytes | <a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a> | None</code>:</span>
+    
+    <a class="headerLink" href="#serializeData" title="acme.etc.RequestUtils.serializeData">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Serialize a dictionary, depending on the serialization type.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">data:</span><code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The data to serialize.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ct:</span><code><a href="acme.etc.Types.ContentSerializationType.html" class="internal-link" title="acme.etc.Types.ContentSerializationType">ContentSerializationType</a></code></td><td class="fieldArgDesc">The <em>data</em> content serialization format.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>str | bytes | <a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a> | None</code></td><td class="fieldArgDesc">A data <em>str</em> or <em>byte</em> object with the serialized data, or <em>None</em>.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="acme.etc.RequestUtils.toCoAPPath">
+    
+  </a>
+  <a name="toCoAPPath">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">toCoAPPath</span><span class="function-signature">(<span class="rst-sig-param">path: <code>str</code></span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#toCoAPPath" title="acme.etc.RequestUtils.toCoAPPath">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Make the <em>path</em> a valid CoAP URL path (escape / and //) and return it.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">path:</span><code>str</code></td><td class="fieldArgDesc">The path to convert.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>str</code></td><td class="fieldArgDesc">A valid CoAP URL path with escaped special characters for oneM2M IDs</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="acme.etc.RequestUtils.toHttpUrl">
+    
+  </a>
+  <a name="toHttpUrl">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">toHttpUrl</span><span class="function-signature">(<span class="rst-sig-param">url: <code>str</code></span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#toHttpUrl" title="acme.etc.RequestUtils.toHttpUrl">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Make the <em>url</em> a valid http URL (escape // and ///) and return it.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">url:</span><code>str</code></td><td class="fieldArgDesc">The URL to convert.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>str</code></td><td class="fieldArgDesc">A valid URL with escaped special characters.</td></tr></table></div>
+  </div>
+</div>
+        </div>
+      
+      </main>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container-fluid">
+      <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      25.10.1 at 2026-05-13 12:48:06.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

@@ -1,0 +1,1597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>acme.services.RegistrationManager.RegistrationManager</title>
+    <meta name="generator" content="pydoctor 25.10.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    <link rel="canonical" href="https://acmecse.net/api/acme.services.RegistrationManager.RegistrationManager.html" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="acme.services.RegistrationManager.RegistrationManager.html" class="internal-link" title="This class"><wbr></wbr>Registration<wbr></wbr>Manager</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#checkResourceCreation" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.checkResourceCreation">check<wbr></wbr>Resource<wbr></wbr>Creation</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#checkResourceDeletion" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.checkResourceDeletion">check<wbr></wbr>Resource<wbr></wbr>Deletion</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#checkResourceUpdated" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.checkResourceUpdated">check<wbr></wbr>Resource<wbr></wbr>Updated</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#configUpdate" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.configUpdate">config<wbr></wbr>Update</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#deregisterSOriginator" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.deregisterSOriginator">deregister<wbr></wbr>SOriginator</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#expirationDBMonitor" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.expirationDBMonitor">expiration<wbr></wbr>DBMonitor</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#handleAEDeRegistration" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.handleAEDeRegistration">handle<wbr></wbr>AEDe<wbr></wbr>Registration</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#handleAERegistration" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.handleAERegistration">handle<wbr></wbr>AERegistration</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#handleCreator" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.handleCreator">handle<wbr></wbr>Creator</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#handleCSEBaseAnncRegistration" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.handleCSEBaseAnncRegistration">handle<wbr></wbr>CSEBase<wbr></wbr>Annc<wbr></wbr>Registration</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#handleCSEBaseRegistration" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.handleCSEBaseRegistration">handle<wbr></wbr>CSEBase<wbr></wbr>Registration</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#handleCSRRegistration" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.handleCSRRegistration">handle<wbr></wbr>CSRRegistration</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#handleCSRUpdate" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.handleCSRUpdate">handle<wbr></wbr>CSRUpdate</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#handleRegistreeCSRDeRegistration" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.handleRegistreeCSRDeRegistration">handle<wbr></wbr>Registree<wbr></wbr>CSRDe<wbr></wbr>Registration</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#handleREQDeRegistration" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.handleREQDeRegistration">handle<wbr></wbr>REQDe<wbr></wbr>Registration</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#handleREQRegistration" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.handleREQRegistration">handle<wbr></wbr>REQRegistration</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#hasRegisteredAE" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.hasRegisteredAE">has<wbr></wbr>Registered<wbr></wbr>AE</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#initialize" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.initialize">initialize</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#postResourceCreation" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.postResourceCreation">post<wbr></wbr>Resource<wbr></wbr>Creation</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#postResourceDeletion" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.postResourceDeletion">post<wbr></wbr>Resource<wbr></wbr>Deletion</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#registerSOriginator" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.registerSOriginator">register<wbr></wbr>SOriginator</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#restart" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.restart">restart</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#restartExpirationMonitor" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.restartExpirationMonitor">restart<wbr></wbr>Expiration<wbr></wbr>Monitor</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#shutdown" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.shutdown">shutdown</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#startExpirationMonitor" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.startExpirationMonitor">start<wbr></wbr>Expiration<wbr></wbr>Monitor</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#stopExpirationMonitor" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.stopExpirationMonitor">stop<wbr></wbr>Expiration<wbr></wbr>Monitor</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__slots__" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.__slots__">__slots__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dispatcher" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.dispatcher">dispatcher</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#importer" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.importer">importer</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#remoteCSEManager" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.remoteCSEManager">remote<wbr></wbr>CSEManager</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#securityManager" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.securityManager">security<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#storage" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.storage">storage</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#validator" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.validator">validator</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#expWorker" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.expWorker">exp<wbr></wbr>Worker</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="acme.services.RegistrationManager.html" class="internal-link" title="The parent of this class"><wbr></wbr>Registration<wbr></wbr>Manager</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.services.RegistrationManager.RegistrationManager.html" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager"><wbr></wbr>Registration<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <main class="">
+        
+
+        
+
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">acme</a></code><wbr></wbr>.<code><a href="acme.services.html" class="internal-link" title="acme.services">services</a></code><wbr></wbr>.<code><a href="acme.services.RegistrationManager.html" class="internal-link" title="acme.services.RegistrationManager">RegistrationManager</a></code><wbr></wbr>.<code><a href="acme.services.RegistrationManager.RegistrationManager.html" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager">RegistrationManager</a></code></code></h1>
+          <div id="show-private">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">RegistrationManager</span>:</code></p><p><a href="classIndex.html#acme.services.RegistrationManager.RegistrationManager">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>RegistrationManager to handle registrations and de-registrations resources.</p></div>
+        </div>
+
+        <div id="split-tables">
+          <table class="children sortable" id="id693">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#checkResourceCreation" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.checkResourceCreation">check<wbr></wbr>Resource<wbr></wbr>Creation</a></code></td>
+    <td>Check the creation of a resource, for example handle registrations for AE, CSR and CSEBase resources.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#checkResourceDeletion" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.checkResourceDeletion">check<wbr></wbr>Resource<wbr></wbr>Deletion</a></code></td>
+    <td>Check the deletion of a resource, for example handle de-registrations for AE, CSR and REQ resources.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#checkResourceUpdated" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.checkResourceUpdated">check<wbr></wbr>Resource<wbr></wbr>Updated</a></code></td>
+    <td>Check the update of a resource, for example handle updates for CSR resources.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#configUpdate" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.configUpdate">config<wbr></wbr>Update</a></code></td>
+    <td>Handle configuration updates.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#deregisterSOriginator" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.deregisterSOriginator">deregister<wbr></wbr>SOriginator</a></code></td>
+    <td>Deregister the S-Originator for an &lt;AE&gt; resource.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#expirationDBMonitor" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.expirationDBMonitor">expiration<wbr></wbr>DBMonitor</a></code></td>
+    <td>Check the database for expired resources and delete them. This is called periodically by the expiration monitor.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#handleAEDeRegistration" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.handleAEDeRegistration">handle<wbr></wbr>AEDe<wbr></wbr>Registration</a></code></td>
+    <td>Handle the de-registration of an AE resource. This includes the deletion of the originator and sending events.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#handleAERegistration" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.handleAERegistration">handle<wbr></wbr>AERegistration</a></code></td>
+    <td>This method creates a new originator for the AE registration, depending on the method choosen.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#handleCreator" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.handleCreator">handle<wbr></wbr>Creator</a></code></td>
+    <td>Check for set creator attribute as well as assign it to allowed resources.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#handleCSEBaseAnncRegistration" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.handleCSEBaseAnncRegistration">handle<wbr></wbr>CSEBase<wbr></wbr>Annc<wbr></wbr>Registration</a></code></td>
+    <td>Handle the registration of a &lt;CSEBaseAnnc&gt; resource.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#handleCSEBaseRegistration" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.handleCSEBaseRegistration">handle<wbr></wbr>CSEBase<wbr></wbr>Registration</a></code></td>
+    <td>Handle the registration of a &lt;CSEBase&gt; resource.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#handleCSRRegistration" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.handleCSRRegistration">handle<wbr></wbr>CSRRegistration</a></code></td>
+    <td>Handle the registration of a &lt;CSR&gt; resource.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#handleCSRUpdate" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.handleCSRUpdate">handle<wbr></wbr>CSRUpdate</a></code></td>
+    <td>Handle the update of a &lt;CSR&gt; resource.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#handleRegistreeCSRDeRegistration" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.handleRegistreeCSRDeRegistration">handle<wbr></wbr>Registree<wbr></wbr>CSRDe<wbr></wbr>Registration</a></code></td>
+    <td>Handle the de-registration of a registree &lt;CSR&gt; resource.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#handleREQDeRegistration" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.handleREQDeRegistration">handle<wbr></wbr>REQDe<wbr></wbr>Registration</a></code></td>
+    <td>Handle the de-registration of a &lt;REQ&gt; resource.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#handleREQRegistration" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.handleREQRegistration">handle<wbr></wbr>REQRegistration</a></code></td>
+    <td>Handle the registration of a &lt;REQ&gt; resource.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#hasRegisteredAE" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.hasRegisteredAE">has<wbr></wbr>Registered<wbr></wbr>AE</a></code></td>
+    <td>Check wether an AE with <em>originator</em> is registered at the CSE.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#initialize" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.initialize">initialize</a></code></td>
+    <td>Initialize the RegistrationManager.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#postResourceCreation" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.postResourceCreation">post<wbr></wbr>Resource<wbr></wbr>Creation</a></code></td>
+    <td>Handle some post-create aspects, for example send events for some resources.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#postResourceDeletion" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.postResourceDeletion">post<wbr></wbr>Resource<wbr></wbr>Deletion</a></code></td>
+    <td>Handle some post-delete aspects, for example send events for some resources.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#registerSOriginator" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.registerSOriginator">register<wbr></wbr>SOriginator</a></code></td>
+    <td>Register the S-Originator for an AE resource.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#restart" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.restart">restart</a></code></td>
+    <td>Restart the registration services.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#restartExpirationMonitor" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.restartExpirationMonitor">restart<wbr></wbr>Expiration<wbr></wbr>Monitor</a></code></td>
+    <td>Restart the expiration monitor, for example after a CSE restart.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#shutdown" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.shutdown">shutdown</a></code></td>
+    <td>Shutdown the RegistrationManager.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#startExpirationMonitor" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.startExpirationMonitor">start<wbr></wbr>Expiration<wbr></wbr>Monitor</a></code></td>
+    <td>Start the expiration monitor, which periodically checks for expired resources and deletes them.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#stopExpirationMonitor" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.stopExpirationMonitor">stop<wbr></wbr>Expiration<wbr></wbr>Monitor</a></code></td>
+    <td>Stop the expiration monitor.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#__slots__" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.__slots__">__slots__</a></code></td>
+    <td>Slots for the RegistrationManager.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#dispatcher" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.dispatcher">dispatcher</a></code></td>
+    <td>Injected Dispatcher instance.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#importer" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.importer">importer</a></code></td>
+    <td>Injected Importer instance.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#remoteCSEManager" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.remoteCSEManager">remote<wbr></wbr>CSEManager</a></code></td>
+    <td>Injected RemoteCSEManager plugin, if available.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#securityManager" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.securityManager">security<wbr></wbr>Manager</a></code></td>
+    <td>Injected SecurityManager instance.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#storage" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.storage">storage</a></code></td>
+    <td>Injected Storage instance.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#validator" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.validator">validator</a></code></td>
+    <td>Validator instance.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#expWorker" class="internal-link" title="acme.services.RegistrationManager.RegistrationManager.expWorker">exp<wbr></wbr>Worker</a></code></td>
+    <td>Background worker for checking expired resources.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="child-list">
+          <div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.checkResourceCreation">
+    
+  </a>
+  <a name="checkResourceCreation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">checkResourceCreation</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">parentResource: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | None</code> = None</span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#checkResourceCreation" title="acme.services.RegistrationManager.RegistrationManager.checkResourceCreation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check the creation of a resource, for example handle registrations for AE, CSR and CSEBase resources.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The resource to be created.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator of the request that triggered the creation of the resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">parent<wbr></wbr>Resource:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a> | None</code></td><td class="fieldArgDesc">The parent resource of the resource to be created, if available.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>str</code></td><td class="fieldArgDesc"><dl class="rst-docutils">
+<dt>The (possibly new) originator to be used for the resource creation.</dt>
+<dd>This is relevant for AE registrations, where a new originator is created for the registered AE.</dd>
+</dl>
+</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.OPERATION_NOT_ALLOWED.html" class="internal-link" title="acme.etc.ResponseStatusCodes.OPERATION_NOT_ALLOWED">OPERATION_NOT_ALLOWED</a></code></td><td>If the operation is not allowed.</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.BAD_REQUEST.html" class="internal-link" title="acme.etc.ResponseStatusCodes.BAD_REQUEST">BAD_REQUEST</a></code></td><td>If the request is malformed or invalid.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.checkResourceDeletion">
+    
+  </a>
+  <a name="checkResourceDeletion">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">checkResourceDeletion</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></span>):</span>
+    
+    <a class="headerLink" href="#checkResourceDeletion" title="acme.services.RegistrationManager.RegistrationManager.checkResourceDeletion">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check the deletion of a resource, for example handle de-registrations for AE, CSR and REQ resources.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The resource to be deleted.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.BAD_REQUEST.html" class="internal-link" title="acme.etc.ResponseStatusCodes.BAD_REQUEST">BAD_REQUEST</a></code></td><td>If the deletion is not allowed for the resource type.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.checkResourceUpdated">
+    
+  </a>
+  <a name="checkResourceUpdated">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">checkResourceUpdated</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">updateDict: <code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></span>):</span>
+    
+    <a class="headerLink" href="#checkResourceUpdated" title="acme.services.RegistrationManager.RegistrationManager.checkResourceUpdated">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check the update of a resource, for example handle updates for CSR resources.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The resource to be updated.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">update<wbr></wbr>Dict:</span><code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The update dict with the new values for the resource attributes.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.BAD_REQUEST.html" class="internal-link" title="acme.etc.ResponseStatusCodes.BAD_REQUEST">BAD_REQUEST</a></code></td><td>If the update is not allowed for the resource type.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.configUpdate">
+    
+  </a>
+  <a name="configUpdate">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="acme.helpers.EventManager.html#onEvent" class="internal-link" title="acme.helpers.EventManager.onEvent">onEvent</a>(<wbr></wbr>eventManager.configUpdate)<br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">configUpdate</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">eventData: <code><a href="acme.helpers.EventManager.EventData.html" class="internal-link" title="acme.helpers.EventManager.EventData">EventData</a></code></span>):</span>
+    
+    <a class="headerLink" href="#configUpdate" title="acme.services.RegistrationManager.RegistrationManager.configUpdate">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle configuration updates.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">event<wbr></wbr>Data:</span><code><a href="acme.helpers.EventManager.EventData.html" class="internal-link" title="acme.helpers.EventManager.EventData">EventData</a></code></td><td class="fieldArgDesc">The event data, containing the name of the updated configuration setting and its new value.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.deregisterSOriginator">
+    
+  </a>
+  <a name="deregisterSOriginator">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">deregisterSOriginator</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ae: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></span>):</span>
+    
+    <a class="headerLink" href="#deregisterSOriginator" title="acme.services.RegistrationManager.RegistrationManager.deregisterSOriginator">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Deregister the S-Originator for an &lt;AE&gt; resource.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ae:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The &lt;AE&gt; resource.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.expirationDBMonitor">
+    
+  </a>
+  <a name="expirationDBMonitor">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">expirationDBMonitor</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#expirationDBMonitor" title="acme.services.RegistrationManager.RegistrationManager.expirationDBMonitor">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check the database for expired resources and delete them. This is called periodically by the expiration monitor.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">Always <em>True</em>.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.handleAEDeRegistration">
+    
+  </a>
+  <a name="handleAEDeRegistration">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">handleAEDeRegistration</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ae: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#handleAEDeRegistration" title="acme.services.RegistrationManager.RegistrationManager.handleAEDeRegistration">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle the de-registration of an AE resource. This includes the deletion of the originator and sending events.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ae:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The &lt;AE&gt; resource to be de-registered.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">Always <em>True</em>.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.handleAERegistration">
+    
+  </a>
+  <a name="handleAERegistration">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">handleAERegistration</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ae: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">parentResource: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#handleAERegistration" title="acme.services.RegistrationManager.RegistrationManager.handleAERegistration">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>This method creates a new originator for the AE registration, depending on the method choosen.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ae:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The AE resource to be registered.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator of the request that triggered the registration of the AE.
+This can be empty, in which case a new originator is created for the AE.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">parent<wbr></wbr>Resource:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The parent resource of the AE to be registered. This should be the CSEBase resource.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>str</code></td><td class="fieldArgDesc">The originator to be used for the AE registration.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.APP_RULE_VALIDATION_FAILED.html" class="internal-link" title="acme.etc.ResponseStatusCodes.APP_RULE_VALIDATION_FAILED">APP_RULE_VALIDATION_FAILED</a></code></td><td>If the originator is not allowed.</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.INVALID_CHILD_RESOURCE_TYPE.html" class="internal-link" title="acme.etc.ResponseStatusCodes.INVALID_CHILD_RESOURCE_TYPE">INVALID_CHILD_RESOURCE_TYPE</a></code></td><td>If the parent resource is not the CSEBase.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.handleCreator">
+    
+  </a>
+  <a name="handleCreator">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">handleCreator</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code></span>):</span>
+    
+    <a class="headerLink" href="#handleCreator" title="acme.services.RegistrationManager.RegistrationManager.handleCreator">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check for set creator attribute as well as assign it to allowed resources.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The resource for which to check and set the creator attribute.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator to set as creator, if allowed.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.BAD_REQUEST.html" class="internal-link" title="acme.etc.ResponseStatusCodes.BAD_REQUEST">BAD_REQUEST</a></code></td><td>If the creator attribute is not allowed for the resource type, or if the originator is not allowed to be set as creator.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.handleCSEBaseAnncRegistration">
+    
+  </a>
+  <a name="handleCSEBaseAnncRegistration">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">handleCSEBaseAnncRegistration</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">cbA: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code></span>):</span>
+    
+    <a class="headerLink" href="#handleCSEBaseAnncRegistration" title="acme.services.RegistrationManager.RegistrationManager.handleCSEBaseAnncRegistration">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle the registration of a &lt;CSEBaseAnnc&gt; resource.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">cb<wbr></wbr>A:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The &lt;CSEBaseAnnc&gt; resource to be registered.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator of the request that triggered the registration of the &lt;CSEBaseAnnc&gt;.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.CONFLICT.html" class="internal-link" title="acme.etc.ResponseStatusCodes.CONFLICT">CONFLICT</a></code></td><td>If a &lt;CSEBaseAnnc&gt; with the same lnk already exists.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.handleCSEBaseRegistration">
+    
+  </a>
+  <a name="handleCSEBaseRegistration">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">handleCSEBaseRegistration</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">cb: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code></span>):</span>
+    
+    <a class="headerLink" href="#handleCSEBaseRegistration" title="acme.services.RegistrationManager.RegistrationManager.handleCSEBaseRegistration">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle the registration of a &lt;CSEBase&gt; resource.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">cb:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The &lt;CSEBase&gt; resource to be registered.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator for the CSEBase registration. This should be the Admin originator.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.CONFLICT.html" class="internal-link" title="acme.etc.ResponseStatusCodes.CONFLICT">CONFLICT</a></code></td><td>If a &lt;CSEBase&gt; with the same csi already exists, which means that a CSEBase can only be registered once.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.handleCSRRegistration">
+    
+  </a>
+  <a name="handleCSRRegistration">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">handleCSRRegistration</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">csr: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code></span>):</span>
+    
+    <a class="headerLink" href="#handleCSRRegistration" title="acme.services.RegistrationManager.RegistrationManager.handleCSRRegistration">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle the registration of a &lt;CSR&gt; resource.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">csr:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The &lt;CSR&gt; resource to be registered.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator of the request that triggered the registration of the &lt;CSR&gt;.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.OPERATION_NOT_ALLOWED.html" class="internal-link" title="acme.etc.ResponseStatusCodes.OPERATION_NOT_ALLOWED">OPERATION_NOT_ALLOWED</a></code></td><td>If the registration is not allowed.</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.ResponseStatusCodes.NOT_IMPLEMENTED.html" class="internal-link" title="acme.etc.ResponseStatusCodes.NOT_IMPLEMENTED">NOT_IMPLEMENTED</a></code></td><td>If the RemoteCSEManager is disabled.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.handleCSRUpdate">
+    
+  </a>
+  <a name="handleCSRUpdate">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">handleCSRUpdate</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">csr: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">updateDict: <code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#handleCSRUpdate" title="acme.services.RegistrationManager.RegistrationManager.handleCSRUpdate">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle the update of a &lt;CSR&gt; resource.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">csr:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The &lt;CSR&gt; resource to be updated.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">update<wbr></wbr>Dict:</span><code><a href="acme.etc.Types.html#JSON" class="internal-link" title="acme.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The update dict with the new values for the resource attributes.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">Always <em>True</em>.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.handleRegistreeCSRDeRegistration">
+    
+  </a>
+  <a name="handleRegistreeCSRDeRegistration">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">handleRegistreeCSRDeRegistration</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">registreeCSR: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#handleRegistreeCSRDeRegistration" title="acme.services.RegistrationManager.RegistrationManager.handleRegistreeCSRDeRegistration">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle the de-registration of a registree &lt;CSR&gt; resource.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">registree<wbr></wbr>CSR:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The &lt;CSR&gt; resource to de-register.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">Always <em>True</em>.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.handleREQDeRegistration">
+    
+  </a>
+  <a name="handleREQDeRegistration">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">handleREQDeRegistration</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#handleREQDeRegistration" title="acme.services.RegistrationManager.RegistrationManager.handleREQDeRegistration">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle the de-registration of a &lt;REQ&gt; resource.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The &lt;REQ&gt; resource to be de-registered.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">Always <em>True</em>.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.handleREQRegistration">
+    
+  </a>
+  <a name="handleREQRegistration">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">handleREQRegistration</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">req: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#handleREQRegistration" title="acme.services.RegistrationManager.RegistrationManager.handleREQRegistration">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle the registration of a &lt;REQ&gt; resource.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">req:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The &lt;REQ&gt; resource to be registered.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator of the request that triggered the registration of the &lt;REQ&gt;.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">Always <em>True</em>.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.hasRegisteredAE">
+    
+  </a>
+  <a name="hasRegisteredAE">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">hasRegisteredAE</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">originator: <code>str</code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#hasRegisteredAE" title="acme.services.RegistrationManager.RegistrationManager.hasRegisteredAE">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check wether an AE with <em>originator</em> is registered at the CSE.</p>
+<dl class="rst-docutils">
+<dt>Return</dt>
+<dd>True if the originator is registered with the CSE.</dd>
+</dl>
+<div class="rst-admonition rst-admonition-todo">
+<p class="rst-admonition-title rst-first">Todo</p>
+<p class="rst-last">Currently this is done by searching the storage. This should be optimized by using an index for the originator.</p>
+</div>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">ID of the originator / AE.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc"><span class="undocumented">Undocumented</span></td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.initialize">
+    
+  </a>
+  <a name="initialize">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">initialize</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#initialize" title="acme.services.RegistrationManager.RegistrationManager.initialize">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Initialize the RegistrationManager.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.postResourceCreation">
+    
+  </a>
+  <a name="postResourceCreation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">postResourceCreation</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></span>):</span>
+    
+    <a class="headerLink" href="#postResourceCreation" title="acme.services.RegistrationManager.RegistrationManager.postResourceCreation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle some post-create aspects, for example send events for some resources.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">Resource that was created.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.postResourceDeletion">
+    
+  </a>
+  <a name="postResourceDeletion">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">postResourceDeletion</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></span>):</span>
+    
+    <a class="headerLink" href="#postResourceDeletion" title="acme.services.RegistrationManager.RegistrationManager.postResourceDeletion">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle some post-delete aspects, for example send events for some resources.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">Resource that was created.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.registerSOriginator">
+    
+  </a>
+  <a name="registerSOriginator">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">registerSOriginator</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ae: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code></span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#registerSOriginator" title="acme.services.RegistrationManager.RegistrationManager.registerSOriginator">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Register the S-Originator for an AE resource.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ae:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The &lt;AE&gt; resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The original originator.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>str</code></td><td class="fieldArgDesc">The assigned S-Originator.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.restart">
+    
+  </a>
+  <a name="restart">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="acme.helpers.EventManager.html#onEvent" class="internal-link" title="acme.helpers.EventManager.onEvent">onEvent</a>(<wbr></wbr>eventManager.cseReset)<br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">restart</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">eventData: <code><a href="acme.helpers.EventManager.EventData.html" class="internal-link" title="acme.helpers.EventManager.EventData">EventData</a></code></span>):</span>
+    
+    <a class="headerLink" href="#restart" title="acme.services.RegistrationManager.RegistrationManager.restart">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Restart the registration services.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.restartExpirationMonitor">
+    
+  </a>
+  <a name="restartExpirationMonitor">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">restartExpirationMonitor</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#restartExpirationMonitor" title="acme.services.RegistrationManager.RegistrationManager.restartExpirationMonitor">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Restart the expiration monitor, for example after a CSE restart.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.shutdown">
+    
+  </a>
+  <a name="shutdown">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">shutdown</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#shutdown" title="acme.services.RegistrationManager.RegistrationManager.shutdown">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Shutdown the RegistrationManager.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">Always <em>True</em>.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.startExpirationMonitor">
+    
+  </a>
+  <a name="startExpirationMonitor">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">startExpirationMonitor</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#startExpirationMonitor" title="acme.services.RegistrationManager.RegistrationManager.startExpirationMonitor">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Start the expiration monitor, which periodically checks for expired resources and deletes them.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.stopExpirationMonitor">
+    
+  </a>
+  <a name="stopExpirationMonitor">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">stopExpirationMonitor</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#stopExpirationMonitor" title="acme.services.RegistrationManager.RegistrationManager.stopExpirationMonitor">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Stop the expiration monitor.</p></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.__slots__">
+    
+  </a>
+  <a name="__slots__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__slots__</span>: <code>tuple[<wbr></wbr>str, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code> =
+    
+    <a class="headerLink" href="#__slots__" title="acme.services.RegistrationManager.RegistrationManager.__slots__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Slots for the RegistrationManager.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.dispatcher">
+    
+  </a>
+  <a name="dispatcher">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dispatcher</span>: <code><a href="acme.services.Dispatcher.Dispatcher.html" class="internal-link" title="acme.services.Dispatcher.Dispatcher">Dispatcher</a></code> =
+    
+    <a class="headerLink" href="#dispatcher" title="acme.services.RegistrationManager.RegistrationManager.dispatcher">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected Dispatcher instance.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.importer">
+    
+  </a>
+  <a name="importer">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">importer</span>: <code><a href="acme.runtime.Importer.Importer.html" class="internal-link" title="acme.runtime.Importer.Importer">Importer</a></code> =
+    
+    <a class="headerLink" href="#importer" title="acme.services.RegistrationManager.RegistrationManager.importer">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected Importer instance.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.remoteCSEManager">
+    
+  </a>
+  <a name="remoteCSEManager">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">remoteCSEManager</span>: <code><a href="acme.plugins.services.RemoteCSEManager.RemoteCSEManager.html" class="internal-link" title="acme.plugins.services.RemoteCSEManager.RemoteCSEManager">RemoteCSEManager</a> | None</code> =
+    
+    <a class="headerLink" href="#remoteCSEManager" title="acme.services.RegistrationManager.RegistrationManager.remoteCSEManager">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected RemoteCSEManager plugin, if available.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.securityManager">
+    
+  </a>
+  <a name="securityManager">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">securityManager</span>: <code><a href="acme.services.SecurityManager.SecurityManager.html" class="internal-link" title="acme.services.SecurityManager.SecurityManager">SecurityManager</a></code> =
+    
+    <a class="headerLink" href="#securityManager" title="acme.services.RegistrationManager.RegistrationManager.securityManager">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected SecurityManager instance.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.storage">
+    
+  </a>
+  <a name="storage">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">storage</span>: <code><a href="acme.runtime.Storage.Storage.html" class="internal-link" title="acme.runtime.Storage.Storage">Storage</a></code> =
+    
+    <a class="headerLink" href="#storage" title="acme.services.RegistrationManager.RegistrationManager.storage">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected Storage instance.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.validator">
+    
+  </a>
+  <a name="validator">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">validator</span>: <code><a href="acme.services.Validator.Validator.html" class="internal-link" title="acme.services.Validator.Validator">Validator</a></code> =
+    
+    <a class="headerLink" href="#validator" title="acme.services.RegistrationManager.RegistrationManager.validator">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Validator instance.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acme.services.RegistrationManager.RegistrationManager.expWorker">
+    
+  </a>
+  <a name="expWorker">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">expWorker</span>: <code><a href="acme.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acme.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a></code> =
+    
+    <a class="headerLink" href="#expWorker" title="acme.services.RegistrationManager.RegistrationManager.expWorker">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Background worker for checking expired resources.</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </main>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container-fluid">
+      <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      25.10.1 at 2026-05-13 12:48:06.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

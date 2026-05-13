@@ -1,0 +1,1596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>plugins.bindings.WebSocketServer.WebSocketServer</title>
+    <meta name="generator" content="pydoctor 25.10.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    <link rel="canonical" href="https://acmecse.net/api/plugins.bindings.WebSocketServer.WebSocketServer.html" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="plugins.bindings.WebSocketServer.WebSocketServer.html" class="internal-link" title="This class"><wbr></wbr>Web<wbr></wbr>Socket<wbr></wbr>Server</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#addConnection" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.addConnection">add<wbr></wbr>Connection</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#associateConnectionWithOriginator" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.associateConnectionWithOriginator">associate<wbr></wbr>Connection<wbr></wbr>With<wbr></wbr>Originator</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#closeConnectionForOriginator" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.closeConnectionForOriginator">close<wbr></wbr>Connection<wbr></wbr>For<wbr></wbr>Originator</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#configure" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.configure">configure</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dissociateConnectionFromOriginator" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.dissociateConnectionFromOriginator">dissociate<wbr></wbr>Connection<wbr></wbr>From<wbr></wbr>Originator</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#handleIncomingConnection" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.handleIncomingConnection">handle<wbr></wbr>Incoming<wbr></wbr>Connection</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#incrementConnection" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.incrementConnection">increment<wbr></wbr>Connection</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#init" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.init">init</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#pause" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.pause">pause</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#receiveLoop" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.receiveLoop">receive<wbr></wbr>Loop</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#removeConnection" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.removeConnection">remove<wbr></wbr>Connection</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#run" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.run">run</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#sendWSRequest" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.sendWSRequest">send<wbr></wbr>WSRequest</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#shutdown" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.shutdown">shutdown</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#unpause" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.unpause">unpause</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#validate" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.validate">validate</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_checkIsServerRunning" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer._checkIsServerRunning">_check<wbr></wbr>Is<wbr></wbr>Server<wbr></wbr>Running</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_configUpdate" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer._configUpdate">_config<wbr></wbr>Update</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_getWSSendingTargetName" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer._getWSSendingTargetName">_get<wbr></wbr>WSSending<wbr></wbr>Target<wbr></wbr>Name</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_handleAuthentication" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer._handleAuthentication">_handle<wbr></wbr>Authentication</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_handleDeleteEvent" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer._handleDeleteEvent">_handle<wbr></wbr>Delete<wbr></wbr>Event</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_handleReceivedMessage" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer._handleReceivedMessage">_handle<wbr></wbr>Received<wbr></wbr>Message</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_run" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer._run">_run</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_stop" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer._stop">_stop</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__slots__" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.__slots__">__slots__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#requestManager" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.requestManager">request<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#securityManager" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.securityManager">security<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#actor" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.actor">actor</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#associatedConnections" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.associatedConnections">associated<wbr></wbr>Connections</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#connectionUsedCounter" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.connectionUsedCounter">connection<wbr></wbr>Used<wbr></wbr>Counter</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#isPaused" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.isPaused">is<wbr></wbr>Paused</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#operationEvents" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.operationEvents">operation<wbr></wbr>Events</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#websocketServer" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.websocketServer">websocket<wbr></wbr>Server</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#wsConnections" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.wsConnections">ws<wbr></wbr>Connections</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="plugins.bindings.WebSocketServer.html" class="internal-link" title="The parent of this class"><wbr></wbr>Web<wbr></wbr>Socket<wbr></wbr>Server</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="plugins.bindings.WebSocketServer.WebSocketServer.html" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer"><wbr></wbr>Web<wbr></wbr>Socket<wbr></wbr>Server</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <main class="">
+        
+
+        
+
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="plugins.html" class="internal-link">plugins</a></code><wbr></wbr>.<code><a href="plugins.bindings.html" class="internal-link" title="plugins.bindings">bindings</a></code><wbr></wbr>.<code><a href="plugins.bindings.WebSocketServer.html" class="internal-link" title="plugins.bindings.WebSocketServer">WebSocketServer</a></code><wbr></wbr>.<code><a href="plugins.bindings.WebSocketServer.WebSocketServer.html" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer">WebSocketServer</a></code></code></h1>
+          <div id="show-private">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">WebSocketServer</span>(object):</code></p><p><a href="classIndex.html#plugins.bindings.WebSocketServer.WebSocketServer">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>WebSocket Server implementation.</p></div>
+        </div>
+
+        <div id="split-tables">
+          <table class="children sortable" id="id776">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#addConnection" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.addConnection">add<wbr></wbr>Connection</a></code></td>
+    <td>Add a new connection to the list of connections.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#associateConnectionWithOriginator" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.associateConnectionWithOriginator">associate<wbr></wbr>Connection<wbr></wbr>With<wbr></wbr>Originator</a></code></td>
+    <td>Associate a connection with an originator.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#closeConnectionForOriginator" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.closeConnectionForOriginator">close<wbr></wbr>Connection<wbr></wbr>For<wbr></wbr>Originator</a></code></td>
+    <td>Close a connection for an originator.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#configure" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.configure">configure</a></code></td>
+    <td>Configure the WebSocket server.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#dissociateConnectionFromOriginator" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.dissociateConnectionFromOriginator">dissociate<wbr></wbr>Connection<wbr></wbr>From<wbr></wbr>Originator</a></code></td>
+    <td>Dissociate a connection from an originator.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#handleIncomingConnection" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.handleIncomingConnection">handle<wbr></wbr>Incoming<wbr></wbr>Connection</a></code></td>
+    <td>Handle a new incoming WebSocket connection. This connection stays open until the client closes it, or the server is stopped.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#incrementConnection" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.incrementConnection">increment<wbr></wbr>Connection</a></code></td>
+    <td>Increment the counter for a connection.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#init" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.init">init</a></code></td>
+    <td>Initialization of the WebSocket Server.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#pause" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.pause">pause</a></code></td>
+    <td>Stop handling requests.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#receiveLoop" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.receiveLoop">receive<wbr></wbr>Loop</a></code></td>
+    <td>Receive loop for the WebSocket server. This is the main entry point for handling a received message, whether the connection was initiated by the server or the client.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#removeConnection" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.removeConnection">remove<wbr></wbr>Connection</a></code></td>
+    <td>Remove a connection from the list of connections. Also remove the association between the connection and the originator.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#run" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.run">run</a></code></td>
+    <td>Initialize and run the WebSocket server as a BackgroundWorker/Actor.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#sendWSRequest" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.sendWSRequest">send<wbr></wbr>WSRequest</a></code></td>
+    <td>Send a request to another WebSocket server.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#shutdown" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.shutdown">shutdown</a></code></td>
+    <td>Shutdown the WebSocket server.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#unpause" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.unpause">unpause</a></code></td>
+    <td>Continue handling requests.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#validate" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.validate">validate</a></code></td>
+    <td>Validate the WebSocket server configuration.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#__slots__" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.__slots__">__slots__</a></code></td>
+    <td>Define slots for instance variables.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#requestManager" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.requestManager">request<wbr></wbr>Manager</a></code></td>
+    <td>Injected RequestManager instance.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#securityManager" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.securityManager">security<wbr></wbr>Manager</a></code></td>
+    <td>Injected SecurityManager instance.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#actor" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.actor">actor</a></code></td>
+    <td>The actor for running the synchronous WebSocket server in the background.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#associatedConnections" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.associatedConnections">associated<wbr></wbr>Connections</a></code></td>
+    <td>The list of currently handled WebSocket connections, associated with an originator.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#connectionUsedCounter" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.connectionUsedCounter">connection<wbr></wbr>Used<wbr></wbr>Counter</a></code></td>
+    <td>A counter for each opened WS connection opened by the CSE.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#isPaused" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.isPaused">is<wbr></wbr>Paused</a></code></td>
+    <td>Flag whether the server is currently paused. Requests are not handled when the server is paused.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#operationEvents" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.operationEvents">operation<wbr></wbr>Events</a></code></td>
+    <td>Events for the different operations.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#websocketServer" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.websocketServer">websocket<wbr></wbr>Server</a></code></td>
+    <td>The WebSocket server object.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#wsConnections" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.wsConnections">ws<wbr></wbr>Connections</a></code></td>
+    <td>The list of currently handled WebSocket connections.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_checkIsServerRunning" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer._checkIsServerRunning">_check<wbr></wbr>Is<wbr></wbr>Server<wbr></wbr>Running</a></code></td>
+    <td>Check if the server is running. If not, send an error message to the client.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_configUpdate" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer._configUpdate">_config<wbr></wbr>Update</a></code></td>
+    <td>Callback for the <em>configUpdate</em> event.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_getWSSendingTargetName" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer._getWSSendingTargetName">_get<wbr></wbr>WSSending<wbr></wbr>Target<wbr></wbr>Name</a></code></td>
+    <td>Get the target name for sending a WebSocket request.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_handleAuthentication" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer._handleAuthentication">_handle<wbr></wbr>Authentication</a></code></td>
+    <td>Handle the authentication of a new connection.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_handleDeleteEvent" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer._handleDeleteEvent">_handle<wbr></wbr>Delete<wbr></wbr>Event</a></code></td>
+    <td>Callback and handler for the <em>deleteResource</em> event.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_handleReceivedMessage" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer._handleReceivedMessage">_handle<wbr></wbr>Received<wbr></wbr>Message</a></code></td>
+    <td>Handle a received message. This is the main entry point for handling a received message, whether the message is a request or a response.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_run" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer._run">_run</a></code></td>
+    <td>WebSocket server main loop.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_stop" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer._stop">_stop</a></code></td>
+    <td>Stop the WebSocket server.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="child-list">
+          <div class="basemethod">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.addConnection">
+    
+  </a>
+  <a name="addConnection">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">addConnection</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">websocket: <code>WSConnection</code>, </span><span class="rst-sig-param">cseInitiated: <code>bool</code> = False</span>):</span>
+    
+    <a class="headerLink" href="#addConnection" title="plugins.bindings.WebSocketServer.WebSocketServer.addConnection">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Add a new connection to the list of connections.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">websocket:</span><code>WSConnection</code></td><td class="fieldArgDesc">The WebSocket connection.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">cse<wbr></wbr>Initiated:</span><code>bool</code></td><td class="fieldArgDesc"><span class="undocumented">Undocumented</span></td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.associateConnectionWithOriginator">
+    
+  </a>
+  <a name="associateConnectionWithOriginator">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">associateConnectionWithOriginator</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">websocket: <code>WSConnection</code>, </span><span class="rst-sig-param">originator: <code>str</code></span>):</span>
+    
+    <a class="headerLink" href="#associateConnectionWithOriginator" title="plugins.bindings.WebSocketServer.WebSocketServer.associateConnectionWithOriginator">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Associate a connection with an originator.</p>
+<p>If the originator is already associated with another connection then that connection is closed.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">websocket:</span><code>WSConnection</code></td><td class="fieldArgDesc">The WebSocket connection.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.closeConnectionForOriginator">
+    
+  </a>
+  <a name="closeConnectionForOriginator">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">closeConnectionForOriginator</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">originator: <code>str</code></span>):</span>
+    
+    <a class="headerLink" href="#closeConnectionForOriginator" title="plugins.bindings.WebSocketServer.WebSocketServer.closeConnectionForOriginator">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Close a connection for an originator.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.configure">
+    
+  </a>
+  <a name="configure">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#configure" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.configure">configure</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">configure</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">config: <code><a href="acme.runtime.Configuration.Configuration.html" class="internal-link" title="acme.runtime.Configuration.Configuration">Configuration</a></code></span>):</span>
+    
+    <a class="headerLink" href="#configure" title="plugins.bindings.WebSocketServer.WebSocketServer.configure">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Configure the WebSocket server.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">config:</span><code><a href="acme.runtime.Configuration.Configuration.html" class="internal-link" title="acme.runtime.Configuration.Configuration">Configuration</a></code></td><td class="fieldArgDesc">The configuration object to update with the WebSocket server configuration.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.dissociateConnectionFromOriginator">
+    
+  </a>
+  <a name="dissociateConnectionFromOriginator">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">dissociateConnectionFromOriginator</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">originator: <code>str</code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#dissociateConnectionFromOriginator" title="plugins.bindings.WebSocketServer.WebSocketServer.dissociateConnectionFromOriginator">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Dissociate a connection from an originator.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator to dissociate.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if the originator was associated with a connection, False otherwise.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.handleIncomingConnection">
+    
+  </a>
+  <a name="handleIncomingConnection">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">handleIncomingConnection</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">websocket: <code>ServerConnection</code></span>):</span>
+    
+    <a class="headerLink" href="#handleIncomingConnection" title="plugins.bindings.WebSocketServer.WebSocketServer.handleIncomingConnection">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle a new incoming WebSocket connection. This connection stays open until the client closes it, or the
+server is stopped.</p>
+<div class="rst-admonition rst-note">
+<p class="rst-admonition-title rst-first">Note</p>
+<p class="rst-last">This method is not called for connections initiated by the server.</p>
+</div>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">websocket:</span><code>ServerConnection</code></td><td class="fieldArgDesc">The WebSocket connection.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.incrementConnection">
+    
+  </a>
+  <a name="incrementConnection">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">incrementConnection</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">websocket: <code>WSConnection</code></span>):</span>
+    
+    <a class="headerLink" href="#incrementConnection" title="plugins.bindings.WebSocketServer.WebSocketServer.incrementConnection">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Increment the counter for a connection.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">websocket:</span><code>WSConnection</code></td><td class="fieldArgDesc">The WebSocket connection.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.init">
+    
+  </a>
+  <a name="init">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#init" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.init">init</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">init</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#init" title="plugins.bindings.WebSocketServer.WebSocketServer.init">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Initialization of the WebSocket Server.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.pause">
+    
+  </a>
+  <a name="pause">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#pause" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.pause">pause</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">pause</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#pause" title="plugins.bindings.WebSocketServer.WebSocketServer.pause">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Stop handling requests.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.receiveLoop">
+    
+  </a>
+  <a name="receiveLoop">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">receiveLoop</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">websocket: <code>WSConnection</code>, </span><span class="rst-sig-param">wsOriginator: <code>str</code>, </span><span class="rst-sig-param">ct: <code><a href="acme.etc.Types.ContentSerializationType.html" class="internal-link" title="acme.etc.Types.ContentSerializationType">ContentSerializationType</a></code>, </span><span class="rst-sig-param">authResult: <code><a href="acme.etc.Types.AuthorizationResult.html" class="internal-link" title="acme.etc.Types.AuthorizationResult">AuthorizationResult</a></code></span>):</span>
+    
+    <a class="headerLink" href="#receiveLoop" title="plugins.bindings.WebSocketServer.WebSocketServer.receiveLoop">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Receive loop for the WebSocket server. This is the main entry point for handling a received message,
+whether the connection was initiated by the server or the client.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">websocket:</span><code>WSConnection</code></td><td class="fieldArgDesc">The WebSocket connection.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ws<wbr></wbr>Originator:</span><code>str</code></td><td class="fieldArgDesc">The originator of the connection.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ct:</span><code><a href="acme.etc.Types.ContentSerializationType.html" class="internal-link" title="acme.etc.Types.ContentSerializationType">ContentSerializationType</a></code></td><td class="fieldArgDesc">The content type.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">auth<wbr></wbr>Result:</span><code><a href="acme.etc.Types.AuthorizationResult.html" class="internal-link" title="acme.etc.Types.AuthorizationResult">AuthorizationResult</a></code></td><td class="fieldArgDesc">The result of the request authentication.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.removeConnection">
+    
+  </a>
+  <a name="removeConnection">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">removeConnection</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">websocket: <code>WSConnection</code>, </span><span class="rst-sig-param">originator: <code>str</code></span>):</span>
+    
+    <a class="headerLink" href="#removeConnection" title="plugins.bindings.WebSocketServer.WebSocketServer.removeConnection">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Remove a connection from the list of connections.
+Also remove the association between the connection and the originator.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">websocket:</span><code>WSConnection</code></td><td class="fieldArgDesc">The WebSocket connection.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.run">
+    
+  </a>
+  <a name="run">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="acme.helpers.PluginManager.html#start" class="internal-link" title="acme.helpers.PluginManager.start">start</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">run</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#run" title="plugins.bindings.WebSocketServer.WebSocketServer.run">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Initialize and run the WebSocket server as a BackgroundWorker/Actor.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.sendWSRequest">
+    
+  </a>
+  <a name="sendWSRequest">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">sendWSRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">url: <code>str</code>, </span><span class="rst-sig-param">ignoreResponse: <code>bool</code></span>) -&gt; <code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code>:</span>
+    
+    <a class="headerLink" href="#sendWSRequest" title="plugins.bindings.WebSocketServer.WebSocketServer.sendWSRequest">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Send a request to another WebSocket server.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">The request to send.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">url:</span><code>str</code></td><td class="fieldArgDesc">The URL to send the request to.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ignore<wbr></wbr>Response:</span><code>bool</code></td><td class="fieldArgDesc">Flag whether to ignore the response.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code></td><td class="fieldArgDesc">The result object of the request.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.shutdown">
+    
+  </a>
+  <a name="shutdown">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="acme.helpers.PluginManager.html#stop" class="internal-link" title="acme.helpers.PluginManager.stop">stop</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">shutdown</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#shutdown" title="plugins.bindings.WebSocketServer.WebSocketServer.shutdown">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Shutdown the WebSocket server.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.unpause">
+    
+  </a>
+  <a name="unpause">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#unpause" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.unpause">unpause</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">unpause</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#unpause" title="plugins.bindings.WebSocketServer.WebSocketServer.unpause">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Continue handling requests.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.validate">
+    
+  </a>
+  <a name="validate">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#validate" class="internal-link" title="plugins.bindings.WebSocketServer.WebSocketServer.validate">validate</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">validate</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">config: <code><a href="acme.runtime.Configuration.Configuration.html" class="internal-link" title="acme.runtime.Configuration.Configuration">Configuration</a></code></span>):</span>
+    
+    <a class="headerLink" href="#validate" title="plugins.bindings.WebSocketServer.WebSocketServer.validate">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Validate the WebSocket server configuration.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">config:</span><code><a href="acme.runtime.Configuration.Configuration.html" class="internal-link" title="acme.runtime.Configuration.Configuration">Configuration</a></code></td><td class="fieldArgDesc">The configuration object to validate.</td></tr></table></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.__slots__">
+    
+  </a>
+  <a name="__slots__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__slots__</span>: <code>list[<wbr></wbr>str]</code> =
+    
+    <a class="headerLink" href="#__slots__" title="plugins.bindings.WebSocketServer.WebSocketServer.__slots__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Define slots for instance variables.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.requestManager">
+    
+  </a>
+  <a name="requestManager">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">requestManager</span>: <code><a href="acme.services.RequestManager.RequestManager.html" class="internal-link" title="acme.services.RequestManager.RequestManager">RequestManager</a></code> =
+    
+    <a class="headerLink" href="#requestManager" title="plugins.bindings.WebSocketServer.WebSocketServer.requestManager">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected RequestManager instance.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.securityManager">
+    
+  </a>
+  <a name="securityManager">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">securityManager</span>: <code><a href="acme.services.SecurityManager.SecurityManager.html" class="internal-link" title="acme.services.SecurityManager.SecurityManager">SecurityManager</a></code> =
+    
+    <a class="headerLink" href="#securityManager" title="plugins.bindings.WebSocketServer.WebSocketServer.securityManager">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected SecurityManager instance.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.actor">
+    
+  </a>
+  <a name="actor">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">actor</span>: <code><a href="acme.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acme.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a> | None</code> =
+    
+    <a class="headerLink" href="#actor" title="plugins.bindings.WebSocketServer.WebSocketServer.actor">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The actor for running the synchronous WebSocket server in the background.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.associatedConnections">
+    
+  </a>
+  <a name="associatedConnections">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">associatedConnections</span>: <code>dict[<wbr></wbr>str, <wbr></wbr>uuid.UUID]</code> =
+    
+    <a class="headerLink" href="#associatedConnections" title="plugins.bindings.WebSocketServer.WebSocketServer.associatedConnections">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The list of currently handled WebSocket connections, associated with an originator.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.connectionUsedCounter">
+    
+  </a>
+  <a name="connectionUsedCounter">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">connectionUsedCounter</span>: <code>dict[<wbr></wbr>uuid.UUID, <wbr></wbr><a href="acme.helpers.ThreadSafeCounter.ThreadSafeCounter.html" class="internal-link" title="acme.helpers.ThreadSafeCounter.ThreadSafeCounter">ThreadSafeCounter</a>]</code> =
+    
+    <a class="headerLink" href="#connectionUsedCounter" title="plugins.bindings.WebSocketServer.WebSocketServer.connectionUsedCounter">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>A counter for each opened WS connection opened by the CSE.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.isPaused">
+    
+  </a>
+  <a name="isPaused">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">isPaused</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#isPaused" title="plugins.bindings.WebSocketServer.WebSocketServer.isPaused">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Flag whether the server is currently paused. Requests are not handled when the server is paused.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.operationEvents">
+    
+  </a>
+  <a name="operationEvents">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">operationEvents</span>: <code>dict[<wbr></wbr><a href="acme.etc.Types.Operation.html" class="internal-link" title="acme.etc.Types.Operation">Operation</a>, <wbr></wbr>tuple[<wbr></wbr><a href="acme.helpers.EventManager.Event.html" class="internal-link" title="acme.helpers.EventManager.Event">Event</a>, <wbr></wbr>str]]</code> =
+    
+    <a class="headerLink" href="#operationEvents" title="plugins.bindings.WebSocketServer.WebSocketServer.operationEvents">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Events for the different operations.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.websocketServer">
+    
+  </a>
+  <a name="websocketServer">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">websocketServer</span>: <code>WSServer | None</code> =
+    
+    <a class="headerLink" href="#websocketServer" title="plugins.bindings.WebSocketServer.WebSocketServer.websocketServer">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The WebSocket server object.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer.wsConnections">
+    
+  </a>
+  <a name="wsConnections">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">wsConnections</span>: <code>dict[<wbr></wbr>uuid.UUID, <wbr></wbr>WSConnection]</code> =
+    
+    <a class="headerLink" href="#wsConnections" title="plugins.bindings.WebSocketServer.WebSocketServer.wsConnections">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The list of currently handled WebSocket connections.</p></div>
+    
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer._checkIsServerRunning">
+    
+  </a>
+  <a name="_checkIsServerRunning">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_checkIsServerRunning</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">websocket: <code>WSConnection</code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#_checkIsServerRunning" title="plugins.bindings.WebSocketServer.WebSocketServer._checkIsServerRunning">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check if the server is running. If not, send an error message to the client.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if the server is running, False otherwise.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer._configUpdate">
+    
+  </a>
+  <a name="_configUpdate">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="acme.helpers.EventManager.html#onEvent" class="internal-link" title="acme.helpers.EventManager.onEvent">onEvent</a>(<wbr></wbr>eventManager.configUpdate)<br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_configUpdate</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">eventData: <code><a href="acme.helpers.EventManager.EventData.html" class="internal-link" title="acme.helpers.EventManager.EventData">EventData</a></code></span>):</span>
+    
+    <a class="headerLink" href="#_configUpdate" title="plugins.bindings.WebSocketServer.WebSocketServer._configUpdate">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Callback for the <em>configUpdate</em> event.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">event<wbr></wbr>Data:</span><code><a href="acme.helpers.EventManager.EventData.html" class="internal-link" title="acme.helpers.EventManager.EventData">EventData</a></code></td><td class="fieldArgDesc">The event data containing the name of the updated configuration setting and its new value.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer._getWSSendingTargetName">
+    
+  </a>
+  <a name="_getWSSendingTargetName">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_getWSSendingTargetName</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">target: <code>str</code></span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#_getWSSendingTargetName" title="plugins.bindings.WebSocketServer.WebSocketServer._getWSSendingTargetName">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the target name for sending a WebSocket request.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">target:</span><code>str</code></td><td class="fieldArgDesc">The target to send the request to.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>str</code></td><td class="fieldArgDesc">The target for sending the request.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer._handleAuthentication">
+    
+  </a>
+  <a name="_handleAuthentication">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_handleAuthentication</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">websocket: <code>WSConnection</code></span>) -&gt; <code><a href="acme.etc.Types.AuthorizationResult.html" class="internal-link" title="acme.etc.Types.AuthorizationResult">AuthorizationResult</a></code>:</span>
+    
+    <a class="headerLink" href="#_handleAuthentication" title="plugins.bindings.WebSocketServer.WebSocketServer._handleAuthentication">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle the authentication of a new connection.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">websocket:</span><code>WSConnection</code></td><td class="fieldArgDesc">The WebSocket connection.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.Types.AuthorizationResult.html" class="internal-link" title="acme.etc.Types.AuthorizationResult">AuthorizationResult</a></code></td><td class="fieldArgDesc">Eneumeration value of the result of the authentication.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer._handleDeleteEvent">
+    
+  </a>
+  <a name="_handleDeleteEvent">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="acme.helpers.EventManager.html#onEvent" class="internal-link" title="acme.helpers.EventManager.onEvent">onEvent</a>(<wbr></wbr>eventManager.deleteResource)<br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_handleDeleteEvent</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">eventData: <code><a href="acme.helpers.EventManager.EventData.html" class="internal-link" title="acme.helpers.EventManager.EventData">EventData</a></code></span>):</span>
+    
+    <a class="headerLink" href="#_handleDeleteEvent" title="plugins.bindings.WebSocketServer.WebSocketServer._handleDeleteEvent">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Callback and handler for the <em>deleteResource</em> event.</p>
+<p>In case of an AE deletion, the associated WS connection is dissociated, but left open.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">event<wbr></wbr>Data:</span><code><a href="acme.helpers.EventManager.EventData.html" class="internal-link" title="acme.helpers.EventManager.EventData">EventData</a></code></td><td class="fieldArgDesc">The event data containing the deleted resource.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer._handleReceivedMessage">
+    
+  </a>
+  <a name="_handleReceivedMessage">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_handleReceivedMessage</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">websocket: <code>WSConnection</code>, </span><span class="rst-sig-param">message: <code>str | bytes</code>, </span><span class="rst-sig-param">wsOriginator: <code>str</code>, </span><span class="rst-sig-param">contentType: <code><a href="acme.etc.Types.ContentSerializationType.html" class="internal-link" title="acme.etc.Types.ContentSerializationType">ContentSerializationType</a></code>, </span><span class="rst-sig-param">authResult: <code><a href="acme.etc.Types.AuthorizationResult.html" class="internal-link" title="acme.etc.Types.AuthorizationResult">AuthorizationResult</a></code></span>):</span>
+    
+    <a class="headerLink" href="#_handleReceivedMessage" title="plugins.bindings.WebSocketServer.WebSocketServer._handleReceivedMessage">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle a received message. This is the main entry point for handling a received message, whether the
+message is a request or a response.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">websocket:</span><code>WSConnection</code></td><td class="fieldArgDesc">The WebSocket connection.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">message:</span><code>str | bytes</code></td><td class="fieldArgDesc">The received message.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ws<wbr></wbr>Originator:</span><code>str</code></td><td class="fieldArgDesc">The originator of the connection.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">content<wbr></wbr>Type:</span><code><a href="acme.etc.Types.ContentSerializationType.html" class="internal-link" title="acme.etc.Types.ContentSerializationType">ContentSerializationType</a></code></td><td class="fieldArgDesc">The content type.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">auth<wbr></wbr>Result:</span><code><a href="acme.etc.Types.AuthorizationResult.html" class="internal-link" title="acme.etc.Types.AuthorizationResult">AuthorizationResult</a></code></td><td class="fieldArgDesc">The result of the request authentication.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer._run">
+    
+  </a>
+  <a name="_run">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_run</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#_run" title="plugins.bindings.WebSocketServer.WebSocketServer._run">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>WebSocket server main loop.</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="plugins.bindings.WebSocketServer.WebSocketServer._stop">
+    
+  </a>
+  <a name="_stop">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_stop</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#_stop" title="plugins.bindings.WebSocketServer.WebSocketServer._stop">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Stop the WebSocket server.</p></div>
+  </div>
+</div>
+        </div>
+      
+      </main>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container-fluid">
+      <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      25.10.1 at 2026-05-13 00:16:54.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>acme.plugins.services.TimeManager.TimeManager</title>
+    <meta name="generator" content="pydoctor 25.10.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    <link rel="canonical" href="https://acmecse.net/api/acme.plugins.services.TimeManager.TimeManager.html" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="acme.plugins.services.TimeManager.TimeManager.html" class="internal-link" title="This class"><wbr></wbr>Time<wbr></wbr>Manager</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#addLoSTimeSyncBeacon" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.addLoSTimeSyncBeacon">add<wbr></wbr>Lo<wbr></wbr>STime<wbr></wbr>Sync<wbr></wbr>Beacon</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#addPeriodicTimeSyncBeacon" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.addPeriodicTimeSyncBeacon">add<wbr></wbr>Periodic<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#addTimeSyncBeacon" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.addTimeSyncBeacon">add<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#isLossOfSynchronization" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.isLossOfSynchronization">is<wbr></wbr>Loss<wbr></wbr>Of<wbr></wbr>Synchronization</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#removeLosTimeSyncBeacon" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.removeLosTimeSyncBeacon">remove<wbr></wbr>Los<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#removePeriodicTimeSyncBeacon" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.removePeriodicTimeSyncBeacon">remove<wbr></wbr>Periodic<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#removeTimeSyncBeacon" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.removeTimeSyncBeacon">remove<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#requestReveivedHandler" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.requestReveivedHandler">request<wbr></wbr>Reveived<wbr></wbr>Handler</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#responseReveivedHandler" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.responseReveivedHandler">response<wbr></wbr>Reveived<wbr></wbr>Handler</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#restart" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.restart">restart</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#start" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.start">start</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#stop" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.stop">stop</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#updateTimeSyncBeacon" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.updateTimeSyncBeacon">update<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_getAllPeriodicTimeSyncBeacons" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager._getAllPeriodicTimeSyncBeacons">_get<wbr></wbr>All<wbr></wbr>Periodic<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacons</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_stopPeriodicBeacons" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager._stopPeriodicBeacons">_stop<wbr></wbr>Periodic<wbr></wbr>Beacons</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__slots__" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.__slots__">__slots__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#notification" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.notification">notification</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#storage" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.storage">storage</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#timeManager" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.timeManager">time<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#cseActiveSchedule" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.cseActiveSchedule">cse<wbr></wbr>Active<wbr></wbr>Schedule</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#losTimeSyncBeacons" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.losTimeSyncBeacons">los<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacons</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#periodicTimeSyncBeacons" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.periodicTimeSyncBeacons">periodic<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacons</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="acme.plugins.services.TimeManager.html" class="internal-link" title="The parent of this class"><wbr></wbr>Time<wbr></wbr>Manager</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.plugins.services.TimeManager.TimeManager.html" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager"><wbr></wbr>Time<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <main class="">
+        
+
+        
+
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">acme</a></code><wbr></wbr>.<code><a href="acme.plugins.html" class="internal-link" title="acme.plugins">plugins</a></code><wbr></wbr>.<code><a href="acme.plugins.services.html" class="internal-link" title="acme.plugins.services">services</a></code><wbr></wbr>.<code><a href="acme.plugins.services.TimeManager.html" class="internal-link" title="acme.plugins.services.TimeManager">TimeManager</a></code><wbr></wbr>.<code><a href="acme.plugins.services.TimeManager.TimeManager.html" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager">TimeManager</a></code></code></h1>
+          <div id="show-private">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">TimeManager</span>(object):</code></p><p><a href="classIndex.html#acme.plugins.services.TimeManager.TimeManager">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Managing time related CSE functions.</p></div>
+        </div>
+
+        <div id="split-tables">
+          <table class="children sortable" id="id369">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#addLoSTimeSyncBeacon" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.addLoSTimeSyncBeacon">add<wbr></wbr>Lo<wbr></wbr>STime<wbr></wbr>Sync<wbr></wbr>Beacon</a></code></td>
+    <td>Add a Loss-of-sync timeSyncBeacon resource.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#addPeriodicTimeSyncBeacon" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.addPeriodicTimeSyncBeacon">add<wbr></wbr>Periodic<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</a></code></td>
+    <td>Add a worker for a periodic timeSyncBeacon resource.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#addTimeSyncBeacon" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.addTimeSyncBeacon">add<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</a></code></td>
+    <td>Add a timeSyncBeacon resource.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#isLossOfSynchronization" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.isLossOfSynchronization">is<wbr></wbr>Loss<wbr></wbr>Of<wbr></wbr>Synchronization</a></code></td>
+    <td>Check if a request is a loss-of-synchronization request.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#removeLosTimeSyncBeacon" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.removeLosTimeSyncBeacon">remove<wbr></wbr>Los<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</a></code></td>
+    <td>Remove a Loss-of-sync timeSyncBeacon resource.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#removePeriodicTimeSyncBeacon" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.removePeriodicTimeSyncBeacon">remove<wbr></wbr>Periodic<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</a></code></td>
+    <td>Remove a periodic timeSyncBeacon resource. A running worker is stopped.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#removeTimeSyncBeacon" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.removeTimeSyncBeacon">remove<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</a></code></td>
+    <td>Remove a timeSyncBeacon resource.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#requestReveivedHandler" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.requestReveivedHandler">request<wbr></wbr>Reveived<wbr></wbr>Handler</a></code></td>
+    <td>Handle a received request.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#responseReveivedHandler" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.responseReveivedHandler">response<wbr></wbr>Reveived<wbr></wbr>Handler</a></code></td>
+    <td>Handle a received response.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#restart" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.restart">restart</a></code></td>
+    <td>Restart the time manager services.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#start" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.start">start</a></code></td>
+    <td>Initialize the TimeManager.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#stop" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.stop">stop</a></code></td>
+    <td>Shutdown the TimeManager.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#updateTimeSyncBeacon" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.updateTimeSyncBeacon">update<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</a></code></td>
+    <td>Update a timeSyncBeacon resource.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#__slots__" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.__slots__">__slots__</a></code></td>
+    <td>Define slots for instance variables.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#notification" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.notification">notification</a></code></td>
+    <td>Injected NotificationManager instance.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#storage" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.storage">storage</a></code></td>
+    <td>Injected Storage instance.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#timeManager" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.timeManager">time<wbr></wbr>Manager</a></code></td>
+    <td>Reference to the TimeManager plugin instance.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#cseActiveSchedule" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.cseActiveSchedule">cse<wbr></wbr>Active<wbr></wbr>Schedule</a></code></td>
+    <td>List of active schedules when the CSE is active and will process requests.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#losTimeSyncBeacons" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.losTimeSyncBeacons">los<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacons</a></code></td>
+    <td>Table for Loss-of-sync timeSyncBeacons.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#periodicTimeSyncBeacons" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.periodicTimeSyncBeacons">periodic<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacons</a></code></td>
+    <td>Table for periodic timeSyncBeacons.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_getAllPeriodicTimeSyncBeacons" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager._getAllPeriodicTimeSyncBeacons">_get<wbr></wbr>All<wbr></wbr>Periodic<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacons</a></code></td>
+    <td>Get all periodic timeSyncBeacons from the storage.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_stopPeriodicBeacons" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager._stopPeriodicBeacons">_stop<wbr></wbr>Periodic<wbr></wbr>Beacons</a></code></td>
+    <td>Stop all the running periodic timers.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="child-list">
+          <div class="basemethod">
+  
+  
+  <a name="acme.plugins.services.TimeManager.TimeManager.addLoSTimeSyncBeacon">
+    
+  </a>
+  <a name="addLoSTimeSyncBeacon">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">addLoSTimeSyncBeacon</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">tsb: <code><a href="acme.resources.TSB.TSB.html" class="internal-link" title="acme.resources.TSB.TSB">TSB</a></code></span>):</span>
+    
+    <a class="headerLink" href="#addLoSTimeSyncBeacon" title="acme.plugins.services.TimeManager.TimeManager.addLoSTimeSyncBeacon">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Add a Loss-of-sync timeSyncBeacon resource.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tsb:</span><code><a href="acme.resources.TSB.TSB.html" class="internal-link" title="acme.resources.TSB.TSB">TSB</a></code></td><td class="fieldArgDesc">timeSyncBeacon resource</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.plugins.services.TimeManager.TimeManager.addPeriodicTimeSyncBeacon">
+    
+  </a>
+  <a name="addPeriodicTimeSyncBeacon">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">addPeriodicTimeSyncBeacon</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">tsb: <code><a href="acme.resources.TSB.TSB.html" class="internal-link" title="acme.resources.TSB.TSB">TSB</a></code></span>):</span>
+    
+    <a class="headerLink" href="#addPeriodicTimeSyncBeacon" title="acme.plugins.services.TimeManager.TimeManager.addPeriodicTimeSyncBeacon">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Add a worker for a periodic timeSyncBeacon resource.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tsb:</span><code><a href="acme.resources.TSB.TSB.html" class="internal-link" title="acme.resources.TSB.TSB">TSB</a></code></td><td class="fieldArgDesc">timeSyncBeacon resource</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.plugins.services.TimeManager.TimeManager.addTimeSyncBeacon">
+    
+  </a>
+  <a name="addTimeSyncBeacon">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">addTimeSyncBeacon</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">tsb: <code><a href="acme.resources.TSB.TSB.html" class="internal-link" title="acme.resources.TSB.TSB">TSB</a></code></span>):</span>
+    
+    <a class="headerLink" href="#addTimeSyncBeacon" title="acme.plugins.services.TimeManager.TimeManager.addTimeSyncBeacon">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Add a timeSyncBeacon resource.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tsb:</span><code><a href="acme.resources.TSB.TSB.html" class="internal-link" title="acme.resources.TSB.TSB">TSB</a></code></td><td class="fieldArgDesc">timeSyncBeacon resource</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.plugins.services.TimeManager.TimeManager.isLossOfSynchronization">
+    
+  </a>
+  <a name="isLossOfSynchronization">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">isLossOfSynchronization</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">req: <code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code></span>) -&gt; <code>str | None</code>:</span>
+    
+    <a class="headerLink" href="#isLossOfSynchronization" title="acme.plugins.services.TimeManager.TimeManager.isLossOfSynchronization">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check if a request is a loss-of-synchronization request.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">req:</span><code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">The request.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>str | None</code></td><td class="fieldArgDesc">The duration of the loss-of-synchronization or None.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.plugins.services.TimeManager.TimeManager.removeLosTimeSyncBeacon">
+    
+  </a>
+  <a name="removeLosTimeSyncBeacon">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">removeLosTimeSyncBeacon</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">tsb: <code><a href="acme.resources.TSB.TSB.html" class="internal-link" title="acme.resources.TSB.TSB">TSB</a></code></span>):</span>
+    
+    <a class="headerLink" href="#removeLosTimeSyncBeacon" title="acme.plugins.services.TimeManager.TimeManager.removeLosTimeSyncBeacon">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Remove a Loss-of-sync timeSyncBeacon resource.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tsb:</span><code><a href="acme.resources.TSB.TSB.html" class="internal-link" title="acme.resources.TSB.TSB">TSB</a></code></td><td class="fieldArgDesc">The timeSyncBeacon resource.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.plugins.services.TimeManager.TimeManager.removePeriodicTimeSyncBeacon">
+    
+  </a>
+  <a name="removePeriodicTimeSyncBeacon">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">removePeriodicTimeSyncBeacon</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">tsb: <code><a href="acme.resources.TSB.TSB.html" class="internal-link" title="acme.resources.TSB.TSB">TSB</a></code></span>):</span>
+    
+    <a class="headerLink" href="#removePeriodicTimeSyncBeacon" title="acme.plugins.services.TimeManager.TimeManager.removePeriodicTimeSyncBeacon">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Remove a periodic timeSyncBeacon resource. A running worker is stopped.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tsb:</span><code><a href="acme.resources.TSB.TSB.html" class="internal-link" title="acme.resources.TSB.TSB">TSB</a></code></td><td class="fieldArgDesc">The timeSyncBeacon resource.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.plugins.services.TimeManager.TimeManager.removeTimeSyncBeacon">
+    
+  </a>
+  <a name="removeTimeSyncBeacon">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">removeTimeSyncBeacon</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">tsb: <code><a href="acme.resources.TSB.TSB.html" class="internal-link" title="acme.resources.TSB.TSB">TSB</a></code></span>):</span>
+    
+    <a class="headerLink" href="#removeTimeSyncBeacon" title="acme.plugins.services.TimeManager.TimeManager.removeTimeSyncBeacon">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Remove a timeSyncBeacon resource.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tsb:</span><code><a href="acme.resources.TSB.TSB.html" class="internal-link" title="acme.resources.TSB.TSB">TSB</a></code></td><td class="fieldArgDesc">The timeSyncBeacon resource</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.plugins.services.TimeManager.TimeManager.requestReveivedHandler">
+    
+  </a>
+  <a name="requestReveivedHandler">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@onEvent(<wbr></wbr>eventManager.requestReceived)<br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">requestReveivedHandler</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">eventData: <code>EventData</code></span>):</span>
+    
+    <a class="headerLink" href="#requestReveivedHandler" title="acme.plugins.services.TimeManager.TimeManager.requestReveivedHandler">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle a received request.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">event<wbr></wbr>Data:</span><code>EventData</code></td><td class="fieldArgDesc">The event data containing the request.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.plugins.services.TimeManager.TimeManager.responseReveivedHandler">
+    
+  </a>
+  <a name="responseReveivedHandler">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@onEvent(<wbr></wbr>eventManager.responseReceived)<br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">responseReveivedHandler</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">eventData: <code>EventData</code></span>):</span>
+    
+    <a class="headerLink" href="#responseReveivedHandler" title="acme.plugins.services.TimeManager.TimeManager.responseReveivedHandler">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle a received response.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">event<wbr></wbr>Data:</span><code>EventData</code></td><td class="fieldArgDesc">The event data containing the response.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.plugins.services.TimeManager.TimeManager.restart">
+    
+  </a>
+  <a name="restart">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#restart" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.restart">restart</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">restart</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#restart" title="acme.plugins.services.TimeManager.TimeManager.restart">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Restart the time manager services.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.plugins.services.TimeManager.TimeManager.start">
+    
+  </a>
+  <a name="start">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#start" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.start">start</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">start</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#start" title="acme.plugins.services.TimeManager.TimeManager.start">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Initialize the TimeManager.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.plugins.services.TimeManager.TimeManager.stop">
+    
+  </a>
+  <a name="stop">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#stop" class="internal-link" title="acme.plugins.services.TimeManager.TimeManager.stop">stop</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">stop</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#stop" title="acme.plugins.services.TimeManager.TimeManager.stop">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Shutdown the TimeManager.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">Boolean, always True.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.plugins.services.TimeManager.TimeManager.updateTimeSyncBeacon">
+    
+  </a>
+  <a name="updateTimeSyncBeacon">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">updateTimeSyncBeacon</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">tsb: <code><a href="acme.resources.TSB.TSB.html" class="internal-link" title="acme.resources.TSB.TSB">TSB</a></code>, </span><span class="rst-sig-param">originalBcnc: <code><a href="acme.etc.Types.BeaconCriteria.html" class="internal-link" title="acme.etc.Types.BeaconCriteria">BeaconCriteria</a></code></span>):</span>
+    
+    <a class="headerLink" href="#updateTimeSyncBeacon" title="acme.plugins.services.TimeManager.TimeManager.updateTimeSyncBeacon">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Update a timeSyncBeacon resource.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tsb:</span><code><a href="acme.resources.TSB.TSB.html" class="internal-link" title="acme.resources.TSB.TSB">TSB</a></code></td><td class="fieldArgDesc">The timeSyncBeacon resource</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">original<wbr></wbr>Bcnc:</span><code><a href="acme.etc.Types.BeaconCriteria.html" class="internal-link" title="acme.etc.Types.BeaconCriteria">BeaconCriteria</a></code></td><td class="fieldArgDesc">The original beacon criteria</td></tr></table></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.plugins.services.TimeManager.TimeManager.__slots__">
+    
+  </a>
+  <a name="__slots__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__slots__</span>: <code>tuple[<wbr></wbr>str, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code> =
+    
+    <a class="headerLink" href="#__slots__" title="acme.plugins.services.TimeManager.TimeManager.__slots__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Define slots for instance variables.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.plugins.services.TimeManager.TimeManager.notification">
+    
+  </a>
+  <a name="notification">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">notification</span>: <code><a href="acme.services.NotificationManager.NotificationManager.html" class="internal-link" title="acme.services.NotificationManager.NotificationManager">NotificationManager</a></code> =
+    
+    <a class="headerLink" href="#notification" title="acme.plugins.services.TimeManager.TimeManager.notification">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected NotificationManager instance.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.plugins.services.TimeManager.TimeManager.storage">
+    
+  </a>
+  <a name="storage">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">storage</span>: <code><a href="acme.runtime.Storage.Storage.html" class="internal-link" title="acme.runtime.Storage.Storage">Storage</a></code> =
+    
+    <a class="headerLink" href="#storage" title="acme.plugins.services.TimeManager.TimeManager.storage">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected Storage instance.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acme.plugins.services.TimeManager.TimeManager.timeManager">
+    
+  </a>
+  <a name="timeManager">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">timeManager</span>: <code>Any | None</code> =
+    
+    <a class="headerLink" href="#timeManager" title="acme.plugins.services.TimeManager.TimeManager.timeManager">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Reference to the TimeManager plugin instance.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acme.plugins.services.TimeManager.TimeManager.cseActiveSchedule">
+    
+  </a>
+  <a name="cseActiveSchedule">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">cseActiveSchedule</span>: <code>list[<wbr></wbr>str]</code> =
+    
+    <a class="headerLink" href="#cseActiveSchedule" title="acme.plugins.services.TimeManager.TimeManager.cseActiveSchedule">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>List of active schedules when the CSE is active and will process requests.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acme.plugins.services.TimeManager.TimeManager.losTimeSyncBeacons">
+    
+  </a>
+  <a name="losTimeSyncBeacons">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">losTimeSyncBeacons</span>: <code>dict[<wbr></wbr>str, <wbr></wbr>tuple[<wbr></wbr>float, <wbr></wbr>str]]</code> =
+    
+    <a class="headerLink" href="#losTimeSyncBeacons" title="acme.plugins.services.TimeManager.TimeManager.losTimeSyncBeacons">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Table for Loss-of-sync timeSyncBeacons.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acme.plugins.services.TimeManager.TimeManager.periodicTimeSyncBeacons">
+    
+  </a>
+  <a name="periodicTimeSyncBeacons">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">periodicTimeSyncBeacons</span>: <code>dict[<wbr></wbr>str, <wbr></wbr><a href="acme.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acme.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a>]</code> =
+    
+    <a class="headerLink" href="#periodicTimeSyncBeacons" title="acme.plugins.services.TimeManager.TimeManager.periodicTimeSyncBeacons">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Table for periodic timeSyncBeacons.</p></div>
+    
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acme.plugins.services.TimeManager.TimeManager._getAllPeriodicTimeSyncBeacons">
+    
+  </a>
+  <a name="_getAllPeriodicTimeSyncBeacons">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_getAllPeriodicTimeSyncBeacons</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>list[<wbr></wbr><a href="acme.resources.TSB.TSB.html" class="internal-link" title="acme.resources.TSB.TSB">TSB</a>]</code>:</span>
+    
+    <a class="headerLink" href="#_getAllPeriodicTimeSyncBeacons" title="acme.plugins.services.TimeManager.TimeManager._getAllPeriodicTimeSyncBeacons">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get all periodic timeSyncBeacons from the storage.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acme.resources.TSB.TSB.html" class="internal-link" title="acme.resources.TSB.TSB">TSB</a>]</code></td><td class="fieldArgDesc">List of periodic timeSyncBeacons</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acme.plugins.services.TimeManager.TimeManager._stopPeriodicBeacons">
+    
+  </a>
+  <a name="_stopPeriodicBeacons">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_stopPeriodicBeacons</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#_stopPeriodicBeacons" title="acme.plugins.services.TimeManager.TimeManager._stopPeriodicBeacons">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Stop all the running periodic timers.</p></div>
+  </div>
+</div>
+        </div>
+      
+      </main>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container-fluid">
+      <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      25.10.1 at 2026-05-13 12:48:06.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>
