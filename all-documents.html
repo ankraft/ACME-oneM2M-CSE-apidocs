@@ -2667,7 +2667,7 @@
             <div class="type">Attribute</div>
             <div class="kind">Class Variable</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary">The event payload.</div>
+            <div class="summary">The event payload. This may be any data that should be passed to the event handlers. It can be a single value or a tuple of values.</div>
           </li><li id="acme.helpers.EventManager.EventData.__getitem__">
             
             <div class="fullName">acme<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Event<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Event<wbr></wbr>Data<wbr></wbr>.__getitem__</div>
@@ -2699,7 +2699,7 @@
             <div class="type">Class</div>
             <div class="kind">Class</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary">Event subscription.</div>
+            <div class="summary">This class represents an event. It is actially a list of callable functions, which are the event handlers for this event. Calling an instance of this class will call all the registered event handlers for this event.</div>
           </li><li id="acme.helpers.EventManager.Event.__slots__">
             
             <div class="fullName">acme<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Event<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Event<wbr></wbr>.__slots__</div>
@@ -2755,7 +2755,7 @@
             <div class="type">Class</div>
             <div class="kind">Class</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary">Event topics are added as new methods to an <em>EventManager</em> instance. Events can be raised by calling those new methods.</div>
+            <div class="summary">Base class for an event manager. This class manages events and event handlers. It is implememted as a <code><a href="acme.helpers.Singleton.Singleton.html" class="internal-link" title="acme.helpers.Singleton.Singleton">Singleton</a></code>, so there is only one instance of the event manager in the whole application.</div>
           </li><li id="acme.helpers.EventManager.EventManager.addEvent">
             
             <div class="fullName">acme<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Event<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Event<wbr></wbr>Manager<wbr></wbr>.add<wbr></wbr>Event</div>
@@ -8764,10 +8764,10 @@
             <div class="kind">Method</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Shutdown the PluginManager service and plugins.</div>
-          </li><li id="acme.runtime.PluginSupport.pluginManager">
+          </li><li id="acme.runtime.PluginManager.pluginManager">
             
-            <div class="fullName">acme<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Support<wbr></wbr>.plugin<wbr></wbr>Manager</div>
-            <div class="url">acme.runtime.PluginSupport.html#pluginManager</div>
+            <div class="fullName">acme<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.plugin<wbr></wbr>Manager</div>
+            <div class="url">acme.runtime.PluginManager.html#pluginManager</div>
             <div class="type">Attribute</div>
             <div class="kind">Variable</div>
             <div class="privacy">PUBLIC</div>
@@ -33428,14 +33428,6 @@
             <div class="kind">Variable</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Runtime instance of the <code><a href="acme.services.NotificationManager.NotificationManager.html" class="internal-link" title="acme.services.NotificationManager.NotificationManager">NotificationManager</a></code>.</div>
-          </li><li id="acme.runtime.CSE.pluginManager">
-            
-            <div class="fullName">acme<wbr></wbr>.runtime<wbr></wbr>.CSE<wbr></wbr>.plugin<wbr></wbr>Manager</div>
-            <div class="url">acme.runtime.CSE.html#pluginManager</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Runtime instance of the <code><a href="acme.runtime.PluginManager.html" class="internal-link" title="acme.runtime.PluginManager">PluginManager</a></code>.</div>
           </li><li id="acme.runtime.CSE.registration">
             
             <div class="fullName">acme<wbr></wbr>.runtime<wbr></wbr>.CSE<wbr></wbr>.registration</div>
@@ -34387,7 +34379,7 @@
             <div class="type">Attribute</div>
             <div class="kind">Variable</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
+            <div class="summary">The total number of steps in the onboarding process. This is used to calculate the progress bar.</div>
           </li><li id="acme.runtime.Onboarding.currentStep">
             
             <div class="fullName">acme<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Onboarding<wbr></wbr>.current<wbr></wbr>Step</div>
@@ -34395,7 +34387,7 @@
             <div class="type">Attribute</div>
             <div class="kind">Variable</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
+            <div class="summary">The current step in the onboarding process. This is used to update the progress bar.</div>
           </li><li id="acme.runtime.Onboarding.progressBar">
             
             <div class="fullName">acme<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Onboarding<wbr></wbr>.progress<wbr></wbr>Bar</div>
@@ -34403,7 +34395,7 @@
             <div class="type">Attribute</div>
             <div class="kind">Variable</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
+            <div class="summary">The progress bar to use for showing the progress of the onboarding process.</div>
           </li><li id="acme.runtime.Onboarding.configParser">
             
             <div class="fullName">acme<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Onboarding<wbr></wbr>.config<wbr></wbr>Parser</div>
@@ -34411,7 +34403,15 @@
             <div class="type">Attribute</div>
             <div class="kind">Variable</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
+            <div class="summary">The configuration parser to use for creating the configuration file.</div>
+          </li><li id="acme.runtime.Onboarding.cseEnvironment">
+            
+            <div class="fullName">acme<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Onboarding<wbr></wbr>.cse<wbr></wbr>Environment</div>
+            <div class="url">acme.runtime.Onboarding.html#cseEnvironment</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">The selected CSE environment. This is used to determine which features to enable and which default values to use for the configuration file.</div>
           </li><li id="acme.runtime.Onboarding._print">
             
             <div class="fullName">acme<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Onboarding<wbr></wbr>._print</div>
@@ -34420,6 +34420,14 @@
             <div class="kind">Function</div>
             <div class="privacy">PRIVATE</div>
             <div class="summary">Print a message to the console.</div>
+          </li><li id="acme.runtime.Onboarding._incrementStep">
+            
+            <div class="fullName">acme<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Onboarding<wbr></wbr>._increment<wbr></wbr>Step</div>
+            <div class="url">acme.runtime.Onboarding.html#_incrementStep</div>
+            <div class="type">Function</div>
+            <div class="kind">Function</div>
+            <div class="privacy">PRIVATE</div>
+            <div class="summary">Increment the current step and update the progress bar.</div>
           </li><li id="acme.runtime.Onboarding._printRule">
             
             <div class="fullName">acme<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Onboarding<wbr></wbr>._print<wbr></wbr>Rule</div>
@@ -34427,7 +34435,7 @@
             <div class="type">Function</div>
             <div class="kind">Function</div>
             <div class="privacy">PRIVATE</div>
-            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
+            <div class="summary">Print a header with the given title and extras, and update the progress bar.</div>
           </li><li id="acme.runtime.Onboarding._printHeader">
             
             <div class="fullName">acme<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Onboarding<wbr></wbr>._print<wbr></wbr>Header</div>
@@ -34443,7 +34451,15 @@
             <div class="type">Function</div>
             <div class="kind">Function</div>
             <div class="privacy">PRIVATE</div>
-            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
+            <div class="summary">Set an option in the configuration if it is not already set, and return the value to use for the option. If the value is None, return None.</div>
+          </li><li id="acme.runtime.Onboarding._optimizeConfig">
+            
+            <div class="fullName">acme<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Onboarding<wbr></wbr>._optimize<wbr></wbr>Config</div>
+            <div class="url">acme.runtime.Onboarding.html#_optimizeConfig</div>
+            <div class="type">Function</div>
+            <div class="kind">Function</div>
+            <div class="privacy">PRIVATE</div>
+            <div class="summary">Remove default values from the configuration to optimize it. This is done to reduce the size of the configuration file and to make it easier to read.</div>
           </li><li id="acme.runtime.Onboarding._interpolationVariable">
             
             <div class="fullName">acme<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Onboarding<wbr></wbr>._interpolation<wbr></wbr>Variable</div>

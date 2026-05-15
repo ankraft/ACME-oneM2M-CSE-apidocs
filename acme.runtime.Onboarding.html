@@ -148,6 +148,26 @@
         
 
         
+            <div class="itemName"><code><a href="#_incrementStep" class="internal-link" title="acme.runtime.Onboarding._incrementStep">_increment<wbr></wbr>Step</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_optimizeConfig" class="internal-link" title="acme.runtime.Onboarding._optimizeConfig">_optimize<wbr></wbr>Config</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
             <div class="itemName"><code><a href="#_print" class="internal-link" title="acme.runtime.Onboarding._print">_print</a></code>
             </div>
         
@@ -208,6 +228,16 @@
 
         
             <div class="itemName"><code><a href="#console" class="internal-link" title="acme.runtime.Onboarding.console">console</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#cseEnvironment" class="internal-link" title="acme.runtime.Onboarding.cseEnvironment">cse<wbr></wbr>Environment</a></code>
             </div>
         
 
@@ -500,7 +530,7 @@
     
     <td>Variable</td>
     <td><code><a href="#configParser" class="internal-link" title="acme.runtime.Onboarding.configParser">config<wbr></wbr>Parser</a></code></td>
-    <td><span class="rst-undocumented">Undocumented</span></td>
+    <td>The configuration parser to use for creating the configuration file.</td>
   </tr><tr class="variable">
     
     <td>Variable</td>
@@ -509,23 +539,38 @@
   </tr><tr class="variable">
     
     <td>Variable</td>
+    <td><code><a href="#cseEnvironment" class="internal-link" title="acme.runtime.Onboarding.cseEnvironment">cse<wbr></wbr>Environment</a></code></td>
+    <td>The selected CSE environment. This is used to determine which features to enable and which default values to use for the configuration file.</td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
     <td><code><a href="#currentStep" class="internal-link" title="acme.runtime.Onboarding.currentStep">current<wbr></wbr>Step</a></code></td>
-    <td><span class="rst-undocumented">Undocumented</span></td>
+    <td>The current step in the onboarding process. This is used to update the progress bar.</td>
   </tr><tr class="variable">
     
     <td>Variable</td>
     <td><code><a href="#progressBar" class="internal-link" title="acme.runtime.Onboarding.progressBar">progress<wbr></wbr>Bar</a></code></td>
-    <td><span class="rst-undocumented">Undocumented</span></td>
+    <td>The progress bar to use for showing the progress of the onboarding process.</td>
   </tr><tr class="variable">
     
     <td>Variable</td>
     <td><code><a href="#totalSteps" class="internal-link" title="acme.runtime.Onboarding.totalSteps">total<wbr></wbr>Steps</a></code></td>
-    <td><span class="rst-undocumented">Undocumented</span></td>
+    <td>The total number of steps in the onboarding process. This is used to calculate the progress bar.</td>
   </tr><tr class="function private">
     
     <td>Function</td>
     <td><code><a href="#_containsVariable" class="internal-link" title="acme.runtime.Onboarding._containsVariable">_contains<wbr></wbr>Variable</a></code></td>
     <td>Check if the value contains an interpolation variable.</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_incrementStep" class="internal-link" title="acme.runtime.Onboarding._incrementStep">_increment<wbr></wbr>Step</a></code></td>
+    <td>Increment the current step and update the progress bar.</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_optimizeConfig" class="internal-link" title="acme.runtime.Onboarding._optimizeConfig">_optimize<wbr></wbr>Config</a></code></td>
+    <td>Remove default values from the configuration to optimize it. This is done to reduce the size of the configuration file and to make it easier to read.</td>
   </tr><tr class="function private">
     
     <td>Function</td>
@@ -540,12 +585,12 @@
     
     <td>Function</td>
     <td><code><a href="#_printRule" class="internal-link" title="acme.runtime.Onboarding._printRule">_print<wbr></wbr>Rule</a></code></td>
-    <td><span class="rst-undocumented">Undocumented</span></td>
+    <td>Print a header with the given title and extras, and update the progress bar.</td>
   </tr><tr class="function private">
     
     <td>Function</td>
     <td><code><a href="#_setOption" class="internal-link" title="acme.runtime.Onboarding._setOption">_set<wbr></wbr>Option</a></code></td>
-    <td><span class="rst-undocumented">Undocumented</span></td>
+    <td>Set an option in the configuration if it is not already set, and return the value to use for the option. If the value is None, return None.</td>
   </tr><tr class="variable private">
     
     <td>Variable</td>
@@ -615,7 +660,7 @@ the configuration will be stored in the ZooKeeper service instead of a local fil
   </div>
   <div class="functionBody">
     
-    <div><p class="undocumented">Undocumented</p></div>
+    <div><p>The configuration parser to use for creating the configuration file.</p></div>
     
   </div>
 </div><div class="basevariable">
@@ -645,6 +690,30 @@ the configuration will be stored in the ZooKeeper service instead of a local fil
 </div><div class="basevariable">
   
   
+  <a name="acme.runtime.Onboarding.cseEnvironment">
+    
+  </a>
+  <a name="cseEnvironment">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">cseEnvironment</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#cseEnvironment" title="acme.runtime.Onboarding.cseEnvironment">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The selected CSE environment. This is used to determine which features to enable and which default values to use for the configuration file.</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
   <a name="acme.runtime.Onboarding.currentStep">
     
   </a>
@@ -663,7 +732,7 @@ the configuration will be stored in the ZooKeeper service instead of a local fil
   </div>
   <div class="functionBody">
     
-    <div><p class="undocumented">Undocumented</p></div>
+    <div><p>The current step in the onboarding process. This is used to update the progress bar.</p></div>
     
   </div>
 </div><div class="basevariable">
@@ -687,7 +756,7 @@ the configuration will be stored in the ZooKeeper service instead of a local fil
   </div>
   <div class="functionBody">
     
-    <div><p class="undocumented">Undocumented</p></div>
+    <div><p>The progress bar to use for showing the progress of the onboarding process.</p></div>
     
   </div>
 </div><div class="basevariable">
@@ -711,7 +780,7 @@ the configuration will be stored in the ZooKeeper service instead of a local fil
   </div>
   <div class="functionBody">
     
-    <div><p class="undocumented">Undocumented</p></div>
+    <div><p>The total number of steps in the onboarding process. This is used to calculate the progress bar.</p></div>
     
   </div>
 </div><div class="basefunction private">
@@ -737,6 +806,55 @@ the configuration will be stored in the ZooKeeper service instead of a local fil
   <div class="docstring functionBody">
     
     <div><p>Check if the value contains an interpolation variable.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">value:</span><code>str</code></td><td class="fieldArgDesc">The value to check.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if the value contains an interpolation variable, False otherwise.</td></tr></table></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="acme.runtime.Onboarding._incrementStep">
+    
+  </a>
+  <a name="_incrementStep">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_incrementStep</span><span class="function-signature">(<span class="rst-sig-param">count: <code>int</code> = 1</span>):</span>
+    
+    <a class="headerLink" href="#_incrementStep" title="acme.runtime.Onboarding._incrementStep">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Increment the current step and update the progress bar.</p></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="acme.runtime.Onboarding._optimizeConfig">
+    
+  </a>
+  <a name="_optimizeConfig">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_optimizeConfig</span><span class="function-signature">(<span class="rst-sig-param">config: <code><a href="acme.helpers.ACMEConfiguration.ACMEConfiguration.html" class="internal-link" title="acme.helpers.ACMEConfiguration.ACMEConfiguration">ACMEConfiguration.ACMEConfiguration</a></code></span>):</span>
+    
+    <a class="headerLink" href="#_optimizeConfig" title="acme.runtime.Onboarding._optimizeConfig">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Remove default values from the configuration to optimize it.
+This is done to reduce the size of the configuration file and to make it easier to read.</p></div>
   </div>
 </div><div class="basefunction private">
   
@@ -808,7 +926,7 @@ the configuration will be stored in the ZooKeeper service instead of a local fil
   </div>
   <div class="docstring functionBody">
     
-    <div><p class="undocumented">Undocumented</p></div>
+    <div><p>Print a header with the given title and extras, and update the progress bar.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">title:</span><code>str</code></td><td class="fieldArgDesc">The title to print.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">extras:</span><code>str | None</code></td><td class="fieldArgDesc">Additional information to print.</td></tr></table></div>
   </div>
 </div><div class="basefunction private">
   
@@ -832,7 +950,8 @@ the configuration will be stored in the ZooKeeper service instead of a local fil
   </div>
   <div class="docstring functionBody">
     
-    <div><p class="undocumented">Undocumented</p></div>
+    <div><p>Set an option in the configuration if it is not already set,
+and return the value to use for the option. If the value is None, return None.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">config:</span><code><a href="acme.helpers.ACMEConfiguration.ACMEConfiguration.html" class="internal-link" title="acme.helpers.ACMEConfiguration.ACMEConfiguration">ACMEConfiguration.ACMEConfiguration</a></code></td><td class="fieldArgDesc">The configuration to set the option in.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">section:</span><code>str</code></td><td class="fieldArgDesc">The section of the option.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">option:</span><code>str</code></td><td class="fieldArgDesc">The name of the option.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">value:</span><code>str</code></td><td class="fieldArgDesc">The value to set for the option.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">to<wbr></wbr>Lower:</span><code>bool | None</code></td><td class="fieldArgDesc">If True, convert the value to lower case before setting it.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>str</code></td><td class="fieldArgDesc"><span class="undocumented">Undocumented</span></td></tr></table></div>
   </div>
 </div><div class="basevariable private">
   
@@ -895,7 +1014,7 @@ the configuration will be stored in the ZooKeeper service instead of a local fil
     <div class="container-fluid">
       <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
     generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-      25.10.1 at 2026-05-13 12:48:06.
+      25.10.1 at 2026-05-16 00:12:02.
     </div>
     
     <script src="ajax.js" type="text/javascript"></script>
