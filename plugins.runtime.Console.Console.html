@@ -7,7 +7,7 @@
   <head>
     
     <title>plugins.runtime.Console.Console</title>
-    <meta name="generator" content="pydoctor 25.10.1"> 
+    <meta name="generator" content="pydoctor 25.4.0"> 
         
     </meta>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="apidocs.css" />
     <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
     <link rel="stylesheet" type="text/css" href="extra.css" />
-    <link rel="canonical" href="https://acmecse.net/api/plugins.runtime.Console.Console.html" />
+    
 </head>
 
   <body>
@@ -32,7 +32,7 @@
       
       <div class="navlinks">
         <span class="navbar-brand">
-          <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+          <a href="https://github.com/ankraft/ACME-oneM2M-CSE" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
         </span>
 
         <a href="moduleIndex.html">
@@ -540,16 +540,6 @@
         
 
         
-            <div class="itemName"><code><a href="#__slots__" class="internal-link" title="plugins.runtime.Console.Console.__slots__">__slots__</a></code>
-            </div>
-        
-
-    </li><li class="">
-        
-        
-        
-
-        
             <div class="itemName"><code><a href="#cseSetConsole" class="internal-link" title="plugins.runtime.Console.Console.cseSetConsole">cse<wbr></wbr>Set<wbr></wbr>Console</a></code>
             </div>
         
@@ -714,6 +704,16 @@
             </div>
         
 
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__slots__" class="internal-link" title="plugins.runtime.Console.Console.__slots__">__slots__</a></code>
+            </div>
+        
+
     </li>
 </ul> 
 
@@ -788,7 +788,7 @@
     
     <div class="container-fluid">
 
-      <main class="">
+      <div id="main" class="">
         
 
         
@@ -796,7 +796,7 @@
 
         <div class="page-header">
           <h1 class="class"><code><code><a href="plugins.html" class="internal-link">plugins</a></code><wbr></wbr>.<code><a href="plugins.runtime.html" class="internal-link" title="plugins.runtime">runtime</a></code><wbr></wbr>.<code><a href="plugins.runtime.Console.html" class="internal-link" title="plugins.runtime.Console">Console</a></code><wbr></wbr>.<code><a href="plugins.runtime.Console.Console.html" class="internal-link" title="plugins.runtime.Console.Console">Console</a></code></code></h1>
-          <div id="show-private">
+          <div id="showPrivate">
             <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
           </div>
         </div>
@@ -806,16 +806,16 @@
         </div>
 
         <div class="extrasDocstring">
-          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">Console</span>(<a href="acme.runtime.ConsoleBase.ConsoleBase.html" class="internal-link" title="acme.runtime.ConsoleBase.ConsoleBase">ConsoleBase</a>):</code></p><p><a href="classIndex.html#plugins.runtime.Console.Console">View In Hierarchy</a></p>
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">Console</span>(<a href="acme.runtime.ConsoleBase.ConsoleBase.html" class="internal-link" title="acme.runtime.ConsoleBase.ConsoleBase">ConsoleBase</a>):</code></p>
+          <p><a href="classIndex.html#plugins.runtime.Console.Console">View In Hierarchy</a></p>
         </div>
 
         <div class="moduleDocstring">
-          <div><p>Console Manager class. This class provides the main console functionality for the CSE.
-It is either this plugin or the minimal console plugin that is used to run the main loop of the CSE.</p></div>
+          <div><p>Console Manager class.</p></div>
         </div>
 
-        <div id="split-tables">
-          <table class="children sortable" id="id793">
+        <div id="splitTables">
+          <table class="children sortable" id="id716">
   
   
   <tr class="method">
@@ -887,7 +887,7 @@ It is either this plugin or the minimal console plugin that is used to run the m
     
     <td>Method</td>
     <td><code><a href="#getConfigurationRich" class="internal-link" title="plugins.runtime.Console.Console.getConfigurationRich">get<wbr></wbr>Configuration<wbr></wbr>Rich</a></code></td>
-    <td>Generate a rich table for the configuration settings.</td>
+    <td><span class="rst-undocumented">Undocumented</span></td>
   </tr><tr class="method">
     
     <td>Method</td>
@@ -981,11 +981,6 @@ It is either this plugin or the minimal console plugin that is used to run the m
   </tr><tr class="classvariable">
     
     <td>Class Variable</td>
-    <td><code><a href="#__slots__" class="internal-link" title="plugins.runtime.Console.Console.__slots__">__slots__</a></code></td>
-    <td>The slots for the Console to optimize memory usage.</td>
-  </tr><tr class="classvariable">
-    
-    <td>Class Variable</td>
     <td><code><a href="#cseSetConsole" class="internal-link" title="plugins.runtime.Console.Console.cseSetConsole">cse<wbr></wbr>Set<wbr></wbr>Console</a></code></td>
     <td>Injected function to set the console instance in the CSE.</td>
   </tr><tr class="classvariable">
@@ -1017,57 +1012,57 @@ It is either this plugin or the minimal console plugin that is used to run the m
     
     <td>Instance Variable</td>
     <td><code><a href="#interruptContinous" class="internal-link" title="plugins.runtime.Console.Console.interruptContinous">interrupt<wbr></wbr>Continous</a></code></td>
-    <td>Indication whether any continuous display function</td>
+    <td>Indication whether any continuous display function should terminate.</td>
   </tr><tr class="instancevariable">
     
     <td>Instance Variable</td>
     <td><code><a href="#previosInspectChildrenRi" class="internal-link" title="plugins.runtime.Console.Console.previosInspectChildrenRi">previos<wbr></wbr>Inspect<wbr></wbr>Children<wbr></wbr>Ri</a></code></td>
-    <td>Resource ID of the previous resource + child resource inspection. This is used as the default value for the next resource + child resource inspection.</td>
+    <td>Resource ID of the previous resource + child resource inspection.</td>
   </tr><tr class="instancevariable">
     
     <td>Instance Variable</td>
     <td><code><a href="#previousArgument" class="internal-link" title="plugins.runtime.Console.Console.previousArgument">previous<wbr></wbr>Argument</a></code></td>
-    <td>Previous script arguments. This is used as the default value for the next script to run.</td>
+    <td>Previous script arguments.</td>
   </tr><tr class="instancevariable">
     
     <td>Instance Variable</td>
     <td><code><a href="#previousExportRi" class="internal-link" title="plugins.runtime.Console.Console.previousExportRi">previous<wbr></wbr>Export<wbr></wbr>Ri</a></code></td>
-    <td>Resource ID of the previous export. This is used as the default value for the next export.</td>
+    <td>Resource ID of the previous export.</td>
   </tr><tr class="instancevariable">
     
     <td>Instance Variable</td>
     <td><code><a href="#previousGraphRi" class="internal-link" title="plugins.runtime.Console.Console.previousGraphRi">previous<wbr></wbr>Graph<wbr></wbr>Ri</a></code></td>
-    <td>Resource ID of the previous graph display. This is used as the default value for the next graph display.</td>
+    <td>Resource ID of the previous graph display.</td>
   </tr><tr class="instancevariable">
     
     <td>Instance Variable</td>
     <td><code><a href="#previousInspectRi" class="internal-link" title="plugins.runtime.Console.Console.previousInspectRi">previous<wbr></wbr>Inspect<wbr></wbr>Ri</a></code></td>
-    <td>Resource ID of the previous resource inspection. This is used as the default value for the next resource inspection.</td>
+    <td>Resource ID of the previous resource inspection.</td>
   </tr><tr class="instancevariable">
     
     <td>Instance Variable</td>
     <td><code><a href="#previousInstanceExportRi" class="internal-link" title="plugins.runtime.Console.Console.previousInstanceExportRi">previous<wbr></wbr>Instance<wbr></wbr>Export<wbr></wbr>Ri</a></code></td>
-    <td>Resource ID of the previous instance export. This is used as the default value for the next instance export.</td>
+    <td>Resource ID of the previous instance export.</td>
   </tr><tr class="instancevariable">
     
     <td>Instance Variable</td>
     <td><code><a href="#previousRequestRi" class="internal-link" title="plugins.runtime.Console.Console.previousRequestRi">previous<wbr></wbr>Request<wbr></wbr>Ri</a></code></td>
-    <td>Resource ID of the previous request display. This is used as the default value for the next request display.</td>
+    <td>Resource ID of the previous request display.</td>
   </tr><tr class="instancevariable">
     
     <td>Instance Variable</td>
     <td><code><a href="#previousScript" class="internal-link" title="plugins.runtime.Console.Console.previousScript">previous<wbr></wbr>Script</a></code></td>
-    <td>Name of the previous script run. This is used as the default value for the next script to run.</td>
+    <td>Name of the previous script run.</td>
   </tr><tr class="instancevariable">
     
     <td>Instance Variable</td>
     <td><code><a href="#previousTreeRi" class="internal-link" title="plugins.runtime.Console.Console.previousTreeRi">previous<wbr></wbr>Tree<wbr></wbr>Ri</a></code></td>
-    <td>Resource ID of the previous sub-tree display. This is used as the default value for the next sub-tree display.</td>
+    <td>Resource ID of the previous sub-tree display.</td>
   </tr><tr class="instancevariable">
     
     <td>Instance Variable</td>
     <td><code><a href="#treeMode" class="internal-link" title="plugins.runtime.Console.Console.treeMode">tree<wbr></wbr>Mode</a></code></td>
-    <td>Current tree mode for the resource tree display. This is used to determine how the resource tree is displayed.</td>
+    <td><span class="rst-undocumented">Undocumented</span></td>
   </tr><tr class="method private">
     
     <td>Method</td>
@@ -1083,13 +1078,18 @@ It is either this plugin or the minimal console plugin that is used to run the m
     <td>Method</td>
     <td><code><a href="#_plotGraph" class="internal-link" title="plugins.runtime.Console.Console._plotGraph">_plot<wbr></wbr>Graph</a></code></td>
     <td>Plot a single graph from the child-resources of a container-like resource.</td>
+  </tr><tr class="classvariable private">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#__slots__" class="internal-link" title="plugins.runtime.Console.Console.__slots__">__slots__</a></code></td>
+    <td>The slots for the Console to optimize memory usage.</td>
   </tr>
 </table>
           
             <p class="inheritedFrom">
               Inherited from <code><a href="acme.runtime.ConsoleBase.ConsoleBase.html" class="internal-link" title="acme.runtime.ConsoleBase.ConsoleBase">ConsoleBase</a></code>:
             </p>
-            <table class="children sortable" id="id794">
+            <table class="children sortable" id="id717">
   
   
   <tr class="basemethod">
@@ -1129,7 +1129,7 @@ It is either this plugin or the minimal console plugin that is used to run the m
             
         </div>
 
-        <div id="child-list">
+        <div id="childList">
           <div class="basemethod">
   
   
@@ -1472,7 +1472,7 @@ The result is a shell script that can be used to re-build a previous resource tr
   </div>
   <div class="docstring functionBody">
     
-    <div><p>Generate a rich table for the configuration settings.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">style:</span><code>Style | None</code></td><td class="fieldArgDesc">Optional style for the table.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>Table</code></td><td class="fieldArgDesc">A rich Table object representing the configuration settings.</td></tr></table></div>
+    <div><p class="undocumented">Undocumented</p></div>
   </div>
 </div><div class="basemethod">
   
@@ -1914,30 +1914,6 @@ The result is a shell script that can be used to re-build a previous resource tr
 </div><div class="baseclassvariable">
   
   
-  <a name="plugins.runtime.Console.Console.__slots__">
-    
-  </a>
-  <a name="__slots__">
-    
-  </a>
-  <div class="functionHeader">
-    
-    <span class="py-defname">__slots__</span>: <code>tuple[<wbr></wbr>str, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code> =
-    
-    <a class="headerLink" href="#__slots__" title="plugins.runtime.Console.Console.__slots__">
-      
-      
-      ¶
-    </a>
-  </div>
-  <div class="functionBody">
-    
-    <div><p>The slots for the Console to optimize memory usage.</p></div>
-    
-  </div>
-</div><div class="baseclassvariable">
-  
-  
   <a name="plugins.runtime.Console.Console.cseSetConsole">
     
   </a>
@@ -2100,7 +2076,7 @@ The result is a shell script that can be used to re-build a previous resource tr
   </div>
   <div class="functionBody">
     
-    <div><p>Indication whether any continuous display function</p></div>
+    <div><p>Indication whether any continuous display function should terminate.</p></div>
     
   </div>
 </div><div class="baseinstancevariable">
@@ -2124,7 +2100,7 @@ The result is a shell script that can be used to re-build a previous resource tr
   </div>
   <div class="functionBody">
     
-    <div><p>Resource ID of the previous resource + child resource inspection. This is used as the default value for the next resource + child resource inspection.</p></div>
+    <div><p>Resource ID of the previous resource + child resource inspection.</p></div>
     
   </div>
 </div><div class="baseinstancevariable">
@@ -2148,7 +2124,7 @@ The result is a shell script that can be used to re-build a previous resource tr
   </div>
   <div class="functionBody">
     
-    <div><p>Previous script arguments. This is used as the default value for the next script to run.</p></div>
+    <div><p>Previous script arguments.</p></div>
     
   </div>
 </div><div class="baseinstancevariable">
@@ -2172,7 +2148,7 @@ The result is a shell script that can be used to re-build a previous resource tr
   </div>
   <div class="functionBody">
     
-    <div><p>Resource ID of the previous export. This is used as the default value for the next export.</p></div>
+    <div><p>Resource ID of the previous export.</p></div>
     
   </div>
 </div><div class="baseinstancevariable">
@@ -2196,7 +2172,7 @@ The result is a shell script that can be used to re-build a previous resource tr
   </div>
   <div class="functionBody">
     
-    <div><p>Resource ID of the previous graph display. This is used as the default value for the next graph display.</p></div>
+    <div><p>Resource ID of the previous graph display.</p></div>
     
   </div>
 </div><div class="baseinstancevariable">
@@ -2220,7 +2196,7 @@ The result is a shell script that can be used to re-build a previous resource tr
   </div>
   <div class="functionBody">
     
-    <div><p>Resource ID of the previous resource inspection. This is used as the default value for the next resource inspection.</p></div>
+    <div><p>Resource ID of the previous resource inspection.</p></div>
     
   </div>
 </div><div class="baseinstancevariable">
@@ -2244,7 +2220,7 @@ The result is a shell script that can be used to re-build a previous resource tr
   </div>
   <div class="functionBody">
     
-    <div><p>Resource ID of the previous instance export. This is used as the default value for the next instance export.</p></div>
+    <div><p>Resource ID of the previous instance export.</p></div>
     
   </div>
 </div><div class="baseinstancevariable">
@@ -2268,7 +2244,7 @@ The result is a shell script that can be used to re-build a previous resource tr
   </div>
   <div class="functionBody">
     
-    <div><p>Resource ID of the previous request display. This is used as the default value for the next request display.</p></div>
+    <div><p>Resource ID of the previous request display.</p></div>
     
   </div>
 </div><div class="baseinstancevariable">
@@ -2292,7 +2268,7 @@ The result is a shell script that can be used to re-build a previous resource tr
   </div>
   <div class="functionBody">
     
-    <div><p>Name of the previous script run. This is used as the default value for the next script to run.</p></div>
+    <div><p>Name of the previous script run.</p></div>
     
   </div>
 </div><div class="baseinstancevariable">
@@ -2316,7 +2292,7 @@ The result is a shell script that can be used to re-build a previous resource tr
   </div>
   <div class="functionBody">
     
-    <div><p>Resource ID of the previous sub-tree display. This is used as the default value for the next sub-tree display.</p></div>
+    <div><p>Resource ID of the previous sub-tree display.</p></div>
     
   </div>
 </div><div class="baseinstancevariable">
@@ -2340,7 +2316,7 @@ The result is a shell script that can be used to re-build a previous resource tr
   </div>
   <div class="functionBody">
     
-    <div><p>Current tree mode for the resource tree display. This is used to determine how the resource tree is displayed.</p></div>
+    <div><p class="undocumented">Undocumented</p></div>
     
   </div>
 </div><div class="basemethod private">
@@ -2415,10 +2391,34 @@ The result is a shell script that can be used to re-build a previous resource tr
     
     <div><p>Plot a single graph from the child-resources of a container-like resource.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The parent resource for the data instance resources.</td></tr></table></div>
   </div>
+</div><div class="baseclassvariable private">
+  
+  
+  <a name="plugins.runtime.Console.Console.__slots__">
+    
+  </a>
+  <a name="__slots__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__slots__</span>: <code>tuple[<wbr></wbr>str, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code> =
+    
+    <a class="headerLink" href="#__slots__" title="plugins.runtime.Console.Console.__slots__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The slots for the Console to optimize memory usage.</p></div>
+    
+  </div>
 </div>
         </div>
       
-      </main>
+      </div>
     </div>
 
     <footer class="navbar navbar-default">
@@ -2426,9 +2426,9 @@ The result is a shell script that can be used to re-build a previous resource tr
     
     
     <div class="container-fluid">
-      <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/ankraft/ACME-oneM2M-CSE" class="projecthome">ACME oneM2M CSE</a>,
     generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-      25.10.1 at 2026-05-13 00:16:54.
+      25.4.0 at 2026-05-11 15:25:42.
     </div>
     
     <script src="ajax.js" type="text/javascript"></script>

@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>acmecse.runtime.Logging.ACMERichLogHandler</title>
+    <meta name="generator" content="pydoctor 25.4.0"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    <link rel="canonical" href="https://api.acmecse.net/acmecse.runtime.Logging.ACMERichLogHandler.html" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="acmecse.runtime.Logging.ACMERichLogHandler.html" class="internal-link" title="This class"><wbr></wbr>ACMERich<wbr></wbr>Log<wbr></wbr>Handler</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="acmecse.runtime.Logging.ACMERichLogHandler.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#emit" class="internal-link" title="acmecse.runtime.Logging.ACMERichLogHandler.emit">emit</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__slots__" class="internal-link" title="acmecse.runtime.Logging.ACMERichLogHandler.__slots__">__slots__</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_levels" class="internal-link" title="acmecse.runtime.Logging.ACMERichLogHandler._levels">_levels</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_fromtimestamp" class="internal-link" title="acmecse.runtime.Logging.ACMERichLogHandler._fromtimestamp">_fromtimestamp</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="acmecse.runtime.Logging.html" class="internal-link" title="The parent of this class"><wbr></wbr>Logging</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.runtime.Logging.ACMERichLogHandler.html" class="internal-link" title="acmecse.runtime.Logging.ACMERichLogHandler"><wbr></wbr>ACMERich<wbr></wbr>Log<wbr></wbr>Handler</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.runtime.Logging.ACMERingBufferLogHandler.html" class="internal-link" title="acmecse.runtime.Logging.ACMERingBufferLogHandler"><wbr></wbr>ACMERing<wbr></wbr>Buffer<wbr></wbr>Log<wbr></wbr>Handler</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.runtime.Logging.ACMESimpleLogFormatter.html" class="internal-link" title="acmecse.runtime.Logging.ACMESimpleLogFormatter"><wbr></wbr>ACMESimple<wbr></wbr>Log<wbr></wbr>Formatter</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.runtime.Logging.LogFilter.html" class="internal-link" title="acmecse.runtime.Logging.LogFilter"><wbr></wbr>Log<wbr></wbr>Filter</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.runtime.Logging.Logging.html" class="internal-link" title="acmecse.runtime.Logging.Logging"><wbr></wbr>Logging</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.runtime.Logging.html#fontDark" class="internal-link" title="acmecse.runtime.Logging.fontDark">font<wbr></wbr>Dark</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.runtime.Logging.html#fontLight" class="internal-link" title="acmecse.runtime.Logging.fontLight">font<wbr></wbr>Light</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.runtime.Logging.html#levelName" class="internal-link" title="acmecse.runtime.Logging.levelName">level<wbr></wbr>Name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.runtime.Logging.html#tableRowColorDark" class="internal-link" title="acmecse.runtime.Logging.tableRowColorDark">table<wbr></wbr>Row<wbr></wbr>Color<wbr></wbr>Dark</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.runtime.Logging.html#tableRowColorLight" class="internal-link" title="acmecse.runtime.Logging.tableRowColorLight">table<wbr></wbr>Row<wbr></wbr>Color<wbr></wbr>Light</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.runtime.Logging.html#terminalColorDark" class="internal-link" title="acmecse.runtime.Logging.terminalColorDark">terminal<wbr></wbr>Color<wbr></wbr>Dark</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.runtime.Logging.html#terminalColorErrorDark" class="internal-link" title="acmecse.runtime.Logging.terminalColorErrorDark">terminal<wbr></wbr>Color<wbr></wbr>Error<wbr></wbr>Dark</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.runtime.Logging.html#terminalColorErrorLight" class="internal-link" title="acmecse.runtime.Logging.terminalColorErrorLight">terminal<wbr></wbr>Color<wbr></wbr>Error<wbr></wbr>Light</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.runtime.Logging.html#terminalColorLight" class="internal-link" title="acmecse.runtime.Logging.terminalColorLight">terminal<wbr></wbr>Color<wbr></wbr>Light</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">acmecse</a></code><wbr></wbr>.<code><a href="acmecse.runtime.html" class="internal-link" title="acmecse.runtime">runtime</a></code><wbr></wbr>.<code><a href="acmecse.runtime.Logging.html" class="internal-link" title="acmecse.runtime.Logging">Logging</a></code><wbr></wbr>.<code><a href="acmecse.runtime.Logging.ACMERichLogHandler.html" class="internal-link" title="acmecse.runtime.Logging.ACMERichLogHandler">ACMERichLogHandler</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">ACMERichLogHandler</span>(RichHandler):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="acmecse.runtime.Logging.ACMERichLogHandler.__init__">ACMERichLogHandler(level)</a></code></p>
+          <p><a href="classIndex.html#acmecse.runtime.Logging.ACMERichLogHandler">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Custom Rich log handler to support the log formatting for the console output.</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id634">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="acmecse.runtime.Logging.ACMERichLogHandler.__init__">__init__</a></code></td>
+    <td>Initialize the ACMERichLogHandler with the given log level. This also adds custom styles for the console output.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#emit" class="internal-link" title="acmecse.runtime.Logging.ACMERichLogHandler.emit">emit</a></code></td>
+    <td>Invoked by logging.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#__slots__" class="internal-link" title="acmecse.runtime.Logging.ACMERichLogHandler.__slots__">__slots__</a></code></td>
+    <td>Slots for the ACMERichLogHandler</td>
+  </tr><tr class="classvariable private">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#_levels" class="internal-link" title="acmecse.runtime.Logging.ACMERichLogHandler._levels">_levels</a></code></td>
+    <td>Custom log level styles for the console output.</td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_fromtimestamp" class="internal-link" title="acmecse.runtime.Logging.ACMERichLogHandler._fromtimestamp">_fromtimestamp</a></code></td>
+    <td>Function to convert a timestamp to a datetime object. This is set depending on the setting of UTC time.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="acmecse.runtime.Logging.ACMERichLogHandler.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">__init__</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">level: <code>int</code> = logging.NOTSET</span>):</span>
+    
+    <a class="headerLink" href="#__init__" title="acmecse.runtime.Logging.ACMERichLogHandler.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Initialize the ACMERichLogHandler with the given log level. This also adds custom styles for the console output.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.runtime.Logging.ACMERichLogHandler.emit">
+    
+  </a>
+  <a name="emit">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">emit</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">record: <code>LogRecord</code></span>):</span>
+    
+    <a class="headerLink" href="#emit" title="acmecse.runtime.Logging.ACMERichLogHandler.emit">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Invoked by logging.</p></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.runtime.Logging.ACMERichLogHandler.__slots__">
+    
+  </a>
+  <a name="__slots__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__slots__</span>: <code>tuple[<wbr></wbr>str, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code> =
+    
+    <a class="headerLink" href="#__slots__" title="acmecse.runtime.Logging.ACMERichLogHandler.__slots__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Slots for the ACMERichLogHandler</p></div>
+    
+  </div>
+</div><div class="baseclassvariable private">
+  
+  
+  <a name="acmecse.runtime.Logging.ACMERichLogHandler._levels">
+    
+  </a>
+  <a name="_levels">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_levels</span> =
+    
+    <a class="headerLink" href="#_levels" title="acmecse.runtime.Logging.ACMERichLogHandler._levels">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Custom log level styles for the console output.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="acmecse.runtime.Logging.ACMERichLogHandler._fromtimestamp">
+    
+  </a>
+  <a name="_fromtimestamp">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_fromtimestamp</span>: <code>Callable</code> =
+    
+    <a class="headerLink" href="#_fromtimestamp" title="acmecse.runtime.Logging.ACMERichLogHandler._fromtimestamp">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Function to convert a timestamp to a datetime object. This is set depending on the setting of UTC time.</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container-fluid">
+      <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      25.4.0 at 2026-05-25 21:18:11.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

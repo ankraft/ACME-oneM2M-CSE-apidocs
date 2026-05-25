@@ -7,7 +7,7 @@
   <head>
     
     <title>plugins.runtime.Statistics.Statistics</title>
-    <meta name="generator" content="pydoctor 25.10.1"> 
+    <meta name="generator" content="pydoctor 25.4.0"> 
         
     </meta>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="apidocs.css" />
     <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
     <link rel="stylesheet" type="text/css" href="extra.css" />
-    <link rel="canonical" href="https://acmecse.net/api/plugins.runtime.Statistics.Statistics.html" />
+    
 </head>
 
   <body>
@@ -32,7 +32,7 @@
       
       <div class="navlinks">
         <span class="navbar-brand">
-          <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+          <a href="https://github.com/ankraft/ACME-oneM2M-CSE" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
         </span>
 
         <a href="moduleIndex.html">
@@ -267,16 +267,6 @@
         
 
         
-            <div class="itemName"><code><a href="#__slots__" class="internal-link" title="plugins.runtime.Statistics.Statistics.__slots__">__slots__</a></code>
-            </div>
-        
-
-    </li><li class="">
-        
-        
-        
-
-        
             <div class="itemName"><code><a href="#storage" class="internal-link" title="plugins.runtime.Statistics.Statistics.storage">storage</a></code>
             </div>
         
@@ -298,6 +288,16 @@
 
         
             <div class="itemName"><code><a href="#stats" class="internal-link" title="plugins.runtime.Statistics.Statistics.stats">stats</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__slots__" class="internal-link" title="plugins.runtime.Statistics.Statistics.__slots__">__slots__</a></code>
             </div>
         
 
@@ -875,7 +875,7 @@
     
     <div class="container-fluid">
 
-      <main class="">
+      <div id="main" class="">
         
 
         
@@ -883,7 +883,7 @@
 
         <div class="page-header">
           <h1 class="class"><code><code><a href="plugins.html" class="internal-link">plugins</a></code><wbr></wbr>.<code><a href="plugins.runtime.html" class="internal-link" title="plugins.runtime">runtime</a></code><wbr></wbr>.<code><a href="plugins.runtime.Statistics.html" class="internal-link" title="plugins.runtime.Statistics">Statistics</a></code><wbr></wbr>.<code><a href="plugins.runtime.Statistics.Statistics.html" class="internal-link" title="plugins.runtime.Statistics.Statistics">Statistics</a></code></code></h1>
-          <div id="show-private">
+          <div id="showPrivate">
             <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
           </div>
         </div>
@@ -893,15 +893,16 @@
         </div>
 
         <div class="extrasDocstring">
-          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">Statistics</span>(object):</code></p><p><a href="classIndex.html#plugins.runtime.Statistics.Statistics">View In Hierarchy</a></p>
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">Statistics</span>(object):</code></p>
+          <p><a href="classIndex.html#plugins.runtime.Statistics.Statistics">View In Hierarchy</a></p>
         </div>
 
         <div class="moduleDocstring">
           <div><p>Statistics class. Handles all internal statistics.</p></div>
         </div>
 
-        <div id="split-tables">
-          <table class="children sortable" id="id799">
+        <div id="splitTables">
+          <table class="children sortable" id="id722">
   
   
   <tr class="method">
@@ -913,7 +914,7 @@
     
     <td>Method</td>
     <td><code><a href="#initStatistics" class="internal-link" title="plugins.runtime.Statistics.Statistics.initStatistics">init<wbr></wbr>Statistics</a></code></td>
-    <td>Initialize the statistics plugin.</td>
+    <td><span class="rst-undocumented">Undocumented</span></td>
   </tr><tr class="method">
     
     <td>Method</td>
@@ -938,7 +939,7 @@
     
     <td>Method</td>
     <td><code><a href="#start" class="internal-link" title="plugins.runtime.Statistics.Statistics.start">start</a></code></td>
-    <td>Start the statistics plugin. This includes subscribing to events and starting the background worker for writing statistics to the database.</td>
+    <td><span class="rst-undocumented">Undocumented</span></td>
   </tr><tr class="method">
     
     <td>Method</td>
@@ -967,28 +968,28 @@
   </tr><tr class="classvariable">
     
     <td>Class Variable</td>
-    <td><code><a href="#__slots__" class="internal-link" title="plugins.runtime.Statistics.Statistics.__slots__">__slots__</a></code></td>
-    <td>Slots of class attributes.</td>
-  </tr><tr class="classvariable">
-    
-    <td>Class Variable</td>
     <td><code><a href="#storage" class="internal-link" title="plugins.runtime.Statistics.Statistics.storage">storage</a></code></td>
     <td>Injected Storage instance.</td>
   </tr><tr class="instancevariable">
     
     <td>Instance Variable</td>
     <td><code><a href="#statLock" class="internal-link" title="plugins.runtime.Statistics.Statistics.statLock">stat<wbr></wbr>Lock</a></code></td>
-    <td>Lock for statistic handling.</td>
+    <td>Internal lock for statistic handling.</td>
   </tr><tr class="instancevariable">
     
     <td>Instance Variable</td>
     <td><code><a href="#stats" class="internal-link" title="plugins.runtime.Statistics.Statistics.stats">stats</a></code></td>
-    <td>Statistics records.</td>
+    <td>Statistics records</td>
   </tr><tr class="method private">
     
     <td>Method</td>
     <td><code><a href="#_handleStatsEvent" class="internal-link" title="plugins.runtime.Statistics.Statistics._handleStatsEvent">_handle<wbr></wbr>Stats<wbr></wbr>Event</a></code></td>
     <td>Generic handling of statist events.</td>
+  </tr><tr class="classvariable private">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#__slots__" class="internal-link" title="plugins.runtime.Statistics.Statistics.__slots__">__slots__</a></code></td>
+    <td>Slots of class attributes.</td>
   </tr>
 </table>
           
@@ -996,7 +997,7 @@
             
         </div>
 
-        <div id="child-list">
+        <div id="childList">
           <div class="basemethod">
   
   
@@ -1043,7 +1044,7 @@
   </div>
   <div class="docstring functionBody">
     
-    <div><p>Initialize the statistics plugin.</p></div>
+    <div><p class="undocumented">Undocumented</p></div>
   </div>
 </div><div class="basemethod">
   
@@ -1163,8 +1164,7 @@
   </div>
   <div class="docstring functionBody">
     
-    <div><p>Start the statistics plugin.
-This includes subscribing to events and starting the background worker for writing statistics to the database.</p></div>
+    <div><p class="undocumented">Undocumented</p></div>
   </div>
 </div><div class="basemethod">
   
@@ -1291,30 +1291,6 @@ This includes subscribing to events and starting the background worker for writi
 </div><div class="baseclassvariable">
   
   
-  <a name="plugins.runtime.Statistics.Statistics.__slots__">
-    
-  </a>
-  <a name="__slots__">
-    
-  </a>
-  <div class="functionHeader">
-    
-    <span class="py-defname">__slots__</span>: <code>tuple[<wbr></wbr>str, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code> =
-    
-    <a class="headerLink" href="#__slots__" title="plugins.runtime.Statistics.Statistics.__slots__">
-      
-      
-      ¶
-    </a>
-  </div>
-  <div class="functionBody">
-    
-    <div><p>Slots of class attributes.</p></div>
-    
-  </div>
-</div><div class="baseclassvariable">
-  
-  
   <a name="plugins.runtime.Statistics.Statistics.storage">
     
   </a>
@@ -1357,7 +1333,7 @@ This includes subscribing to events and starting the background worker for writi
   </div>
   <div class="functionBody">
     
-    <div><p>Lock for statistic handling.</p></div>
+    <div><p>Internal lock for statistic handling.</p></div>
     
   </div>
 </div><div class="baseinstancevariable">
@@ -1381,7 +1357,7 @@ This includes subscribing to events and starting the background worker for writi
   </div>
   <div class="functionBody">
     
-    <div><p>Statistics records.</p></div>
+    <div><p>Statistics records</p></div>
     
   </div>
 </div><div class="basemethod private">
@@ -1408,10 +1384,34 @@ This includes subscribing to events and starting the background worker for writi
     
     <div><p>Generic handling of statist events.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">event<wbr></wbr>Type:</span><code>str</code></td><td class="fieldArgDesc">The event short name as a string. The event name is used to identify the statistic to update.</td></tr></table></div>
   </div>
+</div><div class="baseclassvariable private">
+  
+  
+  <a name="plugins.runtime.Statistics.Statistics.__slots__">
+    
+  </a>
+  <a name="__slots__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__slots__</span>: <code>tuple[<wbr></wbr>str, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code> =
+    
+    <a class="headerLink" href="#__slots__" title="plugins.runtime.Statistics.Statistics.__slots__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Slots of class attributes.</p></div>
+    
+  </div>
 </div>
         </div>
       
-      </main>
+      </div>
     </div>
 
     <footer class="navbar navbar-default">
@@ -1419,9 +1419,9 @@ This includes subscribing to events and starting the background worker for writi
     
     
     <div class="container-fluid">
-      <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/ankraft/ACME-oneM2M-CSE" class="projecthome">ACME oneM2M CSE</a>,
     generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-      25.10.1 at 2026-05-13 00:16:54.
+      25.4.0 at 2026-05-11 15:25:42.
     </div>
     
     <script src="ajax.js" type="text/javascript"></script>

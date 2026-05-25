@@ -1,0 +1,1407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>acmecse.helpers.BackgroundWorker.BackgroundWorker</title>
+    <meta name="generator" content="pydoctor 25.4.0"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    <link rel="canonical" href="https://api.acmecse.net/acmecse.helpers.BackgroundWorker.BackgroundWorker.html" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="This class"><wbr></wbr>Background<wbr></wbr>Worker</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__repr__" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.__repr__">__repr__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#pause" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.pause">pause</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#restart" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.restart">restart</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#start" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.start">start</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#stop" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.stop">stop</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#unpause" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.unpause">unpause</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#workNow" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.workNow">work<wbr></wbr>Now</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_postCall" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker._postCall">_post<wbr></wbr>Call</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_work" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker._work">_work</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__slots__" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.__slots__">__slots__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#args" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.args">args</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#callback" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.callback">callback</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#data" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.data">data</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dispose" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.dispose">dispose</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#executing" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.executing">executing</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#finished" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.finished">finished</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#id" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.id">id</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#ignoreException" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.ignoreException">ignore<wbr></wbr>Exception</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#interval" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.interval">interval</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#maxCount" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.maxCount">max<wbr></wbr>Count</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#name" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.name">name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#nextRunTime" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.nextRunTime">next<wbr></wbr>Run<wbr></wbr>Time</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#numberOfRuns" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.numberOfRuns">number<wbr></wbr>Of<wbr></wbr>Runs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#running" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.running">running</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#runOnTime" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.runOnTime">run<wbr></wbr>On<wbr></wbr>Time</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#runPastEvents" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.runPastEvents">run<wbr></wbr>Past<wbr></wbr>Events</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#startWithDelay" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.startWithDelay">start<wbr></wbr>With<wbr></wbr>Delay</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="acmecse.helpers.BackgroundWorker.html" class="internal-link" title="The parent of this class"><wbr></wbr>Background<wbr></wbr>Worker</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker"><wbr></wbr>Background<wbr></wbr>Worker</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorkerPool.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorkerPool"><wbr></wbr>Background<wbr></wbr>Worker<wbr></wbr>Pool</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.BackgroundWorker.Job.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.Job"><wbr></wbr>Job</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.BackgroundWorker.WorkerEntry.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.WorkerEntry"><wbr></wbr>Worker<wbr></wbr>Entry</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.BackgroundWorker.html#_utcTime" class="internal-link" title="acmecse.helpers.BackgroundWorker._utcTime">_utc<wbr></wbr>Time</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">acmecse</a></code><wbr></wbr>.<code><a href="acmecse.helpers.html" class="internal-link" title="acmecse.helpers">helpers</a></code><wbr></wbr>.<code><a href="acmecse.helpers.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker">BackgroundWorker</a></code><wbr></wbr>.<code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">BackgroundWorker</span>(object):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.__init__">BackgroundWorker(interval, callback, name, startWithDelay, ...)</a></code></p>
+          <p><a href="classIndex.html#acmecse.helpers.BackgroundWorker.BackgroundWorker">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>This class provides the functionality for background worker or a single actor instance.</p>
+<p>Background workers are executed in a separate thread.</p>
+<p>They are executed periodically according to the interval. The interval is the time between
+the end of the previous execution and the start of the next execution. The interval is usually
+not the time betweenthe start of two consecutive executions, but this could be achieved by setting the
+<em>runOnTime</em> parameter to <em>True</em>. This will compensate for the processing time of the
+worker callback.</p>
+<p>Background workers can be stopped and started again. They can also be paused and resumed.</p>
+</div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id207">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.__init__">__init__</a></code></td>
+    <td>Initialize a background worker.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__repr__" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.__repr__">__repr__</a></code></td>
+    <td>Return a string representation of the worker.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#pause" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.pause">pause</a></code></td>
+    <td>Pause the execution of a a worker.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#restart" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.restart">restart</a></code></td>
+    <td>Restart the worker. Optionally use new interval, and re-use the previous arguments passed with the <code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html#start" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.start">start()</a></code> method.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#start" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.start">start</a></code></td>
+    <td>Start the background worker in a thread.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#stop" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.stop">stop</a></code></td>
+    <td>Stop the background worker.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#unpause" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.unpause">unpause</a></code></td>
+    <td>Continue the running of a worker.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#workNow" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.workNow">work<wbr></wbr>Now</a></code></td>
+    <td>Execute the worker immediately and outside the normal schedule.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#__slots__" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.__slots__">__slots__</a></code></td>
+    <td>Slots for the class.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#args" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.args">args</a></code></td>
+    <td>Arguments for the callback.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#callback" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.callback">callback</a></code></td>
+    <td>Callback function to run as a worker.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#data" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.data">data</a></code></td>
+    <td>Any data structure that is stored in the worker and accessible by the <em>data</em> attribute, and which is passed as the first argument in the <em>_data</em> argument of the <em>workerCallback</em> if not <em>None</em>.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#dispose" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.dispose">dispose</a></code></td>
+    <td>If True then dispose the worker after finish.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#executing" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.executing">executing</a></code></td>
+    <td>True if the worker is currently executing.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#finished" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.finished">finished</a></code></td>
+    <td>Callback that is executed after the worker finished.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#id" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.id">id</a></code></td>
+    <td>Unique ID of the worker.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#ignoreException" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.ignoreException">ignore<wbr></wbr>Exception</a></code></td>
+    <td>Restart the actor in case an exception is encountered.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#interval" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.interval">interval</a></code></td>
+    <td>Interval in seconds to run the worker callback.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#maxCount" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.maxCount">max<wbr></wbr>Count</a></code></td>
+    <td>Maximum number runs.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#name" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.name">name</a></code></td>
+    <td>Name of the worker.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#nextRunTime" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.nextRunTime">next<wbr></wbr>Run<wbr></wbr>Time</a></code></td>
+    <td>Timestamp of the next execution.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#numberOfRuns" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.numberOfRuns">number<wbr></wbr>Of<wbr></wbr>Runs</a></code></td>
+    <td>Number of runs.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#running" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.running">running</a></code></td>
+    <td>True if the worker is running.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#runOnTime" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.runOnTime">run<wbr></wbr>On<wbr></wbr>Time</a></code></td>
+    <td>If True then the worker is always run <em>at</em> the interval, otherwise the interval starts <em>after</em> the worker execution.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#runPastEvents" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.runPastEvents">run<wbr></wbr>Past<wbr></wbr>Events</a></code></td>
+    <td>If True then missed worker runs in the past are executed, otherwise they are dismissed.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#startWithDelay" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.startWithDelay">start<wbr></wbr>With<wbr></wbr>Delay</a></code></td>
+    <td>If True then start the worker after a <code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html#interval" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.interval">interval</a></code> delay.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_postCall" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker._postCall">_post<wbr></wbr>Call</a></code></td>
+    <td>Internal cleanup after execution finished or a worker has been stopped.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_work" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker._work">_work</a></code></td>
+    <td>Wrapper around the actual worker function. It deals with terminating, process time compensation, etc.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">__init__</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">interval: <code>float</code>, </span><span class="rst-sig-param">callback: <code>Callable</code>, </span><span class="rst-sig-param">name: <code>str | None</code> = None, </span><span class="rst-sig-param">startWithDelay: <code>bool | None</code> = False, </span><span class="rst-sig-param">maxCount: <code>int | None</code> = None, </span><span class="rst-sig-param">dispose: <code>bool | None</code> = True, </span><span class="rst-sig-param">id: <code>int | None</code> = None, </span><span class="rst-sig-param">runOnTime: <code>bool | None</code> = True, </span><span class="rst-sig-param">runPastEvents: <code>bool | None</code> = False, </span><span class="rst-sig-param">finished: <code>Callable | None</code> = None, </span><span class="rst-sig-param">ignoreException: <code>bool | None</code> = False, </span><span class="rst-sig-param">data: <code>Any | None</code> = None</span>):</span>
+    
+    <a class="headerLink" href="#__init__" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Initialize a background worker.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">interval:</span><code>float</code></td><td class="fieldArgDesc">Interval in seconds to run the worker callback.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">callback:</span><code>Callable</code></td><td class="fieldArgDesc">Callback to run as a worker.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">name:</span><code>str | None</code></td><td class="fieldArgDesc">Name of the worker.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">start<wbr></wbr>With<wbr></wbr>Delay:</span><code>bool | None</code></td><td class="fieldArgDesc">If True then start the worker after a <code><a href="#interval" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.interval">interval</a></code> delay.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">max<wbr></wbr>Count:</span><code>int | None</code></td><td class="fieldArgDesc">Maximum number runs.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dispose:</span><code>bool | None</code></td><td class="fieldArgDesc">If True then dispose the worker after finish.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">id:</span><code>int | None</code></td><td class="fieldArgDesc">Unique ID of the worker.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">run<wbr></wbr>On<wbr></wbr>Time:</span><code>bool | None</code></td><td class="fieldArgDesc">If True then the worker is always run <em>at</em> the interval, otherwise the interval starts <em>after</em> the worker execution.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">run<wbr></wbr>Past<wbr></wbr>Events:</span><code>bool | None</code></td><td class="fieldArgDesc">If True then runs in the past are executed, otherwise they are dismissed.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">finished:</span><code>Callable | None</code></td><td class="fieldArgDesc">Callable that is executed after the worker finished.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ignore<wbr></wbr>Exception:</span><code>bool | None</code></td><td class="fieldArgDesc">Restart the actor in case an exception is encountered.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">data:</span><code>Any | None</code></td><td class="fieldArgDesc">Any data structure that is stored in the worker and accessible by the <em>data</em> attribute, and which is passed as the first argument in the <em>_data</em> argument of the <em>workerCallback</em> if not <em>None</em>.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.__repr__">
+    
+  </a>
+  <a name="__repr__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">__repr__</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#__repr__" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.__repr__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Return a string representation of the worker.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>str</code></td><td class="fieldArgDesc">A string representation of the worker.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.pause">
+    
+  </a>
+  <a name="pause">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">pause</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a></code>:</span>
+    
+    <a class="headerLink" href="#pause" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.pause">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Pause the execution of a a worker.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a></code></td><td class="fieldArgDesc">The background worker instance.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.restart">
+    
+  </a>
+  <a name="restart">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">restart</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">interval: <code>float | None</code> = None</span>) -&gt; <code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a> | None</code>:</span>
+    
+    <a class="headerLink" href="#restart" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.restart">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Restart the worker. Optionally use new interval, and re-use the previous arguments passed with the <code><a href="#start" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.start">start()</a></code> method.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">interval:</span><code>float | None</code></td><td class="fieldArgDesc">Optional float with the interval.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a> | None</code></td><td class="fieldArgDesc">The background worker instance, or None if the worker isn't running</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.start">
+    
+  </a>
+  <a name="start">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">start</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">**kwargs: <code>Any</code></span>) -&gt; <code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a></code>:</span>
+    
+    <a class="headerLink" href="#start" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.start">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Start the background worker in a thread.</p>
+<p>If the background worker is already     running then it is stopped and started again.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">**kwargs:</span><code>Any</code></td><td class="fieldArgDesc">Any number of keyword arguments are passed to the worker.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a></code></td><td class="fieldArgDesc">The background worker instance.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.stop">
+    
+  </a>
+  <a name="stop">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">stop</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a></code>:</span>
+    
+    <a class="headerLink" href="#stop" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.stop">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Stop the background worker.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a></code></td><td class="fieldArgDesc">The background worker instance.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.unpause">
+    
+  </a>
+  <a name="unpause">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">unpause</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">immediately: <code>bool | None</code> = False</span>) -&gt; <code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a> | None</code>:</span>
+    
+    <a class="headerLink" href="#unpause" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.unpause">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Continue the running of a worker.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">immediately:</span><code>bool | None</code></td><td class="fieldArgDesc">If True then the worker is executed immediately, and then the normal schedule continues.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a> | None</code></td><td class="fieldArgDesc">self.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.workNow">
+    
+  </a>
+  <a name="workNow">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">workNow</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a></code>:</span>
+    
+    <a class="headerLink" href="#workNow" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.workNow">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Execute the worker immediately and outside the normal schedule.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a></code></td><td class="fieldArgDesc">self.</td></tr></table></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.__slots__">
+    
+  </a>
+  <a name="__slots__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__slots__</span>: <code>tuple[<wbr></wbr>str, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code> =
+    
+    <a class="headerLink" href="#__slots__" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.__slots__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Slots for the class.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.args">
+    
+  </a>
+  <a name="args">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">args</span>: <code>dict[<wbr></wbr>str, <wbr></wbr>Any]</code> =
+    
+    <a class="headerLink" href="#args" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.args">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Arguments for the callback.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.callback">
+    
+  </a>
+  <a name="callback">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">callback</span> =
+    
+    <a class="headerLink" href="#callback" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.callback">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Callback function to run as a worker.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.data">
+    
+  </a>
+  <a name="data">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">data</span> =
+    
+    <a class="headerLink" href="#data" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.data">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Any data structure that is stored in the worker and accessible by the <em>data</em> attribute, and which is passed as the first argument in the <em>_data</em> argument of the <em>workerCallback</em> if not <em>None</em>.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.dispose">
+    
+  </a>
+  <a name="dispose">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dispose</span> =
+    
+    <a class="headerLink" href="#dispose" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.dispose">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>If True then dispose the worker after finish.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.executing">
+    
+  </a>
+  <a name="executing">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">executing</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#executing" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.executing">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>True if the worker is currently executing.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.finished">
+    
+  </a>
+  <a name="finished">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">finished</span> =
+    
+    <a class="headerLink" href="#finished" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.finished">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Callback that is executed after the worker finished.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.id">
+    
+  </a>
+  <a name="id">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">id</span> =
+    
+    <a class="headerLink" href="#id" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.id">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Unique ID of the worker.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.ignoreException">
+    
+  </a>
+  <a name="ignoreException">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">ignoreException</span> =
+    
+    <a class="headerLink" href="#ignoreException" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.ignoreException">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Restart the actor in case an exception is encountered.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.interval">
+    
+  </a>
+  <a name="interval">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">interval</span> =
+    
+    <a class="headerLink" href="#interval" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.interval">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Interval in seconds to run the worker callback.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.maxCount">
+    
+  </a>
+  <a name="maxCount">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">maxCount</span> =
+    
+    <a class="headerLink" href="#maxCount" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.maxCount">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Maximum number runs.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.name">
+    
+  </a>
+  <a name="name">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">name</span> =
+    
+    <a class="headerLink" href="#name" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.name">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Name of the worker.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.nextRunTime">
+    
+  </a>
+  <a name="nextRunTime">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">nextRunTime</span>: <code>float</code> =
+    
+    <a class="headerLink" href="#nextRunTime" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.nextRunTime">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Timestamp of the next execution.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.numberOfRuns">
+    
+  </a>
+  <a name="numberOfRuns">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">numberOfRuns</span>: <code>int</code> =
+    
+    <a class="headerLink" href="#numberOfRuns" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.numberOfRuns">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Number of runs.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.running">
+    
+  </a>
+  <a name="running">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">running</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#running" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.running">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>True if the worker is running.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.runOnTime">
+    
+  </a>
+  <a name="runOnTime">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">runOnTime</span> =
+    
+    <a class="headerLink" href="#runOnTime" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.runOnTime">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>If True then the worker is always run <em>at</em> the interval, otherwise the interval starts <em>after</em> the worker execution.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.runPastEvents">
+    
+  </a>
+  <a name="runPastEvents">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">runPastEvents</span> =
+    
+    <a class="headerLink" href="#runPastEvents" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.runPastEvents">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>If True then missed worker runs in the past are executed, otherwise they are dismissed.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.startWithDelay">
+    
+  </a>
+  <a name="startWithDelay">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">startWithDelay</span> =
+    
+    <a class="headerLink" href="#startWithDelay" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.startWithDelay">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>If True then start the worker after a <code><a href="#interval" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.interval">interval</a></code> delay.</p></div>
+    
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker._postCall">
+    
+  </a>
+  <a name="_postCall">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_postCall</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#_postCall" title="acmecse.helpers.BackgroundWorker.BackgroundWorker._postCall">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Internal cleanup after execution finished or a worker has been stopped.</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker._work">
+    
+  </a>
+  <a name="_work">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_work</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#_work" title="acmecse.helpers.BackgroundWorker.BackgroundWorker._work">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Wrapper around the actual worker function. It deals with terminating,
+process time compensation, etc.</p>
+<p>This wrapper and the callback are executed in a separate Thread.
+At the end, depending on return value and whether the maxCount has been reached, the worker is added to the queue again.</p>
+</div>
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container-fluid">
+      <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      25.4.0 at 2026-05-25 21:18:11.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

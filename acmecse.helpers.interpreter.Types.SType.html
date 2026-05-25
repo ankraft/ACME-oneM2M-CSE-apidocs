@@ -1,0 +1,1174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>acmecse.helpers.interpreter.Types.SType</title>
+    <meta name="generator" content="pydoctor 25.4.0"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    <link rel="canonical" href="https://api.acmecse.net/acmecse.helpers.interpreter.Types.SType.html" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="acmecse.helpers.interpreter.Types.SType.html" class="internal-link" title="This class"><wbr></wbr>SType</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__repr__" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.__repr__">__repr__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__str__" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.__str__">__str__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#unquote" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.unquote">unquote</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tBool" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tBool">t<wbr></wbr>Bool</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tFalse" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tFalse">t<wbr></wbr>False</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tJson" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tJson">t<wbr></wbr>Json</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tLambda" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tLambda">t<wbr></wbr>Lambda</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tList" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tList">t<wbr></wbr>List</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tListBegin" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tListBegin">t<wbr></wbr>List<wbr></wbr>Begin</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tListEnd" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tListEnd">t<wbr></wbr>List<wbr></wbr>End</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tListQuote" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tListQuote">t<wbr></wbr>List<wbr></wbr>Quote</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tNIL" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tNIL">t<wbr></wbr>NIL</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tNumber" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tNumber">t<wbr></wbr>Number</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tString" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tString">t<wbr></wbr>String</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tSymbol" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tSymbol">t<wbr></wbr>Symbol</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tSymbolQuote" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tSymbolQuote">t<wbr></wbr>Symbol<wbr></wbr>Quote</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tT" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tT">t<wbr></wbr>T</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="acmecse.helpers.interpreter.Types.html" class="internal-link" title="The parent of this class"><wbr></wbr>Types</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.PCall.html" class="internal-link" title="acmecse.helpers.interpreter.Types.PCall"><wbr></wbr>PCall</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.PError.html" class="internal-link" title="acmecse.helpers.interpreter.Types.PError"><wbr></wbr>PError</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.PState.html" class="internal-link" title="acmecse.helpers.interpreter.Types.PState"><wbr></wbr>PState</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.SBooleanSymbol.html" class="internal-link" title="acmecse.helpers.interpreter.Types.SBooleanSymbol"><wbr></wbr>SBoolean<wbr></wbr>Symbol</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.SJsonSymbol.html" class="internal-link" title="acmecse.helpers.interpreter.Types.SJsonSymbol"><wbr></wbr>SJson<wbr></wbr>Symbol</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.SLambdaSymbol.html" class="internal-link" title="acmecse.helpers.interpreter.Types.SLambdaSymbol"><wbr></wbr>SLambda<wbr></wbr>Symbol</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.SListCharSymbol.html" class="internal-link" title="acmecse.helpers.interpreter.Types.SListCharSymbol"><wbr></wbr>SList<wbr></wbr>Char<wbr></wbr>Symbol</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.SListQuoteSymbol.html" class="internal-link" title="acmecse.helpers.interpreter.Types.SListQuoteSymbol"><wbr></wbr>SList<wbr></wbr>Quote<wbr></wbr>Symbol</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.SListSymbol.html" class="internal-link" title="acmecse.helpers.interpreter.Types.SListSymbol"><wbr></wbr>SList<wbr></wbr>Symbol</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.SNilSymbol.html" class="internal-link" title="acmecse.helpers.interpreter.Types.SNilSymbol"><wbr></wbr>SNil<wbr></wbr>Symbol</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.SNumberSymbol.html" class="internal-link" title="acmecse.helpers.interpreter.Types.SNumberSymbol"><wbr></wbr>SNumber<wbr></wbr>Symbol</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.SStringSymbol.html" class="internal-link" title="acmecse.helpers.interpreter.Types.SStringSymbol"><wbr></wbr>SString<wbr></wbr>Symbol</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.SSymbol.html" class="internal-link" title="acmecse.helpers.interpreter.Types.SSymbol"><wbr></wbr>SSymbol</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.SSymbolQuoteSymbol.html" class="internal-link" title="acmecse.helpers.interpreter.Types.SSymbolQuoteSymbol"><wbr></wbr>SSymbol<wbr></wbr>Quote<wbr></wbr>Symbol</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.SSymbolSymbol.html" class="internal-link" title="acmecse.helpers.interpreter.Types.SSymbolSymbol"><wbr></wbr>SSymbol<wbr></wbr>Symbol</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.STSymbol.html" class="internal-link" title="acmecse.helpers.interpreter.Types.STSymbol"><wbr></wbr>STSymbol</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.SType.html" class="internal-link" title="acmecse.helpers.interpreter.Types.SType"><wbr></wbr>SType</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.html#FunctionDefinition" class="internal-link" title="acmecse.helpers.interpreter.Types.FunctionDefinition"><wbr></wbr>Function<wbr></wbr>Definition</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.html#PErrorLogCallable" class="internal-link" title="acmecse.helpers.interpreter.Types.PErrorLogCallable"><wbr></wbr>PError<wbr></wbr>Log<wbr></wbr>Callable</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.html#PFuncCallable" class="internal-link" title="acmecse.helpers.interpreter.Types.PFuncCallable"><wbr></wbr>PFunc<wbr></wbr>Callable</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.html#PLogCallable" class="internal-link" title="acmecse.helpers.interpreter.Types.PLogCallable"><wbr></wbr>PLog<wbr></wbr>Callable</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.html#PMatchCallable" class="internal-link" title="acmecse.helpers.interpreter.Types.PMatchCallable"><wbr></wbr>PMatch<wbr></wbr>Callable</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.html#PSymbolCallable" class="internal-link" title="acmecse.helpers.interpreter.Types.PSymbolCallable"><wbr></wbr>PSymbol<wbr></wbr>Callable</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.html#PSymbolDict" class="internal-link" title="acmecse.helpers.interpreter.Types.PSymbolDict"><wbr></wbr>PSymbol<wbr></wbr>Dict</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.html#SSymbolsList" class="internal-link" title="acmecse.helpers.interpreter.Types.SSymbolsList"><wbr></wbr>SSymbols<wbr></wbr>List</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.interpreter.Types.html#PErrorState" class="internal-link" title="acmecse.helpers.interpreter.Types.PErrorState"><wbr></wbr>PError<wbr></wbr>State</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">acmecse</a></code><wbr></wbr>.<code><a href="acmecse.helpers.html" class="internal-link" title="acmecse.helpers">helpers</a></code><wbr></wbr>.<code><a href="acmecse.helpers.interpreter.html" class="internal-link" title="acmecse.helpers.interpreter">interpreter</a></code><wbr></wbr>.<code><a href="acmecse.helpers.interpreter.Types.html" class="internal-link" title="acmecse.helpers.interpreter.Types">Types</a></code><wbr></wbr>.<code><a href="acmecse.helpers.interpreter.Types.SType.html" class="internal-link" title="acmecse.helpers.interpreter.Types.SType">SType</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">SType</span>(IntEnum):</code></p>
+          <p><a href="classIndex.html#acmecse.helpers.interpreter.Types.SType">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Type definitions for supported interpreter types.</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id280">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__repr__" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.__repr__">__repr__</a></code></td>
+    <td>Nice representation of a data type name.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__str__" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.__str__">__str__</a></code></td>
+    <td>Nice representation of a data type name.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#unquote" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.unquote">unquote</a></code></td>
+    <td>Return the unquoted equivalet type of a quoted type.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tBool" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tBool">t<wbr></wbr>Bool</a></code></td>
+    <td>Boolean data type.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tFalse" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tFalse">t<wbr></wbr>False</a></code></td>
+    <td>False data type.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tJson" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tJson">t<wbr></wbr>Json</a></code></td>
+    <td>JSON / dictionary data type.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tLambda" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tLambda">t<wbr></wbr>Lambda</a></code></td>
+    <td>Lambda expression data type.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tList" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tList">t<wbr></wbr>List</a></code></td>
+    <td>List of <code><a href="acmecse.helpers.interpreter.Types.SSymbol.html" class="internal-link" title="acmecse.helpers.interpreter.Types.SSymbol">SSymbol</a></code>'s data type.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tListBegin" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tListBegin">t<wbr></wbr>List<wbr></wbr>Begin</a></code></td>
+    <td>Beginning of a list. Internally used only.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tListEnd" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tListEnd">t<wbr></wbr>List<wbr></wbr>End</a></code></td>
+    <td>Ending of a list. Internally used only.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tListQuote" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tListQuote">t<wbr></wbr>List<wbr></wbr>Quote</a></code></td>
+    <td>List of <code><a href="acmecse.helpers.interpreter.Types.SSymbol.html" class="internal-link" title="acmecse.helpers.interpreter.Types.SSymbol">SSymbol</a></code>'s data type. It it not executed.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tNIL" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tNIL">t<wbr></wbr>NIL</a></code></td>
+    <td>NIL data type.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tNumber" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tNumber">t<wbr></wbr>Number</a></code></td>
+    <td>Number data type (integer or float).</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tString" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tString">t<wbr></wbr>String</a></code></td>
+    <td>String data type.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tSymbol" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tSymbol">t<wbr></wbr>Symbol</a></code></td>
+    <td>Symbol data type.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tSymbolQuote" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tSymbolQuote">t<wbr></wbr>Symbol<wbr></wbr>Quote</a></code></td>
+    <td>Quoted data type. It is not executed.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tT" class="internal-link" title="acmecse.helpers.interpreter.Types.SType.tT">t<wbr></wbr>T</a></code></td>
+    <td>True (ie. not nil) data type.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="acmecse.helpers.interpreter.Types.SType.__repr__">
+    
+  </a>
+  <a name="__repr__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">__repr__</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#__repr__" title="acmecse.helpers.interpreter.Types.SType.__repr__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Nice representation of a data type name.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>str</code></td><td class="fieldArgDesc">String representation.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.helpers.interpreter.Types.SType.__str__">
+    
+  </a>
+  <a name="__str__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">__str__</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#__str__" title="acmecse.helpers.interpreter.Types.SType.__str__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Nice representation of a data type name.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>str</code></td><td class="fieldArgDesc">String representation.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.helpers.interpreter.Types.SType.unquote">
+    
+  </a>
+  <a name="unquote">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">unquote</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code><a href="acmecse.helpers.interpreter.Types.SType.html" class="internal-link" title="acmecse.helpers.interpreter.Types.SType">SType</a></code>:</span>
+    
+    <a class="headerLink" href="#unquote" title="acmecse.helpers.interpreter.Types.SType.unquote">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Return the unquoted equivalet type of a quoted type.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.helpers.interpreter.Types.SType.html" class="internal-link" title="acmecse.helpers.interpreter.Types.SType">SType</a></code></td><td class="fieldArgDesc">The unquotde version of a quoted type. If the type is not a quoted type then return the same type.</td></tr></table></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.helpers.interpreter.Types.SType.tBool">
+    
+  </a>
+  <a name="tBool">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tBool</span> =
+    
+    <a class="headerLink" href="#tBool" title="acmecse.helpers.interpreter.Types.SType.tBool">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Boolean data type.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.helpers.interpreter.Types.SType.tFalse">
+    
+  </a>
+  <a name="tFalse">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tFalse</span> =
+    
+    <a class="headerLink" href="#tFalse" title="acmecse.helpers.interpreter.Types.SType.tFalse">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>False data type.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.helpers.interpreter.Types.SType.tJson">
+    
+  </a>
+  <a name="tJson">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tJson</span> =
+    
+    <a class="headerLink" href="#tJson" title="acmecse.helpers.interpreter.Types.SType.tJson">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>JSON / dictionary data type.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.helpers.interpreter.Types.SType.tLambda">
+    
+  </a>
+  <a name="tLambda">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tLambda</span> =
+    
+    <a class="headerLink" href="#tLambda" title="acmecse.helpers.interpreter.Types.SType.tLambda">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Lambda expression data type.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.helpers.interpreter.Types.SType.tList">
+    
+  </a>
+  <a name="tList">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tList</span> =
+    
+    <a class="headerLink" href="#tList" title="acmecse.helpers.interpreter.Types.SType.tList">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>List of <code><a href="acmecse.helpers.interpreter.Types.SSymbol.html" class="internal-link" title="acmecse.helpers.interpreter.Types.SSymbol">SSymbol</a></code>'s data type.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.helpers.interpreter.Types.SType.tListBegin">
+    
+  </a>
+  <a name="tListBegin">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tListBegin</span> =
+    
+    <a class="headerLink" href="#tListBegin" title="acmecse.helpers.interpreter.Types.SType.tListBegin">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Beginning of a list. Internally used only.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.helpers.interpreter.Types.SType.tListEnd">
+    
+  </a>
+  <a name="tListEnd">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tListEnd</span> =
+    
+    <a class="headerLink" href="#tListEnd" title="acmecse.helpers.interpreter.Types.SType.tListEnd">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Ending of a list. Internally used only.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.helpers.interpreter.Types.SType.tListQuote">
+    
+  </a>
+  <a name="tListQuote">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tListQuote</span> =
+    
+    <a class="headerLink" href="#tListQuote" title="acmecse.helpers.interpreter.Types.SType.tListQuote">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>List of <code><a href="acmecse.helpers.interpreter.Types.SSymbol.html" class="internal-link" title="acmecse.helpers.interpreter.Types.SSymbol">SSymbol</a></code>'s data type. It it not executed.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.helpers.interpreter.Types.SType.tNIL">
+    
+  </a>
+  <a name="tNIL">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tNIL</span> =
+    
+    <a class="headerLink" href="#tNIL" title="acmecse.helpers.interpreter.Types.SType.tNIL">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>NIL data type.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.helpers.interpreter.Types.SType.tNumber">
+    
+  </a>
+  <a name="tNumber">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tNumber</span> =
+    
+    <a class="headerLink" href="#tNumber" title="acmecse.helpers.interpreter.Types.SType.tNumber">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Number data type (integer or float).</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.helpers.interpreter.Types.SType.tString">
+    
+  </a>
+  <a name="tString">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tString</span> =
+    
+    <a class="headerLink" href="#tString" title="acmecse.helpers.interpreter.Types.SType.tString">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>String data type.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.helpers.interpreter.Types.SType.tSymbol">
+    
+  </a>
+  <a name="tSymbol">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tSymbol</span> =
+    
+    <a class="headerLink" href="#tSymbol" title="acmecse.helpers.interpreter.Types.SType.tSymbol">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Symbol data type.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.helpers.interpreter.Types.SType.tSymbolQuote">
+    
+  </a>
+  <a name="tSymbolQuote">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tSymbolQuote</span> =
+    
+    <a class="headerLink" href="#tSymbolQuote" title="acmecse.helpers.interpreter.Types.SType.tSymbolQuote">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Quoted data type. It is not executed.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.helpers.interpreter.Types.SType.tT">
+    
+  </a>
+  <a name="tT">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tT</span> =
+    
+    <a class="headerLink" href="#tT" title="acmecse.helpers.interpreter.Types.SType.tT">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>True (ie. not nil) data type.</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container-fluid">
+      <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      25.4.0 at 2026-05-25 21:18:11.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

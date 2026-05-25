@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>acmecse.plugins.bindings.CoAPServer.CoAPServer</title>
+    <meta name="generator" content="pydoctor 25.4.0"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    <link rel="canonical" href="https://api.acmecse.net/acmecse.plugins.bindings.CoAPServer.CoAPServer.html" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="acmecse.plugins.bindings.CoAPServer.CoAPServer.html" class="internal-link" title="This class"><wbr></wbr>Co<wbr></wbr>APServer</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#configure" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.configure">configure</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#initCoAPServer" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.initCoAPServer">init<wbr></wbr>Co<wbr></wbr>APServer</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#pause" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.pause">pause</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#run" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.run">run</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#sendCoAPRequest" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.sendCoAPRequest">send<wbr></wbr>Co<wbr></wbr>APRequest</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#shutdown" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.shutdown">shutdown</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#unpause" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.unpause">unpause</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#validate" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.validate">validate</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_configUpdate" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer._configUpdate">_config<wbr></wbr>Update</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_run" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer._run">_run</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_stop" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer._stop">_stop</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__slots__" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.__slots__">__slots__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#actor" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.actor">actor</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#coapServer" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.coapServer">coap<wbr></wbr>Server</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#isPaused" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.isPaused">is<wbr></wbr>Paused</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#operationEvents" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.operationEvents">operation<wbr></wbr>Events</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="acmecse.plugins.bindings.CoAPServer.html" class="internal-link" title="The parent of this class"><wbr></wbr>Co<wbr></wbr>APServer</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.plugins.bindings.CoAPServer.ACMECoAPHandler.html" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.ACMECoAPHandler"><wbr></wbr>ACMECo<wbr></wbr>APHandler</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.plugins.bindings.CoAPServer.ACMECoAPRequestLayer.html" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.ACMECoAPRequestLayer"><wbr></wbr>ACMECo<wbr></wbr>APRequest<wbr></wbr>Layer</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.plugins.bindings.CoAPServer.ACMECoAPServer.html" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.ACMECoAPServer"><wbr></wbr>ACMECo<wbr></wbr>APServer</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.plugins.bindings.CoAPServer.CoAPServer.html" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer"><wbr></wbr>Co<wbr></wbr>APServer</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.plugins.bindings.CoAPServer.html#dissectOptions" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.dissectOptions">dissect<wbr></wbr>Options</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.plugins.bindings.CoAPServer.html#optionsToDict" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.optionsToDict">options<wbr></wbr>To<wbr></wbr>Dict</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.plugins.bindings.CoAPServer.html#toCoAPContentType" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.toCoAPContentType">to<wbr></wbr>Co<wbr></wbr>APContent<wbr></wbr>Type</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">acmecse</a></code><wbr></wbr>.<code><a href="acmecse.plugins.html" class="internal-link" title="acmecse.plugins">plugins</a></code><wbr></wbr>.<code><a href="acmecse.plugins.bindings.html" class="internal-link" title="acmecse.plugins.bindings">bindings</a></code><wbr></wbr>.<code><a href="acmecse.plugins.bindings.CoAPServer.html" class="internal-link" title="acmecse.plugins.bindings.CoAPServer">CoAPServer</a></code><wbr></wbr>.<code><a href="acmecse.plugins.bindings.CoAPServer.CoAPServer.html" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer">CoAPServer</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">CoAPServer</span>:</code></p>
+          <p><a href="classIndex.html#acmecse.plugins.bindings.CoAPServer.CoAPServer">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>CoAPServer Server implementation.</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id317">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#configure" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.configure">configure</a></code></td>
+    <td>Configure the CoAP server.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#initCoAPServer" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.initCoAPServer">init<wbr></wbr>Co<wbr></wbr>APServer</a></code></td>
+    <td>Initialization of the CoAP Server.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#pause" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.pause">pause</a></code></td>
+    <td>Stop handling requests.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#run" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.run">run</a></code></td>
+    <td>Initialize and run the CoAP server as a BackgroundWorker/Actor.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#sendCoAPRequest" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.sendCoAPRequest">send<wbr></wbr>Co<wbr></wbr>APRequest</a></code></td>
+    <td>Send a CoAP request to a URL.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#shutdown" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.shutdown">shutdown</a></code></td>
+    <td>Shutdown the CoAP server.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#unpause" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.unpause">unpause</a></code></td>
+    <td>Continue handling requests.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#validate" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.validate">validate</a></code></td>
+    <td>Validate the CoAP server configuration.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#__slots__" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.__slots__">__slots__</a></code></td>
+    <td>Define slots for instance variables.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#actor" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.actor">actor</a></code></td>
+    <td>The actor for running the synchronous CoAP server in the background.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#coapServer" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.coapServer">coap<wbr></wbr>Server</a></code></td>
+    <td>The CoAP server object.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#isPaused" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.isPaused">is<wbr></wbr>Paused</a></code></td>
+    <td>Flag whether the server is currently paused. Requests are not handled when the server is paused.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#operationEvents" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.operationEvents">operation<wbr></wbr>Events</a></code></td>
+    <td>Events for the different operations.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_configUpdate" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer._configUpdate">_config<wbr></wbr>Update</a></code></td>
+    <td>Callback for the <em>configUpdate</em> event.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_run" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer._run">_run</a></code></td>
+    <td>CoAP server main loop.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_stop" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer._stop">_stop</a></code></td>
+    <td>Stop the CoAP server.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.bindings.CoAPServer.CoAPServer.configure">
+    
+  </a>
+  <a name="configure">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#configure" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.configure">configure</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">configure</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">config: <code><a href="acmecse.runtime.Configuration.Configuration.html" class="internal-link" title="acmecse.runtime.Configuration.Configuration">Configuration</a></code></span>):</span>
+    
+    <a class="headerLink" href="#configure" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.configure">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Configure the CoAP server.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">config:</span><code><a href="acmecse.runtime.Configuration.Configuration.html" class="internal-link" title="acmecse.runtime.Configuration.Configuration">Configuration</a></code></td><td class="fieldArgDesc">The configuration object to read the configuration from.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.bindings.CoAPServer.CoAPServer.initCoAPServer">
+    
+  </a>
+  <a name="initCoAPServer">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="acmecse.helpers.PluginManager.html#init" class="internal-link" title="acmecse.helpers.PluginManager.init">init</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">initCoAPServer</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#initCoAPServer" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.initCoAPServer">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Initialization of the CoAP Server.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.bindings.CoAPServer.CoAPServer.pause">
+    
+  </a>
+  <a name="pause">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#pause" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.pause">pause</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">pause</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#pause" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.pause">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Stop handling requests.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.bindings.CoAPServer.CoAPServer.run">
+    
+  </a>
+  <a name="run">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="acmecse.helpers.PluginManager.html#start" class="internal-link" title="acmecse.helpers.PluginManager.start">start</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">run</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#run" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.run">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Initialize and run the CoAP server as a BackgroundWorker/Actor.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">True if the server has been started successfully.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.bindings.CoAPServer.CoAPServer.sendCoAPRequest">
+    
+  </a>
+  <a name="sendCoAPRequest">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">sendCoAPRequest</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">url: <code>str</code>, </span><span class="rst-sig-param">isDirectURL: <code>bool</code> = False</span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
+    
+    <a class="headerLink" href="#sendCoAPRequest" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.sendCoAPRequest">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Send a CoAP request to a URL.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">The request to send.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">url:</span><code>str</code></td><td class="fieldArgDesc">The URL to send the request to.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">is<wbr></wbr>Direct<wbr></wbr>URL:</span><code>bool</code></td><td class="fieldArgDesc">Flag whether the URL is a direct URL.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code></td><td class="fieldArgDesc">The result of the request.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.bindings.CoAPServer.CoAPServer.shutdown">
+    
+  </a>
+  <a name="shutdown">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="acmecse.helpers.PluginManager.html#stop" class="internal-link" title="acmecse.helpers.PluginManager.stop">stop</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">shutdown</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#shutdown" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.shutdown">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Shutdown the CoAP server.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if the server has been shut down successfully.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.bindings.CoAPServer.CoAPServer.unpause">
+    
+  </a>
+  <a name="unpause">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#unpause" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.unpause">unpause</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">unpause</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#unpause" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.unpause">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Continue handling requests.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.bindings.CoAPServer.CoAPServer.validate">
+    
+  </a>
+  <a name="validate">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#validate" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.validate">validate</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">validate</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">config: <code><a href="acmecse.runtime.Configuration.Configuration.html" class="internal-link" title="acmecse.runtime.Configuration.Configuration">Configuration</a></code></span>):</span>
+    
+    <a class="headerLink" href="#validate" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.validate">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Validate the CoAP server configuration.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">config:</span><code><a href="acmecse.runtime.Configuration.Configuration.html" class="internal-link" title="acmecse.runtime.Configuration.Configuration">Configuration</a></code></td><td class="fieldArgDesc">The configuration object to validate.</td></tr></table></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.plugins.bindings.CoAPServer.CoAPServer.__slots__">
+    
+  </a>
+  <a name="__slots__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__slots__</span>: <code>list[<wbr></wbr>str]</code> =
+    
+    <a class="headerLink" href="#__slots__" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.__slots__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Define slots for instance variables.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.plugins.bindings.CoAPServer.CoAPServer.actor">
+    
+  </a>
+  <a name="actor">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">actor</span>: <code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a> | None</code> =
+    
+    <a class="headerLink" href="#actor" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.actor">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The actor for running the synchronous CoAP server in the background.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.plugins.bindings.CoAPServer.CoAPServer.coapServer">
+    
+  </a>
+  <a name="coapServer">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">coapServer</span>: <code><a href="acmecse.plugins.bindings.CoAPServer.ACMECoAPServer.html" class="internal-link" title="acmecse.plugins.bindings.CoAPServer.ACMECoAPServer">ACMECoAPServer</a> | None</code> =
+    
+    <a class="headerLink" href="#coapServer" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.coapServer">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The CoAP server object.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.plugins.bindings.CoAPServer.CoAPServer.isPaused">
+    
+  </a>
+  <a name="isPaused">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">isPaused</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#isPaused" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.isPaused">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Flag whether the server is currently paused. Requests are not handled when the server is paused.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.plugins.bindings.CoAPServer.CoAPServer.operationEvents">
+    
+  </a>
+  <a name="operationEvents">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">operationEvents</span> =
+    
+    <a class="headerLink" href="#operationEvents" title="acmecse.plugins.bindings.CoAPServer.CoAPServer.operationEvents">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Events for the different operations.</p></div>
+    
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acmecse.plugins.bindings.CoAPServer.CoAPServer._configUpdate">
+    
+  </a>
+  <a name="_configUpdate">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="acmecse.helpers.EventManager.html#onEvent" class="internal-link" title="acmecse.helpers.EventManager.onEvent">onEvent</a>(<wbr></wbr>eventManager.configUpdate)<br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_configUpdate</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">eventData: <code><a href="acmecse.helpers.EventManager.EventData.html" class="internal-link" title="acmecse.helpers.EventManager.EventData">EventData</a></code></span>):</span>
+    
+    <a class="headerLink" href="#_configUpdate" title="acmecse.plugins.bindings.CoAPServer.CoAPServer._configUpdate">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Callback for the <em>configUpdate</em> event.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">event<wbr></wbr>Data:</span><code><a href="acmecse.helpers.EventManager.EventData.html" class="internal-link" title="acmecse.helpers.EventManager.EventData">EventData</a></code></td><td class="fieldArgDesc">The event data, containing the key and value of the updated configuration.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acmecse.plugins.bindings.CoAPServer.CoAPServer._run">
+    
+  </a>
+  <a name="_run">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_run</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#_run" title="acmecse.plugins.bindings.CoAPServer.CoAPServer._run">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>CoAP server main loop.</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acmecse.plugins.bindings.CoAPServer.CoAPServer._stop">
+    
+  </a>
+  <a name="_stop">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_stop</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#_stop" title="acmecse.plugins.bindings.CoAPServer.CoAPServer._stop">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Stop the CoAP server.</p></div>
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container-fluid">
+      <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      25.4.0 at 2026-05-25 21:18:11.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

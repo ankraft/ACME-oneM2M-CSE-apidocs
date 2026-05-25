@@ -24,7 +24,7 @@ function togglePrivate() {
 }
 function updatePrivate() {
     var hidden = document.body.classList.contains('private-hidden');
-    document.querySelector('#show-private button').innerText =
+    document.querySelector('#showPrivate button').innerText =
         hidden ? 'Show Private API' : 'Hide Private API';
     if (history) {
         var search = hidden ? document.location.pathname : '?private=1';

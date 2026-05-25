@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>acmecse.textui.ACMEContainerTools.ACMEToolsTree</title>
+    <meta name="generator" content="pydoctor 25.4.0"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    <link rel="canonical" href="https://api.acmecse.net/acmecse.textui.ACMEContainerTools.ACMEToolsTree.html" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="acmecse.textui.ACMEContainerTools.ACMEToolsTree.html" class="internal-link" title="This class"><wbr></wbr>ACMETools<wbr></wbr>Tree</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#on_mount" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.on_mount">on<wbr></wbr>_mount</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#on_show" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.on_show">on<wbr></wbr>_show</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#on_tree_node_highlighted" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.on_tree_node_highlighted">on<wbr></wbr>_tree<wbr></wbr>_node<wbr></wbr>_highlighted</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#printLogs" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.printLogs">print<wbr></wbr>Logs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#stopAutoRunScript" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.stopAutoRunScript">stop<wbr></wbr>Auto<wbr></wbr>Run<wbr></wbr>Script</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_executeScript" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree._executeScript">_execute<wbr></wbr>Script</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_showTool" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree._showTool">_show<wbr></wbr>Tool</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#scriptManager" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.scriptManager">script<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#allLogs" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.allLogs">all<wbr></wbr>Logs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#auto_expand" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.auto_expand">auto<wbr></wbr>_expand</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#autoRunName" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.autoRunName">auto<wbr></wbr>Run<wbr></wbr>Name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#autoRunWorker" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.autoRunWorker">auto<wbr></wbr>Run<wbr></wbr>Worker</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#logs" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.logs">logs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#nodes" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.nodes">nodes</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#parentContainer" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.parentContainer">parent<wbr></wbr>Container</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_app" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree._app">_app</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="acmecse.textui.ACMEContainerTools.html" class="internal-link" title="The parent of this class"><wbr></wbr>ACMEContainer<wbr></wbr>Tools</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.textui.ACMEContainerTools.ACMEContainerTools.html" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEContainerTools"><wbr></wbr>ACMEContainer<wbr></wbr>Tools</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.textui.ACMEContainerTools.ACMEToolsTree.html" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree"><wbr></wbr>ACMETools<wbr></wbr>Tree</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">acmecse</a></code><wbr></wbr>.<code><a href="acmecse.textui.html" class="internal-link" title="acmecse.textui">textui</a></code><wbr></wbr>.<code><a href="acmecse.textui.ACMEContainerTools.html" class="internal-link" title="acmecse.textui.ACMEContainerTools">ACMEContainerTools</a></code><wbr></wbr>.<code><a href="acmecse.textui.ACMEContainerTools.ACMEToolsTree.html" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree">ACMEToolsTree</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">ACMEToolsTree</span>(TextualTree):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.__init__">ACMEToolsTree(*args, **kwargs)</a></code></p>
+          <p><a href="classIndex.html#acmecse.textui.ACMEContainerTools.ACMEToolsTree">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>The tree view for the tools and commands.</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id727">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.__init__">__init__</a></code></td>
+    <td>Initialize the tree view.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#on_mount" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.on_mount">on<wbr></wbr>_mount</a></code></td>
+    <td>Mount the tree view.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#on_show" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.on_show">on<wbr></wbr>_show</a></code></td>
+    <td>Show the tools tree.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#on_tree_node_highlighted" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.on_tree_node_highlighted">on<wbr></wbr>_tree<wbr></wbr>_node<wbr></wbr>_highlighted</a></code></td>
+    <td>Show the tool description when a node is highlighted.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#printLogs" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.printLogs">print<wbr></wbr>Logs</a></code></td>
+    <td>Print the logs of the selected node to the log widget. The output depends on the value of self.allLogs.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#stopAutoRunScript" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.stopAutoRunScript">stop<wbr></wbr>Auto<wbr></wbr>Run<wbr></wbr>Script</a></code></td>
+    <td>Stop the autorun worker if it is running and the node is different from the previous autorun node.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#scriptManager" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.scriptManager">script<wbr></wbr>Manager</a></code></td>
+    <td>Injected ScriptManager instance.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#allLogs" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.allLogs">all<wbr></wbr>Logs</a></code></td>
+    <td>Whether all logs should be shown.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#auto_expand" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.auto_expand">auto<wbr></wbr>_expand</a></code></td>
+    <td>Whether the tree should auto expand. Inherited from TextualTree.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#autoRunName" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.autoRunName">auto<wbr></wbr>Run<wbr></wbr>Name</a></code></td>
+    <td>The name of the autorun script.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#autoRunWorker" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.autoRunWorker">auto<wbr></wbr>Run<wbr></wbr>Worker</a></code></td>
+    <td>The autorun worker.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#logs" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.logs">logs</a></code></td>
+    <td>The logs for the scripts.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#nodes" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.nodes">nodes</a></code></td>
+    <td>The nodes for the scripts.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#parentContainer" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.parentContainer">parent<wbr></wbr>Container</a></code></td>
+    <td>The parent container.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_executeScript" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree._executeScript">_execute<wbr></wbr>Script</a></code></td>
+    <td>Executes the given script context.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_showTool" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree._showTool">_show<wbr></wbr>Tool</a></code></td>
+    <td>Show the script's description when a node is highlighted.</td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_app" class="internal-link" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree._app">_app</a></code></td>
+    <td>The application.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="acmecse.textui.ACMEContainerTools.ACMEToolsTree.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">__init__</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">*args: <code>Any</code>, </span><span class="rst-sig-param">**kwargs: <code>Any</code></span>):</span>
+    
+    <a class="headerLink" href="#__init__" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Initialize the tree view.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">*args:</span><code>Any</code></td><td class="fieldArgDesc">The arguments.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">**kwargs:</span><code>Any</code></td><td class="fieldArgDesc">The keyword arguments.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.textui.ACMEContainerTools.ACMEToolsTree.on_mount">
+    
+  </a>
+  <a name="on_mount">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">on_mount</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#on_mount" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.on_mount">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Mount the tree view.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.textui.ACMEContainerTools.ACMEToolsTree.on_show">
+    
+  </a>
+  <a name="on_show">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">on_show</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#on_show" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.on_show">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Show the tools tree.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.textui.ACMEContainerTools.ACMEToolsTree.on_tree_node_highlighted">
+    
+  </a>
+  <a name="on_tree_node_highlighted">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">on_tree_node_highlighted</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">node: <code>TextualTree.NodeHighlighted</code></span>):</span>
+    
+    <a class="headerLink" href="#on_tree_node_highlighted" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.on_tree_node_highlighted">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Show the tool description when a node is highlighted.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">node:</span><code>TextualTree.NodeHighlighted</code></td><td class="fieldArgDesc">The highlighted node.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.textui.ACMEContainerTools.ACMEToolsTree.printLogs">
+    
+  </a>
+  <a name="printLogs">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">printLogs</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#printLogs" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.printLogs">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Print the logs of the selected node to the log widget.
+The output depends on the value of self.allLogs.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.textui.ACMEContainerTools.ACMEToolsTree.stopAutoRunScript">
+    
+  </a>
+  <a name="stopAutoRunScript">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">stopAutoRunScript</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">name: <code>str | None</code> = None</span>):</span>
+    
+    <a class="headerLink" href="#stopAutoRunScript" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.stopAutoRunScript">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Stop the autorun worker if it is running and the node is different
+from the previous autorun node.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">name:</span><code>str | None</code></td><td class="fieldArgDesc">The name of the script to stop. If None, the current autorun
+script is stopped, independent of its name.</td></tr></table></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.textui.ACMEContainerTools.ACMEToolsTree.scriptManager">
+    
+  </a>
+  <a name="scriptManager">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">scriptManager</span>: <code><a href="acmecse.runtime.ScriptManager.ScriptManager.html" class="internal-link" title="acmecse.runtime.ScriptManager.ScriptManager">ScriptManager</a></code> =
+    
+    <a class="headerLink" href="#scriptManager" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.scriptManager">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected ScriptManager instance.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.textui.ACMEContainerTools.ACMEToolsTree.allLogs">
+    
+  </a>
+  <a name="allLogs">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">allLogs</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#allLogs" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.allLogs">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Whether all logs should be shown.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.textui.ACMEContainerTools.ACMEToolsTree.auto_expand">
+    
+  </a>
+  <a name="auto_expand">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">auto_expand</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#auto_expand" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.auto_expand">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Whether the tree should auto expand. Inherited from TextualTree.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.textui.ACMEContainerTools.ACMEToolsTree.autoRunName">
+    
+  </a>
+  <a name="autoRunName">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">autoRunName</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#autoRunName" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.autoRunName">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The name of the autorun script.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.textui.ACMEContainerTools.ACMEToolsTree.autoRunWorker">
+    
+  </a>
+  <a name="autoRunWorker">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">autoRunWorker</span>: <code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a></code> =
+    
+    <a class="headerLink" href="#autoRunWorker" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.autoRunWorker">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The autorun worker.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.textui.ACMEContainerTools.ACMEToolsTree.logs">
+    
+  </a>
+  <a name="logs">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">logs</span>: <code>dict[<wbr></wbr>str, <wbr></wbr>list[<wbr></wbr>str]]</code> =
+    
+    <a class="headerLink" href="#logs" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.logs">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The logs for the scripts.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.textui.ACMEContainerTools.ACMEToolsTree.nodes">
+    
+  </a>
+  <a name="nodes">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">nodes</span>: <code>dict[<wbr></wbr>str, <wbr></wbr>TreeNode]</code> =
+    
+    <a class="headerLink" href="#nodes" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.nodes">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The nodes for the scripts.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.textui.ACMEContainerTools.ACMEToolsTree.parentContainer">
+    
+  </a>
+  <a name="parentContainer">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">parentContainer</span> =
+    
+    <a class="headerLink" href="#parentContainer" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree.parentContainer">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The parent container.</p></div>
+    
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acmecse.textui.ACMEContainerTools.ACMEToolsTree._executeScript">
+    
+  </a>
+  <a name="_executeScript">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_executeScript</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">name: <code>str</code>, </span><span class="rst-sig-param">autoRun: <code>bool | None</code> = False, </span><span class="rst-sig-param">argument: <code>str | None</code> = <span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#_executeScript" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree._executeScript">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Executes the given script context.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">name:</span><code>str</code></td><td class="fieldArgDesc">The name of the script.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">auto<wbr></wbr>Run:</span><code>bool | None</code></td><td class="fieldArgDesc"><span class="undocumented">Undocumented</span></td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">argument:</span><code>str | None</code></td><td class="fieldArgDesc"><span class="undocumented">Undocumented</span></td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc"><span class="undocumented">Undocumented</span></td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acmecse.textui.ACMEContainerTools.ACMEToolsTree._showTool">
+    
+  </a>
+  <a name="_showTool">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_showTool</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">node: <code>TreeNode</code></span>):</span>
+    
+    <a class="headerLink" href="#_showTool" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree._showTool">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Show the script's description when a node is highlighted.</p>
+<p>Also start the autorun worker if the meta tag "tuiAutoRun" is set.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">node:</span><code>TreeNode</code></td><td class="fieldArgDesc">The highlighted node.</td></tr></table></div>
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="acmecse.textui.ACMEContainerTools.ACMEToolsTree._app">
+    
+  </a>
+  <a name="_app">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_app</span> =
+    
+    <a class="headerLink" href="#_app" title="acmecse.textui.ACMEContainerTools.ACMEToolsTree._app">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The application.</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container-fluid">
+      <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      25.4.0 at 2026-05-25 21:18:11.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

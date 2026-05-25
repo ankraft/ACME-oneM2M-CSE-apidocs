@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>acmecse.helpers.ReadWriteLock.ReadWriteLock</title>
+    <meta name="generator" content="pydoctor 25.4.0"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    <link rel="canonical" href="https://api.acmecse.net/acmecse.helpers.ReadWriteLock.ReadWriteLock.html" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="acmecse.helpers.ReadWriteLock.ReadWriteLock.html" class="internal-link" title="This class"><wbr></wbr>Read<wbr></wbr>Write<wbr></wbr>Lock</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#acquire_read" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock.acquire_read">acquire<wbr></wbr>_read</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#acquire_write" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock.acquire_write">acquire<wbr></wbr>_write</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#release_read" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock.release_read">release<wbr></wbr>_read</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#release_write" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock.release_write">release<wbr></wbr>_write</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_promote" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock._promote">_promote</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_read_ready" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock._read_ready">_read<wbr></wbr>_ready</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_readerList" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock._readerList">_reader<wbr></wbr>List</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_readers" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock._readers">_readers</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_writerList" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock._writerList">_writer<wbr></wbr>List</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_writers" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock._writers">_writers</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="acmecse.helpers.ReadWriteLock.html" class="internal-link" title="The parent of this class"><wbr></wbr>Read<wbr></wbr>Write<wbr></wbr>Lock</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.ReadWriteLock.ReadRWLock.html" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadRWLock"><wbr></wbr>Read<wbr></wbr>RWLock</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.ReadWriteLock.ReadWriteLock.html" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock"><wbr></wbr>Read<wbr></wbr>Write<wbr></wbr>Lock</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.ReadWriteLock.WriteRWLock.html" class="internal-link" title="acmecse.helpers.ReadWriteLock.WriteRWLock"><wbr></wbr>Write<wbr></wbr>RWLock</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.ReadWriteLock.html#_reads" class="internal-link" title="acmecse.helpers.ReadWriteLock._reads">_reads</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.ReadWriteLock.html#_writes" class="internal-link" title="acmecse.helpers.ReadWriteLock._writes">_writes</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.ReadWriteLock.html#_lock" class="internal-link" title="acmecse.helpers.ReadWriteLock._lock">_lock</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">acmecse</a></code><wbr></wbr>.<code><a href="acmecse.helpers.html" class="internal-link" title="acmecse.helpers">helpers</a></code><wbr></wbr>.<code><a href="acmecse.helpers.ReadWriteLock.html" class="internal-link" title="acmecse.helpers.ReadWriteLock">ReadWriteLock</a></code><wbr></wbr>.<code><a href="acmecse.helpers.ReadWriteLock.ReadWriteLock.html" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock">ReadWriteLock</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">ReadWriteLock</span>(object):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock.__init__">ReadWriteLock(withPromotion)</a></code></p>
+          <p><a href="classIndex.html#acmecse.helpers.ReadWriteLock.ReadWriteLock">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>A lock object that allows many simultaneous "read locks", but
+only one "write lock."</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id236">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock.__init__">__init__</a></code></td>
+    <td>Initialize the ReadWriteLock object.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#acquire_read" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock.acquire_read">acquire<wbr></wbr>_read</a></code></td>
+    <td>Acquire a read lock. Blocks only if a thread has acquired the write lock.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#acquire_write" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock.acquire_write">acquire<wbr></wbr>_write</a></code></td>
+    <td>Acquire a write lock. Blocks until there are no acquired read or write locks.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#release_read" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock.release_read">release<wbr></wbr>_read</a></code></td>
+    <td>Release a read lock.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#release_write" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock.release_write">release<wbr></wbr>_write</a></code></td>
+    <td>Release a write lock.</td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_promote" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock._promote">_promote</a></code></td>
+    <td>If True, then a reader thread can promote itself to a writer thread.</td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_read_ready" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock._read_ready">_read<wbr></wbr>_ready</a></code></td>
+    <td>Condition object to synchronize the read and write locks.</td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_readerList" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock._readerList">_reader<wbr></wbr>List</a></code></td>
+    <td>List of Reader thread IDs.</td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_readers" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock._readers">_readers</a></code></td>
+    <td>Number of readers.</td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_writerList" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock._writerList">_writer<wbr></wbr>List</a></code></td>
+    <td>List of Writer thread IDs.</td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_writers" class="internal-link" title="acmecse.helpers.ReadWriteLock.ReadWriteLock._writers">_writers</a></code></td>
+    <td>Number of writers.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="acmecse.helpers.ReadWriteLock.ReadWriteLock.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">__init__</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">withPromotion: <code>bool | None</code> = False</span>):</span>
+    
+    <a class="headerLink" href="#__init__" title="acmecse.helpers.ReadWriteLock.ReadWriteLock.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Initialize the ReadWriteLock object.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">with<wbr></wbr>Promotion:</span><code>bool | None</code></td><td class="fieldArgDesc">If True, then a reader thread can promote itself to a writer thread.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.helpers.ReadWriteLock.ReadWriteLock.acquire_read">
+    
+  </a>
+  <a name="acquire_read">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">acquire_read</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#acquire_read" title="acmecse.helpers.ReadWriteLock.ReadWriteLock.acquire_read">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Acquire a read lock. Blocks only if a thread has
+acquired the write lock.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.helpers.ReadWriteLock.ReadWriteLock.acquire_write">
+    
+  </a>
+  <a name="acquire_write">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">acquire_write</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#acquire_write" title="acmecse.helpers.ReadWriteLock.ReadWriteLock.acquire_write">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Acquire a write lock. Blocks until there are no
+acquired read or write locks.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.helpers.ReadWriteLock.ReadWriteLock.release_read">
+    
+  </a>
+  <a name="release_read">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">release_read</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#release_read" title="acmecse.helpers.ReadWriteLock.ReadWriteLock.release_read">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Release a read lock.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.helpers.ReadWriteLock.ReadWriteLock.release_write">
+    
+  </a>
+  <a name="release_write">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">release_write</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#release_write" title="acmecse.helpers.ReadWriteLock.ReadWriteLock.release_write">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Release a write lock.</p></div>
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="acmecse.helpers.ReadWriteLock.ReadWriteLock._promote">
+    
+  </a>
+  <a name="_promote">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_promote</span> =
+    
+    <a class="headerLink" href="#_promote" title="acmecse.helpers.ReadWriteLock.ReadWriteLock._promote">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>If True, then a reader thread can promote itself to a writer thread.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="acmecse.helpers.ReadWriteLock.ReadWriteLock._read_ready">
+    
+  </a>
+  <a name="_read_ready">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_read_ready</span> =
+    
+    <a class="headerLink" href="#_read_ready" title="acmecse.helpers.ReadWriteLock.ReadWriteLock._read_ready">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Condition object to synchronize the read and write locks.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="acmecse.helpers.ReadWriteLock.ReadWriteLock._readerList">
+    
+  </a>
+  <a name="_readerList">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_readerList</span>: <code>list[<wbr></wbr>int]</code> =
+    
+    <a class="headerLink" href="#_readerList" title="acmecse.helpers.ReadWriteLock.ReadWriteLock._readerList">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>List of Reader thread IDs.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="acmecse.helpers.ReadWriteLock.ReadWriteLock._readers">
+    
+  </a>
+  <a name="_readers">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_readers</span>: <code>int</code> =
+    
+    <a class="headerLink" href="#_readers" title="acmecse.helpers.ReadWriteLock.ReadWriteLock._readers">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Number of readers.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="acmecse.helpers.ReadWriteLock.ReadWriteLock._writerList">
+    
+  </a>
+  <a name="_writerList">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_writerList</span>: <code>list[<wbr></wbr>int]</code> =
+    
+    <a class="headerLink" href="#_writerList" title="acmecse.helpers.ReadWriteLock.ReadWriteLock._writerList">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>List of Writer thread IDs.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="acmecse.helpers.ReadWriteLock.ReadWriteLock._writers">
+    
+  </a>
+  <a name="_writers">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_writers</span>: <code>int</code> =
+    
+    <a class="headerLink" href="#_writers" title="acmecse.helpers.ReadWriteLock.ReadWriteLock._writers">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Number of writers.</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container-fluid">
+      <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      25.4.0 at 2026-05-25 21:18:11.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

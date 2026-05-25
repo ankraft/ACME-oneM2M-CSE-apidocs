@@ -1,0 +1,3174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding</title>
+    <meta name="generator" content="pydoctor 25.4.0"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    <link rel="canonical" href="https://api.acmecse.net/acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.html" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.html" class="internal-link" title="This class"><wbr></wbr>Postgre<wbr></wbr>SQLBinding</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#addBatchNotification" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.addBatchNotification">add<wbr></wbr>Batch<wbr></wbr>Notification</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#addOriginator" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.addOriginator">add<wbr></wbr>Originator</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#backupDB" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.backupDB">backup<wbr></wbr>DB</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#closeDB" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.closeDB">close<wbr></wbr>DB</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#configure" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.configure">configure</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#countBatchNotifications" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.countBatchNotifications">count<wbr></wbr>Batch<wbr></wbr>Notifications</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#countResources" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.countResources">count<wbr></wbr>Resources</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#createTables" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.createTables">create<wbr></wbr>Tables</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#deleteIdentifier" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.deleteIdentifier">delete<wbr></wbr>Identifier</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#deleteRequests" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.deleteRequests">delete<wbr></wbr>Requests</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#deleteResource" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.deleteResource">delete<wbr></wbr>Resource</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#discoverResourcesByFilter" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.discoverResourcesByFilter">discover<wbr></wbr>Resources<wbr></wbr>By<wbr></wbr>Filter</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getActionRep" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getActionRep">get<wbr></wbr>Action<wbr></wbr>Rep</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getAllActionReprs" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getAllActionReprs">get<wbr></wbr>All<wbr></wbr>Action<wbr></wbr>Reprs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getBatchNotifications" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getBatchNotifications">get<wbr></wbr>Batch<wbr></wbr>Notifications</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getOriginator" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getOriginator">get<wbr></wbr>Originator</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getRequests" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getRequests">get<wbr></wbr>Requests</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getSchedule" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getSchedule">get<wbr></wbr>Schedule</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getSchedules" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getSchedules">get<wbr></wbr>Schedules</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#hasResource" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.hasResource">has<wbr></wbr>Resource</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#insertRequest" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.insertRequest">insert<wbr></wbr>Request</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#insertResource" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.insertResource">insert<wbr></wbr>Resource</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#prepareStatements" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.prepareStatements">prepare<wbr></wbr>Statements</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#purgeDB" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.purgeDB">purge<wbr></wbr>DB</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#purgeStatistics" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.purgeStatistics">purge<wbr></wbr>Statistics</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#removeActionRepr" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeActionRepr">remove<wbr></wbr>Action<wbr></wbr>Repr</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#removeBatchNotifications" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeBatchNotifications">remove<wbr></wbr>Batch<wbr></wbr>Notifications</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#removeChildResource" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeChildResource">remove<wbr></wbr>Child<wbr></wbr>Resource</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#removeOldRequests" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeOldRequests">remove<wbr></wbr>Old<wbr></wbr>Requests</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#removeOriginator" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeOriginator">remove<wbr></wbr>Originator</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#removeSchedule" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeSchedule">remove<wbr></wbr>Schedule</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#removeSubscriptionRepr" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeSubscriptionRepr">remove<wbr></wbr>Subscription<wbr></wbr>Repr</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#searchActionsReprsForSubject" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchActionsReprsForSubject">search<wbr></wbr>Actions<wbr></wbr>Reprs<wbr></wbr>For<wbr></wbr>Subject</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#searchByFragment" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchByFragment">search<wbr></wbr>By<wbr></wbr>Fragment</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#searchChildResourceIDsByParentRIAndType" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchChildResourceIDsByParentRIAndType">search<wbr></wbr>Child<wbr></wbr>Resource<wbr></wbr>IDs<wbr></wbr>By<wbr></wbr>Parent<wbr></wbr>RIAnd<wbr></wbr>Type</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#searchIdentifiers" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchIdentifiers">search<wbr></wbr>Identifiers</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#searchResources" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchResources">search<wbr></wbr>Resources</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#searchSchedulesForParent" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchSchedulesForParent">search<wbr></wbr>Schedules<wbr></wbr>For<wbr></wbr>Parent</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#searchStatistics" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchStatistics">search<wbr></wbr>Statistics</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#searchSubscriptionReprs" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchSubscriptionReprs">search<wbr></wbr>Subscription<wbr></wbr>Reprs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#start" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.start">start</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#updateActionRepr" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.updateActionRepr">update<wbr></wbr>Action<wbr></wbr>Repr</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#updateResource" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.updateResource">update<wbr></wbr>Resource</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#upgradeTables" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upgradeTables">upgrade<wbr></wbr>Tables</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#upsertActionRepr" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertActionRepr">upsert<wbr></wbr>Action<wbr></wbr>Repr</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#upsertChildResource" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertChildResource">upsert<wbr></wbr>Child<wbr></wbr>Resource</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#upsertIdentifier" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertIdentifier">upsert<wbr></wbr>Identifier</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#upsertResource" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertResource">upsert<wbr></wbr>Resource</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#upsertSchedule" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertSchedule">upsert<wbr></wbr>Schedule</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#upsertStatistics" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertStatistics">upsert<wbr></wbr>Statistics</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#upsertSubscriptionRepr" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertSubscriptionRepr">upsert<wbr></wbr>Subscription<wbr></wbr>Repr</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#validate" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.validate">validate</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_checkOpenConnection" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding._checkOpenConnection">_check<wbr></wbr>Open<wbr></wbr>Connection</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_executePrepared" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding._executePrepared">_execute<wbr></wbr>Prepared</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_fetchAllRows" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding._fetchAllRows">_fetch<wbr></wbr>All<wbr></wbr>Rows</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_fetchNumber" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding._fetchNumber">_fetch<wbr></wbr>Number</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_fetchSingleRow" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding._fetchSingleRow">_fetch<wbr></wbr>Single<wbr></wbr>Row</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tableActions" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableActions">table<wbr></wbr>Actions</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tableBatchNotifications" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableBatchNotifications">table<wbr></wbr>Batch<wbr></wbr>Notifications</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tableChildResources" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableChildResources">table<wbr></wbr>Child<wbr></wbr>Resources</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tableIdentidiers" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableIdentidiers">table<wbr></wbr>Identidiers</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tableOriginators" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableOriginators">table<wbr></wbr>Originators</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tableRequests" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableRequests">table<wbr></wbr>Requests</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tableResources" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableResources">table<wbr></wbr>Resources</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tableSchedules" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableSchedules">table<wbr></wbr>Schedules</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tableStatistics" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableStatistics">table<wbr></wbr>Statistics</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tableSubscriptions" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableSubscriptions">table<wbr></wbr>Subscriptions</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dbConnection" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbConnection">db<wbr></wbr>Connection</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dbDatabase" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbDatabase">db<wbr></wbr>Database</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dbHost" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbHost">db<wbr></wbr>Host</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dbPassword" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbPassword">db<wbr></wbr>Password</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dbPort" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbPort">db<wbr></wbr>Port</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dbSchema" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbSchema">db<wbr></wbr>Schema</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dbUser" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbUser">db<wbr></wbr>User</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="acmecse.plugins.database.PostgreSQLBinding.html" class="internal-link" title="The parent of this class"><wbr></wbr>Postgre<wbr></wbr>SQLBinding</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.html" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding"><wbr></wbr>Postgre<wbr></wbr>SQLBinding</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">acmecse</a></code><wbr></wbr>.<code><a href="acmecse.plugins.html" class="internal-link" title="acmecse.plugins">plugins</a></code><wbr></wbr>.<code><a href="acmecse.plugins.database.html" class="internal-link" title="acmecse.plugins.database">database</a></code><wbr></wbr>.<code><a href="acmecse.plugins.database.PostgreSQLBinding.html" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding">PostgreSQLBinding</a></code><wbr></wbr>.<code><a href="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.html" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding">PostgreSQLBinding</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">PostgreSQLBinding</span>(<a href="acmecse.runtime.DBBinding.DBBinding.html" class="internal-link" title="acmecse.runtime.DBBinding.DBBinding">DBBinding</a>):</code></p>
+          <p><a href="classIndex.html#acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>PostgreSQLBinding class.</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id338">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#addBatchNotification" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.addBatchNotification">add<wbr></wbr>Batch<wbr></wbr>Notification</a></code></td>
+    <td>Add a batch notification to the database.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#addOriginator" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.addOriginator">add<wbr></wbr>Originator</a></code></td>
+    <td>Add an originator to the database.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#backupDB" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.backupDB">backup<wbr></wbr>DB</a></code></td>
+    <td>Backup the database to a directory.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#closeDB" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.closeDB">close<wbr></wbr>DB</a></code></td>
+    <td>Close the database.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#configure" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.configure">configure</a></code></td>
+    <td>Configure the PostgreSQLBinding with the provided configuration.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#countBatchNotifications" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.countBatchNotifications">count<wbr></wbr>Batch<wbr></wbr>Notifications</a></code></td>
+    <td>Return the number of batch notifications for a resource and notification URI.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#countResources" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.countResources">count<wbr></wbr>Resources</a></code></td>
+    <td>Return the number of resources in the database.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#createTables" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.createTables">create<wbr></wbr>Tables</a></code></td>
+    <td>Create the necessary schema and tables if they do not exist.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#deleteIdentifier" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.deleteIdentifier">delete<wbr></wbr>Identifier</a></code></td>
+    <td>Delete an identifier from the identifiers DB.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#deleteRequests" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.deleteRequests">delete<wbr></wbr>Requests</a></code></td>
+    <td>Remnove all stored requests from the database.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#deleteResource" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.deleteResource">delete<wbr></wbr>Resource</a></code></td>
+    <td>Delete a resource from the database.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#discoverResourcesByFilter" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.discoverResourcesByFilter">discover<wbr></wbr>Resources<wbr></wbr>By<wbr></wbr>Filter</a></code></td>
+    <td>Search for resources by a filter function. This goes through all resources in the database and applies the filter function to each resource. If the filter function returns True, the resource is added to the result list.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getActionRep" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getActionRep">get<wbr></wbr>Action<wbr></wbr>Rep</a></code></td>
+    <td>Get an action representation by resource ID.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getAllActionReprs" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getAllActionReprs">get<wbr></wbr>All<wbr></wbr>Action<wbr></wbr>Reprs</a></code></td>
+    <td>Return all action representations.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getBatchNotifications" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getBatchNotifications">get<wbr></wbr>Batch<wbr></wbr>Notifications</a></code></td>
+    <td>Return the batch notifications for a resource and notification URI.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getOriginator" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getOriginator">get<wbr></wbr>Originator</a></code></td>
+    <td>Get an originator and its information from the database.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getRequests" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getRequests">get<wbr></wbr>Requests</a></code></td>
+    <td>Get requests for a resource ID, or all requests.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getSchedule" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getSchedule">get<wbr></wbr>Schedule</a></code></td>
+    <td>Get a schedule from the database.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getSchedules" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getSchedules">get<wbr></wbr>Schedules</a></code></td>
+    <td>Get all schedules from the database.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#hasResource" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.hasResource">has<wbr></wbr>Resource</a></code></td>
+    <td>Check if a resource exists in the database.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#insertRequest" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.insertRequest">insert<wbr></wbr>Request</a></code></td>
+    <td>Add a request to the <em>requests</em> database.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#insertResource" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.insertResource">insert<wbr></wbr>Resource</a></code></td>
+    <td>Insert a resource into the database.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#prepareStatements" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.prepareStatements">prepare<wbr></wbr>Statements</a></code></td>
+    <td>Prepare the PreparedStatements for various SQL operations.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#purgeDB" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.purgeDB">purge<wbr></wbr>DB</a></code></td>
+    <td>Purge the database. Remove all data</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#purgeStatistics" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.purgeStatistics">purge<wbr></wbr>Statistics</a></code></td>
+    <td>Purge the statistics DB.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#removeActionRepr" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeActionRepr">remove<wbr></wbr>Action<wbr></wbr>Repr</a></code></td>
+    <td>Remove an action representation.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#removeBatchNotifications" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeBatchNotifications">remove<wbr></wbr>Batch<wbr></wbr>Notifications</a></code></td>
+    <td>Remove the batch notifications for a resource and notification URI.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#removeChildResource" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeChildResource">remove<wbr></wbr>Child<wbr></wbr>Resource</a></code></td>
+    <td>Remove a child resource from the childResources DB.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#removeOldRequests" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeOldRequests">remove<wbr></wbr>Old<wbr></wbr>Requests</a></code></td>
+    <td>Remove old requests from the database.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#removeOriginator" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeOriginator">remove<wbr></wbr>Originator</a></code></td>
+    <td>Remove an originator from the database.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#removeSchedule" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeSchedule">remove<wbr></wbr>Schedule</a></code></td>
+    <td>Remove a schedule from the database.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#removeSubscriptionRepr" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeSubscriptionRepr">remove<wbr></wbr>Subscription<wbr></wbr>Repr</a></code></td>
+    <td>Remove a subscription representation from the database.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#searchActionsReprsForSubject" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchActionsReprsForSubject">search<wbr></wbr>Actions<wbr></wbr>Reprs<wbr></wbr>For<wbr></wbr>Subject</a></code></td>
+    <td>Search for action representations by subject.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#searchByFragment" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchByFragment">search<wbr></wbr>By<wbr></wbr>Fragment</a></code></td>
+    <td>Search and return all resources that match the given dictionary/document.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#searchChildResourceIDsByParentRIAndType" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchChildResourceIDsByParentRIAndType">search<wbr></wbr>Child<wbr></wbr>Resource<wbr></wbr>IDs<wbr></wbr>By<wbr></wbr>Parent<wbr></wbr>RIAnd<wbr></wbr>Type</a></code></td>
+    <td>Search for child resources by parent resource ID and optional type.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#searchIdentifiers" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchIdentifiers">search<wbr></wbr>Identifiers</a></code></td>
+    <td>Search for an resource ID OR for a structured name in the identifiers DB.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#searchResources" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchResources">search<wbr></wbr>Resources</a></code></td>
+    <td>Search for resources by structured resource name, resource ID, CSE-ID, parent resource ID, resource type, or application entity ID.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#searchSchedulesForParent" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchSchedulesForParent">search<wbr></wbr>Schedules<wbr></wbr>For<wbr></wbr>Parent</a></code></td>
+    <td>Search for schedules in the database.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#searchStatistics" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchStatistics">search<wbr></wbr>Statistics</a></code></td>
+    <td>Search for statistics.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#searchSubscriptionReprs" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchSubscriptionReprs">search<wbr></wbr>Subscription<wbr></wbr>Reprs</a></code></td>
+    <td>Search for subscription representations by resource ID or parent resource ID.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#start" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.start">start</a></code></td>
+    <td>Start the PostgreSQLBinding.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#updateActionRepr" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.updateActionRepr">update<wbr></wbr>Action<wbr></wbr>Repr</a></code></td>
+    <td>Update an action representation.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#updateResource" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.updateResource">update<wbr></wbr>Resource</a></code></td>
+    <td>Update a resource in the database. Only the fields that are not None will be updated.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#upgradeTables" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upgradeTables">upgrade<wbr></wbr>Tables</a></code></td>
+    <td>Upgrade the tables if necessary.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#upsertActionRepr" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertActionRepr">upsert<wbr></wbr>Action<wbr></wbr>Repr</a></code></td>
+    <td>Update or insert an action representation.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#upsertChildResource" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertChildResource">upsert<wbr></wbr>Child<wbr></wbr>Resource</a></code></td>
+    <td>Add a child resource to the childResources DB.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#upsertIdentifier" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertIdentifier">upsert<wbr></wbr>Identifier</a></code></td>
+    <td>Insert or update an identifier into the identifiers DB and a structured resource name into the structuredResourceNames DB.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#upsertResource" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertResource">upsert<wbr></wbr>Resource</a></code></td>
+    <td>Update or insert a resource into the database.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#upsertSchedule" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertSchedule">upsert<wbr></wbr>Schedule</a></code></td>
+    <td>Add or update a schedule in the database.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#upsertStatistics" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertStatistics">upsert<wbr></wbr>Statistics</a></code></td>
+    <td>Update or insert statistics.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#upsertSubscriptionRepr" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertSubscriptionRepr">upsert<wbr></wbr>Subscription<wbr></wbr>Repr</a></code></td>
+    <td>Update or insert a subscription representation into the database.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#validate" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.validate">validate</a></code></td>
+    <td>Validate the configuration for the PostgreSQLBinding.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tableActions" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableActions">table<wbr></wbr>Actions</a></code></td>
+    <td>The name of the table for actions.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tableBatchNotifications" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableBatchNotifications">table<wbr></wbr>Batch<wbr></wbr>Notifications</a></code></td>
+    <td>The name of the table for batch notifications.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tableChildResources" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableChildResources">table<wbr></wbr>Child<wbr></wbr>Resources</a></code></td>
+    <td>The name of the table for child resource mappings.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tableIdentidiers" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableIdentidiers">table<wbr></wbr>Identidiers</a></code></td>
+    <td>The name of the table for identifier mappings.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tableOriginators" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableOriginators">table<wbr></wbr>Originators</a></code></td>
+    <td>The name of the table for originators.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tableRequests" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableRequests">table<wbr></wbr>Requests</a></code></td>
+    <td>The name of the table to store requests and responses.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tableResources" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableResources">table<wbr></wbr>Resources</a></code></td>
+    <td>The name of the table for resources.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tableSchedules" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableSchedules">table<wbr></wbr>Schedules</a></code></td>
+    <td>The name of the table for schedules.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tableStatistics" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableStatistics">table<wbr></wbr>Statistics</a></code></td>
+    <td>The name of the table for statistic information.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#tableSubscriptions" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableSubscriptions">table<wbr></wbr>Subscriptions</a></code></td>
+    <td>The name of the table for subscription mappings.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#dbConnection" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbConnection">db<wbr></wbr>Connection</a></code></td>
+    <td>The database connection object.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#dbDatabase" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbDatabase">db<wbr></wbr>Database</a></code></td>
+    <td>The name of the database to connect to.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#dbHost" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbHost">db<wbr></wbr>Host</a></code></td>
+    <td>The hostname of the database server.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#dbPassword" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbPassword">db<wbr></wbr>Password</a></code></td>
+    <td>The password to connect to the database.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#dbPort" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbPort">db<wbr></wbr>Port</a></code></td>
+    <td>The port of the database server.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#dbSchema" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbSchema">db<wbr></wbr>Schema</a></code></td>
+    <td>The schema to use in the database.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#dbUser" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbUser">db<wbr></wbr>User</a></code></td>
+    <td>The username to connect to the database.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_checkOpenConnection" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding._checkOpenConnection">_check<wbr></wbr>Open<wbr></wbr>Connection</a></code></td>
+    <td>Check if the database connection is open.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_executePrepared" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding._executePrepared">_execute<wbr></wbr>Prepared</a></code></td>
+    <td>Execute a prepared statement.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_fetchAllRows" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding._fetchAllRows">_fetch<wbr></wbr>All<wbr></wbr>Rows</a></code></td>
+    <td>Fetch the first elements from all rows from the database cursor.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_fetchNumber" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding._fetchNumber">_fetch<wbr></wbr>Number</a></code></td>
+    <td>Fetch one number from the database cursor.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_fetchSingleRow" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding._fetchSingleRow">_fetch<wbr></wbr>Single<wbr></wbr>Row</a></code></td>
+    <td>Fetch the first element from the first row from the database cursor.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.addBatchNotification">
+    
+  </a>
+  <a name="addBatchNotification">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">addBatchNotification</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">batchRecord: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#addBatchNotification" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.addBatchNotification">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#addBatchNotification" class="internal-link">acmecse.runtime.DBBinding.DBBinding.addBatchNotification</a></code></div>
+    <div><p>Add a batch notification to the database.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">batch<wbr></wbr>Record:</span><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The batch notification to add.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if the batch notification was added, False otherwise.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.addOriginator">
+    
+  </a>
+  <a name="addOriginator">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">addOriginator</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">originatorStructure: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">originator: <code>str</code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#addOriginator" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.addOriginator">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#addOriginator" class="internal-link">acmecse.runtime.DBBinding.DBBinding.addOriginator</a></code></div>
+    <div><p>Add an originator to the database.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator<wbr></wbr>Structure:</span><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The originator structure to add.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator to add.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">Boolean value to indicate success or failure.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.backupDB">
+    
+  </a>
+  <a name="backupDB">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">backupDB</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">dir: <code>str</code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#backupDB" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.backupDB">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#backupDB" class="internal-link">acmecse.runtime.DBBinding.DBBinding.backupDB</a></code></div>
+    <div><p>Backup the database to a directory.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dir:</span><code>str</code></td><td class="fieldArgDesc">The directory to backup to.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">Boolean value to indicate success or failure.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.closeDB">
+    
+  </a>
+  <a name="closeDB">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">closeDB</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#closeDB" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.closeDB">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#closeDB" class="internal-link">acmecse.runtime.DBBinding.DBBinding.closeDB</a></code></div>
+    <div><p>Close the database.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.configure">
+    
+  </a>
+  <a name="configure">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#configure" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.configure">configure</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">configure</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">config: <code><a href="acmecse.runtime.Configuration.Configuration.html" class="internal-link" title="acmecse.runtime.Configuration.Configuration">Configuration</a></code></span>):</span>
+    
+    <a class="headerLink" href="#configure" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.configure">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Configure the PostgreSQLBinding with the provided configuration.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">config:</span><code><a href="acmecse.runtime.Configuration.Configuration.html" class="internal-link" title="acmecse.runtime.Configuration.Configuration">Configuration</a></code></td><td class="fieldArgDesc">The configuration object containing the settings for the PostgreSQLBinding.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.countBatchNotifications">
+    
+  </a>
+  <a name="countBatchNotifications">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">countBatchNotifications</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code>, </span><span class="rst-sig-param">nu: <code>str</code></span>) -&gt; <code>int</code>:</span>
+    
+    <a class="headerLink" href="#countBatchNotifications" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.countBatchNotifications">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#countBatchNotifications" class="internal-link">acmecse.runtime.DBBinding.DBBinding.countBatchNotifications</a></code></div>
+    <div><p>Return the number of batch notifications for a resource and notification URI.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">nu:</span><code>str</code></td><td class="fieldArgDesc">The notification URI.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>int</code></td><td class="fieldArgDesc">The number of batch notifications for the resource and notification URI.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.countResources">
+    
+  </a>
+  <a name="countResources">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">countResources</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>int</code>:</span>
+    
+    <a class="headerLink" href="#countResources" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.countResources">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#countResources" class="internal-link">acmecse.runtime.DBBinding.DBBinding.countResources</a></code></div>
+    <div><p>Return the number of resources in the database.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>int</code></td><td class="fieldArgDesc">The number of resources in the database.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.createTables">
+    
+  </a>
+  <a name="createTables">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">createTables</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#createTables" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.createTables">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Create the necessary schema and tables if they do not exist.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.deleteIdentifier">
+    
+  </a>
+  <a name="deleteIdentifier">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">deleteIdentifier</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code>, </span><span class="rst-sig-param">srn: <code>str</code></span>):</span>
+    
+    <a class="headerLink" href="#deleteIdentifier" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.deleteIdentifier">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#deleteIdentifier" class="internal-link">acmecse.runtime.DBBinding.DBBinding.deleteIdentifier</a></code></div>
+    <div><p>Delete an identifier from the identifiers DB.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">srn:</span><code>str</code></td><td class="fieldArgDesc">The structured resource name of the resource.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.deleteRequests">
+    
+  </a>
+  <a name="deleteRequests">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">deleteRequests</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str | None</code> = None</span>):</span>
+    
+    <a class="headerLink" href="#deleteRequests" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.deleteRequests">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#deleteRequests" class="internal-link">acmecse.runtime.DBBinding.DBBinding.deleteRequests</a></code></div>
+    <div><p>Remnove all stored requests from the database.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str | None</code></td><td class="fieldArgDesc">Optional resouce ID. Only requests for this resource ID will be deleted.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.deleteResource">
+    
+  </a>
+  <a name="deleteResource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">deleteResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code></span>):</span>
+    
+    <a class="headerLink" href="#deleteResource" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.deleteResource">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#deleteResource" class="internal-link">acmecse.runtime.DBBinding.DBBinding.deleteResource</a></code></div>
+    <div><p>Delete a resource from the database.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the resource.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.discoverResourcesByFilter">
+    
+  </a>
+  <a name="discoverResourcesByFilter">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">discoverResourcesByFilter</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">func: <code>Callable[<wbr></wbr>[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>], <wbr></wbr>bool]</code></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code>:</span>
+    
+    <a class="headerLink" href="#discoverResourcesByFilter" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.discoverResourcesByFilter">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#discoverResourcesByFilter" class="internal-link">acmecse.runtime.DBBinding.DBBinding.discoverResourcesByFilter</a></code></div>
+    <div><p>Search for resources by a filter function. This goes through all resources in the database and
+applies the filter function to each resource. If the filter function returns True, the resource is added
+to the result list.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">func:</span><code>Callable[<wbr></wbr>[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>], <wbr></wbr>bool]</code></td><td class="fieldArgDesc">The filter function to use.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code></td><td class="fieldArgDesc">A list of found resource documents, or an empty list.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getActionRep">
+    
+  </a>
+  <a name="getActionRep">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">getActionRep</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code></span>) -&gt; <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a> | None</code>:</span>
+    
+    <a class="headerLink" href="#getActionRep" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getActionRep">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#getActionRep" class="internal-link">acmecse.runtime.DBBinding.DBBinding.getActionRep</a></code></div>
+    <div><p>Get an action representation by resource ID.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the action representation.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a> | None</code></td><td class="fieldArgDesc">The action representation, or None if not found.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getAllActionReprs">
+    
+  </a>
+  <a name="getAllActionReprs">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">getAllActionReprs</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code>:</span>
+    
+    <a class="headerLink" href="#getAllActionReprs" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getAllActionReprs">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#getAllActionReprs" class="internal-link">acmecse.runtime.DBBinding.DBBinding.getAllActionReprs</a></code></div>
+    <div><p>Return all action representations.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code></td><td class="fieldArgDesc">A list of action representations, or None if not found.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getBatchNotifications">
+    
+  </a>
+  <a name="getBatchNotifications">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">getBatchNotifications</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code>, </span><span class="rst-sig-param">nu: <code>str</code></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code>:</span>
+    
+    <a class="headerLink" href="#getBatchNotifications" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getBatchNotifications">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#getBatchNotifications" class="internal-link">acmecse.runtime.DBBinding.DBBinding.getBatchNotifications</a></code></div>
+    <div><p>Return the batch notifications for a resource and notification URI.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">nu:</span><code>str</code></td><td class="fieldArgDesc">The notification URI.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code></td><td class="fieldArgDesc">A list of batch notifications for the resource and notification URI.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getOriginator">
+    
+  </a>
+  <a name="getOriginator">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">getOriginator</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">originator: <code>str</code></span>) -&gt; <code>tuple[<wbr></wbr>str, <wbr></wbr><a href="acmecse.etc.Types.OriginatorType.html" class="internal-link" title="acmecse.etc.Types.OriginatorType">OriginatorType</a>] | None</code>:</span>
+    
+    <a class="headerLink" href="#getOriginator" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getOriginator">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#getOriginator" class="internal-link">acmecse.runtime.DBBinding.DBBinding.getOriginator</a></code></div>
+    <div><p>Get an originator and its information from the database.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator to search for.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>tuple[<wbr></wbr>str, <wbr></wbr><a href="acmecse.etc.Types.OriginatorType.html" class="internal-link" title="acmecse.etc.Types.OriginatorType">OriginatorType</a>] | None</code></td><td class="fieldArgDesc">Tuple containing the originator and its type, or None if not found.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getRequests">
+    
+  </a>
+  <a name="getRequests">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">getRequests</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str | None</code> = None</span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code>:</span>
+    
+    <a class="headerLink" href="#getRequests" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getRequests">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#getRequests" class="internal-link">acmecse.runtime.DBBinding.DBBinding.getRequests</a></code></div>
+    <div><p>Get requests for a resource ID, or all requests.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str | None</code></td><td class="fieldArgDesc">The target resource's resource ID. If <em>None</em> or empty, then all requests are returned</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code></td><td class="fieldArgDesc">List of <em>Documents</em>. May be empty.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getSchedule">
+    
+  </a>
+  <a name="getSchedule">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">getSchedule</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code></span>) -&gt; <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a> | None</code>:</span>
+    
+    <a class="headerLink" href="#getSchedule" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getSchedule">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#getSchedule" class="internal-link">acmecse.runtime.DBBinding.DBBinding.getSchedule</a></code></div>
+    <div><p>Get a schedule from the database.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the schedule.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a> | None</code></td><td class="fieldArgDesc">The schedule, or <em>None</em> if not found.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getSchedules">
+    
+  </a>
+  <a name="getSchedules">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">getSchedules</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code>:</span>
+    
+    <a class="headerLink" href="#getSchedules" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.getSchedules">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#getSchedules" class="internal-link">acmecse.runtime.DBBinding.DBBinding.getSchedules</a></code></div>
+    <div><p>Get all schedules from the database.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code></td><td class="fieldArgDesc">List of <em>Documents</em>. May be empty.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.hasResource">
+    
+  </a>
+  <a name="hasResource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">hasResource</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str | None</code> = None, </span><span class="rst-sig-param">srn: <code>str | None</code> = None, </span><span class="rst-sig-param">ty: <code>int | None</code> = None</span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#hasResource" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.hasResource">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#hasResource" class="internal-link">acmecse.runtime.DBBinding.DBBinding.hasResource</a></code></div>
+    <div><p>Check if a resource exists in the database.</p>
+<p>Only one of the parameters may be used at a time. The order of precedence is: structured resource name,
+resource ID, resource type.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str | None</code></td><td class="fieldArgDesc">A resource ID.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">srn:</span><code>str | None</code></td><td class="fieldArgDesc">A structured resource name.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ty:</span><code>int | None</code></td><td class="fieldArgDesc">A resource type.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if the resource exists, False otherwise.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.insertRequest">
+    
+  </a>
+  <a name="insertRequest">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">insertRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">req: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">ts: <code>float</code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#insertRequest" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.insertRequest">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#insertRequest" class="internal-link">acmecse.runtime.DBBinding.DBBinding.insertRequest</a></code></div>
+    <div><p>Add a request to the <em>requests</em> database.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">req:</span><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The request to store.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ts:</span><code>float</code></td><td class="fieldArgDesc">The timestamp of the request.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">Boolean value to indicate success or failure.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.insertResource">
+    
+  </a>
+  <a name="insertResource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">insertResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">ri: <code>str</code></span>):</span>
+    
+    <a class="headerLink" href="#insertResource" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.insertResource">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#insertResource" class="internal-link">acmecse.runtime.DBBinding.DBBinding.insertResource</a></code></div>
+    <div><p>Insert a resource into the database.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The resource to insert.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the resource.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.prepareStatements">
+    
+  </a>
+  <a name="prepareStatements">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">prepareStatements</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#prepareStatements" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.prepareStatements">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Prepare the PreparedStatements for various SQL operations.</p>
+<p>This method is called after the database connection is established and
+the tables are created. It prepares the SQL statements for the various
+operations that can be performed on the database. This includes inserting,
+updating, and deleting resources, identifiers, child resources, and
+subscriptions.</p>
+<p>Note that prepared statements are only usable within the same connection.
+Therefore, this method should be called after the connection is established.</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.purgeDB">
+    
+  </a>
+  <a name="purgeDB">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">purgeDB</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#purgeDB" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.purgeDB">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#purgeDB" class="internal-link">acmecse.runtime.DBBinding.DBBinding.purgeDB</a></code></div>
+    <div><p>Purge the database. Remove all data</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.purgeStatistics">
+    
+  </a>
+  <a name="purgeStatistics">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">purgeStatistics</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#purgeStatistics" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.purgeStatistics">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#purgeStatistics" class="internal-link">acmecse.runtime.DBBinding.DBBinding.purgeStatistics</a></code></div>
+    <div><p>Purge the statistics DB.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeActionRepr">
+    
+  </a>
+  <a name="removeActionRepr">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">removeActionRepr</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#removeActionRepr" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeActionRepr">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#removeActionRepr" class="internal-link">acmecse.runtime.DBBinding.DBBinding.removeActionRepr</a></code></div>
+    <div><p>Remove an action representation.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str</code></td><td class="fieldArgDesc">The action's resource ID.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if the action representation was removed, False otherwise.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeBatchNotifications">
+    
+  </a>
+  <a name="removeBatchNotifications">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">removeBatchNotifications</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code>, </span><span class="rst-sig-param">nu: <code>str</code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#removeBatchNotifications" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeBatchNotifications">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#removeBatchNotifications" class="internal-link">acmecse.runtime.DBBinding.DBBinding.removeBatchNotifications</a></code></div>
+    <div><p>Remove the batch notifications for a resource and notification URI.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">nu:</span><code>str</code></td><td class="fieldArgDesc">The notification URI.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if the batch notifications were removed, False otherwise.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeChildResource">
+    
+  </a>
+  <a name="removeChildResource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">removeChildResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code>, </span><span class="rst-sig-param">pi: <code>str</code></span>):</span>
+    
+    <a class="headerLink" href="#removeChildResource" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeChildResource">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#removeChildResource" class="internal-link">acmecse.runtime.DBBinding.DBBinding.removeChildResource</a></code></div>
+    <div><p>Remove a child resource from the childResources DB.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">pi:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the parent resource.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeOldRequests">
+    
+  </a>
+  <a name="removeOldRequests">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">removeOldRequests</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">maxRequests: <code>int</code></span>):</span>
+    
+    <a class="headerLink" href="#removeOldRequests" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeOldRequests">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#removeOldRequests" class="internal-link">acmecse.runtime.DBBinding.DBBinding.removeOldRequests</a></code></div>
+    <div><p>Remove old requests from the database.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">max<wbr></wbr>Requests:</span><code>int</code></td><td class="fieldArgDesc">The maximum number of requests to keep.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeOriginator">
+    
+  </a>
+  <a name="removeOriginator">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">removeOriginator</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">originator: <code>str</code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#removeOriginator" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeOriginator">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#removeOriginator" class="internal-link">acmecse.runtime.DBBinding.DBBinding.removeOriginator</a></code></div>
+    <div><p>Remove an originator from the database.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator to remove.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">Boolean value to indicate success or failure.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeSchedule">
+    
+  </a>
+  <a name="removeSchedule">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">removeSchedule</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#removeSchedule" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeSchedule">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#removeSchedule" class="internal-link">acmecse.runtime.DBBinding.DBBinding.removeSchedule</a></code></div>
+    <div><p>Remove a schedule from the database.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the schedule to remove.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if the schedule was removed, False otherwise.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeSubscriptionRepr">
+    
+  </a>
+  <a name="removeSubscriptionRepr">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">removeSubscriptionRepr</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#removeSubscriptionRepr" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.removeSubscriptionRepr">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#removeSubscriptionRepr" class="internal-link">acmecse.runtime.DBBinding.DBBinding.removeSubscriptionRepr</a></code></div>
+    <div><p>Remove a subscription representation from the database.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the original <code><a href="acmecse.resources.SUB.html" class="internal-link" title="acmecse.resources.SUB">SUB</a></code> resource.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if the subscription representation was removed, False otherwise.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchActionsReprsForSubject">
+    
+  </a>
+  <a name="searchActionsReprsForSubject">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">searchActionsReprsForSubject</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">subjectRi: <code>str</code></span>) -&gt; <code>Sequence[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code>:</span>
+    
+    <a class="headerLink" href="#searchActionsReprsForSubject" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchActionsReprsForSubject">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#searchActionsReprsForSubject" class="internal-link">acmecse.runtime.DBBinding.DBBinding.searchActionsReprsForSubject</a></code></div>
+    <div><p>Search for action representations by subject.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">subject<wbr></wbr>Ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the action representation's subject.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>Sequence[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code></td><td class="fieldArgDesc">A list of action representations, or an empty list if not found.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchByFragment">
+    
+  </a>
+  <a name="searchByFragment">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">searchByFragment</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">dct: <code>dict</code></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code>:</span>
+    
+    <a class="headerLink" href="#searchByFragment" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchByFragment">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#searchByFragment" class="internal-link">acmecse.runtime.DBBinding.DBBinding.searchByFragment</a></code></div>
+    <div><p>Search and return all resources that match the given dictionary/document.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dct:</span><code>dict</code></td><td class="fieldArgDesc">The dictionary/document to search for.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code></td><td class="fieldArgDesc">A list of found resources, or an empty list.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchChildResourceIDsByParentRIAndType">
+    
+  </a>
+  <a name="searchChildResourceIDsByParentRIAndType">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">searchChildResourceIDsByParentRIAndType</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pi: <code>str</code>, </span><span class="rst-sig-param">ty: <code><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a> | list[<wbr></wbr><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a>] | None</code> = None</span>) -&gt; <code>list[<wbr></wbr>str]</code>:</span>
+    
+    <a class="headerLink" href="#searchChildResourceIDsByParentRIAndType" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchChildResourceIDsByParentRIAndType">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#searchChildResourceIDsByParentRIAndType" class="internal-link">acmecse.runtime.DBBinding.DBBinding.searchChildResourceIDsByParentRIAndType</a></code></div>
+    <div><p>Search for child resources by parent resource ID and optional type.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">pi:</span><code>str</code></td><td class="fieldArgDesc">The parent resource ID.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ty:</span><code><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a> | list[<wbr></wbr><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a>] | None</code></td><td class="fieldArgDesc">The resource type of the child resources to search for, or a list of resource types.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr>str]</code></td><td class="fieldArgDesc">A list of child resource IDs, or an empty list if not found.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchIdentifiers">
+    
+  </a>
+  <a name="searchIdentifiers">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">searchIdentifiers</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str | None</code> = None, </span><span class="rst-sig-param">srn: <code>str | None</code> = None</span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code>:</span>
+    
+    <a class="headerLink" href="#searchIdentifiers" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchIdentifiers">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#searchIdentifiers" class="internal-link">acmecse.runtime.DBBinding.DBBinding.searchIdentifiers</a></code></div>
+    <div><p>Search for an resource ID OR for a structured name in the identifiers DB.</p>
+<p>Either <em>ri</em> or <em>srn</em> shall be given. If both are given then <em>srn</em>
+is taken.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str | None</code></td><td class="fieldArgDesc">Resource ID to search for.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">srn:</span><code>str | None</code></td><td class="fieldArgDesc">Structured path to search for.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code></td><td class="fieldArgDesc">A list of found identifier documents (see <code><a href="#upsertIdentifier" class="internal-link" title="acmecse.runtime.DBBinding.DBBinding.upsertIdentifier">upsertIdentifier</a></code>), or an empty list if not found.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchResources">
+    
+  </a>
+  <a name="searchResources">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">searchResources</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str | None</code> = None, </span><span class="rst-sig-param">csi: <code>str | None</code> = None, </span><span class="rst-sig-param">srn: <code>str | None</code> = None, </span><span class="rst-sig-param">pi: <code>str | None</code> = None, </span><span class="rst-sig-param">ty: <code>int | None</code> = None, </span><span class="rst-sig-param">aei: <code>str | None</code> = None</span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code>:</span>
+    
+    <a class="headerLink" href="#searchResources" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchResources">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#searchResources" class="internal-link">acmecse.runtime.DBBinding.DBBinding.searchResources</a></code></div>
+    <div><p>Search for resources by structured resource name, resource ID, CSE-ID, parent resource ID, resource type,
+or application entity ID.</p>
+<p>Only one of the parameters may be used at a time. The order of precedence is: structured resource name,
+resource ID, CSE-ID, structured resource name, parent resource ID, resource type, application entity ID.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str | None</code></td><td class="fieldArgDesc">A resource ID.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">csi:</span><code>str | None</code></td><td class="fieldArgDesc">A CSE ID.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">srn:</span><code>str | None</code></td><td class="fieldArgDesc">A structured resource name.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">pi:</span><code>str | None</code></td><td class="fieldArgDesc">A parent resource ID.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ty:</span><code>int | None</code></td><td class="fieldArgDesc">A resource type.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">aei:</span><code>str | None</code></td><td class="fieldArgDesc">An application entity ID.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code></td><td class="fieldArgDesc">A list of found resource documents, or an empty list.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchSchedulesForParent">
+    
+  </a>
+  <a name="searchSchedulesForParent">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">searchSchedulesForParent</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pi: <code>str</code></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code>:</span>
+    
+    <a class="headerLink" href="#searchSchedulesForParent" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchSchedulesForParent">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#searchSchedulesForParent" class="internal-link">acmecse.runtime.DBBinding.DBBinding.searchSchedulesForParent</a></code></div>
+    <div><p>Search for schedules in the database.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">pi:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the parent resource.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code></td><td class="fieldArgDesc">List of <em>Documents</em>. May be empty.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchStatistics">
+    
+  </a>
+  <a name="searchStatistics">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">searchStatistics</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>:</span>
+    
+    <a class="headerLink" href="#searchStatistics" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchStatistics">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#searchStatistics" class="internal-link">acmecse.runtime.DBBinding.DBBinding.searchStatistics</a></code></div>
+    <div><p>Search for statistics.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The statistics, or None if not found.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchSubscriptionReprs">
+    
+  </a>
+  <a name="searchSubscriptionReprs">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">searchSubscriptionReprs</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str | None</code> = None, </span><span class="rst-sig-param">pi: <code>str | None</code> = None</span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>] | None</code>:</span>
+    
+    <a class="headerLink" href="#searchSubscriptionReprs" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.searchSubscriptionReprs">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#searchSubscriptionReprs" class="internal-link">acmecse.runtime.DBBinding.DBBinding.searchSubscriptionReprs</a></code></div>
+    <div><p>Search for subscription representations by resource ID or parent resource ID.</p>
+<p>Only one of the parameters may be used at a time. The order of precedence is: resource ID, parent resource ID.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str | None</code></td><td class="fieldArgDesc">A resource ID.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">pi:</span><code>str | None</code></td><td class="fieldArgDesc">A parent resource ID.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>] | None</code></td><td class="fieldArgDesc">A list of found subscription representations, or None.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.start">
+    
+  </a>
+  <a name="start">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#start" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.start">start</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">start</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#start" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.start">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Start the PostgreSQLBinding.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.updateActionRepr">
+    
+  </a>
+  <a name="updateActionRepr">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">updateActionRepr</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">actionRepr: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#updateActionRepr" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.updateActionRepr">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#updateActionRepr" class="internal-link">acmecse.runtime.DBBinding.DBBinding.updateActionRepr</a></code></div>
+    <div><p>Update an action representation.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">action<wbr></wbr>Repr:</span><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The action representation to update.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if the action representation was updated, False otherwise.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.updateResource">
+    
+  </a>
+  <a name="updateResource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">updateResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">ri: <code>str</code></span>) -&gt; <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>:</span>
+    
+    <a class="headerLink" href="#updateResource" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.updateResource">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#updateResource" class="internal-link">acmecse.runtime.DBBinding.DBBinding.updateResource</a></code></div>
+    <div><p>Update a resource in the database. Only the fields that are not None will be updated.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The resource to update.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the resource.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The updated resource dirctionary.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upgradeTables">
+    
+  </a>
+  <a name="upgradeTables">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">upgradeTables</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#upgradeTables" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upgradeTables">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Upgrade the tables if necessary.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertActionRepr">
+    
+  </a>
+  <a name="upsertActionRepr">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">upsertActionRepr</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">actionRepr: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">ri: <code>str</code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#upsertActionRepr" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertActionRepr">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#upsertActionRepr" class="internal-link">acmecse.runtime.DBBinding.DBBinding.upsertActionRepr</a></code></div>
+    <div><p>Update or insert an action representation.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">action<wbr></wbr>Repr:</span><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The action representation to update or insert.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the action representation.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if the action representation was updated or inserted, False otherwise.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertChildResource">
+    
+  </a>
+  <a name="upsertChildResource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">upsertChildResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">childResource: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">ri: <code>str</code></span>):</span>
+    
+    <a class="headerLink" href="#upsertChildResource" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertChildResource">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#upsertChildResource" class="internal-link">acmecse.runtime.DBBinding.DBBinding.upsertChildResource</a></code></div>
+    <div><p>Add a child resource to the childResources DB.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">child<wbr></wbr>Resource:</span><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The resource to add as a child.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the resource.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertIdentifier">
+    
+  </a>
+  <a name="upsertIdentifier">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">upsertIdentifier</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">identifierMapping: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">structuredPathMapping: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">ri: <code>str</code>, </span><span class="rst-sig-param">srn: <code>str</code></span>):</span>
+    
+    <a class="headerLink" href="#upsertIdentifier" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertIdentifier">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#upsertIdentifier" class="internal-link">acmecse.runtime.DBBinding.DBBinding.upsertIdentifier</a></code></div>
+    <div><p>Insert or update an identifier into the identifiers DB and a structured
+resource name into the structuredResourceNames DB.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">identifier<wbr></wbr>Mapping:</span><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The identifier mapping to insert.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">structured<wbr></wbr>Path<wbr></wbr>Mapping:</span><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The structured path mapping to insert.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">srn:</span><code>str</code></td><td class="fieldArgDesc">The structured resource name of the resource.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertResource">
+    
+  </a>
+  <a name="upsertResource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">upsertResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">ri: <code>str</code></span>):</span>
+    
+    <a class="headerLink" href="#upsertResource" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertResource">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#upsertResource" class="internal-link">acmecse.runtime.DBBinding.DBBinding.upsertResource</a></code></div>
+    <div><p>Update or insert a resource into the database.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The resource to upate or insert.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the resource.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertSchedule">
+    
+  </a>
+  <a name="upsertSchedule">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">upsertSchedule</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">schedule: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">ri: <code>str</code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#upsertSchedule" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertSchedule">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#upsertSchedule" class="internal-link">acmecse.runtime.DBBinding.DBBinding.upsertSchedule</a></code></div>
+    <div><p>Add or update a schedule in the database.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">schedule:</span><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The schedule to store.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the schedule.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if the schedule was added or updated, False otherwise.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertStatistics">
+    
+  </a>
+  <a name="upsertStatistics">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">upsertStatistics</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">stats: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#upsertStatistics" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertStatistics">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#upsertStatistics" class="internal-link">acmecse.runtime.DBBinding.DBBinding.upsertStatistics</a></code></div>
+    <div><p>Update or insert statistics.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">stats:</span><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The statistics to update or insert.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if the statistics were updated or inserted, False otherwise.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertSubscriptionRepr">
+    
+  </a>
+  <a name="upsertSubscriptionRepr">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">upsertSubscriptionRepr</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">subscription: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">ri: <code>str</code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#upsertSubscriptionRepr" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.upsertSubscriptionRepr">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="acmecse.runtime.DBBinding.DBBinding.html#upsertSubscriptionRepr" class="internal-link">acmecse.runtime.DBBinding.DBBinding.upsertSubscriptionRepr</a></code></div>
+    <div><p>Update or insert a subscription representation into the database.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">subscription:</span><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">The subscription representation to update or insert.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the original <code><a href="acmecse.resources.SUB.html" class="internal-link" title="acmecse.resources.SUB">SUB</a></code> resource.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if the subscription representation was updated or inserted, False otherwise.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.validate">
+    
+  </a>
+  <a name="validate">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#validate" class="internal-link" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.validate">validate</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">validate</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">config: <code><a href="acmecse.runtime.Configuration.Configuration.html" class="internal-link" title="acmecse.runtime.Configuration.Configuration">Configuration</a></code></span>):</span>
+    
+    <a class="headerLink" href="#validate" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.validate">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Validate the configuration for the PostgreSQLBinding.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">config:</span><code><a href="acmecse.runtime.Configuration.Configuration.html" class="internal-link" title="acmecse.runtime.Configuration.Configuration">Configuration</a></code></td><td class="fieldArgDesc">The configuration object containing the settings for the PostgreSQLBinding.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.runtime.Configuration.ConfigurationError.html" class="internal-link" title="acmecse.runtime.Configuration.ConfigurationError">ConfigurationError</a></code></td><td>If the configuration is invalid.</td></tr></table></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableActions">
+    
+  </a>
+  <a name="tableActions">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tableActions</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#tableActions" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableActions">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The name of the table for actions.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableBatchNotifications">
+    
+  </a>
+  <a name="tableBatchNotifications">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tableBatchNotifications</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#tableBatchNotifications" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableBatchNotifications">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The name of the table for batch notifications.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableChildResources">
+    
+  </a>
+  <a name="tableChildResources">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tableChildResources</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#tableChildResources" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableChildResources">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The name of the table for child resource mappings.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableIdentidiers">
+    
+  </a>
+  <a name="tableIdentidiers">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tableIdentidiers</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#tableIdentidiers" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableIdentidiers">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The name of the table for identifier mappings.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableOriginators">
+    
+  </a>
+  <a name="tableOriginators">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tableOriginators</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#tableOriginators" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableOriginators">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The name of the table for originators.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableRequests">
+    
+  </a>
+  <a name="tableRequests">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tableRequests</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#tableRequests" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableRequests">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The name of the table to store requests and responses.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableResources">
+    
+  </a>
+  <a name="tableResources">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tableResources</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#tableResources" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableResources">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The name of the table for resources.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableSchedules">
+    
+  </a>
+  <a name="tableSchedules">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tableSchedules</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#tableSchedules" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableSchedules">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The name of the table for schedules.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableStatistics">
+    
+  </a>
+  <a name="tableStatistics">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tableStatistics</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#tableStatistics" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableStatistics">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The name of the table for statistic information.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableSubscriptions">
+    
+  </a>
+  <a name="tableSubscriptions">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tableSubscriptions</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#tableSubscriptions" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.tableSubscriptions">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The name of the table for subscription mappings.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbConnection">
+    
+  </a>
+  <a name="dbConnection">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dbConnection</span>: <code>PsyConnection | None</code> =
+    
+    <a class="headerLink" href="#dbConnection" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbConnection">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The database connection object.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbDatabase">
+    
+  </a>
+  <a name="dbDatabase">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dbDatabase</span> =
+    
+    <a class="headerLink" href="#dbDatabase" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbDatabase">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The name of the database to connect to.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbHost">
+    
+  </a>
+  <a name="dbHost">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dbHost</span> =
+    
+    <a class="headerLink" href="#dbHost" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbHost">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The hostname of the database server.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbPassword">
+    
+  </a>
+  <a name="dbPassword">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dbPassword</span> =
+    
+    <a class="headerLink" href="#dbPassword" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbPassword">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The password to connect to the database.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbPort">
+    
+  </a>
+  <a name="dbPort">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dbPort</span> =
+    
+    <a class="headerLink" href="#dbPort" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbPort">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The port of the database server.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbSchema">
+    
+  </a>
+  <a name="dbSchema">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dbSchema</span> =
+    
+    <a class="headerLink" href="#dbSchema" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbSchema">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The schema to use in the database.</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbUser">
+    
+  </a>
+  <a name="dbUser">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dbUser</span> =
+    
+    <a class="headerLink" href="#dbUser" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.dbUser">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The username to connect to the database.</p></div>
+    
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding._checkOpenConnection">
+    
+  </a>
+  <a name="_checkOpenConnection">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_checkOpenConnection</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#_checkOpenConnection" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding._checkOpenConnection">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check if the database connection is open.</p>
+<p>Try to reconnect if the connection is closed.</p>
+</div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding._executePrepared">
+    
+  </a>
+  <a name="_executePrepared">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_executePrepared</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">statement: <code>str</code>, </span><span class="rst-sig-param">args: <code>tuple</code>, </span><span class="rst-sig-param">closure: <code>Callable | None</code> = None</span>) -&gt; <code>Any</code>:</span>
+    
+    <a class="headerLink" href="#_executePrepared" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding._executePrepared">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Execute a prepared statement.</p>
+<p>This is the main method to execute a prepared statement. It will execute the statement
+with the given arguments and return the result of the closure, if one is provided.</p>
+<p>Almost all database operations are done through this method.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">statement:</span><code>str</code></td><td class="fieldArgDesc">The name of the prepared statement to execute and its parameters.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">args:</span><code>tuple</code></td><td class="fieldArgDesc">The arguments to pass to the prepared statement. This must be a tuple.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">closure:</span><code>Callable | None</code></td><td class="fieldArgDesc">An optional closure callback to process the result of the query. This closure will be
+passed the cursor object and should return the result of the query.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>Any</code></td><td class="fieldArgDesc">The result of the closure, if one is provided, or True if no closure is provided.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding._fetchAllRows">
+    
+  </a>
+  <a name="_fetchAllRows">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_fetchAllRows</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">cursor: <code>PsyCursor</code></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code>:</span>
+    
+    <a class="headerLink" href="#_fetchAllRows" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding._fetchAllRows">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Fetch the first elements from all rows from the database cursor.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">cursor:</span><code>PsyCursor</code></td><td class="fieldArgDesc">The database cursor to fetch the rows from.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code></td><td class="fieldArgDesc">The fetched rows, or an empty list if no rows were fetched.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding._fetchNumber">
+    
+  </a>
+  <a name="_fetchNumber">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_fetchNumber</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">cursor: <code>PsyCursor</code></span>) -&gt; <code>int</code>:</span>
+    
+    <a class="headerLink" href="#_fetchNumber" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding._fetchNumber">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Fetch one number from the database cursor.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">cursor:</span><code>PsyCursor</code></td><td class="fieldArgDesc">The database cursor to fetch the number from.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>int</code></td><td class="fieldArgDesc">The fetched number, or None if no number was fetched.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding._fetchSingleRow">
+    
+  </a>
+  <a name="_fetchSingleRow">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_fetchSingleRow</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">cursor: <code>PsyCursor</code>, </span><span class="rst-sig-param">asList: <code>bool</code> = True</span>) -&gt; <code>Any | list[<wbr></wbr>Any]</code>:</span>
+    
+    <a class="headerLink" href="#_fetchSingleRow" title="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding._fetchSingleRow">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Fetch the first element from the first row from the database cursor.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">cursor:</span><code>PsyCursor</code></td><td class="fieldArgDesc">The database cursor to fetch the row from.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">as<wbr></wbr>List:</span><code>bool</code></td><td class="fieldArgDesc">Whether to return the row as a list or not.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>Any | list[<wbr></wbr>Any]</code></td><td class="fieldArgDesc">The fetched row as a single object or in a list, or None or an empty list if no row was fetched.</td></tr></table></div>
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container-fluid">
+      <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      25.4.0 at 2026-05-25 21:18:11.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

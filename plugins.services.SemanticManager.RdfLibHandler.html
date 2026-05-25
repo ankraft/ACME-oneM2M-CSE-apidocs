@@ -7,7 +7,7 @@
   <head>
     
     <title>plugins.services.SemanticManager.RdfLibHandler</title>
-    <meta name="generator" content="pydoctor 25.10.1"> 
+    <meta name="generator" content="pydoctor 25.4.0"> 
         
     </meta>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="apidocs.css" />
     <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
     <link rel="stylesheet" type="text/css" href="extra.css" />
-    <link rel="canonical" href="https://acmecse.net/api/plugins.services.SemanticManager.RdfLibHandler.html" />
+    
 </head>
 
   <body>
@@ -32,7 +32,7 @@
       
       <div class="navlinks">
         <span class="navbar-brand">
-          <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+          <a href="https://github.com/ankraft/ACME-oneM2M-CSE" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
         </span>
 
         <a href="moduleIndex.html">
@@ -257,16 +257,6 @@
         
 
         
-            <div class="itemName"><code><a href="#__slots__" class="internal-link" title="plugins.services.SemanticManager.RdfLibHandler.__slots__">__slots__</a></code>
-            </div>
-        
-
-    </li><li class="">
-        
-        
-        
-
-        
             <div class="itemName"><code><a href="#storeIdentifier" class="internal-link" title="plugins.services.SemanticManager.RdfLibHandler.storeIdentifier">store<wbr></wbr>Identifier</a></code>
             </div>
         
@@ -298,6 +288,16 @@
 
         
             <div class="itemName"><code><a href="#store" class="internal-link" title="plugins.services.SemanticManager.RdfLibHandler.store">store</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__slots__" class="internal-link" title="plugins.services.SemanticManager.RdfLibHandler.__slots__">__slots__</a></code>
             </div>
         
 
@@ -382,7 +382,7 @@
     
     <div class="container-fluid">
 
-      <main class="">
+      <div id="main" class="">
         
 
         
@@ -390,7 +390,7 @@
 
         <div class="page-header">
           <h1 class="class"><code><code><a href="plugins.html" class="internal-link">plugins</a></code><wbr></wbr>.<code><a href="plugins.services.html" class="internal-link" title="plugins.services">services</a></code><wbr></wbr>.<code><a href="plugins.services.SemanticManager.html" class="internal-link" title="plugins.services.SemanticManager">SemanticManager</a></code><wbr></wbr>.<code><a href="plugins.services.SemanticManager.RdfLibHandler.html" class="internal-link" title="plugins.services.SemanticManager.RdfLibHandler">RdfLibHandler</a></code></code></h1>
-          <div id="show-private">
+          <div id="showPrivate">
             <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
           </div>
         </div>
@@ -400,7 +400,8 @@
         </div>
 
         <div class="extrasDocstring">
-          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">RdfLibHandler</span>(<a href="plugins.services.SemanticManager.SemanticHandler.html" class="internal-link" title="plugins.services.SemanticManager.SemanticHandler">SemanticHandler</a>):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="plugins.services.SemanticManager.RdfLibHandler.__init__">RdfLibHandler()</a></code></p><p><a href="classIndex.html#plugins.services.SemanticManager.RdfLibHandler">View In Hierarchy</a></p>
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">RdfLibHandler</span>(<a href="plugins.services.SemanticManager.SemanticHandler.html" class="internal-link" title="plugins.services.SemanticManager.SemanticHandler">SemanticHandler</a>):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="plugins.services.SemanticManager.RdfLibHandler.__init__">RdfLibHandler()</a></code></p>
+          <p><a href="classIndex.html#plugins.services.SemanticManager.RdfLibHandler">View In Hierarchy</a></p>
         </div>
 
         <div class="moduleDocstring">
@@ -412,8 +413,8 @@
 </div>
         </div>
 
-        <div id="split-tables">
-          <table class="children sortable" id="id817">
+        <div id="splitTables">
+          <table class="children sortable" id="id740">
   
   
   <tr class="method">
@@ -474,11 +475,6 @@
   </tr><tr class="classvariable">
     
     <td>Class Variable</td>
-    <td><code><a href="#__slots__" class="internal-link" title="plugins.services.SemanticManager.RdfLibHandler.__slots__">__slots__</a></code></td>
-    <td>Slots for RdfLibHandler class.</td>
-  </tr><tr class="classvariable">
-    
-    <td>Class Variable</td>
     <td><code><a href="#storeIdentifier" class="internal-link" title="plugins.services.SemanticManager.RdfLibHandler.storeIdentifier">store<wbr></wbr>Identifier</a></code></td>
     <td>The identifier for the graph stores.</td>
   </tr><tr class="classvariable">
@@ -495,12 +491,17 @@
     
     <td>Instance Variable</td>
     <td><code><a href="#store" class="internal-link" title="plugins.services.SemanticManager.RdfLibHandler.store">store</a></code></td>
-    <td>The store that stores the graphs. Only the in-memory storage method is supported.</td>
+    <td>The store that stores the graphs.</td>
   </tr><tr class="method private">
     
     <td>Method</td>
     <td><code><a href="#_openStore" class="internal-link" title="plugins.services.SemanticManager.RdfLibHandler._openStore">_open<wbr></wbr>Store</a></code></td>
     <td>Open the graph store.</td>
+  </tr><tr class="classvariable private">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#__slots__" class="internal-link" title="plugins.services.SemanticManager.RdfLibHandler.__slots__">__slots__</a></code></td>
+    <td><span class="rst-undocumented">Undocumented</span></td>
   </tr>
 </table>
           
@@ -508,7 +509,7 @@
             
         </div>
 
-        <div id="child-list">
+        <div id="childList">
           <div class="basemethod">
   
   
@@ -777,30 +778,6 @@ graphs for the list of resources indicated by their resource IDs.</p><table clas
 </div><div class="baseclassvariable">
   
   
-  <a name="plugins.services.SemanticManager.RdfLibHandler.__slots__">
-    
-  </a>
-  <a name="__slots__">
-    
-  </a>
-  <div class="functionHeader">
-    
-    <span class="py-defname">__slots__</span>: <code>tuple[<wbr></wbr>str, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code> =
-    
-    <a class="headerLink" href="#__slots__" title="plugins.services.SemanticManager.RdfLibHandler.__slots__">
-      
-      
-      ¶
-    </a>
-  </div>
-  <div class="functionBody">
-    
-    <div><p>Slots for RdfLibHandler class.</p></div>
-    
-  </div>
-</div><div class="baseclassvariable">
-  
-  
   <a name="plugins.services.SemanticManager.RdfLibHandler.storeIdentifier">
     
   </a>
@@ -892,7 +869,7 @@ supported formats are listed here.</p></div>
   </div>
   <div class="functionBody">
     
-    <div><p>The store that stores the graphs. Only the in-memory storage method is supported.</p></div>
+    <div><p>The store that stores the graphs.</p></div>
     
   </div>
 </div><div class="basemethod private">
@@ -919,10 +896,34 @@ supported formats are listed here.</p></div>
     
     <div><p>Open the graph store.</p></div>
   </div>
+</div><div class="baseclassvariable private">
+  
+  
+  <a name="plugins.services.SemanticManager.RdfLibHandler.__slots__">
+    
+  </a>
+  <a name="__slots__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__slots__</span>: <code>tuple[<wbr></wbr>str, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code> =
+    
+    <a class="headerLink" href="#__slots__" title="plugins.services.SemanticManager.RdfLibHandler.__slots__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
 </div>
         </div>
       
-      </main>
+      </div>
     </div>
 
     <footer class="navbar navbar-default">
@@ -930,9 +931,9 @@ supported formats are listed here.</p></div>
     
     
     <div class="container-fluid">
-      <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/ankraft/ACME-oneM2M-CSE" class="projecthome">ACME oneM2M CSE</a>,
     generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-      25.10.1 at 2026-05-13 00:16:54.
+      25.4.0 at 2026-05-11 15:25:42.
     </div>
     
     <script src="ajax.js" type="text/javascript"></script>

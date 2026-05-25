@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>acme.protocols.HttpServer.ACMERequestHandler</title>
+    <meta name="generator" content="pydoctor 25.4.0"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/ankraft/ACME-oneM2M-CSE" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="acme.protocols.HttpServer.ACMERequestHandler.html" class="internal-link" title="This class"><wbr></wbr>ACMERequest<wbr></wbr>Handler</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#log" class="internal-link" title="acme.protocols.HttpServer.ACMERequestHandler.log">log</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#log_message" class="internal-link" title="acme.protocols.HttpServer.ACMERequestHandler.log_message">log<wbr></wbr>_message</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#log_request" class="internal-link" title="acme.protocols.HttpServer.ACMERequestHandler.log_request">log<wbr></wbr>_request</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="acme.protocols.HttpServer.html" class="internal-link" title="The parent of this class"><wbr></wbr>Http<wbr></wbr>Server</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.protocols.HttpServer.ACMERequestHandler.html" class="internal-link" title="acme.protocols.HttpServer.ACMERequestHandler"><wbr></wbr>ACMERequest<wbr></wbr>Handler</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.protocols.HttpServer.HttpServer.html" class="internal-link" title="acme.protocols.HttpServer.HttpServer"><wbr></wbr>Http<wbr></wbr>Server</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.protocols.HttpServer.html#FlaskHandler" class="internal-link" title="acme.protocols.HttpServer.FlaskHandler"><wbr></wbr>Flask<wbr></wbr>Handler</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">acme</a></code><wbr></wbr>.<code><a href="acme.protocols.html" class="internal-link" title="acme.protocols">protocols</a></code><wbr></wbr>.<code><a href="acme.protocols.HttpServer.html" class="internal-link" title="acme.protocols.HttpServer">HttpServer</a></code><wbr></wbr>.<code><a href="acme.protocols.HttpServer.ACMERequestHandler.html" class="internal-link" title="acme.protocols.HttpServer.ACMERequestHandler">ACMERequestHandler</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">ACMERequestHandler</span>(WSGIRequestHandler):</code></p>
+          <p><a href="classIndex.html#acme.protocols.HttpServer.ACMERequestHandler">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>ACMERequestHandler is a custom request handler for the ACME CSE HTTP server.
+It extends the WSGIRequestHandler to provide custom logging.</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id313">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#log" class="internal-link" title="acme.protocols.HttpServer.ACMERequestHandler.log">log</a></code></td>
+    <td>Log a message with the given type and arguments. This is used to log HTTP requests and responses.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#log_message" class="internal-link" title="acme.protocols.HttpServer.ACMERequestHandler.log_message">log<wbr></wbr>_message</a></code></td>
+    <td>Log a message with the given format and arguments. This is used to log HTTP requests and responses.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#log_request" class="internal-link" title="acme.protocols.HttpServer.ACMERequestHandler.log_request">log<wbr></wbr>_request</a></code></td>
+    <td>Log an HTTP request with the given code and size. This is used to log HTTP requests and responses.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="acme.protocols.HttpServer.ACMERequestHandler.log">
+    
+  </a>
+  <a name="log">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">log</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">type: <code>str</code>, </span><span class="rst-sig-param">message: <code>str</code>, </span><span class="rst-sig-param">*args: <code>Any</code></span>):</span>
+    
+    <a class="headerLink" href="#log" title="acme.protocols.HttpServer.ACMERequestHandler.log">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Log a message with the given type and arguments.
+This is used to log HTTP requests and responses.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">type:</span><code>str</code></td><td class="fieldArgDesc">The type of the log message (e.g. "request", "response").</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">message:</span><code>str</code></td><td class="fieldArgDesc">The log message format string.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">*args:</span><code>Any</code></td><td class="fieldArgDesc">The values to interpolate into the message format string.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.protocols.HttpServer.ACMERequestHandler.log_message">
+    
+  </a>
+  <a name="log_message">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">log_message</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">format: <code>str</code>, </span><span class="rst-sig-param">*args: <code>Any</code></span>):</span>
+    
+    <a class="headerLink" href="#log_message" title="acme.protocols.HttpServer.ACMERequestHandler.log_message">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Log a message with the given format and arguments.
+This is used to log HTTP requests and responses.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">format:</span><code>str</code></td><td class="fieldArgDesc">The log message format string.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">*args:</span><code>Any</code></td><td class="fieldArgDesc">The values to interpolate into the message format string.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.protocols.HttpServer.ACMERequestHandler.log_request">
+    
+  </a>
+  <a name="log_request">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">log_request</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">code: <code>str | int | None</code> = <span class="rst-variable-quote">'</span><span class="rst-variable-string">-</span><span class="rst-variable-quote">'</span>, </span><span class="rst-sig-param">size: <code>str | int | None</code> = <span class="rst-variable-quote">'</span><span class="rst-variable-string">-</span><span class="rst-variable-quote">'</span></span>):</span>
+    
+    <a class="headerLink" href="#log_request" title="acme.protocols.HttpServer.ACMERequestHandler.log_request">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Log an HTTP request with the given code and size.
+This is used to log HTTP requests and responses.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">code:</span><code>str | int | None</code></td><td class="fieldArgDesc">The HTTP status code of the response.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">size:</span><code>str | int | None</code></td><td class="fieldArgDesc">The size of the response in bytes.</td></tr></table></div>
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container-fluid">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/ankraft/ACME-oneM2M-CSE" class="projecthome">ACME oneM2M CSE</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      25.4.0 at 2026-04-15 11:57:14.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

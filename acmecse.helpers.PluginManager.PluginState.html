@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>acmecse.helpers.PluginManager.PluginState</title>
+    <meta name="generator" content="pydoctor 25.4.0"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    <link rel="canonical" href="https://api.acmecse.net/acmecse.helpers.PluginManager.PluginState.html" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="acmecse.helpers.PluginManager.PluginState.html" class="internal-link" title="This class"><wbr></wbr>Plugin<wbr></wbr>State</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        
+         
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#ERROR" class="internal-link" title="acmecse.helpers.PluginManager.PluginState.ERROR">ERROR</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#FINALIZED" class="internal-link" title="acmecse.helpers.PluginManager.PluginState.FINALIZED">FINALIZED</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#INITIALIZED" class="internal-link" title="acmecse.helpers.PluginManager.PluginState.INITIALIZED">INITIALIZED</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#LOADED" class="internal-link" title="acmecse.helpers.PluginManager.PluginState.LOADED">LOADED</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#PAUSED" class="internal-link" title="acmecse.helpers.PluginManager.PluginState.PAUSED">PAUSED</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#RESOLVED" class="internal-link" title="acmecse.helpers.PluginManager.PluginState.RESOLVED">RESOLVED</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#RUNNING" class="internal-link" title="acmecse.helpers.PluginManager.PluginState.RUNNING">RUNNING</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#STOPPED" class="internal-link" title="acmecse.helpers.PluginManager.PluginState.STOPPED">STOPPED</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#UNRESOLVED" class="internal-link" title="acmecse.helpers.PluginManager.PluginState.UNRESOLVED">UNRESOLVED</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="acmecse.helpers.PluginManager.html" class="internal-link" title="The parent of this class"><wbr></wbr>Plugin<wbr></wbr>Manager</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.Dependency.html" class="internal-link" title="acmecse.helpers.PluginManager.Dependency"><wbr></wbr>Dependency</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.PluginInfo.html" class="internal-link" title="acmecse.helpers.PluginManager.PluginInfo"><wbr></wbr>Plugin<wbr></wbr>Info</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.PluginManager.html" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager"><wbr></wbr>Plugin<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.PluginState.html" class="internal-link" title="acmecse.helpers.PluginManager.PluginState"><wbr></wbr>Plugin<wbr></wbr>State</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.Service.html" class="internal-link" title="acmecse.helpers.PluginManager.Service"><wbr></wbr>Service</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.DependencyError.html" class="internal-link" title="acmecse.helpers.PluginManager.DependencyError"><wbr></wbr>Dependency<wbr></wbr>Error</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.PluginConfigurationError.html" class="internal-link" title="acmecse.helpers.PluginManager.PluginConfigurationError"><wbr></wbr>Plugin<wbr></wbr>Configuration<wbr></wbr>Error</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.PluginError.html" class="internal-link" title="acmecse.helpers.PluginManager.PluginError"><wbr></wbr>Plugin<wbr></wbr>Error</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#configure" class="internal-link" title="acmecse.helpers.PluginManager.configure">configure</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#endpoint" class="internal-link" title="acmecse.helpers.PluginManager.endpoint">endpoint</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#finish" class="internal-link" title="acmecse.helpers.PluginManager.finish">finish</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#init" class="internal-link" title="acmecse.helpers.PluginManager.init">init</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#onResolved" class="internal-link" title="acmecse.helpers.PluginManager.onResolved">on<wbr></wbr>Resolved</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#onUnresolved" class="internal-link" title="acmecse.helpers.PluginManager.onUnresolved">on<wbr></wbr>Unresolved</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#pause" class="internal-link" title="acmecse.helpers.PluginManager.pause">pause</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#plugin" class="internal-link" title="acmecse.helpers.PluginManager.plugin">plugin</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#provide" class="internal-link" title="acmecse.helpers.PluginManager.provide">provide</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#requires" class="internal-link" title="acmecse.helpers.PluginManager.requires">requires</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#restart" class="internal-link" title="acmecse.helpers.PluginManager.restart">restart</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#start" class="internal-link" title="acmecse.helpers.PluginManager.start">start</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#stop" class="internal-link" title="acmecse.helpers.PluginManager.stop">stop</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#unpause" class="internal-link" title="acmecse.helpers.PluginManager.unpause">unpause</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#validate" class="internal-link" title="acmecse.helpers.PluginManager.validate">validate</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#_wrap" class="internal-link" title="acmecse.helpers.PluginManager._wrap">_wrap</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#DependencyGraph" class="internal-link" title="acmecse.helpers.PluginManager.DependencyGraph"><wbr></wbr>Dependency<wbr></wbr>Graph</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#dependencies" class="internal-link" title="acmecse.helpers.PluginManager.dependencies">dependencies</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#dependentClasses" class="internal-link" title="acmecse.helpers.PluginManager.dependentClasses">dependent<wbr></wbr>Classes</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#providedFunctions" class="internal-link" title="acmecse.helpers.PluginManager.providedFunctions">provided<wbr></wbr>Functions</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#serviceClasses" class="internal-link" title="acmecse.helpers.PluginManager.serviceClasses">service<wbr></wbr>Classes</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#_tagEndpointMap" class="internal-link" title="acmecse.helpers.PluginManager._tagEndpointMap">_tag<wbr></wbr>Endpoint<wbr></wbr>Map</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#_tagEnpoints" class="internal-link" title="acmecse.helpers.PluginManager._tagEnpoints">_tag<wbr></wbr>Enpoints</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#_tagInstanceName" class="internal-link" title="acmecse.helpers.PluginManager._tagInstanceName">_tag<wbr></wbr>Instance<wbr></wbr>Name</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#_tagInstancePriority" class="internal-link" title="acmecse.helpers.PluginManager._tagInstancePriority">_tag<wbr></wbr>Instance<wbr></wbr>Priority</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#_tagInstanceTags" class="internal-link" title="acmecse.helpers.PluginManager._tagInstanceTags">_tag<wbr></wbr>Instance<wbr></wbr>Tags</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#_tagNoRestartWhilePaused" class="internal-link" title="acmecse.helpers.PluginManager._tagNoRestartWhilePaused">_tag<wbr></wbr>No<wbr></wbr>Restart<wbr></wbr>While<wbr></wbr>Paused</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html#_tagType" class="internal-link" title="acmecse.helpers.PluginManager._tagType">_tag<wbr></wbr>Type</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">acmecse</a></code><wbr></wbr>.<code><a href="acmecse.helpers.html" class="internal-link" title="acmecse.helpers">helpers</a></code><wbr></wbr>.<code><a href="acmecse.helpers.PluginManager.html" class="internal-link" title="acmecse.helpers.PluginManager">PluginManager</a></code><wbr></wbr>.<code><a href="acmecse.helpers.PluginManager.PluginState.html" class="internal-link" title="acmecse.helpers.PluginManager.PluginState">PluginState</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">PluginState</span>(IntEnum):</code></p>
+          <p><a href="classIndex.html#acmecse.helpers.PluginManager.PluginState">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Plugin states.</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id230">
+  
+  
+  <tr class="constant">
+    
+    <td>Constant</td>
+    <td><code><a href="#ERROR" class="internal-link" title="acmecse.helpers.PluginManager.PluginState.ERROR">ERROR</a></code></td>
+    <td>The plugin is in an error state.</td>
+  </tr><tr class="constant">
+    
+    <td>Constant</td>
+    <td><code><a href="#FINALIZED" class="internal-link" title="acmecse.helpers.PluginManager.PluginState.FINALIZED">FINALIZED</a></code></td>
+    <td>The plugin is finalized.</td>
+  </tr><tr class="constant">
+    
+    <td>Constant</td>
+    <td><code><a href="#INITIALIZED" class="internal-link" title="acmecse.helpers.PluginManager.PluginState.INITIALIZED">INITIALIZED</a></code></td>
+    <td>The plugin is initialized but not yet resolved.</td>
+  </tr><tr class="constant">
+    
+    <td>Constant</td>
+    <td><code><a href="#LOADED" class="internal-link" title="acmecse.helpers.PluginManager.PluginState.LOADED">LOADED</a></code></td>
+    <td>The plugin is loaded but not yet initialized.</td>
+  </tr><tr class="constant">
+    
+    <td>Constant</td>
+    <td><code><a href="#PAUSED" class="internal-link" title="acmecse.helpers.PluginManager.PluginState.PAUSED">PAUSED</a></code></td>
+    <td>The plugin is paused.</td>
+  </tr><tr class="constant">
+    
+    <td>Constant</td>
+    <td><code><a href="#RESOLVED" class="internal-link" title="acmecse.helpers.PluginManager.PluginState.RESOLVED">RESOLVED</a></code></td>
+    <td>The plugin's dependencies are resolved.</td>
+  </tr><tr class="constant">
+    
+    <td>Constant</td>
+    <td><code><a href="#RUNNING" class="internal-link" title="acmecse.helpers.PluginManager.PluginState.RUNNING">RUNNING</a></code></td>
+    <td>The plugin is running.</td>
+  </tr><tr class="constant">
+    
+    <td>Constant</td>
+    <td><code><a href="#STOPPED" class="internal-link" title="acmecse.helpers.PluginManager.PluginState.STOPPED">STOPPED</a></code></td>
+    <td>The plugin is stopped.</td>
+  </tr><tr class="constant">
+    
+    <td>Constant</td>
+    <td><code><a href="#UNRESOLVED" class="internal-link" title="acmecse.helpers.PluginManager.PluginState.UNRESOLVED">UNRESOLVED</a></code></td>
+    <td>The plugin is unresolved.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="baseconstant">
+  
+  
+  <a name="acmecse.helpers.PluginManager.PluginState.ERROR">
+    
+  </a>
+  <a name="ERROR">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">ERROR</span> =
+    
+    <a class="headerLink" href="#ERROR" title="acmecse.helpers.PluginManager.PluginState.ERROR">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The plugin is in an error state.</p></div>
+    <table class="valueTable"><tr class="fieldStart"><td class="fieldName">Value</td></tr><tr><td><pre class="constant-value"><code>auto()</code></pre></td></tr></table>
+  </div>
+</div><div class="baseconstant">
+  
+  
+  <a name="acmecse.helpers.PluginManager.PluginState.FINALIZED">
+    
+  </a>
+  <a name="FINALIZED">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">FINALIZED</span> =
+    
+    <a class="headerLink" href="#FINALIZED" title="acmecse.helpers.PluginManager.PluginState.FINALIZED">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The plugin is finalized.</p></div>
+    <table class="valueTable"><tr class="fieldStart"><td class="fieldName">Value</td></tr><tr><td><pre class="constant-value"><code>auto()</code></pre></td></tr></table>
+  </div>
+</div><div class="baseconstant">
+  
+  
+  <a name="acmecse.helpers.PluginManager.PluginState.INITIALIZED">
+    
+  </a>
+  <a name="INITIALIZED">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">INITIALIZED</span> =
+    
+    <a class="headerLink" href="#INITIALIZED" title="acmecse.helpers.PluginManager.PluginState.INITIALIZED">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The plugin is initialized but not yet resolved.</p></div>
+    <table class="valueTable"><tr class="fieldStart"><td class="fieldName">Value</td></tr><tr><td><pre class="constant-value"><code>auto()</code></pre></td></tr></table>
+  </div>
+</div><div class="baseconstant">
+  
+  
+  <a name="acmecse.helpers.PluginManager.PluginState.LOADED">
+    
+  </a>
+  <a name="LOADED">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">LOADED</span> =
+    
+    <a class="headerLink" href="#LOADED" title="acmecse.helpers.PluginManager.PluginState.LOADED">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The plugin is loaded but not yet initialized.</p></div>
+    <table class="valueTable"><tr class="fieldStart"><td class="fieldName">Value</td></tr><tr><td><pre class="constant-value"><code>auto()</code></pre></td></tr></table>
+  </div>
+</div><div class="baseconstant">
+  
+  
+  <a name="acmecse.helpers.PluginManager.PluginState.PAUSED">
+    
+  </a>
+  <a name="PAUSED">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">PAUSED</span> =
+    
+    <a class="headerLink" href="#PAUSED" title="acmecse.helpers.PluginManager.PluginState.PAUSED">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The plugin is paused.</p></div>
+    <table class="valueTable"><tr class="fieldStart"><td class="fieldName">Value</td></tr><tr><td><pre class="constant-value"><code>auto()</code></pre></td></tr></table>
+  </div>
+</div><div class="baseconstant">
+  
+  
+  <a name="acmecse.helpers.PluginManager.PluginState.RESOLVED">
+    
+  </a>
+  <a name="RESOLVED">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">RESOLVED</span> =
+    
+    <a class="headerLink" href="#RESOLVED" title="acmecse.helpers.PluginManager.PluginState.RESOLVED">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The plugin's dependencies are resolved.</p></div>
+    <table class="valueTable"><tr class="fieldStart"><td class="fieldName">Value</td></tr><tr><td><pre class="constant-value"><code>auto()</code></pre></td></tr></table>
+  </div>
+</div><div class="baseconstant">
+  
+  
+  <a name="acmecse.helpers.PluginManager.PluginState.RUNNING">
+    
+  </a>
+  <a name="RUNNING">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">RUNNING</span> =
+    
+    <a class="headerLink" href="#RUNNING" title="acmecse.helpers.PluginManager.PluginState.RUNNING">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The plugin is running.</p></div>
+    <table class="valueTable"><tr class="fieldStart"><td class="fieldName">Value</td></tr><tr><td><pre class="constant-value"><code>auto()</code></pre></td></tr></table>
+  </div>
+</div><div class="baseconstant">
+  
+  
+  <a name="acmecse.helpers.PluginManager.PluginState.STOPPED">
+    
+  </a>
+  <a name="STOPPED">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">STOPPED</span> =
+    
+    <a class="headerLink" href="#STOPPED" title="acmecse.helpers.PluginManager.PluginState.STOPPED">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The plugin is stopped.</p></div>
+    <table class="valueTable"><tr class="fieldStart"><td class="fieldName">Value</td></tr><tr><td><pre class="constant-value"><code>auto()</code></pre></td></tr></table>
+  </div>
+</div><div class="baseconstant">
+  
+  
+  <a name="acmecse.helpers.PluginManager.PluginState.UNRESOLVED">
+    
+  </a>
+  <a name="UNRESOLVED">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">UNRESOLVED</span> =
+    
+    <a class="headerLink" href="#UNRESOLVED" title="acmecse.helpers.PluginManager.PluginState.UNRESOLVED">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The plugin is unresolved.</p></div>
+    <table class="valueTable"><tr class="fieldStart"><td class="fieldName">Value</td></tr><tr><td><pre class="constant-value"><code>auto()</code></pre></td></tr></table>
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container-fluid">
+      <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      25.4.0 at 2026-05-25 21:18:11.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

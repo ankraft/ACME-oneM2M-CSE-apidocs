@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>acme.services.GroupManager.GroupManager</title>
+    <meta name="generator" content="pydoctor 25.4.0"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/ankraft/ACME-oneM2M-CSE" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="acme.services.GroupManager.GroupManager.html" class="internal-link" title="This class"><wbr></wbr>Group<wbr></wbr>Manager</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="acme.services.GroupManager.GroupManager.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#foptRequest" class="internal-link" title="acme.services.GroupManager.GroupManager.foptRequest">fopt<wbr></wbr>Request</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#handleDeleteEvent" class="internal-link" title="acme.services.GroupManager.GroupManager.handleDeleteEvent">handle<wbr></wbr>Delete<wbr></wbr>Event</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#restart" class="internal-link" title="acme.services.GroupManager.GroupManager.restart">restart</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#shutdown" class="internal-link" title="acme.services.GroupManager.GroupManager.shutdown">shutdown</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#validateGroup" class="internal-link" title="acme.services.GroupManager.GroupManager.validateGroup">validate<wbr></wbr>Group</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_checkMembersAndPrivileges" class="internal-link" title="acme.services.GroupManager.GroupManager._checkMembersAndPrivileges">_check<wbr></wbr>Members<wbr></wbr>And<wbr></wbr>Privileges</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="acme.services.GroupManager.html" class="internal-link" title="The parent of this class"><wbr></wbr>Group<wbr></wbr>Manager</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acme.services.GroupManager.GroupManager.html" class="internal-link" title="acme.services.GroupManager.GroupManager"><wbr></wbr>Group<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">acme</a></code><wbr></wbr>.<code><a href="acme.services.html" class="internal-link" title="acme.services">services</a></code><wbr></wbr>.<code><a href="acme.services.GroupManager.html" class="internal-link" title="acme.services.GroupManager">GroupManager</a></code><wbr></wbr>.<code><a href="acme.services.GroupManager.GroupManager.html" class="internal-link" title="acme.services.GroupManager.GroupManager">GroupManager</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">GroupManager</span>(object):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="acme.services.GroupManager.GroupManager.__init__">GroupManager()</a></code></p>
+          <p><a href="classIndex.html#acme.services.GroupManager.GroupManager">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Manager for the CSE's group service.</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id625">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="acme.services.GroupManager.GroupManager.__init__">__init__</a></code></td>
+    <td>Initialization of the GroupManager.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#foptRequest" class="internal-link" title="acme.services.GroupManager.GroupManager.foptRequest">fopt<wbr></wbr>Request</a></code></td>
+    <td>Handle requests to a &lt;<code><a href="acme.resources.GRP.html" class="internal-link" title="acme.resources.GRP">GRP</a></code>&gt;'s  &lt;<code><a href="acme.resources.GRP_FOPT.GRP_FOPT.html" class="internal-link" title="acme.resources.GRP_FOPT.GRP_FOPT">GRP_FOPT</a></code>&gt; fanOutPoint. This method might be called recursivly, in case there are groups in groups.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#handleDeleteEvent" class="internal-link" title="acme.services.GroupManager.GroupManager.handleDeleteEvent">handle<wbr></wbr>Delete<wbr></wbr>Event</a></code></td>
+    <td>Handle a CSE-internal delete event (ie. whenever a resource is deleted). Check whether the deleted resource is a member of a group. If yes, then remove the member. This method is called by the <code>EventManager</code>...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#restart" class="internal-link" title="acme.services.GroupManager.GroupManager.restart">restart</a></code></td>
+    <td>Restart the registration services.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#shutdown" class="internal-link" title="acme.services.GroupManager.GroupManager.shutdown">shutdown</a></code></td>
+    <td>Shutdown the GroupManager.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#validateGroup" class="internal-link" title="acme.services.GroupManager.GroupManager.validateGroup">validate<wbr></wbr>Group</a></code></td>
+    <td>Validate a group and its members (privileges and attribute).</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_checkMembersAndPrivileges" class="internal-link" title="acme.services.GroupManager.GroupManager._checkMembersAndPrivileges">_check<wbr></wbr>Members<wbr></wbr>And<wbr></wbr>Privileges</a></code></td>
+    <td>Internally check a group's member resources and privileges.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="acme.services.GroupManager.GroupManager.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">__init__</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    
+    <a class="headerLink" href="#__init__" title="acme.services.GroupManager.GroupManager.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Initialization of the GroupManager.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.GroupManager.GroupManager.foptRequest">
+    
+  </a>
+  <a name="foptRequest">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">foptRequest</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">operation: <code><a href="acme.etc.Types.Operation.html" class="internal-link" title="acme.etc.Types.Operation">Operation</a></code>, </span><span class="rst-sig-param">fopt: <code><a href="acme.resources.GRP_FOPT.GRP_FOPT.html" class="internal-link" title="acme.resources.GRP_FOPT.GRP_FOPT">GRP_FOPT</a></code>, </span><span class="rst-sig-param">request: <code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">id: <code>str</code>, </span><span class="rst-sig-param">originator: <code>str</code></span>) -&gt; <code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code>:</span>
+    
+    <a class="headerLink" href="#foptRequest" title="acme.services.GroupManager.GroupManager.foptRequest">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle requests to a &lt;<code><a href="acme.resources.GRP.html" class="internal-link" title="acme.resources.GRP">GRP</a></code>&gt;'s  &lt;<code><a href="acme.resources.GRP_FOPT.GRP_FOPT.html" class="internal-link" title="acme.resources.GRP_FOPT.GRP_FOPT">GRP_FOPT</a></code>&gt; fanOutPoint. This method might be called recursivly,
+in case there are groups in groups.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">operation:</span><code><a href="acme.etc.Types.Operation.html" class="internal-link" title="acme.etc.Types.Operation">Operation</a></code></td><td class="fieldArgDesc">The operation type to perform on the group.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">fopt:</span><code><a href="acme.resources.GRP_FOPT.GRP_FOPT.html" class="internal-link" title="acme.resources.GRP_FOPT.GRP_FOPT">GRP_FOPT</a></code></td><td class="fieldArgDesc">The &lt;<code><a href="acme.resources.GRP_FOPT.GRP_FOPT.html" class="internal-link" title="acme.resources.GRP_FOPT.GRP_FOPT">GRP_FOPT</a></code>&gt; virtual resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acme.etc.Types.CSERequest.html" class="internal-link" title="acme.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">The request to perform on the &lt;<code><a href="acme.resources.GRP_FOPT.GRP_FOPT.html" class="internal-link" title="acme.resources.GRP_FOPT.GRP_FOPT">GRP_FOPT</a></code>&gt;.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">id:</span><code>str</code></td><td class="fieldArgDesc">The original target resource ID.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The request's originator.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code></td><td class="fieldArgDesc"><code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code> instance.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.GroupManager.GroupManager.handleDeleteEvent">
+    
+  </a>
+  <a name="handleDeleteEvent">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">handleDeleteEvent</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">name: <code>str</code>, </span><span class="rst-sig-param">deletedResource: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></span>):</span>
+    
+    <a class="headerLink" href="#handleDeleteEvent" title="acme.services.GroupManager.GroupManager.handleDeleteEvent">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle a CSE-internal delete event (ie. whenever a resource is deleted).
+Check whether the deleted resource is a member of a group. If yes, then remove the member.
+This method is called by the <code>EventManager</code>.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">name:</span><code>str</code></td><td class="fieldArgDesc"><span class="undocumented">Undocumented</span></td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">deleted<wbr></wbr>Resource:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The deleted resource to check.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.GroupManager.GroupManager.restart">
+    
+  </a>
+  <a name="restart">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">restart</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">name: <code>str</code></span>):</span>
+    
+    <a class="headerLink" href="#restart" title="acme.services.GroupManager.GroupManager.restart">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Restart the registration services.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.GroupManager.GroupManager.shutdown">
+    
+  </a>
+  <a name="shutdown">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">shutdown</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#shutdown" title="acme.services.GroupManager.GroupManager.shutdown">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Shutdown the GroupManager.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc"><em>True</em> when shutdown is complete.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acme.services.GroupManager.GroupManager.validateGroup">
+    
+  </a>
+  <a name="validateGroup">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">validateGroup</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">group: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code></span>):</span>
+    
+    <a class="headerLink" href="#validateGroup" title="acme.services.GroupManager.GroupManager.validateGroup">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Validate a group and its members (privileges and attribute).</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">group:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The &lt;group&gt; resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The request's originator.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2"><code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code> instance.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acme.services.GroupManager.GroupManager._checkMembersAndPrivileges">
+    
+  </a>
+  <a name="_checkMembersAndPrivileges">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_checkMembersAndPrivileges</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">group: <code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code></span>):</span>
+    
+    <a class="headerLink" href="#_checkMembersAndPrivileges" title="acme.services.GroupManager.GroupManager._checkMembersAndPrivileges">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Internally check a group's member resources and privileges.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">group:</span><code><a href="acme.resources.Resource.Resource.html" class="internal-link" title="acme.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The group resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The request's originator.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2"><code><a href="acme.etc.Types.Result.html" class="internal-link" title="acme.etc.Types.Result">Result</a></code> object with the status of the operation.</td></tr></table></div>
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container-fluid">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/ankraft/ACME-oneM2M-CSE" class="projecthome">ACME oneM2M CSE</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      25.4.0 at 2026-04-22 10:45:32.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>
