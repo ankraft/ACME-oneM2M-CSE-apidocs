@@ -1332,6 +1332,14 @@
             <div class="kind">Module</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Import various resources, scripts, policies etc into the CSE.</div>
+          </li><li id="acmecse.runtime.InterceptorManager">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager</div>
+            <div class="url">acmecse.runtime.InterceptorManager.html</div>
+            <div class="type">Module</div>
+            <div class="kind">Module</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">InterceptorManager class for managing interceptors.</div>
           </li><li id="acmecse.runtime.Logging">
             
             <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Logging</div>
@@ -4820,22 +4828,6 @@
             <div class="kind">Class Variable</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">The target for balancing jobs.</div>
-          </li><li id="acmecse.runtime.Configuration.Configuration.cse_operation_requests_enable">
-            
-            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Configuration<wbr></wbr>.<wbr></wbr>Configuration<wbr></wbr>.cse<wbr></wbr>_operation<wbr></wbr>_requests<wbr></wbr>_enable</div>
-            <div class="url">acmecse.runtime.Configuration.Configuration.html#cse_operation_requests_enable</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Class Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Enable or disable operation requests.</div>
-          </li><li id="acmecse.runtime.Configuration.Configuration.cse_operation_requests_size">
-            
-            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Configuration<wbr></wbr>.<wbr></wbr>Configuration<wbr></wbr>.cse<wbr></wbr>_operation<wbr></wbr>_requests<wbr></wbr>_size</div>
-            <div class="url">acmecse.runtime.Configuration.Configuration.html#cse_operation_requests_size</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Class Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">The size of the operation requests.</div>
           </li><li id="acmecse.runtime.Configuration.Configuration.cse_operation_plugins_disabledPlugins">
             
             <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Configuration<wbr></wbr>.<wbr></wbr>Configuration<wbr></wbr>.cse_operation_plugins_disabled<wbr></wbr>Plugins</div>
@@ -4852,6 +4844,14 @@
             <div class="kind">Class Variable</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Replace existing plugins with the same name.</div>
+          </li><li id="acmecse.runtime.Configuration.Configuration.cse_operation_plugins_timeout">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Configuration<wbr></wbr>.<wbr></wbr>Configuration<wbr></wbr>.cse<wbr></wbr>_operation<wbr></wbr>_plugins<wbr></wbr>_timeout</div>
+            <div class="url">acmecse.runtime.Configuration.Configuration.html#cse_operation_plugins_timeout</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Class Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Timeout for plugin methods in seconds. This is the default timeout for plugin methods if not set otherwise in the plugin decorators.</div>
           </li><li id="acmecse.runtime.Configuration.Configuration._cse_operation_plugins_enabledComponents">
             
             <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Configuration<wbr></wbr>.<wbr></wbr>Configuration<wbr></wbr>._cse_operation_plugins_enabled<wbr></wbr>Components</div>
@@ -4860,6 +4860,38 @@
             <div class="kind">Class Variable</div>
             <div class="privacy">PRIVATE</div>
             <div class="summary">An internal dictionary of enabled plugins. The keys are the component names, the values are booleans indicating whether the corresponding plugin is enabled.</div>
+          </li><li id="acmecse.runtime.Configuration.Configuration.cse_operation_requests_enable">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Configuration<wbr></wbr>.<wbr></wbr>Configuration<wbr></wbr>.cse<wbr></wbr>_operation<wbr></wbr>_requests<wbr></wbr>_enable</div>
+            <div class="url">acmecse.runtime.Configuration.Configuration.html#cse_operation_requests_enable</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Class Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Enable or disable operation requests.</div>
+          </li><li id="acmecse.runtime.Configuration.Configuration.cse_operation_requests_size">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Configuration<wbr></wbr>.<wbr></wbr>Configuration<wbr></wbr>.cse<wbr></wbr>_operation<wbr></wbr>_requests<wbr></wbr>_size</div>
+            <div class="url">acmecse.runtime.Configuration.Configuration.html#cse_operation_requests_size</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Class Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">The size of the operation requests.</div>
+          </li><li id="acmecse.runtime.Configuration.Configuration.cse_operation_startup_delay">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Configuration<wbr></wbr>.<wbr></wbr>Configuration<wbr></wbr>.cse<wbr></wbr>_operation<wbr></wbr>_startup<wbr></wbr>_delay</div>
+            <div class="url">acmecse.runtime.Configuration.Configuration.html#cse_operation_startup_delay</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Class Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Startup delay in seconds. This is the time the CSE waits before setting itself to the RUNNING state.</div>
+          </li><li id="acmecse.runtime.Configuration.Configuration.cse_operation_startup_guardDelay">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Configuration<wbr></wbr>.<wbr></wbr>Configuration<wbr></wbr>.cse_operation_startup_guard<wbr></wbr>Delay</div>
+            <div class="url">acmecse.runtime.Configuration.Configuration.html#cse_operation_startup_guardDelay</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Class Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Startup guard delay in seconds. If the CSE is not in the RUNNING state after this time, then a shutdown is forced.</div>
           </li><li id="acmecse.runtime.Configuration.Configuration.cse_registrars">
             
             <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Configuration<wbr></wbr>.<wbr></wbr>Configuration<wbr></wbr>.cse<wbr></wbr>_registrars</div>
@@ -7788,6 +7820,222 @@
             <div class="kind">Function</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Create a cURL command from a request.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.Phase">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Phase</div>
+            <div class="url">acmecse.runtime.InterceptorManager.Phase.html</div>
+            <div class="type">Class</div>
+            <div class="kind">Class</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Enumeration of interception phases.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.Phase.ALL">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Phase<wbr></wbr>.ALL</div>
+            <div class="url">acmecse.runtime.InterceptorManager.Phase.html#ALL</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Constant</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Intercept all phases. This is a special value that can be used to indicate that the interceptor should be applied to all phases.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.Phase.REQUEST_PRE_PROCESSING">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Phase<wbr></wbr>.REQUEST<wbr></wbr>_PRE<wbr></wbr>_PROCESSING</div>
+            <div class="url">acmecse.runtime.InterceptorManager.Phase.html#REQUEST_PRE_PROCESSING</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Constant</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Intercept the request pre-processing phase.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.Phase.REQUEST_POST_PROCESSING">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Phase<wbr></wbr>.REQUEST<wbr></wbr>_POST<wbr></wbr>_PROCESSING</div>
+            <div class="url">acmecse.runtime.InterceptorManager.Phase.html#REQUEST_POST_PROCESSING</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Constant</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Intercept the request post-processing phase.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.Phase.REQUEST_ERROR_RESPONSE">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Phase<wbr></wbr>.REQUEST<wbr></wbr>_ERROR<wbr></wbr>_RESPONSE</div>
+            <div class="url">acmecse.runtime.InterceptorManager.Phase.html#REQUEST_ERROR_RESPONSE</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Constant</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Intercept the request error response phase.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.InterceptorHandlerInfo">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Handler<wbr></wbr>Info</div>
+            <div class="url">acmecse.runtime.InterceptorManager.InterceptorHandlerInfo.html</div>
+            <div class="type">Class</div>
+            <div class="kind">Class</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Data class to hold information about an interceptor handler method.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.InterceptorHandlerInfo.func">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Handler<wbr></wbr>Info<wbr></wbr>.func</div>
+            <div class="url">acmecse.runtime.InterceptorManager.InterceptorHandlerInfo.html#func</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Class Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">The interceptor handler function (bound method).</div>
+          </li><li id="acmecse.runtime.InterceptorManager.InterceptorHandlerInfo.phase">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Handler<wbr></wbr>Info<wbr></wbr>.phase</div>
+            <div class="url">acmecse.runtime.InterceptorManager.InterceptorHandlerInfo.html#phase</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Class Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">The phases this interceptor handler is interested in.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.InterceptorHandlerInfo.operation">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Handler<wbr></wbr>Info<wbr></wbr>.operation</div>
+            <div class="url">acmecse.runtime.InterceptorManager.InterceptorHandlerInfo.html#operation</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Class Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">The operations this interceptor handler is interested in.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.InterceptorHandlerInfo.resource">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Handler<wbr></wbr>Info<wbr></wbr>.resource</div>
+            <div class="url">acmecse.runtime.InterceptorManager.InterceptorHandlerInfo.html#resource</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Class Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">The resource types this interceptor handler is interested in.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.InterceptorHandlerInfo.priority">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Handler<wbr></wbr>Info<wbr></wbr>.priority</div>
+            <div class="url">acmecse.runtime.InterceptorManager.InterceptorHandlerInfo.html#priority</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Class Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">The priority of this interceptor handler. Handlers with lower priority are executed first.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.InterceptorFilter">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Filter</div>
+            <div class="url">acmecse.runtime.InterceptorManager.html#InterceptorFilter</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Type Alias</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">A tuple of (phase, operation, resource) to filter interceptor handlers. Each element can be a specific value or None to match all. This is used as a key for caching interceptor handler lookups in the InterceptorManager.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.interceptorPluginMapping">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.interceptor<wbr></wbr>Plugin<wbr></wbr>Mapping</div>
+            <div class="url">acmecse.runtime.InterceptorManager.html#interceptorPluginMapping</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Maps interceptor handler functions to their plugin names for management purposes.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.InterceptorManager">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager</div>
+            <div class="url">acmecse.runtime.InterceptorManager.InterceptorManager.html</div>
+            <div class="type">Class</div>
+            <div class="kind">Class</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Manager for interceptors. This class is responsible for registering interceptors and calling the appropriate interceptor handlers when a request is processed by the CSE. It maintains a registry of all interceptor handlers and their metadata, and uses this registry to find and call the appropriate handlers for each request.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.InterceptorManager.__init__">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.__init__</div>
+            <div class="url">acmecse.runtime.InterceptorManager.InterceptorManager.html#__init__</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Initialize the InterceptorManager with an empty registry and cache.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.InterceptorManager._registry">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>._registry</div>
+            <div class="url">acmecse.runtime.InterceptorManager.InterceptorManager.html#_registry</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Instance Variable</div>
+            <div class="privacy">PRIVATE</div>
+            <div class="summary">The registry of interceptor handlers. This is a list of InterceptorHandlerInfo objects that contain the handler function and its metadata (phase, operation, resource, priority). This registry is populated when interceptors are registered with the InterceptorManager.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.InterceptorManager._cache">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>._cache</div>
+            <div class="url">acmecse.runtime.InterceptorManager.InterceptorManager.html#_cache</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Instance Variable</div>
+            <div class="privacy">PRIVATE</div>
+            <div class="summary">Cache for interceptor handler lookups. The keys are InterceptorFilter tuples and the values are lists of InterceptorHandlerInfo objects that match the filter. This cache is used to speed up the lookup of interceptor handlers for each request...</div>
+          </li><li id="acmecse.runtime.InterceptorManager.InterceptorManager.register">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.register</div>
+            <div class="url">acmecse.runtime.InterceptorManager.InterceptorManager.html#register</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Register an interceptor with the InterceptorManager. This method is called when an interceptor plugin is loaded and instantiated.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.InterceptorManager.interceptRequestPreProcessing">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.intercept<wbr></wbr>Request<wbr></wbr>Pre<wbr></wbr>Processing</div>
+            <div class="url">acmecse.runtime.InterceptorManager.InterceptorManager.html#interceptRequestPreProcessing</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Call the interceptor handlers for the REQUEST_PRE_PROCESSING phase.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.InterceptorManager.interceptRequestPostProcessing">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.intercept<wbr></wbr>Request<wbr></wbr>Post<wbr></wbr>Processing</div>
+            <div class="url">acmecse.runtime.InterceptorManager.InterceptorManager.html#interceptRequestPostProcessing</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Call the interceptor handlers for the REQUEST_POST_PROCESSING phase.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.InterceptorManager.interceptErrorResponse">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.intercept<wbr></wbr>Error<wbr></wbr>Response</div>
+            <div class="url">acmecse.runtime.InterceptorManager.InterceptorManager.html#interceptErrorResponse</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Call the interceptor handlers for the REQUEST_ERROR_RESPONSE phase.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.InterceptorManager._findHandlers">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>._find<wbr></wbr>Handlers</div>
+            <div class="url">acmecse.runtime.InterceptorManager.InterceptorManager.html#_findHandlers</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PRIVATE</div>
+            <div class="summary">Find and return the list of interceptor handlers for the given phase, operation, and resource type.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.Interceptor">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Interceptor</div>
+            <div class="url">acmecse.runtime.InterceptorManager.Interceptor.html</div>
+            <div class="type">Class</div>
+            <div class="kind">Class</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Base class for interceptors. Interceptors are classes that can define methods decorated with @intercept to intercept requests at different phases (e.g. pre-processing, post-processing) and for different operations and resource types.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.Interceptor.__init__">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>.__init__</div>
+            <div class="url">acmecse.runtime.InterceptorManager.Interceptor.html#__init__</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Initialize the interceptor and extract its handlers and metadata.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.Interceptor._handlers">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>._handlers</div>
+            <div class="url">acmecse.runtime.InterceptorManager.Interceptor.html#_handlers</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Instance Variable</div>
+            <div class="privacy">PRIVATE</div>
+            <div class="summary">The list of interceptor handlers defined in this interceptor. This is populated by scanning the class for methods decorated with @intercept and extracting their metadata.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.intercept">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.intercept</div>
+            <div class="url">acmecse.runtime.InterceptorManager.html#intercept</div>
+            <div class="type">Function</div>
+            <div class="kind">Function</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Decorator to mark a method as an interceptor handler. The decorated method will be registered with the InterceptorManager when the interceptor class is instantiated.</div>
+          </li><li id="acmecse.runtime.InterceptorManager.interceptorManager">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Interceptor<wbr></wbr>Manager<wbr></wbr>.interceptor<wbr></wbr>Manager</div>
+            <div class="url">acmecse.runtime.InterceptorManager.html#interceptorManager</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">The global interceptor manager instance. This is a singleton instance.</div>
           </li><li id="acmecse.helpers.PluginManager._tagType">
             
             <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>._tag<wbr></wbr>Type</div>
@@ -7796,6 +8044,14 @@
             <div class="kind">Variable</div>
             <div class="privacy">PRIVATE</div>
             <div class="summary">Internal tag to identify plugin classes and methods.</div>
+          </li><li id="acmecse.helpers.PluginManager._tagTimeout">
+            
+            <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>._tag<wbr></wbr>Timeout</div>
+            <div class="url">acmecse.helpers.PluginManager.html#_tagTimeout</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Variable</div>
+            <div class="privacy">PRIVATE</div>
+            <div class="summary">Internal tag to specify a timeout for plugin methods.</div>
           </li><li id="acmecse.helpers.PluginManager._tagInstanceName">
             
             <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>._tag<wbr></wbr>Instance<wbr></wbr>Name</div>
@@ -7844,6 +8100,14 @@
             <div class="kind">Variable</div>
             <div class="privacy">PRIVATE</div>
             <div class="summary">Internal tag to specify the endpoint map of the plugin.</div>
+          </li><li id="acmecse.helpers.PluginManager._tagTimeoutMap">
+            
+            <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>._tag<wbr></wbr>Timeout<wbr></wbr>Map</div>
+            <div class="url">acmecse.helpers.PluginManager.html#_tagTimeoutMap</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Variable</div>
+            <div class="privacy">PRIVATE</div>
+            <div class="summary">Internal tag to specify the endpoint timeout map of the plugin.</div>
           </li><li id="acmecse.helpers.PluginManager.PluginError">
             
             <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Error</div>
@@ -7868,6 +8132,38 @@
             <div class="kind">Exception</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Raised when a plugin is not configured correctly.</div>
+          </li><li id="acmecse.helpers.PluginManager.PluginNotFoundError">
+            
+            <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Not<wbr></wbr>Found<wbr></wbr>Error</div>
+            <div class="url">acmecse.helpers.PluginManager.PluginNotFoundError.html</div>
+            <div class="type">Class</div>
+            <div class="kind">Exception</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Raised when a plugin is not found.</div>
+          </li><li id="acmecse.helpers.PluginManager.PluginTimeoutError">
+            
+            <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Timeout<wbr></wbr>Error</div>
+            <div class="url">acmecse.helpers.PluginManager.PluginTimeoutError.html</div>
+            <div class="type">Class</div>
+            <div class="kind">Exception</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Raised when a plugin method times out.</div>
+          </li><li id="acmecse.helpers.PluginManager.EndpointNotFoundError">
+            
+            <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Endpoint<wbr></wbr>Not<wbr></wbr>Found<wbr></wbr>Error</div>
+            <div class="url">acmecse.helpers.PluginManager.EndpointNotFoundError.html</div>
+            <div class="type">Class</div>
+            <div class="kind">Exception</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Raised when an endpoint is not found.</div>
+          </li><li id="acmecse.helpers.PluginManager.EndpointTimeoutError">
+            
+            <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Endpoint<wbr></wbr>Timeout<wbr></wbr>Error</div>
+            <div class="url">acmecse.helpers.PluginManager.EndpointTimeoutError.html</div>
+            <div class="type">Class</div>
+            <div class="kind">Exception</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Raised when an endpoint method times out.</div>
           </li><li id="acmecse.helpers.PluginManager.PluginState">
             
             <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>State</div>
@@ -8052,6 +8348,22 @@
             <div class="kind">Variable</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Dictionary to hold the provided functions. The keys are the function paths, the values are the functions themselves.</div>
+          </li><li id="acmecse.helpers.PluginManager._shuttingDown">
+            
+            <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>._shutting<wbr></wbr>Down</div>
+            <div class="url">acmecse.helpers.PluginManager.html#_shuttingDown</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Variable</div>
+            <div class="privacy">PRIVATE</div>
+            <div class="summary">Flag to indicate whether the CSE is shutting down. This is used to prevent starting new threads during shutdown, which can lead to deadlocks and other issues.</div>
+          </li><li id="acmecse.helpers.PluginManager._executePluginMethod">
+            
+            <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>._execute<wbr></wbr>Plugin<wbr></wbr>Method</div>
+            <div class="url">acmecse.helpers.PluginManager.html#_executePluginMethod</div>
+            <div class="type">Function</div>
+            <div class="kind">Function</div>
+            <div class="privacy">PRIVATE</div>
+            <div class="summary">Call a function with a timeout. If the function does not complete within the specified time, a PluginTimeoutError is raised.</div>
           </li><li id="acmecse.helpers.PluginManager.PluginInfo">
             
             <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Info</div>
@@ -8476,6 +8788,14 @@
             <div class="kind">Method</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Check if all required dependencies are resolved. This can be called after the resolvePlugins method to check if there are any unresolved dependencies that are required and not provided. This is a separate step because sometimes, we might want to resolve the plugins first and then check for missing dependencies, so that we can provide the missing dependencies before starting the plugins...</div>
+          </li><li id="acmecse.helpers.PluginManager.PluginManager.shutdownStarted">
+            
+            <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.shutdown<wbr></wbr>Started</div>
+            <div class="url">acmecse.helpers.PluginManager.PluginManager.html#shutdownStarted</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Indicating that the system is shutting down. This can be used to perform any necessary cleanup.</div>
           </li><li id="acmecse.helpers.PluginManager.PluginManager.__getattr__">
             
             <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.__getattr__</div>
@@ -8540,14 +8860,38 @@
             <div class="kind">Method</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Check if a provided instance with the given name is a function provided by the @provide decorator.</div>
-          </li><li id="acmecse.helpers.PluginManager.PluginManager.callService">
+          </li><li id="acmecse.helpers.PluginManager.PluginManager.services">
             
-            <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.call<wbr></wbr>Service</div>
-            <div class="url">acmecse.helpers.PluginManager.PluginManager.html#callService</div>
+            <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.services</div>
+            <div class="url">acmecse.helpers.PluginManager.PluginManager.html#services</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Get a list of all available services provided by the plugins. This is used to discover the available services and their endpoints.</div>
+          </li><li id="acmecse.helpers.PluginManager.PluginManager.endpoints">
+            
+            <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.endpoints</div>
+            <div class="url">acmecse.helpers.PluginManager.PluginManager.html#endpoints</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Get a list of all available endpoints provided by the plugin. This is used to discover the available endpoints and their metadata for a given plugin.</div>
+          </li><li id="acmecse.helpers.PluginManager.PluginManager.callEndpoint">
+            
+            <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.call<wbr></wbr>Endpoint</div>
+            <div class="url">acmecse.helpers.PluginManager.PluginManager.html#callEndpoint</div>
             <div class="type">Function</div>
             <div class="kind">Method</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Call a service plugin endpoint.</div>
+          </li><li id="acmecse.helpers.PluginManager.PluginManager.callEndpoints">
+            
+            <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.call<wbr></wbr>Endpoints</div>
+            <div class="url">acmecse.helpers.PluginManager.PluginManager.html#callEndpoints</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Call multiple service plugin endpoints. This is used to call the same endpoint on multiple plugins that match the given tag(s).</div>
           </li><li id="acmecse.helpers.PluginManager._wrap">
             
             <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>._wrap</div>
@@ -8684,6 +9028,14 @@
             <div class="kind">Class Variable</div>
             <div class="privacy">PRIVATE</div>
             <div class="summary">Mapping of endpoint names to method names</div>
+          </li><li id="acmecse.helpers.PluginManager.Service._service_metadata_">
+            
+            <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Service<wbr></wbr>._service<wbr></wbr>_metadata_</div>
+            <div class="url">acmecse.helpers.PluginManager.Service.html#_service_metadata_</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Class Variable</div>
+            <div class="privacy">PRIVATE</div>
+            <div class="summary">A dictionary to store any metadata of the service that can be used by the plugins. The metadata are not used by the service itself, but can be used to store any information that is relevant to the service...</div>
           </li><li id="acmecse.helpers.PluginManager.Service.__init_subclass__">
             
             <div class="fullName">acmecse<wbr></wbr>.helpers<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Service<wbr></wbr>.__init<wbr></wbr>_subclass__</div>
@@ -8772,14 +9124,6 @@
             <div class="kind">Variable</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">The global plugin manager instance. This is a singleton instance.</div>
-          </li><li id="acmecse.runtime.PluginSupport.Service">
-            
-            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Plugin<wbr></wbr>Support<wbr></wbr>.<wbr></wbr>Service</div>
-            <div class="url">acmecse.runtime.PluginSupport.Service.html</div>
-            <div class="type">Class</div>
-            <div class="kind">Class</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Service support class. This class provides the base for service classes. It is also an event handler to handle CSE-related events.</div>
           </li><li id="acmecse.runtime.DBBinding.DBBinding">
             
             <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>DBBinding<wbr></wbr>.<wbr></wbr>DBBinding</div>
@@ -14236,13 +14580,13 @@
             <div class="kind">Method</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Validate the provided token against the configured WebSocket token authentication file.</div>
-          </li><li id="acmecse.services.SecurityManager.SecurityManager._initAuthInformation">
+          </li><li id="acmecse.services.SecurityManager.SecurityManager.initAuthInformation">
             
-            <div class="fullName">acmecse<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Security<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Security<wbr></wbr>Manager<wbr></wbr>._init<wbr></wbr>Auth<wbr></wbr>Information</div>
-            <div class="url">acmecse.services.SecurityManager.SecurityManager.html#_initAuthInformation</div>
+            <div class="fullName">acmecse<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Security<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Security<wbr></wbr>Manager<wbr></wbr>.init<wbr></wbr>Auth<wbr></wbr>Information</div>
+            <div class="url">acmecse.services.SecurityManager.SecurityManager.html#initAuthInformation</div>
             <div class="type">Function</div>
             <div class="kind">Method</div>
-            <div class="privacy">PRIVATE</div>
+            <div class="privacy">PUBLIC</div>
             <div class="summary">Initialize the authentication information by reading the configured authentication files for HTTP and WebSocket.</div>
           </li><li id="acmecse.services.SecurityManager.SecurityManager._readHttpBasicAuthFile">
             
@@ -15596,6 +15940,14 @@
             <div class="kind">Class Variable</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Injected RequestManager instance.</div>
+          </li><li id="acmecse.runtime.Management.ManagementSupport.securityManager">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Management<wbr></wbr>.<wbr></wbr>Management<wbr></wbr>Support<wbr></wbr>.security<wbr></wbr>Manager</div>
+            <div class="url">acmecse.runtime.Management.ManagementSupport.html#securityManager</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Class Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Injected SecurityManager instance.</div>
           </li><li id="acmecse.runtime.Management.ManagementSupport.validator">
             
             <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Management<wbr></wbr>.<wbr></wbr>Management<wbr></wbr>Support<wbr></wbr>.validator</div>
@@ -15756,6 +16108,14 @@
             <div class="kind">Method</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Get the current loaded plugins of the CSE.</div>
+          </li><li id="acmecse.runtime.Management.ManagementSupport.getInterceptors">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Management<wbr></wbr>.<wbr></wbr>Management<wbr></wbr>Support<wbr></wbr>.get<wbr></wbr>Interceptors</div>
+            <div class="url">acmecse.runtime.Management.ManagementSupport.html#getInterceptors</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Get the current registered interceptors of the CSE.</div>
           </li><li id="acmecse.runtime.Management.ManagementSupport.getServices">
             
             <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Management<wbr></wbr>.<wbr></wbr>Management<wbr></wbr>Support<wbr></wbr>.get<wbr></wbr>Services</div>
@@ -15812,6 +16172,14 @@
             <div class="kind">Method</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Shutdown the CSE.</div>
+          </li><li id="acmecse.runtime.Management.ManagementSupport.reloadCredentials">
+            
+            <div class="fullName">acmecse<wbr></wbr>.runtime<wbr></wbr>.<wbr></wbr>Management<wbr></wbr>.<wbr></wbr>Management<wbr></wbr>Support<wbr></wbr>.reload<wbr></wbr>Credentials</div>
+            <div class="url">acmecse.runtime.Management.ManagementSupport.html#reloadCredentials</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Reload the credentials from the credential storage.</div>
           </li><li id="acmecse.textui.ACMEContainerInfo.ACMEContainerInfo">
             
             <div class="fullName">acmecse<wbr></wbr>.textui<wbr></wbr>.<wbr></wbr>ACMEContainer<wbr></wbr>Info<wbr></wbr>.<wbr></wbr>ACMEContainer<wbr></wbr>Info</div>
@@ -20804,6 +21172,14 @@
             <div class="kind">Method</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Shutdown the validator.</div>
+          </li><li id="acmecse.services.Validator.Validator.validateResourceShortname">
+            
+            <div class="fullName">acmecse<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Validator<wbr></wbr>.<wbr></wbr>Validator<wbr></wbr>.validate<wbr></wbr>Resource<wbr></wbr>Shortname</div>
+            <div class="url">acmecse.services.Validator.Validator.html#validateResourceShortname</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Validate the resource type in the request's primitive content.</div>
           </li><li id="acmecse.services.Validator.Validator.validateResourceUpdate">
             
             <div class="fullName">acmecse<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Validator<wbr></wbr>.<wbr></wbr>Validator<wbr></wbr>.validate<wbr></wbr>Resource<wbr></wbr>Update</div>
@@ -20956,6 +21332,14 @@
             <div class="kind">Method</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Return the availale data for a flexContainer specialization.</div>
+          </li><li id="acmecse.services.Validator.Validator.hasFlexContainerSpecialization">
+            
+            <div class="fullName">acmecse<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Validator<wbr></wbr>.<wbr></wbr>Validator<wbr></wbr>.has<wbr></wbr>Flex<wbr></wbr>Container<wbr></wbr>Specialization</div>
+            <div class="url">acmecse.services.Validator.Validator.html#hasFlexContainerSpecialization</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Test whether a flexContainer specialization with the given typeShortname exists.</div>
           </li><li id="acmecse.services.Validator.Validator.hasFlexContainerContainerDefinition">
             
             <div class="fullName">acmecse<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Validator<wbr></wbr>.<wbr></wbr>Validator<wbr></wbr>.has<wbr></wbr>Flex<wbr></wbr>Container<wbr></wbr>Container<wbr></wbr>Definition</div>
@@ -22828,254 +23212,6 @@
             <div class="kind">Method</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Configure the WebSocket server.</div>
-          </li><li id="acmecse.resources.TSB.TSB">
-            
-            <div class="fullName">acmecse<wbr></wbr>.resources<wbr></wbr>.TSB<wbr></wbr>.TSB</div>
-            <div class="url">acmecse.resources.TSB.TSB.html</div>
-            <div class="type">Class</div>
-            <div class="kind">Class</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Class for the TimeSyncBeacon (TSB) resource type.</div>
-          </li><li id="acmecse.resources.TSB.TSB.timeManager">
-            
-            <div class="fullName">acmecse<wbr></wbr>.resources<wbr></wbr>.TSB<wbr></wbr>.TSB<wbr></wbr>.time<wbr></wbr>Manager</div>
-            <div class="url">acmecse.resources.TSB.TSB.html#timeManager</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Class Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Injected TimeManager plugin instance.</div>
-          </li><li id="acmecse.resources.TSB.TSB.initialize">
-            
-            <div class="fullName">acmecse<wbr></wbr>.resources<wbr></wbr>.TSB<wbr></wbr>.TSB<wbr></wbr>.initialize</div>
-            <div class="url">acmecse.resources.TSB.TSB.html#initialize</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">This method is called when a new resource is created and before written to the database.</div>
-          </li><li id="acmecse.resources.TSB.TSB.activate">
-            
-            <div class="fullName">acmecse<wbr></wbr>.resources<wbr></wbr>.TSB<wbr></wbr>.TSB<wbr></wbr>.activate</div>
-            <div class="url">acmecse.resources.TSB.TSB.html#activate</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">This method is called to activate a resource, usually in a CREATE request.</div>
-          </li><li id="acmecse.resources.TSB.TSB.update">
-            
-            <div class="fullName">acmecse<wbr></wbr>.resources<wbr></wbr>.TSB<wbr></wbr>.TSB<wbr></wbr>.update</div>
-            <div class="url">acmecse.resources.TSB.TSB.html#update</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Update, add or remove resource attributes.</div>
-          </li><li id="acmecse.resources.TSB.TSB.deactivate">
-            
-            <div class="fullName">acmecse<wbr></wbr>.resources<wbr></wbr>.TSB<wbr></wbr>.TSB<wbr></wbr>.deactivate</div>
-            <div class="url">acmecse.resources.TSB.TSB.html#deactivate</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Deactivate an active resource.</div>
-          </li><li id="acmecse.resources.TSB.TSB.validate">
-            
-            <div class="fullName">acmecse<wbr></wbr>.resources<wbr></wbr>.TSB<wbr></wbr>.TSB<wbr></wbr>.validate</div>
-            <div class="url">acmecse.resources.TSB.TSB.html#validate</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Validate a resource.</div>
-          </li><li id="acmecse.resources.TSB.TSB.getInterval">
-            
-            <div class="fullName">acmecse<wbr></wbr>.resources<wbr></wbr>.TSB<wbr></wbr>.TSB<wbr></wbr>.get<wbr></wbr>Interval</div>
-            <div class="url">acmecse.resources.TSB.TSB.html#getInterval</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Return the real beacon interval in seconds instead of the ISO period.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html</div>
-            <div class="type">Class</div>
-            <div class="kind">Class</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Managing time related CSE functions.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.storage">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.storage</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#storage</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Class Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Injected Storage instance.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.notification">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.notification</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#notification</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Class Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Injected NotificationManager instance.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.__slots__">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.__slots__</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#__slots__</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Class Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Define slots for instance variables.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.timeManager">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.time<wbr></wbr>Manager</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#timeManager</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Class Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Reference to the TimeManager plugin instance.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.start">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.start</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#start</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Initialize the TimeManager.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.periodicTimeSyncBeacons">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.periodic<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacons</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#periodicTimeSyncBeacons</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Instance Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Table for periodic timeSyncBeacons.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.losTimeSyncBeacons">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.los<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacons</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#losTimeSyncBeacons</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Instance Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Table for Loss-of-sync timeSyncBeacons.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.cseActiveSchedule">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.cse<wbr></wbr>Active<wbr></wbr>Schedule</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#cseActiveSchedule</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Instance Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">List of active schedules when the CSE is active and will process requests.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.stop">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.stop</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#stop</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Shutdown the TimeManager.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.restart">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.restart</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#restart</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Restart the time manager services.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager._stopPeriodicBeacons">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>._stop<wbr></wbr>Periodic<wbr></wbr>Beacons</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#_stopPeriodicBeacons</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PRIVATE</div>
-            <div class="summary">Stop all the running periodic timers.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.requestReveivedHandler">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.request<wbr></wbr>Reveived<wbr></wbr>Handler</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#requestReveivedHandler</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Handle a received request.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.responseReveivedHandler">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.response<wbr></wbr>Reveived<wbr></wbr>Handler</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#responseReveivedHandler</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Handle a received response.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager._getAllPeriodicTimeSyncBeacons">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>._get<wbr></wbr>All<wbr></wbr>Periodic<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacons</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#_getAllPeriodicTimeSyncBeacons</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PRIVATE</div>
-            <div class="summary">Get all periodic timeSyncBeacons from the storage.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.addTimeSyncBeacon">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.add<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#addTimeSyncBeacon</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Add a timeSyncBeacon resource.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.addPeriodicTimeSyncBeacon">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.add<wbr></wbr>Periodic<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#addPeriodicTimeSyncBeacon</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Add a worker for a periodic timeSyncBeacon resource.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.addLoSTimeSyncBeacon">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.add<wbr></wbr>Lo<wbr></wbr>STime<wbr></wbr>Sync<wbr></wbr>Beacon</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#addLoSTimeSyncBeacon</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Add a Loss-of-sync timeSyncBeacon resource.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.updateTimeSyncBeacon">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.update<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#updateTimeSyncBeacon</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Update a timeSyncBeacon resource.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.removeTimeSyncBeacon">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.remove<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#removeTimeSyncBeacon</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Remove a timeSyncBeacon resource.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.removePeriodicTimeSyncBeacon">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.remove<wbr></wbr>Periodic<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#removePeriodicTimeSyncBeacon</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Remove a periodic timeSyncBeacon resource. A running worker is stopped.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.removeLosTimeSyncBeacon">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.remove<wbr></wbr>Los<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#removeLosTimeSyncBeacon</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Remove a Loss-of-sync timeSyncBeacon resource.</div>
-          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.isLossOfSynchronization">
-            
-            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.is<wbr></wbr>Loss<wbr></wbr>Of<wbr></wbr>Synchronization</div>
-            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#isLossOfSynchronization</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Check if a request is a loss-of-synchronization request.</div>
           </li><li id="acmecse.services.Dispatcher.Dispatcher">
             
             <div class="fullName">acmecse<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Dispatcher<wbr></wbr>.<wbr></wbr>Dispatcher</div>
@@ -23156,14 +23292,6 @@
             <div class="kind">Class Variable</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Injected SemanticManager instance.</div>
-          </li><li id="acmecse.services.Dispatcher.Dispatcher.timeManager">
-            
-            <div class="fullName">acmecse<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Dispatcher<wbr></wbr>.<wbr></wbr>Dispatcher<wbr></wbr>.time<wbr></wbr>Manager</div>
-            <div class="url">acmecse.services.Dispatcher.Dispatcher.html#timeManager</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Class Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Injected TimeManager instance.</div>
           </li><li id="acmecse.services.Dispatcher.Dispatcher.remoteCSEManager">
             
             <div class="fullName">acmecse<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Dispatcher<wbr></wbr>.<wbr></wbr>Dispatcher<wbr></wbr>.remote<wbr></wbr>CSEManager</div>
@@ -23420,38 +23548,6 @@
             <div class="kind">Method</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Remove all child resources of a parent recursively.</div>
-          </li><li id="acmecse.services.Dispatcher.Dispatcher.handleOperationExecutionTime">
-            
-            <div class="fullName">acmecse<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Dispatcher<wbr></wbr>.<wbr></wbr>Dispatcher<wbr></wbr>.handle<wbr></wbr>Operation<wbr></wbr>Execution<wbr></wbr>Time</div>
-            <div class="url">acmecse.services.Dispatcher.Dispatcher.html#handleOperationExecutionTime</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Handle operation execution time and request expiration. If the OET is set then wait until the provided timestamp is reached.</div>
-          </li><li id="acmecse.services.Dispatcher.Dispatcher.checkRequestExpiration">
-            
-            <div class="fullName">acmecse<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Dispatcher<wbr></wbr>.<wbr></wbr>Dispatcher<wbr></wbr>.check<wbr></wbr>Request<wbr></wbr>Expiration</div>
-            <div class="url">acmecse.services.Dispatcher.Dispatcher.html#checkRequestExpiration</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Check request expiration timeout if a request timeout is give.</div>
-          </li><li id="acmecse.services.Dispatcher.Dispatcher.checkResultExpiration">
-            
-            <div class="fullName">acmecse<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Dispatcher<wbr></wbr>.<wbr></wbr>Dispatcher<wbr></wbr>.check<wbr></wbr>Result<wbr></wbr>Expiration</div>
-            <div class="url">acmecse.services.Dispatcher.Dispatcher.html#checkResultExpiration</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Check result expiration timeout if a result timeout is given.</div>
-          </li><li id="acmecse.services.Dispatcher.Dispatcher._checkActiveCSESchedule">
-            
-            <div class="fullName">acmecse<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Dispatcher<wbr></wbr>.<wbr></wbr>Dispatcher<wbr></wbr>._check<wbr></wbr>Active<wbr></wbr>CSESchedule</div>
-            <div class="url">acmecse.services.Dispatcher.Dispatcher.html#_checkActiveCSESchedule</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PRIVATE</div>
-            <div class="summary">Check if the CSE is currently active according to its schedule.</div>
           </li><li id="acmecse.services.Dispatcher.Dispatcher._resourcesToURIList">
             
             <div class="fullName">acmecse<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Dispatcher<wbr></wbr>.<wbr></wbr>Dispatcher<wbr></wbr>._resources<wbr></wbr>To<wbr></wbr>URIList</div>
@@ -24180,6 +24276,254 @@
             <div class="kind">Method</div>
             <div class="privacy">PRIVATE</div>
             <div class="summary">Get the operation from the <em>actionPrimitive</em> attribute.</div>
+          </li><li id="acmecse.resources.TSB.TSB">
+            
+            <div class="fullName">acmecse<wbr></wbr>.resources<wbr></wbr>.TSB<wbr></wbr>.TSB</div>
+            <div class="url">acmecse.resources.TSB.TSB.html</div>
+            <div class="type">Class</div>
+            <div class="kind">Class</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Class for the TimeSyncBeacon (TSB) resource type.</div>
+          </li><li id="acmecse.resources.TSB.TSB.timeManager">
+            
+            <div class="fullName">acmecse<wbr></wbr>.resources<wbr></wbr>.TSB<wbr></wbr>.TSB<wbr></wbr>.time<wbr></wbr>Manager</div>
+            <div class="url">acmecse.resources.TSB.TSB.html#timeManager</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Class Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Injected TimeManager plugin instance.</div>
+          </li><li id="acmecse.resources.TSB.TSB.initialize">
+            
+            <div class="fullName">acmecse<wbr></wbr>.resources<wbr></wbr>.TSB<wbr></wbr>.TSB<wbr></wbr>.initialize</div>
+            <div class="url">acmecse.resources.TSB.TSB.html#initialize</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">This method is called when a new resource is created and before written to the database.</div>
+          </li><li id="acmecse.resources.TSB.TSB.activate">
+            
+            <div class="fullName">acmecse<wbr></wbr>.resources<wbr></wbr>.TSB<wbr></wbr>.TSB<wbr></wbr>.activate</div>
+            <div class="url">acmecse.resources.TSB.TSB.html#activate</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">This method is called to activate a resource, usually in a CREATE request.</div>
+          </li><li id="acmecse.resources.TSB.TSB.update">
+            
+            <div class="fullName">acmecse<wbr></wbr>.resources<wbr></wbr>.TSB<wbr></wbr>.TSB<wbr></wbr>.update</div>
+            <div class="url">acmecse.resources.TSB.TSB.html#update</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Update, add or remove resource attributes.</div>
+          </li><li id="acmecse.resources.TSB.TSB.deactivate">
+            
+            <div class="fullName">acmecse<wbr></wbr>.resources<wbr></wbr>.TSB<wbr></wbr>.TSB<wbr></wbr>.deactivate</div>
+            <div class="url">acmecse.resources.TSB.TSB.html#deactivate</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Deactivate an active resource.</div>
+          </li><li id="acmecse.resources.TSB.TSB.validate">
+            
+            <div class="fullName">acmecse<wbr></wbr>.resources<wbr></wbr>.TSB<wbr></wbr>.TSB<wbr></wbr>.validate</div>
+            <div class="url">acmecse.resources.TSB.TSB.html#validate</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Validate a resource.</div>
+          </li><li id="acmecse.resources.TSB.TSB.getInterval">
+            
+            <div class="fullName">acmecse<wbr></wbr>.resources<wbr></wbr>.TSB<wbr></wbr>.TSB<wbr></wbr>.get<wbr></wbr>Interval</div>
+            <div class="url">acmecse.resources.TSB.TSB.html#getInterval</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Return the real beacon interval in seconds instead of the ISO period.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html</div>
+            <div class="type">Class</div>
+            <div class="kind">Class</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Managing time related CSE functions.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.storage">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.storage</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#storage</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Class Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Injected Storage instance.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.notification">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.notification</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#notification</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Class Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Injected NotificationManager instance.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.__slots__">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.__slots__</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#__slots__</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Class Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Define slots for instance variables.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.timeManager">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.time<wbr></wbr>Manager</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#timeManager</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Class Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Reference to the TimeManager plugin instance.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.start">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.start</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#start</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Initialize the TimeManager.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.periodicTimeSyncBeacons">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.periodic<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacons</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#periodicTimeSyncBeacons</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Instance Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Table for periodic timeSyncBeacons.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.losTimeSyncBeacons">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.los<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacons</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#losTimeSyncBeacons</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Instance Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Table for Loss-of-sync timeSyncBeacons.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.cseActiveSchedule">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.cse<wbr></wbr>Active<wbr></wbr>Schedule</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#cseActiveSchedule</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Instance Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">List of active schedules when the CSE is active and will process requests.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.stop">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.stop</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#stop</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Shutdown the TimeManager.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.restart">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.restart</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#restart</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Restart the time manager services.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager._stopPeriodicBeacons">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>._stop<wbr></wbr>Periodic<wbr></wbr>Beacons</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#_stopPeriodicBeacons</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PRIVATE</div>
+            <div class="summary">Stop all the running periodic timers.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.requestReveivedHandler">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.request<wbr></wbr>Reveived<wbr></wbr>Handler</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#requestReveivedHandler</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Handle a received request.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.responseReveivedHandler">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.response<wbr></wbr>Reveived<wbr></wbr>Handler</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#responseReveivedHandler</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Handle a received response.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager._getAllPeriodicTimeSyncBeacons">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>._get<wbr></wbr>All<wbr></wbr>Periodic<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacons</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#_getAllPeriodicTimeSyncBeacons</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PRIVATE</div>
+            <div class="summary">Get all periodic timeSyncBeacons from the storage.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.addTimeSyncBeacon">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.add<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#addTimeSyncBeacon</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Add a timeSyncBeacon resource.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.addPeriodicTimeSyncBeacon">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.add<wbr></wbr>Periodic<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#addPeriodicTimeSyncBeacon</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Add a worker for a periodic timeSyncBeacon resource.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.addLoSTimeSyncBeacon">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.add<wbr></wbr>Lo<wbr></wbr>STime<wbr></wbr>Sync<wbr></wbr>Beacon</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#addLoSTimeSyncBeacon</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Add a Loss-of-sync timeSyncBeacon resource.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.updateTimeSyncBeacon">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.update<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#updateTimeSyncBeacon</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Update a timeSyncBeacon resource.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.removeTimeSyncBeacon">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.remove<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#removeTimeSyncBeacon</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Remove a timeSyncBeacon resource.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.removePeriodicTimeSyncBeacon">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.remove<wbr></wbr>Periodic<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#removePeriodicTimeSyncBeacon</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Remove a periodic timeSyncBeacon resource. A running worker is stopped.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.removeLosTimeSyncBeacon">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.remove<wbr></wbr>Los<wbr></wbr>Time<wbr></wbr>Sync<wbr></wbr>Beacon</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#removeLosTimeSyncBeacon</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Remove a Loss-of-sync timeSyncBeacon resource.</div>
+          </li><li id="acmecse.plugins.services.TimeManager.TimeManager.isLossOfSynchronization">
+            
+            <div class="fullName">acmecse<wbr></wbr>.plugins<wbr></wbr>.services<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.<wbr></wbr>Time<wbr></wbr>Manager<wbr></wbr>.is<wbr></wbr>Loss<wbr></wbr>Of<wbr></wbr>Synchronization</div>
+            <div class="url">acmecse.plugins.services.TimeManager.TimeManager.html#isLossOfSynchronization</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Check if a request is a loss-of-synchronization request.</div>
           </li><li id="acmecse.resources.SCH.SCH">
             
             <div class="fullName">acmecse<wbr></wbr>.resources<wbr></wbr>.SCH<wbr></wbr>.SCH</div>
@@ -27676,6 +28020,14 @@
             <div class="kind">Constant</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">MobileNetwork ManagementObject specialization.</div>
+          </li><li id="acmecse.etc.Types.ResourceTypes.STOR">
+            
+            <div class="fullName">acmecse<wbr></wbr>.etc<wbr></wbr>.<wbr></wbr>Types<wbr></wbr>.<wbr></wbr>Resource<wbr></wbr>Types<wbr></wbr>.STOR</div>
+            <div class="url">acmecse.etc.Types.ResourceTypes.html#STOR</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Constant</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Storage ManagementObject specialization.</div>
           </li><li id="acmecse.etc.Types.ResourceTypes.ACPAnnc">
             
             <div class="fullName">acmecse<wbr></wbr>.etc<wbr></wbr>.<wbr></wbr>Types<wbr></wbr>.<wbr></wbr>Resource<wbr></wbr>Types<wbr></wbr>.<wbr></wbr>ACPAnnc</div>
@@ -27980,6 +28332,14 @@
             <div class="kind">Class Variable</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Announced MobileNetwork ManagementObject specialization.</div>
+          </li><li id="acmecse.etc.Types.ResourceTypes.STORAnnc">
+            
+            <div class="fullName">acmecse<wbr></wbr>.etc<wbr></wbr>.<wbr></wbr>Types<wbr></wbr>.<wbr></wbr>Resource<wbr></wbr>Types<wbr></wbr>.<wbr></wbr>STORAnnc</div>
+            <div class="url">acmecse.etc.Types.ResourceTypes.html#STORAnnc</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Class Variable</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Announced Storage ManagementObject specialization.</div>
           </li><li id="acmecse.etc.Types.ResourceTypes.typeShortname">
             
             <div class="fullName">acmecse<wbr></wbr>.etc<wbr></wbr>.<wbr></wbr>Types<wbr></wbr>.<wbr></wbr>Resource<wbr></wbr>Types<wbr></wbr>.type<wbr></wbr>Shortname</div>
@@ -28036,6 +28396,22 @@
             <div class="kind">Method</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Return a Resource factory for this resource type.</div>
+          </li><li id="acmecse.etc.Types.ResourceTypes.shortNames">
+            
+            <div class="fullName">acmecse<wbr></wbr>.etc<wbr></wbr>.<wbr></wbr>Types<wbr></wbr>.<wbr></wbr>Resource<wbr></wbr>Types<wbr></wbr>.short<wbr></wbr>Names</div>
+            <div class="url">acmecse.etc.Types.ResourceTypes.html#shortNames</div>
+            <div class="type">Function</div>
+            <div class="kind">Class Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Return a list of all resource type short names.</div>
+          </li><li id="acmecse.etc.Types.ResourceTypes.mgmtObjShortNames">
+            
+            <div class="fullName">acmecse<wbr></wbr>.etc<wbr></wbr>.<wbr></wbr>Types<wbr></wbr>.<wbr></wbr>Resource<wbr></wbr>Types<wbr></wbr>.mgmt<wbr></wbr>Obj<wbr></wbr>Short<wbr></wbr>Names</div>
+            <div class="url">acmecse.etc.Types.ResourceTypes.html#mgmtObjShortNames</div>
+            <div class="type">Function</div>
+            <div class="kind">Class Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Return a list of all mgmtObj specialization resource type short names.</div>
           </li><li id="acmecse.etc.Types.ResourceTypes.fromTypeShortname">
             
             <div class="fullName">acmecse<wbr></wbr>.etc<wbr></wbr>.<wbr></wbr>Types<wbr></wbr>.<wbr></wbr>Resource<wbr></wbr>Types<wbr></wbr>.from<wbr></wbr>Type<wbr></wbr>Shortname</div>
@@ -28084,6 +28460,14 @@
             <div class="kind">Class Method</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Test whether a resource type is a container resource type.</div>
+          </li><li id="acmecse.etc.Types.ResourceTypes.resourceTypeNameByMgd">
+            
+            <div class="fullName">acmecse<wbr></wbr>.etc<wbr></wbr>.<wbr></wbr>Types<wbr></wbr>.<wbr></wbr>Resource<wbr></wbr>Types<wbr></wbr>.resource<wbr></wbr>Type<wbr></wbr>Name<wbr></wbr>By<wbr></wbr>Mgd</div>
+            <div class="url">acmecse.etc.Types.ResourceTypes.html#resourceTypeNameByMgd</div>
+            <div class="type">Function</div>
+            <div class="kind">Class Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">Return the resource type name for a mgmtObj specialization.</div>
           </li><li id="acmecse.etc.Types.ResourceTypes.isRequestCreatable">
             
             <div class="fullName">acmecse<wbr></wbr>.etc<wbr></wbr>.<wbr></wbr>Types<wbr></wbr>.<wbr></wbr>Resource<wbr></wbr>Types<wbr></wbr>.is<wbr></wbr>Request<wbr></wbr>Creatable</div>
@@ -28204,6 +28588,14 @@
             <div class="kind">Variable</div>
             <div class="privacy">PRIVATE</div>
             <div class="summary">List of container resources.</div>
+          </li><li id="acmecse.etc.Types._resourceTypesMgmtObjSpecializations">
+            
+            <div class="fullName">acmecse<wbr></wbr>.etc<wbr></wbr>.<wbr></wbr>Types<wbr></wbr>._resource<wbr></wbr>Types<wbr></wbr>Mgmt<wbr></wbr>Obj<wbr></wbr>Specializations</div>
+            <div class="url">acmecse.etc.Types.html#_resourceTypesMgmtObjSpecializations</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Variable</div>
+            <div class="privacy">PRIVATE</div>
+            <div class="summary">List of mgmtObj specialization resource types.</div>
           </li><li id="acmecse.etc.Types._resourceTypesVirtualResourcesNames">
             
             <div class="fullName">acmecse<wbr></wbr>.etc<wbr></wbr>.<wbr></wbr>Types<wbr></wbr>._resource<wbr></wbr>Types<wbr></wbr>Virtual<wbr></wbr>Resources<wbr></wbr>Names</div>
@@ -28212,6 +28604,14 @@
             <div class="kind">Variable</div>
             <div class="privacy">PRIVATE</div>
             <div class="summary">List of unique virtual resource names.</div>
+          </li><li id="acmecse.etc.Types._resourceTypesMgmtObjSpecializationNames">
+            
+            <div class="fullName">acmecse<wbr></wbr>.etc<wbr></wbr>.<wbr></wbr>Types<wbr></wbr>._resource<wbr></wbr>Types<wbr></wbr>Mgmt<wbr></wbr>Obj<wbr></wbr>Specialization<wbr></wbr>Names</div>
+            <div class="url">acmecse.etc.Types.html#_resourceTypesMgmtObjSpecializationNames</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Variable</div>
+            <div class="privacy">PRIVATE</div>
+            <div class="summary">List of mgmtObj specialization resource type names.</div>
           </li><li id="acmecse.etc.Types._resourceTypesNames">
             
             <div class="fullName">acmecse<wbr></wbr>.etc<wbr></wbr>.<wbr></wbr>Types<wbr></wbr>._resource<wbr></wbr>Types<wbr></wbr>Names</div>
@@ -29164,6 +29564,14 @@
             <div class="kind">Constant</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Not applicable</div>
+          </li><li id="acmecse.etc.Types.Operation.ALL">
+            
+            <div class="fullName">acmecse<wbr></wbr>.etc<wbr></wbr>.<wbr></wbr>Types<wbr></wbr>.<wbr></wbr>Operation<wbr></wbr>.ALL</div>
+            <div class="url">acmecse.etc.Types.Operation.html#ALL</div>
+            <div class="type">Attribute</div>
+            <div class="kind">Constant</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">ALL operations.</div>
           </li><li id="acmecse.etc.Types.Operation.permission">
             
             <div class="fullName">acmecse<wbr></wbr>.etc<wbr></wbr>.<wbr></wbr>Types<wbr></wbr>.<wbr></wbr>Operation<wbr></wbr>.permission</div>
@@ -31812,10 +32220,10 @@
             <div class="kind">Instance Variable</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">The original request after dissection as a dictionary.</div>
-          </li><li id="acmecse.etc.Types.CSERequest.topElememt">
+          </li><li id="acmecse.etc.Types.CSERequest.topElement">
             
-            <div class="fullName">acmecse<wbr></wbr>.etc<wbr></wbr>.<wbr></wbr>Types<wbr></wbr>.<wbr></wbr>CSERequest<wbr></wbr>.top<wbr></wbr>Elememt</div>
-            <div class="url">acmecse.etc.Types.CSERequest.html#topElememt</div>
+            <div class="fullName">acmecse<wbr></wbr>.etc<wbr></wbr>.<wbr></wbr>Types<wbr></wbr>.<wbr></wbr>CSERequest<wbr></wbr>.top<wbr></wbr>Element</div>
+            <div class="url">acmecse.etc.Types.CSERequest.html#topElement</div>
             <div class="type">Attribute</div>
             <div class="kind">Class Variable</div>
             <div class="privacy">PUBLIC</div>
@@ -33076,14 +33484,6 @@
             <div class="kind">Class Variable</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">The URL scheme used when a WebSocket connection cannot be established because the remote entity doesn't host a WebSocket server.</div>
-          </li><li id="acmecse.etc.Constants.Constants.cseStartupDelay">
-            
-            <div class="fullName">acmecse<wbr></wbr>.etc<wbr></wbr>.<wbr></wbr>Constants<wbr></wbr>.<wbr></wbr>Constants<wbr></wbr>.cse<wbr></wbr>Startup<wbr></wbr>Delay</div>
-            <div class="url">acmecse.etc.Constants.Constants.html#cseStartupDelay</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Class Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Internal CSE's startup delay.</div>
           </li><li id="acmecse.etc.Constants.Constants.networkCoordinationSupported">
             
             <div class="fullName">acmecse<wbr></wbr>.etc<wbr></wbr>.<wbr></wbr>Constants<wbr></wbr>.<wbr></wbr>Constants<wbr></wbr>.network<wbr></wbr>Coordination<wbr></wbr>Supported</div>
@@ -37772,6 +38172,14 @@
             <div class="kind">Instance Variable</div>
             <div class="privacy">PUBLIC</div>
             <div class="summary">Shortname of the flexContainer type.</div>
+          </li><li id="acmecse.resources.FCNTAnnc.FCNTAnnc.activate">
+            
+            <div class="fullName">acmecse<wbr></wbr>.resources<wbr></wbr>.<wbr></wbr>FCNTAnnc<wbr></wbr>.<wbr></wbr>FCNTAnnc<wbr></wbr>.activate</div>
+            <div class="url">acmecse.resources.FCNTAnnc.FCNTAnnc.html#activate</div>
+            <div class="type">Function</div>
+            <div class="kind">Method</div>
+            <div class="privacy">PUBLIC</div>
+            <div class="summary">This method is called to activate a resource, usually in a CREATE request.</div>
           </li><li id="acmecse.resources.FCNT_LA.FCNT_LA">
             
             <div class="fullName">acmecse<wbr></wbr>.resources<wbr></wbr>.FCNT<wbr></wbr>_LA<wbr></wbr>.FCNT<wbr></wbr>_LA</div>

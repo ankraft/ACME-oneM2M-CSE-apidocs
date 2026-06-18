@@ -204,7 +204,17 @@
         
 
         
-            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.PluginManager.html#callService" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager.callService">call<wbr></wbr>Service</a></code>
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.PluginManager.html#callEndpoint" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager.callEndpoint">call<wbr></wbr>Endpoint</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.PluginManager.html#callEndpoints" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager.callEndpoints">call<wbr></wbr>Endpoints</a></code>
             </div>
         
 
@@ -235,6 +245,16 @@
 
         
             <div class="itemName"><code><a href="acmecse.helpers.PluginManager.PluginManager.html#dependencyGraphProvidedInstances" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager.dependencyGraphProvidedInstances">dependency<wbr></wbr>Graph<wbr></wbr>Provided<wbr></wbr>Instances</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.PluginManager.html#endpoints" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager.endpoints">endpoints</a></code>
             </div>
         
 
@@ -324,7 +344,27 @@
         
 
         
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.PluginManager.html#services" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager.services">services</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
             <div class="itemName"><code><a href="acmecse.helpers.PluginManager.PluginManager.html#setupFinished" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager.setupFinished">setup<wbr></wbr>Finished</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.PluginManager.html#shutdownStarted" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager.shutdownStarted">shutdown<wbr></wbr>Started</a></code>
             </div>
         
 
@@ -581,7 +621,7 @@ load, configure, validate, start, stop and unload plugins based on the configura
         </div>
 
         <div id="splitTables">
-          <table class="children sortable" id="id642">
+          <table class="children sortable" id="id648">
   
   
   <tr class="method">
@@ -620,7 +660,7 @@ load, configure, validate, start, stop and unload plugins based on the configura
             <p class="inheritedFrom">
               Inherited from <code><a href="acmecse.helpers.PluginManager.PluginManager.html" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager">PluginManager</a></code>:
             </p>
-            <table class="children sortable" id="id643">
+            <table class="children sortable" id="id649">
   
   
   <tr class="basemethod">
@@ -636,8 +676,13 @@ load, configure, validate, start, stop and unload plugins based on the configura
   </tr><tr class="basemethod">
     
     <td>Method</td>
-    <td><code><a href="acmecse.helpers.PluginManager.PluginManager.html#callService" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager.callService">call<wbr></wbr>Service</a></code></td>
+    <td><code><a href="acmecse.helpers.PluginManager.PluginManager.html#callEndpoint" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager.callEndpoint">call<wbr></wbr>Endpoint</a></code></td>
     <td>Call a service plugin endpoint.</td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="acmecse.helpers.PluginManager.PluginManager.html#callEndpoints" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager.callEndpoints">call<wbr></wbr>Endpoints</a></code></td>
+    <td>Call multiple service plugin endpoints. This is used to call the same endpoint on multiple plugins that match the given tag(s).</td>
   </tr><tr class="basemethod">
     
     <td>Method</td>
@@ -653,6 +698,11 @@ load, configure, validate, start, stop and unload plugins based on the configura
     <td>Method</td>
     <td><code><a href="acmecse.helpers.PluginManager.PluginManager.html#dependencyGraphProvidedInstances" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager.dependencyGraphProvidedInstances">dependency<wbr></wbr>Graph<wbr></wbr>Provided<wbr></wbr>Instances</a></code></td>
     <td>Get the provided instances that are not plugins, and who is using them.</td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="acmecse.helpers.PluginManager.PluginManager.html#endpoints" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager.endpoints">endpoints</a></code></td>
+    <td>Get a list of all available endpoints provided by the plugin. This is used to discover the available endpoints and their metadata for a given plugin.</td>
   </tr><tr class="basemethod">
     
     <td>Method</td>
@@ -696,8 +746,18 @@ load, configure, validate, start, stop and unload plugins based on the configura
   </tr><tr class="basemethod">
     
     <td>Method</td>
+    <td><code><a href="acmecse.helpers.PluginManager.PluginManager.html#services" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager.services">services</a></code></td>
+    <td>Get a list of all available services provided by the plugins. This is used to discover the available services and their endpoints.</td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
     <td><code><a href="acmecse.helpers.PluginManager.PluginManager.html#setupFinished" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager.setupFinished">setup<wbr></wbr>Finished</a></code></td>
     <td>Check if all required dependencies are resolved. This can be called after the resolvePlugins method to check if there are any unresolved dependencies that are required and not provided. This is a separate step because sometimes, we might want to resolve the plugins first and then check for missing dependencies, so that we can provide the missing dependencies before starting the plugins...</td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="acmecse.helpers.PluginManager.PluginManager.html#shutdownStarted" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager.shutdownStarted">shutdown<wbr></wbr>Started</a></code></td>
+    <td>Indicating that the system is shutting down. This can be used to perform any necessary cleanup.</td>
   </tr><tr class="basemethod">
     
     <td>Method</td>
@@ -928,7 +988,7 @@ load, configure, validate, start, stop and unload plugins based on the configura
     <div class="container-fluid">
       <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
     generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-      25.4.0 at 2026-05-25 21:18:11.
+      25.4.0 at 2026-06-18 12:03:37.
     </div>
     
     <script src="ajax.js" type="text/javascript"></script>

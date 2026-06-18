@@ -318,6 +318,16 @@
         
 
         
+            <div class="itemName"><code><a href="#hasFlexContainerSpecialization" class="internal-link" title="acmecse.services.Validator.Validator.hasFlexContainerSpecialization">has<wbr></wbr>Flex<wbr></wbr>Container<wbr></wbr>Specialization</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
             <div class="itemName"><code><a href="#initialize" class="internal-link" title="acmecse.services.Validator.Validator.initialize">initialize</a></code>
             </div>
         
@@ -449,6 +459,16 @@
 
         
             <div class="itemName"><code><a href="#validatePvs" class="internal-link" title="acmecse.services.Validator.Validator.validatePvs">validate<wbr></wbr>Pvs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#validateResourceShortname" class="internal-link" title="acmecse.services.Validator.Validator.validateResourceShortname">validate<wbr></wbr>Resource<wbr></wbr>Shortname</a></code>
             </div>
         
 
@@ -682,7 +702,7 @@
         </div>
 
         <div id="splitTables">
-          <table class="children sortable" id="id702">
+          <table class="children sortable" id="id706">
   
   
   <tr class="method">
@@ -783,6 +803,11 @@
   </tr><tr class="method">
     
     <td>Method</td>
+    <td><code><a href="#hasFlexContainerSpecialization" class="internal-link" title="acmecse.services.Validator.Validator.hasFlexContainerSpecialization">has<wbr></wbr>Flex<wbr></wbr>Container<wbr></wbr>Specialization</a></code></td>
+    <td>Test whether a flexContainer specialization with the given typeShortname exists.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
     <td><code><a href="#initialize" class="internal-link" title="acmecse.services.Validator.Validator.initialize">initialize</a></code></td>
     <td>Initialize the validator.</td>
   </tr><tr class="method">
@@ -850,6 +875,11 @@
     <td>Method</td>
     <td><code><a href="#validatePvs" class="internal-link" title="acmecse.services.Validator.Validator.validatePvs">validate<wbr></wbr>Pvs</a></code></td>
     <td>Validating special case for lists that are not allowed to be empty (pvs in ACP).</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#validateResourceShortname" class="internal-link" title="acmecse.services.Validator.Validator.validateResourceShortname">validate<wbr></wbr>Resource<wbr></wbr>Shortname</a></code></td>
+    <td>Validate the resource type in the request's primitive content.</td>
   </tr><tr class="method">
     
     <td>Method</td>
@@ -1364,6 +1394,30 @@ the representation of an attribute where the value is not known yet.</p><table c
 </div><div class="basemethod">
   
   
+  <a name="acmecse.services.Validator.Validator.hasFlexContainerSpecialization">
+    
+  </a>
+  <a name="hasFlexContainerSpecialization">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">hasFlexContainerSpecialization</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">typeShortname: <code>str</code></span>) -&gt; <code>bool</code>:</span>
+    
+    <a class="headerLink" href="#hasFlexContainerSpecialization" title="acmecse.services.Validator.Validator.hasFlexContainerSpecialization">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Test whether a flexContainer specialization with the given typeShortname exists.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">type<wbr></wbr>Shortname:</span><code>str</code></td><td class="fieldArgDesc">String, domain and short name of the flexContainer specialization.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">Boolean, indicating existens.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
   <a name="acmecse.services.Validator.Validator.initialize">
     
   </a>
@@ -1705,6 +1759,30 @@ A line or polygon is a list of list of lists of two or three floats.</p><table c
 </div><div class="basemethod">
   
   
+  <a name="acmecse.services.Validator.Validator.validateResourceShortname">
+    
+  </a>
+  <a name="validateResourceShortname">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">validateResourceShortname</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">cseRequest: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></span>):</span>
+    
+    <a class="headerLink" href="#validateResourceShortname" title="acmecse.services.Validator.Validator.validateResourceShortname">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Validate the resource type in the request's primitive content.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">cse<wbr></wbr>Request:</span><code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">The CSERequest to validate.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.etc.ResponseStatusCodes.BAD_REQUEST.html" class="internal-link" title="acmecse.etc.ResponseStatusCodes.BAD_REQUEST">BAD_REQUEST</a></code></td><td>If the resource type is missing or invalid.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
   <a name="acmecse.services.Validator.Validator.validateResourceUpdate">
     
   </a>
@@ -1890,7 +1968,7 @@ is an error.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">p
     <div class="container-fluid">
       <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
     generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-      25.4.0 at 2026-05-25 21:18:11.
+      25.4.0 at 2026-06-18 12:03:37.
     </div>
     
     <script src="ajax.js" type="text/javascript"></script>

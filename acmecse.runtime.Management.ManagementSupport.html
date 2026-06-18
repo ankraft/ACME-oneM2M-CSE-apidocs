@@ -178,6 +178,16 @@
         
 
         
+            <div class="itemName"><code><a href="#getInterceptors" class="internal-link" title="acmecse.runtime.Management.ManagementSupport.getInterceptors">get<wbr></wbr>Interceptors</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
             <div class="itemName"><code><a href="#getLogGenerator" class="internal-link" title="acmecse.runtime.Management.ManagementSupport.getLogGenerator">get<wbr></wbr>Log<wbr></wbr>Generator</a></code>
             </div>
         
@@ -318,6 +328,16 @@
         
 
         
+            <div class="itemName"><code><a href="#reloadCredentials" class="internal-link" title="acmecse.runtime.Management.ManagementSupport.reloadCredentials">reload<wbr></wbr>Credentials</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
             <div class="itemName"><code><a href="#resetCSE" class="internal-link" title="acmecse.runtime.Management.ManagementSupport.resetCSE">reset<wbr></wbr>CSE</a></code>
             </div>
         
@@ -408,6 +428,16 @@
 
         
             <div class="itemName"><code><a href="#requestManager" class="internal-link" title="acmecse.runtime.Management.ManagementSupport.requestManager">request<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#securityManager" class="internal-link" title="acmecse.runtime.Management.ManagementSupport.securityManager">security<wbr></wbr>Manager</a></code>
             </div>
         
 
@@ -520,7 +550,7 @@ Also provides functions for retrieving and formatting CSE status, statistics, an
         </div>
 
         <div id="splitTables">
-          <table class="children sortable" id="id639">
+          <table class="children sortable" id="id645">
   
   
   <tr class="method">
@@ -548,6 +578,11 @@ Also provides functions for retrieving and formatting CSE status, statistics, an
     <td>Method</td>
     <td><code><a href="#getCSEStatusAsDict" class="internal-link" title="acmecse.runtime.Management.ManagementSupport.getCSEStatusAsDict">get<wbr></wbr>CSEStatus<wbr></wbr>As<wbr></wbr>Dict</a></code></td>
     <td>Get the status, statistics, and runtime information of the CSE.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getInterceptors" class="internal-link" title="acmecse.runtime.Management.ManagementSupport.getInterceptors">get<wbr></wbr>Interceptors</a></code></td>
+    <td>Get the current registered interceptors of the CSE.</td>
   </tr><tr class="method">
     
     <td>Method</td>
@@ -621,6 +656,11 @@ Also provides functions for retrieving and formatting CSE status, statistics, an
   </tr><tr class="method">
     
     <td>Method</td>
+    <td><code><a href="#reloadCredentials" class="internal-link" title="acmecse.runtime.Management.ManagementSupport.reloadCredentials">reload<wbr></wbr>Credentials</a></code></td>
+    <td>Reload the credentials from the credential storage.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
     <td><code><a href="#resetCSE" class="internal-link" title="acmecse.runtime.Management.ManagementSupport.resetCSE">reset<wbr></wbr>CSE</a></code></td>
     <td>Reset the CSE to its initial state.</td>
   </tr><tr class="method">
@@ -663,6 +703,11 @@ Also provides functions for retrieving and formatting CSE status, statistics, an
     <td>Class Variable</td>
     <td><code><a href="#requestManager" class="internal-link" title="acmecse.runtime.Management.ManagementSupport.requestManager">request<wbr></wbr>Manager</a></code></td>
     <td>Injected RequestManager instance.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#securityManager" class="internal-link" title="acmecse.runtime.Management.ManagementSupport.securityManager">security<wbr></wbr>Manager</a></code></td>
+    <td>Injected SecurityManager instance.</td>
   </tr><tr class="classvariable">
     
     <td>Class Variable</td>
@@ -800,6 +845,30 @@ Also provides functions for retrieving and formatting CSE status, statistics, an
   <div class="docstring functionBody">
     
     <div><p>Get the status, statistics, and runtime information of the CSE.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></td><td class="fieldArgDesc">Status as JSON object.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.runtime.Management.ManagementSupport.getInterceptors">
+    
+  </a>
+  <a name="getInterceptors">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">getInterceptors</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#getInterceptors" title="acmecse.runtime.Management.ManagementSupport.getInterceptors">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the current registered interceptors of the CSE.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>str</code></td><td class="fieldArgDesc">The registered interceptors of the CSE in JSON format.</td></tr></table></div>
   </div>
 </div><div class="basemethod">
   
@@ -1159,6 +1228,30 @@ descendant CSE's.</p><table class="fieldTable"><tr class="fieldStart"><td class=
 </div><div class="basemethod">
   
   
+  <a name="acmecse.runtime.Management.ManagementSupport.reloadCredentials">
+    
+  </a>
+  <a name="reloadCredentials">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">reloadCredentials</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>str</code>:</span>
+    
+    <a class="headerLink" href="#reloadCredentials" title="acmecse.runtime.Management.ManagementSupport.reloadCredentials">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Reload the credentials from the credential storage.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
   <a name="acmecse.runtime.Management.ManagementSupport.resetCSE">
     
   </a>
@@ -1377,6 +1470,30 @@ descendant CSE's.</p><table class="fieldTable"><tr class="fieldStart"><td class=
 </div><div class="baseclassvariable">
   
   
+  <a name="acmecse.runtime.Management.ManagementSupport.securityManager">
+    
+  </a>
+  <a name="securityManager">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">securityManager</span>: <code><a href="acmecse.services.SecurityManager.SecurityManager.html" class="internal-link" title="acmecse.services.SecurityManager.SecurityManager">SecurityManager</a></code> =
+    
+    <a class="headerLink" href="#securityManager" title="acmecse.runtime.Management.ManagementSupport.securityManager">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected SecurityManager instance.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
   <a name="acmecse.runtime.Management.ManagementSupport.storage">
     
   </a>
@@ -1435,7 +1552,7 @@ descendant CSE's.</p><table class="fieldTable"><tr class="fieldStart"><td class=
     <div class="container-fluid">
       <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
     generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-      25.4.0 at 2026-05-25 21:18:11.
+      25.4.0 at 2026-06-18 12:03:37.
     </div>
     
     <script src="ajax.js" type="text/javascript"></script>
