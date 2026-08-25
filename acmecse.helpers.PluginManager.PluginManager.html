@@ -7,7 +7,7 @@
   <head>
     
     <title>acmecse.helpers.PluginManager.PluginManager</title>
-    <meta name="generator" content="pydoctor 25.4.0"> 
+    <meta name="generator" content="pydoctor 25.10.1"> 
         
     </meta>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -199,6 +199,16 @@
 
         
             <div class="itemName"><code><a href="#endpoints" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager.endpoints">endpoints</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getPluginByName" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager.getPluginByName">get<wbr></wbr>Plugin<wbr></wbr>By<wbr></wbr>Name</a></code>
             </div>
         
 
@@ -490,6 +500,16 @@
         
 
         
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.EndpointDefinition.html" class="internal-link" title="acmecse.helpers.PluginManager.EndpointDefinition"><wbr></wbr>Endpoint<wbr></wbr>Definition</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
             <div class="itemName"><code><a href="acmecse.helpers.PluginManager.PluginInfo.html" class="internal-link" title="acmecse.helpers.PluginManager.PluginInfo"><wbr></wbr>Plugin<wbr></wbr>Info</a></code>
             </div>
         
@@ -521,6 +541,16 @@
 
         
             <div class="itemName"><code><a href="acmecse.helpers.PluginManager.Service.html" class="internal-link" title="acmecse.helpers.PluginManager.Service"><wbr></wbr>Service</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PluginManager.ServiceDefinition.html" class="internal-link" title="acmecse.helpers.PluginManager.ServiceDefinition"><wbr></wbr>Service<wbr></wbr>Definition</a></code>
             </div>
         
 
@@ -948,7 +978,7 @@
     
     <div class="container-fluid">
 
-      <div id="main" class="">
+      <main class="">
         
 
         
@@ -956,7 +986,7 @@
 
         <div class="page-header">
           <h1 class="class"><code><code><a href="index.html" class="internal-link">acmecse</a></code><wbr></wbr>.<code><a href="acmecse.helpers.html" class="internal-link" title="acmecse.helpers">helpers</a></code><wbr></wbr>.<code><a href="acmecse.helpers.PluginManager.html" class="internal-link" title="acmecse.helpers.PluginManager">PluginManager</a></code><wbr></wbr>.<code><a href="acmecse.helpers.PluginManager.PluginManager.html" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager">PluginManager</a></code></code></h1>
-          <div id="showPrivate">
+          <div id="show-private">
             <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
           </div>
         </div>
@@ -966,8 +996,7 @@
         </div>
 
         <div class="extrasDocstring">
-          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">PluginManager</span>:</code></p><p>Known subclasses: <code><a href="acmecse.runtime.PluginManager.PluginManager.html" class="internal-link">acmecse.runtime.PluginManager.PluginManager</a></code></p>
-          <p><a href="classIndex.html#acmecse.helpers.PluginManager.PluginManager">View In Hierarchy</a></p>
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">PluginManager</span>: <a href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L380" class="sourceLink">(source)</a></code></p><p>Known subclasses: <code><a href="acmecse.runtime.PluginManager.PluginManager.html" class="internal-link">acmecse.runtime.PluginManager.PluginManager</a></code></p><p><a href="classIndex.html#acmecse.helpers.PluginManager.PluginManager">View In Hierarchy</a></p>
         </div>
 
         <div class="moduleDocstring">
@@ -976,8 +1005,8 @@
 </div>
         </div>
 
-        <div id="splitTables">
-          <table class="children sortable" id="id233">
+        <div id="split-tables">
+          <table class="children sortable" id="id252">
   
   
   <tr class="method">
@@ -1020,6 +1049,11 @@
     <td>Method</td>
     <td><code><a href="#endpoints" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager.endpoints">endpoints</a></code></td>
     <td>Get a list of all available endpoints provided by the plugin. This is used to discover the available endpoints and their metadata for a given plugin.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getPluginByName" class="internal-link" title="acmecse.helpers.PluginManager.PluginManager.getPluginByName">get<wbr></wbr>Plugin<wbr></wbr>By<wbr></wbr>Name</a></code></td>
+    <td>Get the plugin by name.</td>
   </tr><tr class="method">
     
     <td>Method</td>
@@ -1147,7 +1181,7 @@
             
         </div>
 
-        <div id="childList">
+        <div id="child-list">
           <div class="basemethod">
   
   
@@ -1161,7 +1195,10 @@
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">__delattr__</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">name: <code>str</code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L981">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#__delattr__" title="acmecse.helpers.PluginManager.PluginManager.__delattr__">
       
       
@@ -1185,7 +1222,10 @@
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">__getattr__</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">name: <code>str</code></span>) -&gt; <code>Any</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L966">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#__getattr__" title="acmecse.helpers.PluginManager.PluginManager.__getattr__">
       
       
@@ -1209,7 +1249,10 @@
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">callEndpoint</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginName: <code>str</code>, </span><span class="rst-sig-param">endpoint: <code>str</code>, </span><span class="rst-sig-param">*args: <code>Any</code>, </span><span class="rst-sig-param">timeout: <code>float | None</code> = None, </span><span class="rst-sig-param">**kwargs: <code>Any</code></span>) -&gt; <code>Any</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L1158">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#callEndpoint" title="acmecse.helpers.PluginManager.PluginManager.callEndpoint">
       
       
@@ -1233,7 +1276,10 @@
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">callEndpoints</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">endpoint: <code>str</code>, </span><span class="rst-sig-param">*args: <code>Any</code>, </span><span class="rst-sig-param">tag: <code>str | None | list[<wbr></wbr>str]</code> = None, </span><span class="rst-sig-param">timeout: <code>float | None</code> = None, </span><span class="rst-sig-param">**kwargs: <code>Any</code></span>) -&gt; <code>list[<wbr></wbr>tuple[<wbr></wbr>Any, <wbr></wbr>str, <wbr></wbr>dict[<wbr></wbr>str, <wbr></wbr>Any]]]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L1193">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#callEndpoints" title="acmecse.helpers.PluginManager.PluginManager.callEndpoints">
       
       
@@ -1258,7 +1304,10 @@ multiple plugins that match the given tag(s).</p><table class="fieldTable"><tr c
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">configurePlugins</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginNames: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">tags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">excludedTags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">*args: <code>Any</code>, </span><span class="rst-sig-param">**kwargs: <code>Any</code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L757">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#configurePlugins" title="acmecse.helpers.PluginManager.PluginManager.configurePlugins">
       
       
@@ -1282,7 +1331,10 @@ multiple plugins that match the given tag(s).</p><table class="fieldTable"><tr c
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">dependencyGraph</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">name: <code>str | None</code> = None</span>) -&gt; <code>dict[<wbr></wbr>str, <wbr></wbr>list[<wbr></wbr><a href="acmecse.helpers.PluginManager.Dependency.html" class="internal-link" title="acmecse.helpers.PluginManager.Dependency">Dependency</a>]]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L1038">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#dependencyGraph" title="acmecse.helpers.PluginManager.PluginManager.dependencyGraph">
       
       
@@ -1306,7 +1358,10 @@ multiple plugins that match the given tag(s).</p><table class="fieldTable"><tr c
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">dependencyGraphProvidedInstances</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>dict[<wbr></wbr>tuple[<wbr></wbr>str, <wbr></wbr>bool], <wbr></wbr>list[<wbr></wbr>tuple[<wbr></wbr>str, <wbr></wbr>str, <wbr></wbr>str]]]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L1059">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#dependencyGraphProvidedInstances" title="acmecse.helpers.PluginManager.PluginManager.dependencyGraphProvidedInstances">
       
       
@@ -1335,8 +1390,11 @@ that are using the provided instance as a dependency.</dd>
   <div class="functionHeader">
     
     
-    <span class="py-keyword">def</span>&#160;<span class="py-defname">endpoints</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginName: <code>str</code></span>) -&gt; <code>list[<wbr></wbr>tuple[<wbr></wbr>str, <wbr></wbr>inspect.Signature]]</code>:</span>
-    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">endpoints</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginName: <code>str</code></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.helpers.PluginManager.EndpointDefinition.html" class="internal-link" title="acmecse.helpers.PluginManager.EndpointDefinition">EndpointDefinition</a>]</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L1137">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#endpoints" title="acmecse.helpers.PluginManager.PluginManager.endpoints">
       
       
@@ -1346,7 +1404,34 @@ that are using the provided instance as a dependency.</dd>
   <div class="docstring functionBody">
     
     <div><p>Get a list of all available endpoints provided by the plugin.
-This is used to discover the available endpoints and their metadata for a given plugin.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">plugin<wbr></wbr>Name:</span><code>str</code></td><td class="fieldArgDesc">The name of the plugin to get the endpoints for.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr>tuple[<wbr></wbr>str, <wbr></wbr>inspect.Signature]]</code></td><td class="fieldArgDesc">A list of tuples of the form (endpoint, signature) where endpoint is the name of the endpoint and signature a Signature object from the inspect module.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.helpers.PluginManager.PluginNotFoundError.html" class="internal-link" title="acmecse.helpers.PluginManager.PluginNotFoundError">PluginNotFoundError</a></code></td><td>If no plugin with the given name is found.</td></tr></table></div>
+This is used to discover the available endpoints and their metadata for a given plugin.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">plugin<wbr></wbr>Name:</span><code>str</code></td><td class="fieldArgDesc">The name of the plugin to get the endpoints for.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acmecse.helpers.PluginManager.EndpointDefinition.html" class="internal-link" title="acmecse.helpers.PluginManager.EndpointDefinition">EndpointDefinition</a>]</code></td><td class="fieldArgDesc">A list of <code><a href="acmecse.helpers.PluginManager.EndpointDefinition.html" class="internal-link" title="acmecse.helpers.PluginManager.EndpointDefinition">EndpointDefinition</a></code> instances where each instance contains the pluginName, endpointName, and signature.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.helpers.PluginManager.PluginNotFoundError.html" class="internal-link" title="acmecse.helpers.PluginManager.PluginNotFoundError">PluginNotFoundError</a></code></td><td>If no plugin with the given name is found.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.helpers.PluginManager.PluginManager.getPluginByName">
+    
+  </a>
+  <a name="getPluginByName">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">getPluginByName</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">name: <code>str</code></span>) -&gt; <code><a href="acmecse.helpers.PluginManager.PluginInfo.html" class="internal-link" title="acmecse.helpers.PluginManager.PluginInfo">PluginInfo</a> | None</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L1004">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#getPluginByName" title="acmecse.helpers.PluginManager.PluginManager.getPluginByName">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the plugin by name.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">name:</span><code>str</code></td><td class="fieldArgDesc">The name of the plugin to get.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.helpers.PluginManager.PluginInfo.html" class="internal-link" title="acmecse.helpers.PluginManager.PluginInfo">PluginInfo</a> | None</code></td><td class="fieldArgDesc">The PluginInfo object for the plugin, or None if not found.</td></tr></table></div>
   </div>
 </div><div class="basemethod">
   
@@ -1361,7 +1446,10 @@ This is used to discover the available endpoints and their metadata for a given 
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">getPluginsByTag</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">tags: <code>str | list[<wbr></wbr>str]</code>, </span><span class="rst-sig-param">byPriority: <code>bool</code> = False</span>) -&gt; <code>list[<wbr></wbr>tuple[<wbr></wbr>str, <wbr></wbr>Any]]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L1086">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#getPluginsByTag" title="acmecse.helpers.PluginManager.PluginManager.getPluginsByTag">
       
       
@@ -1385,7 +1473,10 @@ This is used to discover the available endpoints and their metadata for a given 
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">has</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">instanceName: <code>str</code></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L993">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#has" title="acmecse.helpers.PluginManager.PluginManager.has">
       
       
@@ -1409,7 +1500,10 @@ This is used to discover the available endpoints and their metadata for a given 
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">isProvidedFunction</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">name: <code>str</code></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L1111">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#isProvidedFunction" title="acmecse.helpers.PluginManager.PluginManager.isProvidedFunction">
       
       
@@ -1433,7 +1527,10 @@ This is used to discover the available endpoints and their metadata for a given 
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">loadPlugins</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">directory: <code>str</code>, </span><span class="rst-sig-param">packagePath: <code>str</code>, </span><span class="rst-sig-param">pluginFilter: <code>Callable[<wbr></wbr>[<wbr></wbr>str], <wbr></wbr>bool] | None</code> = None, </span><span class="rst-sig-param">replace: <code>bool</code> = False, </span><span class="rst-sig-param">timeout: <code>float | None</code> = 1.0, </span><span class="rst-sig-param">*args: <code>Any</code>, </span><span class="rst-sig-param">**kwargs: <code>Any</code></span>) -&gt; <code>dict[<wbr></wbr>str, <wbr></wbr><a href="acmecse.helpers.PluginManager.PluginInfo.html" class="internal-link" title="acmecse.helpers.PluginManager.PluginInfo">PluginInfo</a>]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L401">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#loadPlugins" title="acmecse.helpers.PluginManager.PluginManager.loadPlugins">
       
       
@@ -1459,7 +1556,10 @@ This is used to discover the available endpoints and their metadata for a given 
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">pausePlugins</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginNames: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">tags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">excludedTags: <code>str | list[<wbr></wbr>str] | None</code> = None</span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L725">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#pausePlugins" title="acmecse.helpers.PluginManager.PluginManager.pausePlugins">
       
       
@@ -1483,7 +1583,10 @@ This is used to discover the available endpoints and their metadata for a given 
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">provide</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">moduleName: <code>str</code>, </span><span class="rst-sig-param">instance: <code>Any</code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L1015">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#provide" title="acmecse.helpers.PluginManager.PluginManager.provide">
       
       
@@ -1514,7 +1617,10 @@ stopped, etc. They are simply injected as attributes into the dependent classes.
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">resolvePlugins</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">tags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">excludedTags: <code>str | list[<wbr></wbr>str] | None</code> = None</span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L816">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#resolvePlugins" title="acmecse.helpers.PluginManager.PluginManager.resolvePlugins">
       
       
@@ -1540,7 +1646,10 @@ and the plugin instances have all the required attributes injected.</p><table cl
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">restartPlugins</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginNames: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">tags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">excludedTags: <code>str | list[<wbr></wbr>str] | None</code> = None</span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L709">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#restartPlugins" title="acmecse.helpers.PluginManager.PluginManager.restartPlugins">
       
       
@@ -1563,8 +1672,11 @@ and the plugin instances have all the required attributes injected.</p><table cl
   <div class="functionHeader">
     
     
-    <span class="py-keyword">def</span>&#160;<span class="py-defname">services</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">tag: <code>str | list[<wbr></wbr>str]</code> = None</span>) -&gt; <code>list[<wbr></wbr>tuple[<wbr></wbr>str, <wbr></wbr>list[<wbr></wbr>str], <wbr></wbr>dict[<wbr></wbr>str, <wbr></wbr>Any]]]</code>:</span>
-    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">services</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">tag: <code>str | list[<wbr></wbr>str]</code> = None</span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.helpers.PluginManager.ServiceDefinition.html" class="internal-link" title="acmecse.helpers.PluginManager.ServiceDefinition">ServiceDefinition</a>]</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L1122">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#services" title="acmecse.helpers.PluginManager.PluginManager.services">
       
       
@@ -1573,7 +1685,7 @@ and the plugin instances have all the required attributes injected.</p><table cl
   </div>
   <div class="docstring functionBody">
     
-    <div><p>Get a list of all available services provided by the plugins. This is used to discover the available services and their endpoints.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tag:</span><code>str | list[<wbr></wbr>str]</code></td><td class="fieldArgDesc">The tag of the plugin to get the services for. This is used to identify the plugin to get the services for. If multiple plugins with the same tag are found, all of them are returned in order of their priority. If None, all plugins are returned.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr>tuple[<wbr></wbr>str, <wbr></wbr>list[<wbr></wbr>str], <wbr></wbr>dict[<wbr></wbr>str, <wbr></wbr>Any]]]</code></td><td class="fieldArgDesc">A list of tuples of the form (pluginName, tags, serviceMetadata) where pluginName is the name of the plugin that provides the service, tags is a list of tags associated with the plugin, and serviceMetadata is a dictionary of metadata about the service (e.g. description, parameters, etc.).</td></tr></table></div>
+    <div><p>Get a list of all available services provided by the plugins. This is used to discover the available services and their endpoints.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tag:</span><code>str | list[<wbr></wbr>str]</code></td><td class="fieldArgDesc">The tag of the plugin to get the services for. This is used to identify the plugin to get the services for. If multiple plugins with the same tag are found, all of them are returned in order of their priority. If None, all plugins are returned.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acmecse.helpers.PluginManager.ServiceDefinition.html" class="internal-link" title="acmecse.helpers.PluginManager.ServiceDefinition">ServiceDefinition</a>]</code></td><td class="fieldArgDesc">A list of <code><a href="acmecse.helpers.PluginManager.ServiceDefinition.html" class="internal-link" title="acmecse.helpers.PluginManager.ServiceDefinition">ServiceDefinition</a></code> instances where each instance contains the pluginName, tags, and serviceMetadata.</td></tr></table></div>
   </div>
 </div><div class="basemethod">
   
@@ -1588,7 +1700,10 @@ and the plugin instances have all the required attributes injected.</p><table cl
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">setupFinished</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L939">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#setupFinished" title="acmecse.helpers.PluginManager.PluginManager.setupFinished">
       
       
@@ -1615,7 +1730,10 @@ In this case, we can call resolvePlugins first, then setupFinished to see if the
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">shutdownStarted</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L953">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#shutdownStarted" title="acmecse.helpers.PluginManager.PluginManager.shutdownStarted">
       
       
@@ -1641,7 +1759,10 @@ In this case, we can call resolvePlugins first, then setupFinished to see if the
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">startPlugins</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginNames: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">tags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">excludedTags: <code>str | list[<wbr></wbr>str] | None</code> = None</span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L677">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#startPlugins" title="acmecse.helpers.PluginManager.PluginManager.startPlugins">
       
       
@@ -1665,7 +1786,10 @@ In this case, we can call resolvePlugins first, then setupFinished to see if the
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">stopPlugins</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginNames: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">tags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">excludedTags: <code>str | list[<wbr></wbr>str] | None</code> = None</span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L693">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#stopPlugins" title="acmecse.helpers.PluginManager.PluginManager.stopPlugins">
       
       
@@ -1689,7 +1813,10 @@ In this case, we can call resolvePlugins first, then setupFinished to see if the
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">unloadPlugins</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginNames: <code>list[<wbr></wbr>str] | str | None</code> = None</span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L581">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#unloadPlugins" title="acmecse.helpers.PluginManager.PluginManager.unloadPlugins">
       
       
@@ -1713,7 +1840,10 @@ In this case, we can call resolvePlugins first, then setupFinished to see if the
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">unpausePlugins</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginNames: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">tags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">excludedTags: <code>str | list[<wbr></wbr>str] | None</code> = None</span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L741">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#unpausePlugins" title="acmecse.helpers.PluginManager.PluginManager.unpausePlugins">
       
       
@@ -1737,7 +1867,10 @@ In this case, we can call resolvePlugins first, then setupFinished to see if the
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">unresolvePlugins</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L903">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#unresolvePlugins" title="acmecse.helpers.PluginManager.PluginManager.unresolvePlugins">
       
       
@@ -1762,7 +1895,10 @@ and set the plugin instances to None.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">validatePlugins</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginNames: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">tags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">excludedTags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">*args: <code>Any</code>, </span><span class="rst-sig-param">**kwargs: <code>Any</code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L776">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#validatePlugins" title="acmecse.helpers.PluginManager.PluginManager.validatePlugins">
       
       
@@ -1785,7 +1921,10 @@ and set the plugin instances to None.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">plugins</span>: <code>dict[<wbr></wbr>str, <wbr></wbr><a href="acmecse.helpers.PluginManager.PluginInfo.html" class="internal-link" title="acmecse.helpers.PluginManager.PluginInfo">PluginInfo</a>]</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L386">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#plugins" title="acmecse.helpers.PluginManager.PluginManager.plugins">
       
       
@@ -1809,7 +1948,10 @@ and set the plugin instances to None.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">unloadedPlugins</span>: <code>list[<wbr></wbr>str]</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L388">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#unloadedPlugins" title="acmecse.helpers.PluginManager.PluginManager.unloadedPlugins">
       
       
@@ -1834,7 +1976,10 @@ and set the plugin instances to None.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_checkPluginTags</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginName: <code>str</code>, </span><span class="rst-sig-param">tags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">excludedTags: <code>str | list[<wbr></wbr>str] | None</code> = None</span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L794">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_checkPluginTags" title="acmecse.helpers.PluginManager.PluginManager._checkPluginTags">
       
       
@@ -1858,7 +2003,10 @@ and set the plugin instances to None.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_transition</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pluginNames: <code>str | list[<wbr></wbr>str] | None</code>, </span><span class="rst-sig-param">action: <code>Callable[<wbr></wbr>[<wbr></wbr><a href="acmecse.helpers.PluginManager.PluginInfo.html" class="internal-link" title="acmecse.helpers.PluginManager.PluginInfo">PluginInfo</a>], <wbr></wbr>None]</code>, </span><span class="rst-sig-param">tags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">excludedTags: <code>str | list[<wbr></wbr>str] | None</code> = None, </span><span class="rst-sig-param">reverse: <code>bool</code> = False</span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L624">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_transition" title="acmecse.helpers.PluginManager.PluginManager._transition">
       
       
@@ -1884,7 +2032,10 @@ but can be reversed if necessary (e.g. for stopping plugins, which should happen
   <div class="functionHeader">
     
     <span class="py-defname">_pluginInstances</span>: <code>dict[<wbr></wbr>str, <wbr></wbr>Any]</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L390">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_pluginInstances" title="acmecse.helpers.PluginManager.PluginManager._pluginInstances">
       
       
@@ -1908,7 +2059,10 @@ but can be reversed if necessary (e.g. for stopping plugins, which should happen
   <div class="functionHeader">
     
     <span class="py-defname">_providedInstances</span>: <code>dict[<wbr></wbr>str, <wbr></wbr>Any]</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L394">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_providedInstances" title="acmecse.helpers.PluginManager.PluginManager._providedInstances">
       
       
@@ -1934,7 +2088,10 @@ the values are the instances themselves.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">_tagsPluginMap</span>: <code>dict[<wbr></wbr>str, <wbr></wbr>list[<wbr></wbr>tuple[<wbr></wbr>str, <wbr></wbr>Any]]]</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/PluginManager.py#L392">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_tagsPluginMap" title="acmecse.helpers.PluginManager.PluginManager._tagsPluginMap">
       
       
@@ -1949,7 +2106,7 @@ the values are the instances themselves.</p></div>
 </div>
         </div>
       
-      </div>
+      </main>
     </div>
 
     <footer class="navbar navbar-default">
@@ -1959,7 +2116,7 @@ the values are the instances themselves.</p></div>
     <div class="container-fluid">
       <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
     generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-      25.4.0 at 2026-06-18 12:03:37.
+      25.10.1 at 2026-08-25 13:25:20.
     </div>
     
     <script src="ajax.js" type="text/javascript"></script>

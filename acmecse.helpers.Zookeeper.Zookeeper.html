@@ -7,7 +7,7 @@
   <head>
     
     <title>acmecse.helpers.Zookeeper.Zookeeper</title>
-    <meta name="generator" content="pydoctor 25.4.0"> 
+    <meta name="generator" content="pydoctor 25.10.1"> 
         
     </meta>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -425,7 +425,7 @@
     
     <div class="container-fluid">
 
-      <div id="main" class="">
+      <main class="">
         
 
         
@@ -433,7 +433,7 @@
 
         <div class="page-header">
           <h1 class="class"><code><code><a href="index.html" class="internal-link">acmecse</a></code><wbr></wbr>.<code><a href="acmecse.helpers.html" class="internal-link" title="acmecse.helpers">helpers</a></code><wbr></wbr>.<code><a href="acmecse.helpers.Zookeeper.html" class="internal-link" title="acmecse.helpers.Zookeeper">Zookeeper</a></code><wbr></wbr>.<code><a href="acmecse.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acmecse.helpers.Zookeeper.Zookeeper">Zookeeper</a></code></code></h1>
-          <div id="showPrivate">
+          <div id="show-private">
             <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
           </div>
         </div>
@@ -443,8 +443,7 @@
         </div>
 
         <div class="extrasDocstring">
-          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">Zookeeper</span>:</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="acmecse.helpers.Zookeeper.Zookeeper.__init__">Zookeeper(host, port, rootNode, logger, ...)</a></code></p>
-          <p><a href="classIndex.html#acmecse.helpers.Zookeeper.Zookeeper">View In Hierarchy</a></p>
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">Zookeeper</span>: <a href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/Zookeeper.py#L55" class="sourceLink">(source)</a></code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="acmecse.helpers.Zookeeper.Zookeeper.__init__">Zookeeper(host, port, rootNode, logger, ...)</a></code></p><p><a href="classIndex.html#acmecse.helpers.Zookeeper.Zookeeper">View In Hierarchy</a></p>
         </div>
 
         <div class="moduleDocstring">
@@ -454,8 +453,8 @@ add, update, delete key-value pairs, and manage the Zookeeper client connection.
 </div>
         </div>
 
-        <div id="splitTables">
-          <table class="children sortable" id="id254">
+        <div id="split-tables">
+          <table class="children sortable" id="id275">
   
   
   <tr class="method">
@@ -565,7 +564,7 @@ add, update, delete key-value pairs, and manage the Zookeeper client connection.
             
         </div>
 
-        <div id="childList">
+        <div id="child-list">
           <div class="basemethod">
   
   
@@ -579,7 +578,10 @@ add, update, delete key-value pairs, and manage the Zookeeper client connection.
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">__init__</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">host: <code>str</code>, </span><span class="rst-sig-param">port: <code>int | None</code> = <a href="acmecse.helpers.Zookeeper.html#zookeeperDefaultPort" class="internal-link" title="acmecse.helpers.Zookeeper.zookeeperDefaultPort">zookeeperDefaultPort</a>, </span><span class="rst-sig-param">rootNode: <code>str | None</code> = <span class="rst-variable-quote">'</span><span class="rst-variable-string">/</span><span class="rst-variable-quote">'</span>, </span><span class="rst-sig-param">logger: <code>Callable | None</code> = print, </span><span class="rst-sig-param">verbose: <code>bool | None</code> = False, </span><span class="rst-sig-param">caseSensitive: <code>bool | None</code> = True</span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/Zookeeper.py#L62">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#__init__" title="acmecse.helpers.Zookeeper.Zookeeper.__init__">
       
       
@@ -603,7 +605,10 @@ add, update, delete key-value pairs, and manage the Zookeeper client connection.
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">addKeyValue</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">key: <code>str</code>, </span><span class="rst-sig-param">value: <code>str</code> = <span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span></span>) -&gt; <code><a href="acmecse.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acmecse.helpers.Zookeeper.Zookeeper">Zookeeper</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/Zookeeper.py#L282">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#addKeyValue" title="acmecse.helpers.Zookeeper.Zookeeper.addKeyValue">
       
       
@@ -630,7 +635,10 @@ separated by dots (.) in the section name.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">connect</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">createRoot: <code>bool | None</code> = True</span>) -&gt; <code><a href="acmecse.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acmecse.helpers.Zookeeper.Zookeeper">Zookeeper</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/Zookeeper.py#L115">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#connect" title="acmecse.helpers.Zookeeper.Zookeeper.connect">
       
       
@@ -654,7 +662,10 @@ separated by dots (.) in the section name.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">delete</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">key: <code>str</code></span>) -&gt; <code><a href="acmecse.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acmecse.helpers.Zookeeper.Zookeeper">Zookeeper</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/Zookeeper.py#L364">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#delete" title="acmecse.helpers.Zookeeper.Zookeeper.delete">
       
       
@@ -678,7 +689,10 @@ separated by dots (.) in the section name.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">disconnect</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code><a href="acmecse.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acmecse.helpers.Zookeeper.Zookeeper">Zookeeper</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/Zookeeper.py#L141">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#disconnect" title="acmecse.helpers.Zookeeper.Zookeeper.disconnect">
       
       
@@ -702,7 +716,10 @@ separated by dots (.) in the section name.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">exists</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">node: <code>str | None</code> = None</span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/Zookeeper.py#L154">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#exists" title="acmecse.helpers.Zookeeper.Zookeeper.exists">
       
       
@@ -726,7 +743,10 @@ separated by dots (.) in the section name.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">listNode</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">node: <code>str</code></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.helpers.Zookeeper.ZookeperNode.html" class="internal-link" title="acmecse.helpers.Zookeeper.ZookeperNode">ZookeperNode</a>]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/Zookeeper.py#L171">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#listNode" title="acmecse.helpers.Zookeeper.Zookeeper.listNode">
       
       
@@ -750,7 +770,10 @@ separated by dots (.) in the section name.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">retrieveIniConfig</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">node: <code>str | None</code> = None</span>) -&gt; <code>str</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/Zookeeper.py#L203">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#retrieveIniConfig" title="acmecse.helpers.Zookeeper.Zookeeper.retrieveIniConfig">
       
       
@@ -774,7 +797,10 @@ separated by dots (.) in the section name.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">storeIniConfig</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">config: <code>ConfigParser | list[<wbr></wbr>ConfigParser] | str</code>, </span><span class="rst-sig-param">node: <code>str | None</code> = None</span>) -&gt; <code><a href="acmecse.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acmecse.helpers.Zookeeper.Zookeeper">Zookeeper</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/Zookeeper.py#L247">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#storeIniConfig" title="acmecse.helpers.Zookeeper.Zookeeper.storeIniConfig">
       
       
@@ -801,7 +827,10 @@ For example, the section name 'section.subsection' will be stored as 'section/su
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">updateKeyValue</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">key: <code>str</code>, </span><span class="rst-sig-param">value: <code>str</code></span>) -&gt; <code><a href="acmecse.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acmecse.helpers.Zookeeper.Zookeeper">Zookeeper</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/Zookeeper.py#L311">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#updateKeyValue" title="acmecse.helpers.Zookeeper.Zookeeper.updateKeyValue">
       
       
@@ -825,7 +854,10 @@ For example, the section name 'section.subsection' will be stored as 'section/su
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">upsertKeyValue</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">key: <code>str</code>, </span><span class="rst-sig-param">value: <code>str</code></span>) -&gt; <code><a href="acmecse.helpers.Zookeeper.Zookeeper.html" class="internal-link" title="acmecse.helpers.Zookeeper.Zookeeper">Zookeeper</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/Zookeeper.py#L339">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#upsertKeyValue" title="acmecse.helpers.Zookeeper.Zookeeper.upsertKeyValue">
       
       
@@ -848,7 +880,10 @@ For example, the section name 'section.subsection' will be stored as 'section/su
   <div class="functionHeader">
     
     <span class="py-defname">caseSensitive</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/Zookeeper.py#L96">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#caseSensitive" title="acmecse.helpers.Zookeeper.Zookeeper.caseSensitive">
       
       
@@ -872,7 +907,10 @@ For example, the section name 'section.subsection' will be stored as 'section/su
   <div class="functionHeader">
     
     <span class="py-defname">host</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/Zookeeper.py#L81">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#host" title="acmecse.helpers.Zookeeper.Zookeeper.host">
       
       
@@ -896,7 +934,10 @@ For example, the section name 'section.subsection' will be stored as 'section/su
   <div class="functionHeader">
     
     <span class="py-defname">logger</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/Zookeeper.py#L90">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#logger" title="acmecse.helpers.Zookeeper.Zookeeper.logger">
       
       
@@ -920,7 +961,10 @@ For example, the section name 'section.subsection' will be stored as 'section/su
   <div class="functionHeader">
     
     <span class="py-defname">normalizedRootNode</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/Zookeeper.py#L99">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#normalizedRootNode" title="acmecse.helpers.Zookeeper.Zookeeper.normalizedRootNode">
       
       
@@ -944,7 +988,10 @@ For example, the section name 'section.subsection' will be stored as 'section/su
   <div class="functionHeader">
     
     <span class="py-defname">port</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/Zookeeper.py#L84">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#port" title="acmecse.helpers.Zookeeper.Zookeeper.port">
       
       
@@ -968,7 +1015,10 @@ For example, the section name 'section.subsection' will be stored as 'section/su
   <div class="functionHeader">
     
     <span class="py-defname">rootNode</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/Zookeeper.py#L87">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#rootNode" title="acmecse.helpers.Zookeeper.Zookeeper.rootNode">
       
       
@@ -992,7 +1042,10 @@ For example, the section name 'section.subsection' will be stored as 'section/su
   <div class="functionHeader">
     
     <span class="py-defname">verbose</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/Zookeeper.py#L93">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#verbose" title="acmecse.helpers.Zookeeper.Zookeeper.verbose">
       
       
@@ -1016,7 +1069,10 @@ For example, the section name 'section.subsection' will be stored as 'section/su
   <div class="functionHeader">
     
     <span class="py-defname">zk</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/Zookeeper.py#L78">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#zk" title="acmecse.helpers.Zookeeper.Zookeeper.zk">
       
       
@@ -1041,7 +1097,10 @@ For example, the section name 'section.subsection' will be stored as 'section/su
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_normalizeKey</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">key: <code>str</code></span>) -&gt; <code>str</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/Zookeeper.py#L103">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_normalizeKey" title="acmecse.helpers.Zookeeper.Zookeeper._normalizeKey">
       
       
@@ -1055,7 +1114,7 @@ For example, the section name 'section.subsection' will be stored as 'section/su
 </div>
         </div>
       
-      </div>
+      </main>
     </div>
 
     <footer class="navbar navbar-default">
@@ -1065,7 +1124,7 @@ For example, the section name 'section.subsection' will be stored as 'section/su
     <div class="container-fluid">
       <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
     generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-      25.4.0 at 2026-06-18 12:03:37.
+      25.10.1 at 2026-08-25 13:25:20.
     </div>
     
     <script src="ajax.js" type="text/javascript"></script>

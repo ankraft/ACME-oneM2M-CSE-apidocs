@@ -7,7 +7,7 @@
   <head>
     
     <title>acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager</title>
-    <meta name="generator" content="pydoctor 25.4.0"> 
+    <meta name="generator" content="pydoctor 25.10.1"> 
         
     </meta>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -128,7 +128,37 @@
         
 
         
-            <div class="itemName"><code><a href="#init" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.init">init</a></code>
+            <div class="itemName"><code><a href="#configure" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.configure">configure</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#determineNSE" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.determineNSE">determine<wbr></wbr>NSE</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#hasNSE" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.hasNSE">has<wbr></wbr>NSE</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#replaceTriggerRequest" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.replaceTriggerRequest">replace<wbr></wbr>Trigger<wbr></wbr>Request</a></code>
             </div>
         
 
@@ -148,7 +178,7 @@
         
 
         
-            <div class="itemName"><code><a href="#shutdown" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.shutdown">shutdown</a></code>
+            <div class="itemName"><code><a href="#sendTriggerRequest" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.sendTriggerRequest">send<wbr></wbr>Trigger<wbr></wbr>Request</a></code>
             </div>
         
 
@@ -172,14 +202,77 @@
             </div>
         
 
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#terminateTriggerRequest" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.terminateTriggerRequest">terminate<wbr></wbr>Trigger<wbr></wbr>Request</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#validate" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.validate">validate</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_terminateAllTriggerRequests" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager._terminateAllTriggerRequests">_terminate<wbr></wbr>All<wbr></wbr>Trigger<wbr></wbr>Requests</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_triggerHandler" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager._triggerHandler">_trigger<wbr></wbr>Handler</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_triggerHandlerCompleted" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager._triggerHandlerCompleted">_trigger<wbr></wbr>Handler<wbr></wbr>Completed</a></code>
+            </div>
+        
+
     </li>
 </ul> 
 
         
          
 
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
         
-         
+        
+        
+
+        
+            <div class="itemName"><code><a href="#triggerRequestActors" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.triggerRequestActors">trigger<wbr></wbr>Request<wbr></wbr>Actors</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
 
         
          
@@ -239,7 +332,7 @@
     
     <div class="container-fluid">
 
-      <div id="main" class="">
+      <main class="">
         
 
         
@@ -247,7 +340,7 @@
 
         <div class="page-header">
           <h1 class="class"><code><code><a href="index.html" class="internal-link">acmecse</a></code><wbr></wbr>.<code><a href="acmecse.plugins.html" class="internal-link" title="acmecse.plugins">plugins</a></code><wbr></wbr>.<code><a href="acmecse.plugins.services.html" class="internal-link" title="acmecse.plugins.services">services</a></code><wbr></wbr>.<code><a href="acmecse.plugins.services.TriggerRequestManager.html" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager">TriggerRequestManager</a></code><wbr></wbr>.<code><a href="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.html" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager">TriggerRequestManager</a></code></code></h1>
-          <div id="showPrivate">
+          <div id="show-private">
             <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
           </div>
         </div>
@@ -257,8 +350,7 @@
         </div>
 
         <div class="extrasDocstring">
-          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">TriggerRequestManager</span>:</code></p>
-          <p><a href="classIndex.html#acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager">View In Hierarchy</a></p>
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">TriggerRequestManager</span>: <a href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/TriggerRequestManager.py#L28" class="sourceLink">(source)</a></code></p><p><a href="classIndex.html#acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager">View In Hierarchy</a></p>
         </div>
 
         <div class="moduleDocstring">
@@ -271,15 +363,30 @@ the actual functionality for managing TriggerRequests.</p>
 </div>
         </div>
 
-        <div id="splitTables">
-          <table class="children sortable" id="id373">
+        <div id="split-tables">
+          <table class="children sortable" id="id394">
   
   
   <tr class="method">
     
     <td>Method</td>
-    <td><code><a href="#init" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.init">init</a></code></td>
-    <td>Initialize the TriggerRequestManager.</td>
+    <td><code><a href="#configure" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.configure">configure</a></code></td>
+    <td>Configure the GroupManager with the provided configuration.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#determineNSE" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.determineNSE">determine<wbr></wbr>NSE</a></code></td>
+    <td>Determine the NSE (Network Service Entity) for a given TriggerRequest.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#hasNSE" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.hasNSE">has<wbr></wbr>NSE</a></code></td>
+    <td>Check if a given NSE is available.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#replaceTriggerRequest" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.replaceTriggerRequest">replace<wbr></wbr>Trigger<wbr></wbr>Request</a></code></td>
+    <td>Attempt to replace an existing TriggerRequest that is currently being processed.</td>
   </tr><tr class="method">
     
     <td>Method</td>
@@ -288,8 +395,8 @@ the actual functionality for managing TriggerRequests.</p>
   </tr><tr class="method">
     
     <td>Method</td>
-    <td><code><a href="#shutdown" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.shutdown">shutdown</a></code></td>
-    <td>Shutdown the TriggerRequestManager.</td>
+    <td><code><a href="#sendTriggerRequest" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.sendTriggerRequest">send<wbr></wbr>Trigger<wbr></wbr>Request</a></code></td>
+    <td>Handle the sending of a TriggerRequest to the determined NSE.</td>
   </tr><tr class="method">
     
     <td>Method</td>
@@ -300,6 +407,36 @@ the actual functionality for managing TriggerRequests.</p>
     <td>Method</td>
     <td><code><a href="#stop" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.stop">stop</a></code></td>
     <td>Stop the TriggerRequestManager.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#terminateTriggerRequest" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.terminateTriggerRequest">terminate<wbr></wbr>Trigger<wbr></wbr>Request</a></code></td>
+    <td>Terminate (or recall) a TriggerRequest that is currently being processed.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#validate" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.validate">validate</a></code></td>
+    <td>Validate the GroupManager configuration.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#triggerRequestActors" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.triggerRequestActors">trigger<wbr></wbr>Request<wbr></wbr>Actors</a></code></td>
+    <td>Dictionary to keep track of active TriggerRequest actors. The key is the TriggerRequest resource ID (ri), and the value is a tuple containing the BackgroundWorker instance and the corresponding TGR resource.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_terminateAllTriggerRequests" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager._terminateAllTriggerRequests">_terminate<wbr></wbr>All<wbr></wbr>Trigger<wbr></wbr>Requests</a></code></td>
+    <td>Terminate all currently active TriggerRequests. This method is called when the TriggerRequestManager is stopped or restarted.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_triggerHandler" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager._triggerHandler">_trigger<wbr></wbr>Handler</a></code></td>
+    <td>Internal method to handle the actual sending of the TriggerRequest to the NSE.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_triggerHandlerCompleted" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager._triggerHandlerCompleted">_trigger<wbr></wbr>Handler<wbr></wbr>Completed</a></code></td>
+    <td>Internal method called when the trigger handler actor has completed its execution.</td>
   </tr>
 </table>
           
@@ -307,22 +444,25 @@ the actual functionality for managing TriggerRequests.</p>
             
         </div>
 
-        <div id="childList">
+        <div id="child-list">
           <div class="basemethod">
   
   
-  <a name="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.init">
+  <a name="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.configure">
     
   </a>
-  <a name="init">
+  <a name="configure">
     
   </a>
   <div class="functionHeader">
     
-    <div><span class="decorator">@<a href="acmecse.helpers.PluginManager.html#init" class="internal-link" title="acmecse.helpers.PluginManager.init">PluginManager.init</a><br /></span></div>
-    <span class="py-keyword">def</span>&#160;<span class="py-defname">init</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
-    
-    <a class="headerLink" href="#init" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.init">
+    <div><span class="decorator">@<a href="#configure" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.configure">configure</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">configure</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">config: <code><a href="acmecse.runtime.Configuration.Configuration.html" class="internal-link" title="acmecse.runtime.Configuration.Configuration">Configuration</a></code></span>):</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/TriggerRequestManager.py#L72">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#configure" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.configure">
       
       
       ¶
@@ -330,7 +470,96 @@ the actual functionality for managing TriggerRequests.</p>
   </div>
   <div class="docstring functionBody">
     
-    <div><p>Initialize the TriggerRequestManager.</p></div>
+    <div><p>Configure the GroupManager with the provided configuration.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">config:</span><code><a href="acmecse.runtime.Configuration.Configuration.html" class="internal-link" title="acmecse.runtime.Configuration.Configuration">Configuration</a></code></td><td class="fieldArgDesc">The configuration to apply.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.determineNSE">
+    
+  </a>
+  <a name="determineNSE">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">determineNSE</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">tgr: <code><a href="acmecse.resources.TGR.TGR.html" class="internal-link" title="acmecse.resources.TGR.TGR">TGR</a></code></span>) -&gt; <code>str | None</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/TriggerRequestManager.py#L101">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#determineNSE" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.determineNSE">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Determine the NSE (Network Service Entity) for a given TriggerRequest.</p>
+<p>This method iterates through the registered triggerRequestHandler services
+that have the <em>triggerRequestHandler</em> tag and calls their <tt class="rst-docutils rst-literal">acceptsM2MExtID`</tt>
+endpoint to determine if they can handle the provided TriggerRequest's M2M-Ext-ID.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tgr:</span><code><a href="acmecse.resources.TGR.TGR.html" class="internal-link" title="acmecse.resources.TGR.TGR">TGR</a></code></td><td class="fieldArgDesc">The TriggerRequest resource for which to determine the NSE.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>str | None</code></td><td class="fieldArgDesc">The first NSE service handler plugin's name if found, otherwise None.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.hasNSE">
+    
+  </a>
+  <a name="hasNSE">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">hasNSE</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">nse: <code>str</code></span>) -&gt; <code>bool</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/TriggerRequestManager.py#L127">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#hasNSE" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.hasNSE">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check if a given NSE is available.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">nse:</span><code>str</code></td><td class="fieldArgDesc">The name of the NSE service handler plugin to check.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if the NSE is available, False otherwise.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.replaceTriggerRequest">
+    
+  </a>
+  <a name="replaceTriggerRequest">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">replaceTriggerRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">tgr: <code><a href="acmecse.resources.TGR.TGR.html" class="internal-link" title="acmecse.resources.TGR.TGR">TGR</a></code>, </span><span class="rst-sig-param">nse: <code>str</code></span>) -&gt; <code>bool</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/TriggerRequestManager.py#L253">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#replaceTriggerRequest" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.replaceTriggerRequest">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Attempt to replace an existing TriggerRequest that is currently being processed.</p>
+<p>This method checks if the provided TriggerRequest is currently being processed by an actor.
+If it is, it attempts to terminate the existing processing and allows for a new TriggerRequest
+to be sent in its place.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tgr:</span><code><a href="acmecse.resources.TGR.TGR.html" class="internal-link" title="acmecse.resources.TGR.TGR">TGR</a></code></td><td class="fieldArgDesc">The TriggerRequest resource that is attempting to replace an existing one.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">nse:</span><code>str</code></td><td class="fieldArgDesc">The name of the NSE service handler plugin to which the TriggerRequest should be sent.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if the existing TriggerRequest was successfully terminated and replaced, False otherwise.</td></tr></table></div>
   </div>
 </div><div class="basemethod">
   
@@ -343,9 +572,12 @@ the actual functionality for managing TriggerRequests.</p>
   </a>
   <div class="functionHeader">
     
-    <div><span class="decorator">@<a href="acmecse.helpers.PluginManager.html#restart" class="internal-link" title="acmecse.helpers.PluginManager.restart">PluginManager.restart</a><br /></span></div>
+    <div><span class="decorator">@<a href="#restart" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.restart">restart</a><br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">restart</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/TriggerRequestManager.py#L64">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#restart" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.restart">
       
       
@@ -359,18 +591,21 @@ the actual functionality for managing TriggerRequests.</p>
 </div><div class="basemethod">
   
   
-  <a name="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.shutdown">
+  <a name="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.sendTriggerRequest">
     
   </a>
-  <a name="shutdown">
+  <a name="sendTriggerRequest">
     
   </a>
   <div class="functionHeader">
     
-    <div><span class="decorator">@<a href="acmecse.helpers.PluginManager.html#finish" class="internal-link" title="acmecse.helpers.PluginManager.finish">PluginManager.finish</a><br /></span></div>
-    <span class="py-keyword">def</span>&#160;<span class="py-defname">shutdown</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
     
-    <a class="headerLink" href="#shutdown" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.shutdown">
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">sendTriggerRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">tgr: <code><a href="acmecse.resources.TGR.TGR.html" class="internal-link" title="acmecse.resources.TGR.TGR">TGR</a></code>, </span><span class="rst-sig-param">nse: <code>str</code>, </span><span class="rst-sig-param">replace: <code>bool</code> = False</span>):</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/TriggerRequestManager.py#L144">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#sendTriggerRequest" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.sendTriggerRequest">
       
       
       ¶
@@ -378,7 +613,10 @@ the actual functionality for managing TriggerRequests.</p>
   </div>
   <div class="docstring functionBody">
     
-    <div><p>Shutdown the TriggerRequestManager.</p></div>
+    <div><p>Handle the sending of a TriggerRequest to the determined NSE.</p>
+<p>This method is responsible for initiating the process of sending the TriggerRequest to the
+determined NSE. The actual sending process may be asynchronous and handled in the background.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tgr:</span><code><a href="acmecse.resources.TGR.TGR.html" class="internal-link" title="acmecse.resources.TGR.TGR">TGR</a></code></td><td class="fieldArgDesc">The TriggerRequest resource to be sent.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">nse:</span><code>str</code></td><td class="fieldArgDesc">The name of the NSE service handler plugin to which the TriggerRequest should be sent.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">replace:</span><code>bool</code></td><td class="fieldArgDesc">A boolean indicating whether this is a replacement of an existing TriggerRequest. If True, the NSE handler may handle the request differently.</td></tr></table></div>
   </div>
 </div><div class="basemethod">
   
@@ -391,9 +629,12 @@ the actual functionality for managing TriggerRequests.</p>
   </a>
   <div class="functionHeader">
     
-    <div><span class="decorator">@<a href="acmecse.helpers.PluginManager.html#start" class="internal-link" title="acmecse.helpers.PluginManager.start">PluginManager.start</a><br /></span></div>
+    <div><span class="decorator">@<a href="#start" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.start">start</a><br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">start</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/TriggerRequestManager.py#L46">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#start" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.start">
       
       
@@ -415,9 +656,12 @@ the actual functionality for managing TriggerRequests.</p>
   </a>
   <div class="functionHeader">
     
-    <div><span class="decorator">@<a href="acmecse.helpers.PluginManager.html#stop" class="internal-link" title="acmecse.helpers.PluginManager.stop">PluginManager.stop</a><br /></span></div>
+    <div><span class="decorator">@<a href="#stop" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.stop">stop</a><br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">stop</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/TriggerRequestManager.py#L55">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#stop" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.stop">
       
       
@@ -428,10 +672,192 @@ the actual functionality for managing TriggerRequests.</p>
     
     <div><p>Stop the TriggerRequestManager.</p></div>
   </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.terminateTriggerRequest">
+    
+  </a>
+  <a name="terminateTriggerRequest">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">terminateTriggerRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">tgr: <code><a href="acmecse.resources.TGR.TGR.html" class="internal-link" title="acmecse.resources.TGR.TGR">TGR</a></code>, </span><span class="rst-sig-param">replace: <code>bool</code> = False</span>) -&gt; <code>bool</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/TriggerRequestManager.py#L278">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#terminateTriggerRequest" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.terminateTriggerRequest">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Terminate (or recall) a TriggerRequest that is currently being processed.</p>
+<p>This method is responsible for stopping any background processing related to the provided
+TriggerRequest. It should be called when a TriggerRequest is deleted or no longer needs to be processed.</p>
+<p>This method also removes the TriggerRequest's actor from the triggerRequestActors dictionary and calls the
+<em>terminateTriggerRequest</em> endpoint of the assigned NSE service handler plugin to notify it of the termination.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tgr:</span><code><a href="acmecse.resources.TGR.TGR.html" class="internal-link" title="acmecse.resources.TGR.TGR">TGR</a></code></td><td class="fieldArgDesc">The TriggerRequest resource to be terminated.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">replace:</span><code>bool</code></td><td class="fieldArgDesc">A boolean indicating whether this termination is part of a replacement process. If True, the NSE handler may handle the termination differently.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">True if the TriggerRequest was successfully terminated, False otherwise. True is also returned if
+the TriggerRequest was not currently being processed.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.validate">
+    
+  </a>
+  <a name="validate">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#validate" class="internal-link" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.validate">validate</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">validate</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">config: <code><a href="acmecse.runtime.Configuration.Configuration.html" class="internal-link" title="acmecse.runtime.Configuration.Configuration">Configuration</a></code></span>):</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/TriggerRequestManager.py#L85">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#validate" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.validate">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Validate the GroupManager configuration.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">config:</span><code><a href="acmecse.runtime.Configuration.Configuration.html" class="internal-link" title="acmecse.runtime.Configuration.Configuration">Configuration</a></code></td><td class="fieldArgDesc">The configuration to validate.</td></tr></table></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.triggerRequestActors">
+    
+  </a>
+  <a name="triggerRequestActors">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">triggerRequestActors</span>: <code>dict[<wbr></wbr>str, <wbr></wbr>tuple[<wbr></wbr><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a>, <wbr></wbr><a href="acmecse.resources.TGR.TGR.html" class="internal-link" title="acmecse.resources.TGR.TGR">TGR</a>]]</code> =
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/TriggerRequestManager.py#L37">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#triggerRequestActors" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager.triggerRequestActors">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Dictionary to keep track of active TriggerRequest actors.
+The key is the TriggerRequest resource ID (ri), and the value is a tuple containing the
+BackgroundWorker instance and the corresponding TGR resource.</p>
+<p>Be aware that this Triggerrequest resource may be updated or deleted outside of this manager,
+so the manager should always check the current state of the resource before acting on it.</p>
+</div>
+    
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager._terminateAllTriggerRequests">
+    
+  </a>
+  <a name="_terminateAllTriggerRequests">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_terminateAllTriggerRequests</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/TriggerRequestManager.py#L324">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#_terminateAllTriggerRequests" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager._terminateAllTriggerRequests">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Terminate all currently active TriggerRequests.
+This method is called when the TriggerRequestManager is stopped or restarted.</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager._triggerHandler">
+    
+  </a>
+  <a name="_triggerHandler">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_triggerHandler</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">tgr: <code><a href="acmecse.resources.TGR.TGR.html" class="internal-link" title="acmecse.resources.TGR.TGR">TGR</a></code>, </span><span class="rst-sig-param">nse: <code>str</code>, </span><span class="rst-sig-param">replace: <code>bool</code>, </span><span class="rst-sig-param">actor: <code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a></code></span>):</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/TriggerRequestManager.py#L167">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#_triggerHandler" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager._triggerHandler">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Internal method to handle the actual sending of the TriggerRequest to the NSE.</p>
+<p>This method is executed in a background worker and is responsible for the actual communication
+with the NSE. It should handle any necessary retries, error handling, and updating of the
+TriggerRequest's status based on the response from the NSE.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tgr:</span><code><a href="acmecse.resources.TGR.TGR.html" class="internal-link" title="acmecse.resources.TGR.TGR">TGR</a></code></td><td class="fieldArgDesc">The TriggerRequest resource to be sent.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">nse:</span><code>str</code></td><td class="fieldArgDesc">The name of the NSE service handler plugin to which the TriggerRequest should be sent.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">replace:</span><code>bool</code></td><td class="fieldArgDesc">A boolean indicating whether this is a replacement of an existing TriggerRequest. If True, the NSE handler may handle the request differently.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">actor:</span><code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a></code></td><td class="fieldArgDesc">The background worker actor handling this trigger request.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager._triggerHandlerCompleted">
+    
+  </a>
+  <a name="_triggerHandlerCompleted">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_triggerHandlerCompleted</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">tgr: <code><a href="acmecse.resources.TGR.TGR.html" class="internal-link" title="acmecse.resources.TGR.TGR">TGR</a></code>, </span><span class="rst-sig-param">nse: <code>str</code>, </span><span class="rst-sig-param">actor: <code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a></code></span>):</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/TriggerRequestManager.py#L236">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#_triggerHandlerCompleted" title="acmecse.plugins.services.TriggerRequestManager.TriggerRequestManager._triggerHandlerCompleted">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Internal method called when the trigger handler actor has completed its execution.</p>
+<p>This method is responsible for cleaning up after the trigger handling process, including
+removing the actor from the triggerRequestActors dictionary and performing any necessary
+finalization steps.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tgr:</span><code><a href="acmecse.resources.TGR.TGR.html" class="internal-link" title="acmecse.resources.TGR.TGR">TGR</a></code></td><td class="fieldArgDesc">The TriggerRequest resource that was being processed.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">nse:</span><code>str</code></td><td class="fieldArgDesc">The name of the NSE service handler plugin to which the TriggerRequest was sent.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">actor:</span><code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a></code></td><td class="fieldArgDesc">The background worker actor that handled this trigger request.</td></tr></table></div>
+  </div>
 </div>
         </div>
       
-      </div>
+      </main>
     </div>
 
     <footer class="navbar navbar-default">
@@ -441,7 +867,7 @@ the actual functionality for managing TriggerRequests.</p>
     <div class="container-fluid">
       <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
     generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-      25.4.0 at 2026-06-18 12:03:37.
+      25.10.1 at 2026-08-25 13:25:20.
     </div>
     
     <script src="ajax.js" type="text/javascript"></script>

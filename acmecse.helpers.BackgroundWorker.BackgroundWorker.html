@@ -7,7 +7,7 @@
   <head>
     
     <title>acmecse.helpers.BackgroundWorker.BackgroundWorker</title>
-    <meta name="generator" content="pydoctor 25.4.0"> 
+    <meta name="generator" content="pydoctor 25.10.1"> 
         
     </meta>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -159,6 +159,16 @@
 
         
             <div class="itemName"><code><a href="#restart" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.restart">restart</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#sleep" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.sleep">sleep</a></code>
             </div>
         
 
@@ -496,8 +506,31 @@
         
          
 
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="private">
         
-         
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.BackgroundWorker.html#_sleepTimeResolution" class="internal-link" title="acmecse.helpers.BackgroundWorker._sleepTimeResolution">_sleep<wbr></wbr>Time<wbr></wbr>Resolution</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.BackgroundWorker.html#_sleepTimeResolution10" class="internal-link" title="acmecse.helpers.BackgroundWorker._sleepTimeResolution10">_sleep<wbr></wbr>Time<wbr></wbr>Resolution10</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
 
         
          
@@ -515,7 +548,7 @@
     
     <div class="container-fluid">
 
-      <div id="main" class="">
+      <main class="">
         
 
         
@@ -523,7 +556,7 @@
 
         <div class="page-header">
           <h1 class="class"><code><code><a href="index.html" class="internal-link">acmecse</a></code><wbr></wbr>.<code><a href="acmecse.helpers.html" class="internal-link" title="acmecse.helpers">helpers</a></code><wbr></wbr>.<code><a href="acmecse.helpers.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker">BackgroundWorker</a></code><wbr></wbr>.<code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a></code></code></h1>
-          <div id="showPrivate">
+          <div id="show-private">
             <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
           </div>
         </div>
@@ -533,8 +566,7 @@
         </div>
 
         <div class="extrasDocstring">
-          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">BackgroundWorker</span>(object):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.__init__">BackgroundWorker(interval, callback, name, startWithDelay, ...)</a></code></p>
-          <p><a href="classIndex.html#acmecse.helpers.BackgroundWorker.BackgroundWorker">View In Hierarchy</a></p>
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">BackgroundWorker</span>(object): <a href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L37" class="sourceLink">(source)</a></code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.__init__">BackgroundWorker(interval, callback, name, startWithDelay, ...)</a></code></p><p><a href="classIndex.html#acmecse.helpers.BackgroundWorker.BackgroundWorker">View In Hierarchy</a></p>
         </div>
 
         <div class="moduleDocstring">
@@ -549,8 +581,8 @@ worker callback.</p>
 </div>
         </div>
 
-        <div id="splitTables">
-          <table class="children sortable" id="id207">
+        <div id="split-tables">
+          <table class="children sortable" id="id215">
   
   
   <tr class="method">
@@ -573,6 +605,11 @@ worker callback.</p>
     <td>Method</td>
     <td><code><a href="#restart" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.restart">restart</a></code></td>
     <td>Restart the worker. Optionally use new interval, and re-use the previous arguments passed with the <code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html#start" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.start">start()</a></code> method.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#sleep" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.sleep">sleep</a></code></td>
+    <td>Sleep the worker for a given number of seconds.</td>
   </tr><tr class="method">
     
     <td>Method</td>
@@ -700,7 +737,7 @@ worker callback.</p>
             
         </div>
 
-        <div id="childList">
+        <div id="child-list">
           <div class="basemethod">
   
   
@@ -714,7 +751,10 @@ worker callback.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">__init__</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">interval: <code>float</code>, </span><span class="rst-sig-param">callback: <code>Callable</code>, </span><span class="rst-sig-param">name: <code>str | None</code> = None, </span><span class="rst-sig-param">startWithDelay: <code>bool | None</code> = False, </span><span class="rst-sig-param">maxCount: <code>int | None</code> = None, </span><span class="rst-sig-param">dispose: <code>bool | None</code> = True, </span><span class="rst-sig-param">id: <code>int | None</code> = None, </span><span class="rst-sig-param">runOnTime: <code>bool | None</code> = True, </span><span class="rst-sig-param">runPastEvents: <code>bool | None</code> = False, </span><span class="rst-sig-param">finished: <code>Callable | None</code> = None, </span><span class="rst-sig-param">ignoreException: <code>bool | None</code> = False, </span><span class="rst-sig-param">data: <code>Any | None</code> = None</span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L79">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#__init__" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.__init__">
       
       
@@ -738,7 +778,10 @@ worker callback.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">__repr__</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>str</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L353">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#__repr__" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.__repr__">
       
       
@@ -762,7 +805,10 @@ worker callback.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">pause</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L204">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#pause" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.pause">
       
       
@@ -786,7 +832,10 @@ worker callback.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">restart</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">interval: <code>float | None</code> = None</span>) -&gt; <code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a> | None</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L187">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#restart" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.restart">
       
       
@@ -796,6 +845,35 @@ worker callback.</p>
   <div class="docstring functionBody">
     
     <div><p>Restart the worker. Optionally use new interval, and re-use the previous arguments passed with the <code><a href="#start" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.start">start()</a></code> method.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">interval:</span><code>float | None</code></td><td class="fieldArgDesc">Optional float with the interval.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a> | None</code></td><td class="fieldArgDesc">The background worker instance, or None if the worker isn't running</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker.BackgroundWorker.sleep">
+    
+  </a>
+  <a name="sleep">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">sleep</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">seconds: <code>float</code></span>):</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L232">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#sleep" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.sleep">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Sleep the worker for a given number of seconds.</p>
+<p>This is a blocking call, but the worker can be stopped during the sleep. In that case an InterruptedError is raised.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">seconds:</span><code>float</code></td><td class="fieldArgDesc">Number of seconds to sleep.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>InterruptedError</code></td><td>If the worker is stopped during the sleep.</td></tr></table></div>
   </div>
 </div><div class="basemethod">
   
@@ -810,7 +888,10 @@ worker callback.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">start</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">**kwargs: <code>Any</code></span>) -&gt; <code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L145">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#start" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.start">
       
       
@@ -836,7 +917,10 @@ worker callback.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">stop</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L171">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#stop" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.stop">
       
       
@@ -860,7 +944,10 @@ worker callback.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">unpause</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">immediately: <code>bool | None</code> = False</span>) -&gt; <code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a> | None</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L217">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#unpause" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.unpause">
       
       
@@ -884,7 +971,10 @@ worker callback.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">workNow</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code><a href="acmecse.helpers.BackgroundWorker.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker.BackgroundWorker">BackgroundWorker</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L254">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#workNow" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.workNow">
       
       
@@ -907,7 +997,10 @@ worker callback.</p>
   <div class="functionHeader">
     
     <span class="py-defname">__slots__</span>: <code>tuple[<wbr></wbr>str, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L51">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#__slots__" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.__slots__">
       
       
@@ -931,7 +1024,10 @@ worker callback.</p>
   <div class="functionHeader">
     
     <span class="py-defname">args</span>: <code>dict[<wbr></wbr>str, <wbr></wbr>Any]</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L140">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#args" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.args">
       
       
@@ -955,7 +1051,10 @@ worker callback.</p>
   <div class="functionHeader">
     
     <span class="py-defname">callback</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L116">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#callback" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.callback">
       
       
@@ -979,7 +1078,10 @@ worker callback.</p>
   <div class="functionHeader">
     
     <span class="py-defname">data</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L138">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#data" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.data">
       
       
@@ -1003,7 +1105,10 @@ worker callback.</p>
   <div class="functionHeader">
     
     <span class="py-defname">dispose</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L130">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#dispose" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.dispose">
       
       
@@ -1027,7 +1132,10 @@ worker callback.</p>
   <div class="functionHeader">
     
     <span class="py-defname">executing</span>: <code>bool</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L120">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#executing" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.executing">
       
       
@@ -1051,7 +1159,10 @@ worker callback.</p>
   <div class="functionHeader">
     
     <span class="py-defname">finished</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L132">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#finished" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.finished">
       
       
@@ -1075,7 +1186,10 @@ worker callback.</p>
   <div class="functionHeader">
     
     <span class="py-defname">id</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L136">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#id" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.id">
       
       
@@ -1099,7 +1213,10 @@ worker callback.</p>
   <div class="functionHeader">
     
     <span class="py-defname">ignoreException</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L134">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#ignoreException" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.ignoreException">
       
       
@@ -1123,7 +1240,10 @@ worker callback.</p>
   <div class="functionHeader">
     
     <span class="py-defname">interval</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L108">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#interval" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.interval">
       
       
@@ -1147,7 +1267,10 @@ worker callback.</p>
   <div class="functionHeader">
     
     <span class="py-defname">maxCount</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L126">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#maxCount" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.maxCount">
       
       
@@ -1171,7 +1294,10 @@ worker callback.</p>
   <div class="functionHeader">
     
     <span class="py-defname">name</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L122">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#name" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.name">
       
       
@@ -1195,7 +1321,10 @@ worker callback.</p>
   <div class="functionHeader">
     
     <span class="py-defname">nextRunTime</span>: <code>float</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L114">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#nextRunTime" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.nextRunTime">
       
       
@@ -1219,7 +1348,10 @@ worker callback.</p>
   <div class="functionHeader">
     
     <span class="py-defname">numberOfRuns</span>: <code>int</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L128">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#numberOfRuns" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.numberOfRuns">
       
       
@@ -1243,7 +1375,10 @@ worker callback.</p>
   <div class="functionHeader">
     
     <span class="py-defname">running</span>: <code>bool</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L118">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#running" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.running">
       
       
@@ -1267,7 +1402,10 @@ worker callback.</p>
   <div class="functionHeader">
     
     <span class="py-defname">runOnTime</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L110">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#runOnTime" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.runOnTime">
       
       
@@ -1291,7 +1429,10 @@ worker callback.</p>
   <div class="functionHeader">
     
     <span class="py-defname">runPastEvents</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L112">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#runPastEvents" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.runPastEvents">
       
       
@@ -1315,7 +1456,10 @@ worker callback.</p>
   <div class="functionHeader">
     
     <span class="py-defname">startWithDelay</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L124">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#startWithDelay" title="acmecse.helpers.BackgroundWorker.BackgroundWorker.startWithDelay">
       
       
@@ -1340,7 +1484,10 @@ worker callback.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_postCall</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L344">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_postCall" title="acmecse.helpers.BackgroundWorker.BackgroundWorker._postCall">
       
       
@@ -1364,7 +1511,10 @@ worker callback.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_work</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L267">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_work" title="acmecse.helpers.BackgroundWorker.BackgroundWorker._work">
       
       
@@ -1382,7 +1532,7 @@ At the end, depending on return value and whether the maxCount has been reached,
 </div>
         </div>
       
-      </div>
+      </main>
     </div>
 
     <footer class="navbar navbar-default">
@@ -1392,7 +1542,7 @@ At the end, depending on return value and whether the maxCount has been reached,
     <div class="container-fluid">
       <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
     generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-      25.4.0 at 2026-06-18 12:03:37.
+      25.10.1 at 2026-08-25 13:25:20.
     </div>
     
     <script src="ajax.js" type="text/javascript"></script>

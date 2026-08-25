@@ -7,7 +7,7 @@
   <head>
     
     <title>acmecse.etc.DateUtils</title>
-    <meta name="generator" content="pydoctor 25.4.0"> 
+    <meta name="generator" content="pydoctor 25.10.1"> 
         
     </meta>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -439,7 +439,7 @@
     
     <div class="container-fluid">
 
-      <div id="main" class="">
+      <main class="">
         
 
         
@@ -447,7 +447,7 @@
 
         <div class="page-header">
           <h1 class="module"><code><code><a href="index.html" class="internal-link">acmecse</a></code><wbr></wbr>.<code><a href="acmecse.etc.html" class="internal-link" title="acmecse.etc">etc</a></code><wbr></wbr>.<code><a href="acmecse.etc.DateUtils.html" class="internal-link" title="acmecse.etc.DateUtils">DateUtils</a></code></code></h1>
-          <div id="showPrivate">
+          <div id="show-private">
             <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
           </div>
         </div>
@@ -457,15 +457,14 @@
         </div>
 
         <div class="extrasDocstring">
-          
-          <p></p>
+          <a href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/DateUtils.py" class="sourceLink">(source)</a>
         </div>
 
         <div class="moduleDocstring">
           <div><p>This module contains various utilty functions that deal with dates and times.</p></div>
         </div>
 
-        <div id="splitTables">
+        <div id="split-tables">
           <table class="children sortable" id="id8">
   
   
@@ -551,7 +550,7 @@
             
         </div>
 
-        <div id="childList">
+        <div id="child-list">
           <div class="basefunction">
   
   
@@ -565,7 +564,10 @@
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">cronInPeriod</span><span class="function-signature long-signature">(<span class="rst-sig-param">cronPattern: <code>str | list[<wbr></wbr>str]</code>, </span><span class="rst-sig-param">startTs: <code>datetime</code>, </span><span class="rst-sig-param">endTs: <code>datetime | None</code> = None</span>) -&gt; <code>tuple[<wbr></wbr>bool, <wbr></wbr>datetime]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/DateUtils.py#L365">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#cronInPeriod" title="acmecse.etc.DateUtils.cronInPeriod">
       
       
@@ -599,7 +601,10 @@ any time in the given period. The second element provides the matched timestamp.
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">cronMatchesTimestamp</span><span class="function-signature">(<span class="rst-sig-param">cronPattern: <code>str | list[<wbr></wbr>str]</code>, </span><span class="rst-sig-param">ts: <code>datetime | None</code> = None</span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/DateUtils.py#L248">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#cronMatchesTimestamp" title="acmecse.etc.DateUtils.cronMatchesTimestamp">
       
       
@@ -635,7 +640,10 @@ second minute hour dayOfMonth month dayOfWeek year</blockquote>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">fromAbsRelTimestamp</span><span class="function-signature long-signature">(<span class="rst-sig-param">absRelTimestamp: <code>str</code>, </span><span class="rst-sig-param">default: <code>float | None</code> = 0.0, </span><span class="rst-sig-param">withMicroseconds: <code>bool | None</code> = True</span>) -&gt; <code>float</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/DateUtils.py#L60">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#fromAbsRelTimestamp" title="acmecse.etc.DateUtils.fromAbsRelTimestamp">
       
       
@@ -665,7 +673,10 @@ or a ISO 8601 period timestamp.</td></tr><tr><td class="fieldArgContainer"><span
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">fromDuration</span><span class="function-signature">(<span class="rst-sig-param">duration: <code>str</code>, </span><span class="rst-sig-param">allowMS: <code>bool</code> = True</span>) -&gt; <code>float</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/DateUtils.py#L91">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#fromDuration" title="acmecse.etc.DateUtils.fromDuration">
       
       
@@ -689,7 +700,10 @@ or a ISO 8601 period timestamp.</td></tr><tr><td class="fieldArgContainer"><span
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">fromISO8601Date</span><span class="function-signature">(<span class="rst-sig-param">date: <code>str</code></span>) -&gt; <code>datetime</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/DateUtils.py#L49">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#fromISO8601Date" title="acmecse.etc.DateUtils.fromISO8601Date">
       
       
@@ -713,7 +727,10 @@ or a ISO 8601 period timestamp.</td></tr><tr><td class="fieldArgContainer"><span
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">getResourceDate</span><span class="function-signature">(<span class="rst-sig-param">offset: <code>float | None</code> = 0.0</span>) -&gt; <code>str</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/DateUtils.py#L23">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#getResourceDate" title="acmecse.etc.DateUtils.getResourceDate">
       
       
@@ -737,7 +754,10 @@ or a ISO 8601 period timestamp.</td></tr><tr><td class="fieldArgContainer"><span
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">isodateDelta</span><span class="function-signature">(<span class="rst-sig-param">isoDateTime: <code>str</code>, </span><span class="rst-sig-param">now: <code>float | None</code> = None</span>) -&gt; <code>float | None</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/DateUtils.py#L188">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#isodateDelta" title="acmecse.etc.DateUtils.isodateDelta">
       
       
@@ -762,7 +782,10 @@ is earlier then "now"), or <em>None</em> in case of an error.</td></tr></table><
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">rfc1123Date</span><span class="function-signature">(<span class="rst-sig-param">timeval: <code>float | None</code> = None</span>) -&gt; <code>str</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/DateUtils.py#L129">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#rfc1123Date" title="acmecse.etc.DateUtils.rfc1123Date">
       
       
@@ -788,7 +811,10 @@ is earlier then "now"), or <em>None</em> in case of an error.</td></tr></table><
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">timeUntilAbsRelTimestamp</span><span class="function-signature">(<span class="rst-sig-param">absRelTimestamp: <code>str</code></span>) -&gt; <code>float</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/DateUtils.py#L172">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#timeUntilAbsRelTimestamp" title="acmecse.etc.DateUtils.timeUntilAbsRelTimestamp">
       
       
@@ -814,7 +840,10 @@ integer (UTC-based POSIX timestamp in seconds).</td></tr></table><table class="f
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">timeUntilTimestamp</span><span class="function-signature">(<span class="rst-sig-param">ts: <code>float</code></span>) -&gt; <code>float</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/DateUtils.py#L160">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#timeUntilTimestamp" title="acmecse.etc.DateUtils.timeUntilTimestamp">
       
       
@@ -838,7 +867,10 @@ integer (UTC-based POSIX timestamp in seconds).</td></tr></table><table class="f
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">toDuration</span><span class="function-signature">(<span class="rst-sig-param">ts: <code>float</code></span>) -&gt; <code>str</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/DateUtils.py#L116">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#toDuration" title="acmecse.etc.DateUtils.toDuration">
       
       
@@ -862,7 +894,10 @@ integer (UTC-based POSIX timestamp in seconds).</td></tr></table><table class="f
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">toISO8601Date</span><span class="function-signature">(<span class="rst-sig-param">ts: <code>float | datetime</code>, </span><span class="rst-sig-param">readable: <code>bool | None</code> = False</span>) -&gt; <code>str</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/DateUtils.py#L35">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#toISO8601Date" title="acmecse.etc.DateUtils.toISO8601Date">
       
       
@@ -886,7 +921,10 @@ integer (UTC-based POSIX timestamp in seconds).</td></tr></table><table class="f
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">utcDatetime</span><span class="function-signature">() -&gt; <code>datetime</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/DateUtils.py#L142">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#utcDatetime" title="acmecse.etc.DateUtils.utcDatetime">
       
       
@@ -910,7 +948,10 @@ integer (UTC-based POSIX timestamp in seconds).</td></tr></table><table class="f
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">utcTime</span><span class="function-signature">() -&gt; <code>float</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/DateUtils.py#L151">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#utcTime" title="acmecse.etc.DateUtils.utcTime">
       
       
@@ -934,7 +975,10 @@ integer (UTC-based POSIX timestamp in seconds).</td></tr></table><table class="f
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">waitFor</span><span class="function-signature long-signature">(<span class="rst-sig-param">timeout: <code>float</code>, </span><span class="rst-sig-param">condition: <code>Callable[<wbr></wbr>[], <wbr></wbr>bool] | None</code> = None, </span><span class="rst-sig-param">latency: <code>float | None</code> = 0.01</span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/DateUtils.py#L207">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#waitFor" title="acmecse.etc.DateUtils.waitFor">
       
       
@@ -952,7 +996,7 @@ If <em>condition</em> is not callable then <em>False</em> is returned.</td></tr>
 </div>
         </div>
       
-      </div>
+      </main>
     </div>
 
     <footer class="navbar navbar-default">
@@ -962,7 +1006,7 @@ If <em>condition</em> is not callable then <em>False</em> is returned.</td></tr>
     <div class="container-fluid">
       <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
     generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-      25.4.0 at 2026-06-18 12:03:37.
+      25.10.1 at 2026-08-25 13:25:20.
     </div>
     
     <script src="ajax.js" type="text/javascript"></script>

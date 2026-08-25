@@ -7,7 +7,7 @@
   <head>
     
     <title>acmecse.services.RequestManager.RequestManager</title>
-    <meta name="generator" content="pydoctor 25.4.0"> 
+    <meta name="generator" content="pydoctor 25.10.1"> 
         
     </meta>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -607,6 +607,16 @@
         
 
         
+            <div class="itemName"><code><a href="#interceptorManager" class="internal-link" title="acmecse.services.RequestManager.RequestManager.interceptorManager">interceptor<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
             <div class="itemName"><code><a href="#mqttClient" class="internal-link" title="acmecse.services.RequestManager.RequestManager.mqttClient">mqtt<wbr></wbr>Client</a></code>
             </div>
         
@@ -905,7 +915,7 @@
     
     <div class="container-fluid">
 
-      <div id="main" class="">
+      <main class="">
         
 
         
@@ -913,7 +923,7 @@
 
         <div class="page-header">
           <h1 class="class"><code><code><a href="index.html" class="internal-link">acmecse</a></code><wbr></wbr>.<code><a href="acmecse.services.html" class="internal-link" title="acmecse.services">services</a></code><wbr></wbr>.<code><a href="acmecse.services.RequestManager.html" class="internal-link" title="acmecse.services.RequestManager">RequestManager</a></code><wbr></wbr>.<code><a href="acmecse.services.RequestManager.RequestManager.html" class="internal-link" title="acmecse.services.RequestManager.RequestManager">RequestManager</a></code></code></h1>
-          <div id="showPrivate">
+          <div id="show-private">
             <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
           </div>
         </div>
@@ -923,16 +933,15 @@
         </div>
 
         <div class="extrasDocstring">
-          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">RequestManager</span>:</code></p>
-          <p><a href="classIndex.html#acmecse.services.RequestManager.RequestManager">View In Hierarchy</a></p>
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">RequestManager</span>: <a href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L75" class="sourceLink">(source)</a></code></p><p><a href="classIndex.html#acmecse.services.RequestManager.RequestManager">View In Hierarchy</a></p>
         </div>
 
         <div class="moduleDocstring">
           <div><p>RequestManager class.</p></div>
         </div>
 
-        <div id="splitTables">
-          <table class="children sortable" id="id699">
+        <div id="split-tables">
+          <table class="children sortable" id="id724">
   
   
   <tr class="method">
@@ -1128,6 +1137,11 @@
   </tr><tr class="classvariable">
     
     <td>Class Variable</td>
+    <td><code><a href="#interceptorManager" class="internal-link" title="acmecse.services.RequestManager.RequestManager.interceptorManager">interceptor<wbr></wbr>Manager</a></code></td>
+    <td>Injected InterceptorManager instance.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
     <td><code><a href="#mqttClient" class="internal-link" title="acmecse.services.RequestManager.RequestManager.mqttClient">mqtt<wbr></wbr>Client</a></code></td>
     <td>The injected MQTTClient plugin instance is injected by the PluginManager based on the declared dependency.</td>
   </tr><tr class="classvariable">
@@ -1282,7 +1296,7 @@
             
         </div>
 
-        <div id="childList">
+        <div id="child-list">
           <div class="basemethod">
   
   
@@ -1296,7 +1310,10 @@
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">addResponse</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">response: <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>, </span><span class="rst-sig-param">info: <code>str | None</code> = None</span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L1148">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#addResponse" title="acmecse.services.RequestManager.RequestManager.addResponse">
       
       
@@ -1321,7 +1338,10 @@ the response.</p></div>
     
     <div><span class="decorator">@<a href="acmecse.helpers.EventManager.html#onEvent" class="internal-link" title="acmecse.helpers.EventManager.onEvent">onEvent</a>(<wbr></wbr>eventManager.configUpdate)<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">configUpdate</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">eventData: <code><a href="acmecse.helpers.EventManager.EventData.html" class="internal-link" title="acmecse.helpers.EventManager.EventData">EventData</a></code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L279">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#configUpdate" title="acmecse.services.RequestManager.RequestManager.configUpdate">
       
       
@@ -1345,7 +1365,10 @@ the response.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">determineTargetDetails</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></span>) -&gt; <code><a href="acmecse.services.RequestManager.html#TargetDetails" class="internal-link" title="acmecse.services.RequestManager.TargetDetails">TargetDetails</a> | None</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L1787">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#determineTargetDetails" title="acmecse.services.RequestManager.RequestManager.determineTargetDetails">
       
       
@@ -1360,7 +1383,7 @@ the response.</p></div>
 <p class="rst-last">A successful determination may include the type of the target resource. This is different from the request content's
 resource type.</p>
 </div>
-<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">The request from which the target details are taken from.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">The results could differ</td><td class="fieldArgDesc"><p>The result is a list of tuples of (real url including the protocol, list of allowed contentSerializations,
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">The request from which the target details are taken from.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>The results could differ</code></td><td class="fieldArgDesc"><p>The result is a list of tuples of (real url including the protocol, list of allowed contentSerializations,
 target supported release version, PollingChannel resource, originator with adapted scope, target uri,
 determined target resource type).</p>
 <p>Or, return a list of (url, None, None, None, originator, None, UNKNOWN), containing only one element, if the URI is
@@ -1385,7 +1408,10 @@ request reachable and has a PollingChannel as a child resource.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">dissectRequestFromBytes</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">data: <code>bytes</code>, </span><span class="rst-sig-param">contenType: <code><a href="acmecse.etc.Types.ContentSerializationType.html" class="internal-link" title="acmecse.etc.Types.ContentSerializationType">ContentSerializationType</a></code>, </span><span class="rst-sig-param">isResponse: <code>bool | None</code> = False</span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L1711">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#dissectRequestFromBytes" title="acmecse.services.RequestManager.RequestManager.dissectRequestFromBytes">
       
       
@@ -1409,7 +1435,10 @@ request reachable and has a PollingChannel as a child resource.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">fillAndValidateCSERequest</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">cseRequest: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | <a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">isResponse: <code>bool | None</code> = False</span>) -&gt; <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L1356">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#fillAndValidateCSERequest" title="acmecse.services.RequestManager.RequestManager.fillAndValidateCSERequest">
       
       
@@ -1433,7 +1462,10 @@ request reachable and has a PollingChannel as a child resource.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">getSerializationFromOriginator</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">originator: <code>str</code></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.ContentSerializationType.html" class="internal-link" title="acmecse.etc.Types.ContentSerializationType">ContentSerializationType</a>]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L1754">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#getSerializationFromOriginator" title="acmecse.services.RequestManager.RequestManager.getSerializationFromOriginator">
       
       
@@ -1459,7 +1491,10 @@ request reachable and has a PollingChannel as a child resource.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">handleCreateRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L447">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#handleCreateRequest" title="acmecse.services.RequestManager.RequestManager.handleCreateRequest">
       
       
@@ -1483,7 +1518,10 @@ request reachable and has a PollingChannel as a child resource.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">handleDeleteRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L523">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#handleDeleteRequest" title="acmecse.services.RequestManager.RequestManager.handleDeleteRequest">
       
       
@@ -1507,7 +1545,10 @@ request reachable and has a PollingChannel as a child resource.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">handleNotifyRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L561">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#handleNotifyRequest" title="acmecse.services.RequestManager.RequestManager.handleNotifyRequest">
       
       
@@ -1531,7 +1572,10 @@ request reachable and has a PollingChannel as a child resource.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">handleReceivedNotifyRequest</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">id: <code>str</code>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">originator: <code>str</code></span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L390">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#handleReceivedNotifyRequest" title="acmecse.services.RequestManager.RequestManager.handleReceivedNotifyRequest">
       
       
@@ -1555,7 +1599,10 @@ request reachable and has a PollingChannel as a child resource.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">handleRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | <a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L308">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#handleRequest" title="acmecse.services.RequestManager.RequestManager.handleRequest">
       
       
@@ -1582,7 +1629,10 @@ non-blocking etc.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">handleRetrieveRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L414">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#handleRetrieveRequest" title="acmecse.services.RequestManager.RequestManager.handleRetrieveRequest">
       
       
@@ -1606,7 +1656,10 @@ non-blocking etc.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">handleSendRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></span>) -&gt; <code><a href="acmecse.etc.Types.html#RequestResponseList" class="internal-link" title="acmecse.etc.Types.RequestResponseList">RequestResponseList</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L1163">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#handleSendRequest" title="acmecse.services.RequestManager.RequestManager.handleSendRequest">
       
       
@@ -1630,7 +1683,10 @@ non-blocking etc.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">handleTransitCreateRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L801">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#handleTransitCreateRequest" title="acmecse.services.RequestManager.RequestManager.handleTransitCreateRequest">
       
       
@@ -1654,7 +1710,10 @@ non-blocking etc.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">handleTransitDeleteRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L823">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#handleTransitDeleteRequest" title="acmecse.services.RequestManager.RequestManager.handleTransitDeleteRequest">
       
       
@@ -1678,7 +1737,10 @@ non-blocking etc.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">handleTransitNotifyRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L834">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#handleTransitNotifyRequest" title="acmecse.services.RequestManager.RequestManager.handleTransitNotifyRequest">
       
       
@@ -1702,7 +1764,10 @@ non-blocking etc.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">handleTransitRetrieveRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L789">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#handleTransitRetrieveRequest" title="acmecse.services.RequestManager.RequestManager.handleTransitRetrieveRequest">
       
       
@@ -1726,7 +1791,10 @@ non-blocking etc.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">handleTransitUpdateRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L812">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#handleTransitUpdateRequest" title="acmecse.services.RequestManager.RequestManager.handleTransitUpdateRequest">
       
       
@@ -1750,7 +1818,10 @@ non-blocking etc.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">handleUpdateRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L484">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#handleUpdateRequest" title="acmecse.services.RequestManager.RequestManager.handleUpdateRequest">
       
       
@@ -1776,7 +1847,10 @@ non-blocking etc.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">hasPollingRequest</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">requestID: <code>str</code> = None, </span><span class="rst-sig-param">reqType: <code><a href="acmecse.etc.Types.RequestType.html" class="internal-link" title="acmecse.etc.Types.RequestType">RequestType</a></code> = <a href="acmecse.etc.Types.RequestType.html#REQUEST" class="internal-link" title="acmecse.etc.Types.RequestType.REQUEST">RequestType.REQUEST</a></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L890">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#hasPollingRequest" title="acmecse.services.RequestManager.RequestManager.hasPollingRequest">
       
       
@@ -1803,7 +1877,10 @@ Otherwise, <em>True</em> will be returned if there is any request for the <em>or
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">initialize</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L143">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#initialize" title="acmecse.services.RequestManager.RequestManager.initialize">
       
       
@@ -1827,7 +1904,10 @@ Otherwise, <em>True</em> will be returned if there is any request for the <em>or
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">prepareResultForSending</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">inResult: <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>, </span><span class="rst-sig-param">isResponse: <code>bool | None</code> = False, </span><span class="rst-sig-param">originalRequest: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | None</code> = None</span>) -&gt; <code>tuple[<wbr></wbr><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a>, <wbr></wbr>bytes]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L2097">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#prepareResultForSending" title="acmecse.services.RequestManager.RequestManager.prepareResultForSending">
       
       
@@ -1857,7 +1937,10 @@ a response is very similar to a response.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">processRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">id: <code>str</code></span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L376">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#processRequest" title="acmecse.services.RequestManager.RequestManager.processRequest">
       
       
@@ -1887,7 +1970,10 @@ a response is very similar to a response.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">queuePollingRequest</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">reqType: <code><a href="acmecse.etc.Types.RequestType.html" class="internal-link" title="acmecse.etc.Types.RequestType">RequestType</a></code> = <a href="acmecse.etc.Types.RequestType.html#REQUEST" class="internal-link" title="acmecse.etc.Types.RequestType.REQUEST">RequestType.REQUEST</a></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L900">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#queuePollingRequest" title="acmecse.services.RequestManager.RequestManager.queuePollingRequest">
       
       
@@ -1913,7 +1999,10 @@ a response is very similar to a response.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">queueRequestForPCH</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">operation: <code><a href="acmecse.etc.Types.Operation.html" class="internal-link" title="acmecse.etc.Types.Operation">Operation</a></code>, </span><span class="rst-sig-param">pchOriginator: <code>str</code>, </span><span class="rst-sig-param">content: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code> = None, </span><span class="rst-sig-param">ty: <code><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a></code> = None, </span><span class="rst-sig-param">rvi: <code>str</code> = None, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code> = None, </span><span class="rst-sig-param">reqType: <code><a href="acmecse.etc.Types.RequestType.html" class="internal-link" title="acmecse.etc.Types.RequestType">RequestType</a></code> = <a href="acmecse.etc.Types.RequestType.html#REQUEST" class="internal-link" title="acmecse.etc.Types.RequestType.REQUEST">RequestType.REQUEST</a>, </span><span class="rst-sig-param">ec: <code><a href="acmecse.etc.Types.EventCategory.html" class="internal-link" title="acmecse.etc.Types.EventCategory">EventCategory</a></code> = None, </span><span class="rst-sig-param">originator: <code>str</code> = None</span>) -&gt; <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | None</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L1018">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#queueRequestForPCH" title="acmecse.services.RequestManager.RequestManager.queueRequestForPCH">
       
       
@@ -1941,7 +2030,10 @@ for <em>content</em>.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">recordRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | None</code>, </span><span class="rst-sig-param">result: <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L2126">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#recordRequest" title="acmecse.services.RequestManager.RequestManager.recordRequest">
       
       
@@ -1965,7 +2057,10 @@ for <em>content</em>.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">requestFromResult</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">inResult: <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>, </span><span class="rst-sig-param">originator: <code>str | None</code> = None, </span><span class="rst-sig-param">ty: <code><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a> | None</code> = None, </span><span class="rst-sig-param">op: <code><a href="acmecse.etc.Types.Operation.html" class="internal-link" title="acmecse.etc.Types.Operation">Operation</a> | None</code> = None, </span><span class="rst-sig-param">isResponse: <code>bool | None</code> = False, </span><span class="rst-sig-param">originalRequest: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | None</code> = None</span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L1931">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#requestFromResult" title="acmecse.services.RequestManager.RequestManager.requestFromResult">
       
       
@@ -1996,7 +2091,10 @@ a full Request or Response.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">responseFromResult</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">inResult: <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>, </span><span class="rst-sig-param">originator: <code>str | None</code> = None</span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L2082">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#responseFromResult" title="acmecse.services.RequestManager.RequestManager.responseFromResult">
       
       
@@ -2020,7 +2118,10 @@ a full Request or Response.</p>
     
     <div><span class="decorator">@<a href="acmecse.helpers.EventManager.html#onEvent" class="internal-link" title="acmecse.helpers.EventManager.onEvent">onEvent</a>(<wbr></wbr>eventManager.cseReset)<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">restart</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">eventData: <code><a href="acmecse.helpers.EventManager.EventData.html" class="internal-link" title="acmecse.helpers.EventManager.EventData">EventData</a></code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L254">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#restart" title="acmecse.services.RequestManager.RequestManager.restart">
       
       
@@ -2044,7 +2145,10 @@ a full Request or Response.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">shutdown</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L241">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#shutdown" title="acmecse.services.RequestManager.RequestManager.shutdown">
       
       
@@ -2068,7 +2172,10 @@ a full Request or Response.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">unqueuePollingRequest</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">requestID: <code>str</code>, </span><span class="rst-sig-param">reqType: <code><a href="acmecse.etc.Types.RequestType.html" class="internal-link" title="acmecse.etc.Types.RequestType">RequestType</a></code></span>) -&gt; <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L950">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#unqueuePollingRequest" title="acmecse.services.RequestManager.RequestManager.unqueuePollingRequest">
       
       
@@ -2092,7 +2199,10 @@ a full Request or Response.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">waitForPollingRequest</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">requestID: <code>str</code>, </span><span class="rst-sig-param">timeout: <code>float</code>, </span><span class="rst-sig-param">reqType: <code><a href="acmecse.etc.Types.RequestType.html" class="internal-link" title="acmecse.etc.Types.RequestType">RequestType</a> | None</code> = <a href="acmecse.etc.Types.RequestType.html#REQUEST" class="internal-link" title="acmecse.etc.Types.RequestType.REQUEST">RequestType.REQUEST</a>, </span><span class="rst-sig-param">aggregate: <code>bool | None</code> = False</span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L977">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#waitForPollingRequest" title="acmecse.services.RequestManager.RequestManager.waitForPollingRequest">
       
       
@@ -2118,7 +2228,10 @@ The function returns when there is a new or pending matching request in the queu
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">waitForResponse</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">rqi: <code>str</code>, </span><span class="rst-sig-param">timeOut: <code>float</code></span>) -&gt; <code>tuple[<wbr></wbr><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a> | None, <wbr></wbr>str | None]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L1122">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#waitForResponse" title="acmecse.services.RequestManager.RequestManager.waitForResponse">
       
       
@@ -2142,7 +2255,10 @@ The function returns when there is a new or pending matching request in the queu
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">waitForResponseToPCH</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L1074">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#waitForResponseToPCH" title="acmecse.services.RequestManager.RequestManager.waitForResponseToPCH">
       
       
@@ -2165,7 +2281,10 @@ The function returns when there is a new or pending matching request in the queu
   <div class="functionHeader">
     
     <span class="py-defname">__slots__</span>: <code>tuple[<wbr></wbr>str, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L113">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#__slots__" title="acmecse.services.RequestManager.RequestManager.__slots__">
       
       
@@ -2189,7 +2308,10 @@ The function returns when there is a new or pending matching request in the queu
   <div class="functionHeader">
     
     <span class="py-defname">coapServer</span>: <code>Any</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L133">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#coapServer" title="acmecse.services.RequestManager.RequestManager.coapServer">
       
       
@@ -2213,7 +2335,10 @@ The function returns when there is a new or pending matching request in the queu
   <div class="functionHeader">
     
     <span class="py-defname">dispatcher</span>: <code><a href="acmecse.services.Dispatcher.Dispatcher.html" class="internal-link" title="acmecse.services.Dispatcher.Dispatcher">Dispatcher</a></code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L92">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#dispatcher" title="acmecse.services.RequestManager.RequestManager.dispatcher">
       
       
@@ -2237,7 +2362,10 @@ The function returns when there is a new or pending matching request in the queu
   <div class="functionHeader">
     
     <span class="py-defname">httpServer</span>: <code>Any</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L131">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#httpServer" title="acmecse.services.RequestManager.RequestManager.httpServer">
       
       
@@ -2252,6 +2380,33 @@ The function returns when there is a new or pending matching request in the queu
 </div><div class="baseclassvariable">
   
   
+  <a name="acmecse.services.RequestManager.RequestManager.interceptorManager">
+    
+  </a>
+  <a name="interceptorManager">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">interceptorManager</span>: <code><a href="acmecse.runtime.InterceptorManager.InterceptorManager.html" class="internal-link" title="acmecse.runtime.InterceptorManager.InterceptorManager">InterceptorManager</a></code> =
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L95">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#interceptorManager" title="acmecse.services.RequestManager.RequestManager.interceptorManager">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected InterceptorManager instance.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
   <a name="acmecse.services.RequestManager.RequestManager.mqttClient">
     
   </a>
@@ -2261,7 +2416,10 @@ The function returns when there is a new or pending matching request in the queu
   <div class="functionHeader">
     
     <span class="py-defname">mqttClient</span>: <code>Any</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L135">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#mqttClient" title="acmecse.services.RequestManager.RequestManager.mqttClient">
       
       
@@ -2285,7 +2443,10 @@ The function returns when there is a new or pending matching request in the queu
   <div class="functionHeader">
     
     <span class="py-defname">notificationManager</span>: <code><a href="acmecse.services.NotificationManager.NotificationManager.html" class="internal-link" title="acmecse.services.NotificationManager.NotificationManager">NotificationManager</a></code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L98">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#notificationManager" title="acmecse.services.RequestManager.RequestManager.notificationManager">
       
       
@@ -2309,7 +2470,10 @@ The function returns when there is a new or pending matching request in the queu
   <div class="functionHeader">
     
     <span class="py-defname">registration</span>: <code><a href="acmecse.services.RegistrationManager.RegistrationManager.html" class="internal-link" title="acmecse.services.RegistrationManager.RegistrationManager">RegistrationManager</a></code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L101">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#registration" title="acmecse.services.RequestManager.RequestManager.registration">
       
       
@@ -2333,7 +2497,10 @@ The function returns when there is a new or pending matching request in the queu
   <div class="functionHeader">
     
     <span class="py-defname">remoteCSEManager</span>: <code>Any</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L139">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#remoteCSEManager" title="acmecse.services.RequestManager.RequestManager.remoteCSEManager">
       
       
@@ -2357,7 +2524,10 @@ The function returns when there is a new or pending matching request in the queu
   <div class="functionHeader">
     
     <span class="py-defname">securityManager</span>: <code><a href="acmecse.services.SecurityManager.SecurityManager.html" class="internal-link" title="acmecse.services.SecurityManager.SecurityManager">SecurityManager</a></code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L104">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#securityManager" title="acmecse.services.RequestManager.RequestManager.securityManager">
       
       
@@ -2381,7 +2551,10 @@ The function returns when there is a new or pending matching request in the queu
   <div class="functionHeader">
     
     <span class="py-defname">storage</span>: <code><a href="acmecse.runtime.Storage.Storage.html" class="internal-link" title="acmecse.runtime.Storage.Storage">Storage</a></code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L107">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#storage" title="acmecse.services.RequestManager.RequestManager.storage">
       
       
@@ -2405,7 +2578,10 @@ The function returns when there is a new or pending matching request in the queu
   <div class="functionHeader">
     
     <span class="py-defname">validator</span>: <code><a href="acmecse.services.Validator.Validator.html" class="internal-link" title="acmecse.services.Validator.Validator">Validator</a></code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L110">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#validator" title="acmecse.services.RequestManager.RequestManager.validator">
       
       
@@ -2429,7 +2605,10 @@ The function returns when there is a new or pending matching request in the queu
   <div class="functionHeader">
     
     <span class="py-defname">websocketServer</span>: <code>Any</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L137">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#websocketServer" title="acmecse.services.RequestManager.RequestManager.websocketServer">
       
       
@@ -2453,7 +2632,10 @@ The function returns when there is a new or pending matching request in the queu
   <div class="functionHeader">
     
     <span class="py-defname">enableRequestRecording</span>: <code>bool</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L159">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#enableRequestRecording" title="acmecse.services.RequestManager.RequestManager.enableRequestRecording">
       
       
@@ -2477,7 +2659,10 @@ The function returns when there is a new or pending matching request in the queu
   <div class="functionHeader">
     
     <span class="py-defname">flexBlockingBlocking</span>: <code>bool</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L147">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#flexBlockingBlocking" title="acmecse.services.RequestManager.RequestManager.flexBlockingBlocking">
       
       
@@ -2501,7 +2686,10 @@ The function returns when there is a new or pending matching request in the queu
   <div class="functionHeader">
     
     <span class="py-defname">maxExpirationDelta</span>: <code>float</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L153">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#maxExpirationDelta" title="acmecse.services.RequestManager.RequestManager.maxExpirationDelta">
       
       
@@ -2525,7 +2713,10 @@ The function returns when there is a new or pending matching request in the queu
   <div class="functionHeader">
     
     <span class="py-defname">requestExpirationDelta</span>: <code>float</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L150">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#requestExpirationDelta" title="acmecse.services.RequestManager.RequestManager.requestExpirationDelta">
       
       
@@ -2549,7 +2740,10 @@ The function returns when there is a new or pending matching request in the queu
   <div class="functionHeader">
     
     <span class="py-defname">requestHandlers</span>: <code><a href="acmecse.etc.Types.html#RequestHandler" class="internal-link" title="acmecse.etc.Types.RequestHandler">RequestHandler</a></code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L188">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#requestHandlers" title="acmecse.services.RequestManager.RequestManager.requestHandlers">
       
       
@@ -2574,7 +2768,10 @@ dispatcher processing functions, send functions, and events for different protoc
   <div class="functionHeader">
     
     <span class="py-defname">requestRingBuffer</span>: <code><a href="acmecse.services.RequestManager.RequestRingBuffer.html" class="internal-link" title="acmecse.services.RequestManager.RequestRingBuffer">RequestRingBuffer</a></code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L235">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#requestRingBuffer" title="acmecse.services.RequestManager.RequestManager.requestRingBuffer">
       
       
@@ -2598,7 +2795,10 @@ dispatcher processing functions, send functions, and events for different protoc
   <div class="functionHeader">
     
     <span class="py-defname">sendToFromInResponses</span>: <code>bool</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L156">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#sendToFromInResponses" title="acmecse.services.RequestManager.RequestManager.sendToFromInResponses">
       
       
@@ -2623,7 +2823,10 @@ dispatcher processing functions, send functions, and events for different protoc
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_assignConfig</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L269">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_assignConfig" title="acmecse.services.RequestManager.RequestManager._assignConfig">
       
       
@@ -2647,7 +2850,10 @@ dispatcher processing functions, send functions, and events for different protoc
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_cleanupPollingRequests</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L1090">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_cleanupPollingRequests" title="acmecse.services.RequestManager.RequestManager._cleanupPollingRequests">
       
       
@@ -2673,7 +2879,10 @@ dispatcher processing functions, send functions, and events for different protoc
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_createRequestResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></span>) -&gt; <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L594">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_createRequestResource" title="acmecse.services.RequestManager.RequestManager._createRequestResource">
       
       
@@ -2697,7 +2906,10 @@ dispatcher processing functions, send functions, and events for different protoc
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_executeOperation</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">reqRi: <code>str</code></span>) -&gt; <code><a href="acmecse.resources.REQ.REQ.html" class="internal-link" title="acmecse.resources.REQ.REQ">REQ</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L706">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_executeOperation" title="acmecse.services.RequestManager.RequestManager._executeOperation">
       
       
@@ -2722,7 +2934,10 @@ accordingly.</p><table class="fieldTable"><tr class="fieldStart"><td class="fiel
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_handleNonBlockingRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L618">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_handleNonBlockingRequest" title="acmecse.services.RequestManager.RequestManager._handleNonBlockingRequest">
       
       
@@ -2748,7 +2963,10 @@ will contain the result of the operation.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_originatorAdaptToScope</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">simplify: <code>bool</code> = False</span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L845">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_originatorAdaptToScope" title="acmecse.services.RequestManager.RequestManager._originatorAdaptToScope">
       
       
@@ -2776,7 +2994,10 @@ will contain the result of the operation.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_runNonBlockingRequestAsync</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">reqRi: <code>str</code></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L656">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_runNonBlockingRequestAsync" title="acmecse.services.RequestManager.RequestManager._runNonBlockingRequestAsync">
       
       
@@ -2801,7 +3022,10 @@ In addition notify the notification targets.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_runNonBlockingRequestSync</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">reqRi: <code>str</code></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L648">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_runNonBlockingRequestSync" title="acmecse.services.RequestManager.RequestManager._runNonBlockingRequestSync">
       
       
@@ -2825,7 +3049,10 @@ In addition notify the notification targets.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_sendRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></span>) -&gt; <code><a href="acmecse.etc.Types.html#RequestResponseList" class="internal-link" title="acmecse.etc.Types.RequestResponseList">RequestResponseList</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L1199">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_sendRequest" title="acmecse.services.RequestManager.RequestManager._sendRequest">
       
       
@@ -2848,7 +3075,10 @@ In addition notify the notification targets.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">_pcWorker</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L178">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_pcWorker" title="acmecse.services.RequestManager.RequestManager._pcWorker">
       
       
@@ -2872,7 +3102,10 @@ In addition notify the notification targets.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">_receivedResponses</span>: <code>dict[<wbr></wbr>str, <wbr></wbr>tuple[<wbr></wbr><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a>, <wbr></wbr>str]]</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L181">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_receivedResponses" title="acmecse.services.RequestManager.RequestManager._receivedResponses">
       
       
@@ -2896,7 +3129,10 @@ In addition notify the notification targets.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">_receivedResponsesLock</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L184">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_receivedResponsesLock" title="acmecse.services.RequestManager.RequestManager._receivedResponsesLock">
       
       
@@ -2920,7 +3156,10 @@ In addition notify the notification targets.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">_requestLock</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L169">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_requestLock" title="acmecse.services.RequestManager.RequestManager._requestLock">
       
       
@@ -2944,7 +3183,10 @@ In addition notify the notification targets.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">_requests</span>: <code>dict[<wbr></wbr>str, <wbr></wbr>list[<wbr></wbr>tuple[<wbr></wbr><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a>, <wbr></wbr><a href="acmecse.etc.Types.RequestType.html" class="internal-link" title="acmecse.etc.Types.RequestType">RequestType</a>]]]</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L172">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_requests" title="acmecse.services.RequestManager.RequestManager._requests">
       
       
@@ -2968,7 +3210,10 @@ In addition notify the notification targets.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">_rqiOriginator</span>: <code>dict[<wbr></wbr>str, <wbr></wbr>str]</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/RequestManager.py#L175">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_rqiOriginator" title="acmecse.services.RequestManager.RequestManager._rqiOriginator">
       
       
@@ -2983,7 +3228,7 @@ In addition notify the notification targets.</p></div>
 </div>
         </div>
       
-      </div>
+      </main>
     </div>
 
     <footer class="navbar navbar-default">
@@ -2993,7 +3238,7 @@ In addition notify the notification targets.</p></div>
     <div class="container-fluid">
       <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
     generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-      25.4.0 at 2026-06-18 12:03:37.
+      25.10.1 at 2026-08-25 13:25:20.
     </div>
     
     <script src="ajax.js" type="text/javascript"></script>

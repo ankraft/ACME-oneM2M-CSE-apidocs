@@ -7,7 +7,7 @@
   <head>
     
     <title>acmecse.services.Dispatcher.Dispatcher</title>
-    <meta name="generator" content="pydoctor 25.4.0"> 
+    <meta name="generator" content="pydoctor 25.10.1"> 
         
     </meta>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -547,6 +547,16 @@
         
 
         
+            <div class="itemName"><code><a href="#interceptorManager" class="internal-link" title="acmecse.services.Dispatcher.Dispatcher.interceptorManager">interceptor<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
             <div class="itemName"><code><a href="#locationManager" class="internal-link" title="acmecse.services.Dispatcher.Dispatcher.locationManager">location<wbr></wbr>Manager</a></code>
             </div>
         
@@ -702,7 +712,7 @@
     
     <div class="container-fluid">
 
-      <div id="main" class="">
+      <main class="">
         
 
         
@@ -710,7 +720,7 @@
 
         <div class="page-header">
           <h1 class="class"><code><code><a href="index.html" class="internal-link">acmecse</a></code><wbr></wbr>.<code><a href="acmecse.services.html" class="internal-link" title="acmecse.services">services</a></code><wbr></wbr>.<code><a href="acmecse.services.Dispatcher.html" class="internal-link" title="acmecse.services.Dispatcher">Dispatcher</a></code><wbr></wbr>.<code><a href="acmecse.services.Dispatcher.Dispatcher.html" class="internal-link" title="acmecse.services.Dispatcher.Dispatcher">Dispatcher</a></code></code></h1>
-          <div id="showPrivate">
+          <div id="show-private">
             <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
           </div>
         </div>
@@ -720,8 +730,7 @@
         </div>
 
         <div class="extrasDocstring">
-          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">Dispatcher</span>:</code></p>
-          <p><a href="classIndex.html#acmecse.services.Dispatcher.Dispatcher">View In Hierarchy</a></p>
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">Dispatcher</span>: <a href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L66" class="sourceLink">(source)</a></code></p><p><a href="classIndex.html#acmecse.services.Dispatcher.Dispatcher">View In Hierarchy</a></p>
         </div>
 
         <div class="moduleDocstring">
@@ -730,8 +739,8 @@ appropriate handlers. This includes requests for resources, requests
 for resource creation, and requests for resource deletion.</p></div>
         </div>
 
-        <div id="splitTables">
-          <table class="children sortable" id="id693">
+        <div id="split-tables">
+          <table class="children sortable" id="id718">
   
   
   <tr class="method">
@@ -887,6 +896,11 @@ for resource creation, and requests for resource deletion.</p></div>
   </tr><tr class="classvariable">
     
     <td>Class Variable</td>
+    <td><code><a href="#interceptorManager" class="internal-link" title="acmecse.services.Dispatcher.Dispatcher.interceptorManager">interceptor<wbr></wbr>Manager</a></code></td>
+    <td>Injected InterceptorManager instance.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
     <td><code><a href="#locationManager" class="internal-link" title="acmecse.services.Dispatcher.Dispatcher.locationManager">location<wbr></wbr>Manager</a></code></td>
     <td>Injected LocationManager instance.</td>
   </tr><tr class="classvariable">
@@ -996,7 +1010,7 @@ for resource creation, and requests for resource deletion.</p></div>
             
         </div>
 
-        <div id="childList">
+        <div id="child-list">
           <div class="basemethod">
   
   
@@ -1010,7 +1024,10 @@ for resource creation, and requests for resource deletion.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">countDirectChildResources</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pi: <code>str</code>, </span><span class="rst-sig-param">ty: <code><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a> | None</code> = None</span>) -&gt; <code>int</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1625">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#countDirectChildResources" title="acmecse.services.Dispatcher.Dispatcher.countDirectChildResources">
       
       
@@ -1034,7 +1051,10 @@ for resource creation, and requests for resource deletion.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">countResources</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ty: <code><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a> | tuple[<wbr></wbr><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a>, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code> = None</span>) -&gt; <code>int</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1718">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#countResources" title="acmecse.services.Dispatcher.Dispatcher.countResources">
       
       
@@ -1058,8 +1078,11 @@ Optional filter by type.</p></div>
   <div class="functionHeader">
     
     
-    <span class="py-keyword">def</span>&#160;<span class="py-defname">createLocalResource</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">parentResource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str | None</code> = None, </span><span class="rst-sig-param">rvi: <code>str | None</code> = None</span>) -&gt; <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>:</span>
-    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">createLocalResource</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">parentResource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str | None</code> = None, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | None</code> = None</span>) -&gt; <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L980">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#createLocalResource" title="acmecse.services.Dispatcher.Dispatcher.createLocalResource">
       
       
@@ -1068,7 +1091,7 @@ Optional filter by type.</p></div>
   </div>
   <div class="docstring functionBody">
     
-    <div><p>Create a resource locally.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The resource to create.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">parent<wbr></wbr>Resource:</span><code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The parent resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str | None</code></td><td class="fieldArgDesc">The originator of the request.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">rvi:</span><code>str | None</code></td><td class="fieldArgDesc">The release version identifier. This is only be present in a real CREATE request.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The created resource.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.etc.ResponseStatusCodes.TARGET_NOT_SUBSCRIBABLE.html" class="internal-link" title="acmecse.etc.ResponseStatusCodes.TARGET_NOT_SUBSCRIBABLE">TARGET_NOT_SUBSCRIBABLE</a></code></td><td>If the parent resource is not subscribable.</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.etc.ResponseStatusCodes.INVALID_CHILD_RESOURCE_TYPE.html" class="internal-link" title="acmecse.etc.ResponseStatusCodes.INVALID_CHILD_RESOURCE_TYPE">INVALID_CHILD_RESOURCE_TYPE</a></code></td><td>If the child resource type is invalid.</td></tr></table></div>
+    <div><p>Create a resource locally.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The resource to create.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">parent<wbr></wbr>Resource:</span><code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The parent resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str | None</code></td><td class="fieldArgDesc">The originator of the request.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | None</code></td><td class="fieldArgDesc">The request object. This is only be present in a real CREATE request.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The created resource.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.etc.ResponseStatusCodes.TARGET_NOT_SUBSCRIBABLE.html" class="internal-link" title="acmecse.etc.ResponseStatusCodes.TARGET_NOT_SUBSCRIBABLE">TARGET_NOT_SUBSCRIBABLE</a></code></td><td>If the parent resource is not subscribable.</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.etc.ResponseStatusCodes.INVALID_CHILD_RESOURCE_TYPE.html" class="internal-link" title="acmecse.etc.ResponseStatusCodes.INVALID_CHILD_RESOURCE_TYPE">INVALID_CHILD_RESOURCE_TYPE</a></code></td><td>If the child resource type is invalid.</td></tr></table></div>
   </div>
 </div><div class="basemethod">
   
@@ -1083,7 +1106,10 @@ Optional filter by type.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">createResourceFromDict</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">dct: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">parent: <code>str | <a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">ty: <code><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a></code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">checkCreation: <code>bool</code> = True, </span><span class="rst-sig-param">trustedSource: <code>bool</code> = False, </span><span class="rst-sig-param">preCreateCB: <code>Callable[<wbr></wbr>[<wbr></wbr><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a>], <wbr></wbr>None] | None</code> = None</span>) -&gt; <code>tuple[<wbr></wbr><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a> | None, <wbr></wbr>str, <wbr></wbr>str, <wbr></wbr>str]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L875">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#createResourceFromDict" title="acmecse.services.Dispatcher.Dispatcher.createResourceFromDict">
       
       
@@ -1107,7 +1133,10 @@ Optional filter by type.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">deleteChildResources</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">parentResource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">ty: <code><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a> | None</code> = None, </span><span class="rst-sig-param">doDeleteCheck: <code>bool | None</code> = True</span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1776">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#deleteChildResources" title="acmecse.services.Dispatcher.Dispatcher.deleteChildResources">
       
       
@@ -1133,7 +1162,10 @@ Optional filter by type.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">deleteLocalResource</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str | None</code> = None, </span><span class="rst-sig-param">withDeregistration: <code>bool | None</code> = False, </span><span class="rst-sig-param">parentResource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a> | None</code> = None, </span><span class="rst-sig-param">doDeleteCheck: <code>bool | None</code> = True</span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1377">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#deleteLocalResource" title="acmecse.services.Dispatcher.Dispatcher.deleteLocalResource">
       
       
@@ -1157,7 +1189,10 @@ Optional filter by type.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">deleteResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">id: <code>str</code>, </span><span class="rst-sig-param">originator: <code>str | None</code> = None</span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1426">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#deleteResource" title="acmecse.services.Dispatcher.Dispatcher.deleteResource">
       
       
@@ -1181,7 +1216,10 @@ Optional filter by type.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">directChildResourcesRI</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pi: <code>str</code>, </span><span class="rst-sig-param">ty: <code><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a> | list[<wbr></wbr><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a>] | None</code> = None</span>) -&gt; <code>list[<wbr></wbr>str]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1610">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#directChildResourcesRI" title="acmecse.services.Dispatcher.Dispatcher.directChildResourcesRI">
       
       
@@ -1206,7 +1244,10 @@ An empty list is returned if no child resource could be found.</p><table class="
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">discoverChildren</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">id: <code>str</code>, </span><span class="rst-sig-param">resource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">filterCriteria: <code><a href="acmecse.etc.Types.FilterCriteria.html" class="internal-link" title="acmecse.etc.Types.FilterCriteria">FilterCriteria</a></code>, </span><span class="rst-sig-param">permission: <code><a href="acmecse.etc.Types.Permission.html" class="internal-link" title="acmecse.etc.Types.Permission">Permission</a></code></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a>] | None</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1691">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#discoverChildren" title="acmecse.services.Dispatcher.Dispatcher.discoverChildren">
       
       
@@ -1230,7 +1271,10 @@ An empty list is returned if no child resource could be found.</p><table class="
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">discoverResources</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">id: <code>str</code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">filterCriteria: <code><a href="acmecse.etc.Types.FilterCriteria.html" class="internal-link" title="acmecse.etc.Types.FilterCriteria">FilterCriteria</a> | None</code> = None, </span><span class="rst-sig-param">rootResource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a> | None</code> = None, </span><span class="rst-sig-param">permission: <code><a href="acmecse.etc.Types.Permission.html" class="internal-link" title="acmecse.etc.Types.Permission">Permission</a> | None</code> = <a href="acmecse.etc.Types.Permission.html#DISCOVERY" class="internal-link" title="acmecse.etc.Types.Permission.DISCOVERY">Permission.DISCOVERY</a></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a>]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L473">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#discoverResources" title="acmecse.services.Dispatcher.Dispatcher.discoverResources">
       
       
@@ -1254,7 +1298,10 @@ An empty list is returned if no child resource could be found.</p><table class="
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">hasDirectChildResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pi: <code>str</code>, </span><span class="rst-sig-param">ri: <code>str</code></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1638">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#hasDirectChildResource" title="acmecse.services.Dispatcher.Dispatcher.hasDirectChildResource">
       
       
@@ -1278,7 +1325,10 @@ An empty list is returned if no child resource could be found.</p><table class="
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">initialize</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L121">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#initialize" title="acmecse.services.Dispatcher.Dispatcher.initialize">
       
       
@@ -1302,7 +1352,10 @@ An empty list is returned if no child resource could be found.</p><table class="
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">notifyLocalResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">content: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1548">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#notifyLocalResource" title="acmecse.services.Dispatcher.Dispatcher.notifyLocalResource">
       
       
@@ -1326,7 +1379,10 @@ An empty list is returned if no child resource could be found.</p><table class="
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">processCreateRequest</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">originator: <code>str | None</code> = None, </span><span class="rst-sig-param">id: <code>str | None</code> = None</span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L736">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#processCreateRequest" title="acmecse.services.Dispatcher.Dispatcher.processCreateRequest">
       
       
@@ -1350,7 +1406,10 @@ An empty list is returned if no child resource could be found.</p><table class="
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">processDeleteRequest</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">id: <code>str | None</code> = None</span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1269">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#processDeleteRequest" title="acmecse.services.Dispatcher.Dispatcher.processDeleteRequest">
       
       
@@ -1374,7 +1433,10 @@ An empty list is returned if no child resource could be found.</p><table class="
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">processNotifyRequest</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">originator: <code>str | None</code>, </span><span class="rst-sig-param">id: <code>str | None</code> = None</span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1477">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#processNotifyRequest" title="acmecse.services.Dispatcher.Dispatcher.processNotifyRequest">
       
       
@@ -1398,7 +1460,10 @@ An empty list is returned if no child resource could be found.</p><table class="
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">processRetrieveRequest</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">id: <code>str | None</code> = None</span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L152">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#processRetrieveRequest" title="acmecse.services.Dispatcher.Dispatcher.processRetrieveRequest">
       
       
@@ -1422,7 +1487,10 @@ An empty list is returned if no child resource could be found.</p><table class="
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">processUpdateRequest</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">id: <code>str | None</code> = None</span>) -&gt; <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1064">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#processUpdateRequest" title="acmecse.services.Dispatcher.Dispatcher.processUpdateRequest">
       
       
@@ -1446,7 +1514,10 @@ An empty list is returned if no child resource could be found.</p><table class="
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">resourceTreeDict</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resources: <code>list[<wbr></wbr><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a>]</code>, </span><span class="rst-sig-param">targetResource: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a>]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1807">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#resourceTreeDict" title="acmecse.services.Dispatcher.Dispatcher.resourceTreeDict">
       
       
@@ -1470,7 +1541,10 @@ An empty list is returned if no child resource could be found.</p><table class="
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">retrieveDirectChildResources</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pi: <code>str</code>, </span><span class="rst-sig-param">ty: <code><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a> | list[<wbr></wbr><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a>] | None</code> = None</span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a>]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1595">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#retrieveDirectChildResources" title="acmecse.services.Dispatcher.Dispatcher.retrieveDirectChildResources">
       
       
@@ -1495,7 +1569,10 @@ An empty list is returned if no child resource could be found.</p><table class="
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">retrieveLatestOldestInstance</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pi: <code>str</code>, </span><span class="rst-sig-param">ty: <code><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a></code>, </span><span class="rst-sig-param">oldest: <code>bool | None</code> = False</span>) -&gt; <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a> | None</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1652">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#retrieveLatestOldestInstance" title="acmecse.services.Dispatcher.Dispatcher.retrieveLatestOldestInstance">
       
       
@@ -1522,7 +1599,10 @@ An empty list is returned if no child resource could be found.</p><table class="
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">retrieveLocalResource</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str | None</code> = None, </span><span class="rst-sig-param">srn: <code>str | None</code> = None, </span><span class="rst-sig-param">originator: <code>str | None</code> = None, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | None</code> = None</span>) -&gt; <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L424">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#retrieveLocalResource" title="acmecse.services.Dispatcher.Dispatcher.retrieveLocalResource">
       
       
@@ -1546,7 +1626,10 @@ An empty list is returned if no child resource could be found.</p><table class="
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">retrieveResource</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">id: <code>str</code>, </span><span class="rst-sig-param">originator: <code>str | None</code> = None, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | None</code> = None, </span><span class="rst-sig-param">postRetrieveHook: <code>bool | None</code> = False</span>) -&gt; <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L380">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#retrieveResource" title="acmecse.services.Dispatcher.Dispatcher.retrieveResource">
       
       
@@ -1572,7 +1655,10 @@ If no, then try to retrieve the resource from a connected (!) remote CSE.</td></
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">retrieveResourcesByType</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ty: <code><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a></code></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a>]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1738">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#retrieveResourcesByType" title="acmecse.services.Dispatcher.Dispatcher.retrieveResourcesByType">
       
       
@@ -1596,7 +1682,10 @@ If no, then try to retrieve the resource from a connected (!) remote CSE.</td></
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">retrieveResourceWithPermission</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">permission: <code><a href="acmecse.etc.Types.Permission.html" class="internal-link" title="acmecse.etc.Types.Permission">Permission</a></code></span>) -&gt; <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1753">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#retrieveResourceWithPermission" title="acmecse.services.Dispatcher.Dispatcher.retrieveResourceWithPermission">
       
       
@@ -1620,7 +1709,10 @@ If no, then try to retrieve the resource from a connected (!) remote CSE.</td></
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">shutdown</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L130">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#shutdown" title="acmecse.services.Dispatcher.Dispatcher.shutdown">
       
       
@@ -1643,8 +1735,11 @@ If no, then try to retrieve the resource from a connected (!) remote CSE.</td></
   <div class="functionHeader">
     
     
-    <span class="py-keyword">def</span>&#160;<span class="py-defname">updateLocalResource</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">dct: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a> | None</code> = None, </span><span class="rst-sig-param">doUpdateCheck: <code>bool | None</code> = True, </span><span class="rst-sig-param">originator: <code>str | None</code> = None</span>) -&gt; <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>:</span>
-    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">updateLocalResource</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">dct: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a> | None</code> = None, </span><span class="rst-sig-param">doUpdateCheck: <code>bool | None</code> = True, </span><span class="rst-sig-param">originator: <code>str | None</code> = None, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | None</code> = None</span>) -&gt; <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1173">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#updateLocalResource" title="acmecse.services.Dispatcher.Dispatcher.updateLocalResource">
       
       
@@ -1653,7 +1748,7 @@ If no, then try to retrieve the resource from a connected (!) remote CSE.</td></
   </div>
   <div class="docstring functionBody">
     
-    <div><p>Update a resource in the CSE. Call update() and updated() callbacks on the resource.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">Resource to update.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dct:</span><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a> | None</code></td><td class="fieldArgDesc">JSON dictionary with the updated attributes.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">do<wbr></wbr>Update<wbr></wbr>Check:</span><code>bool | None</code></td><td class="fieldArgDesc">Enable/disable a call to update().</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str | None</code></td><td class="fieldArgDesc">The request's originator.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">Updated resource.</td></tr></table></div>
+    <div><p>Update a resource in the CSE. Call update() and updated() callbacks on the resource.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">Resource to update.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dct:</span><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a> | None</code></td><td class="fieldArgDesc">JSON dictionary with the updated attributes.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">do<wbr></wbr>Update<wbr></wbr>Check:</span><code>bool | None</code></td><td class="fieldArgDesc">Enable/disable a call to update().</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str | None</code></td><td class="fieldArgDesc">The request's originator.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | None</code></td><td class="fieldArgDesc">The CSERequest object. This is only be present in a real UPDATE request.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">Updated resource.</td></tr></table></div>
   </div>
 </div><div class="basemethod">
   
@@ -1668,7 +1763,10 @@ If no, then try to retrieve the resource from a connected (!) remote CSE.</td></
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">updateResourceFromDict</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">dct: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">id: <code>str</code>, </span><span class="rst-sig-param">originator: <code>str | None</code> = None, </span><span class="rst-sig-param">resource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a> | None</code> = None</span>) -&gt; <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1206">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#updateResourceFromDict" title="acmecse.services.Dispatcher.Dispatcher.updateResourceFromDict">
       
       
@@ -1691,7 +1789,10 @@ If no, then try to retrieve the resource from a connected (!) remote CSE.</td></
   <div class="functionHeader">
     
     <span class="py-defname">__slots__</span>: <code>tuple[<wbr></wbr>str, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L116">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#__slots__" title="acmecse.services.Dispatcher.Dispatcher.__slots__">
       
       
@@ -1715,7 +1816,10 @@ If no, then try to retrieve the resource from a connected (!) remote CSE.</td></
   <div class="functionHeader">
     
     <span class="py-defname">factory</span>: <code><a href="acmecse.runtime.Factory.Factory.html" class="internal-link" title="acmecse.runtime.Factory.Factory">Factory</a></code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L92">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#factory" title="acmecse.services.Dispatcher.Dispatcher.factory">
       
       
@@ -1730,6 +1834,33 @@ If no, then try to retrieve the resource from a connected (!) remote CSE.</td></
 </div><div class="baseclassvariable">
   
   
+  <a name="acmecse.services.Dispatcher.Dispatcher.interceptorManager">
+    
+  </a>
+  <a name="interceptorManager">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">interceptorManager</span>: <code><a href="acmecse.runtime.InterceptorManager.InterceptorManager.html" class="internal-link" title="acmecse.runtime.InterceptorManager.InterceptorManager">InterceptorManager</a></code> =
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L83">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#interceptorManager" title="acmecse.services.Dispatcher.Dispatcher.interceptorManager">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected InterceptorManager instance.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
   <a name="acmecse.services.Dispatcher.Dispatcher.locationManager">
     
   </a>
@@ -1739,7 +1870,10 @@ If no, then try to retrieve the resource from a connected (!) remote CSE.</td></
   <div class="functionHeader">
     
     <span class="py-defname">locationManager</span>: <code><a href="acmecse.plugins.services.LocationManager.LocationManager.html" class="internal-link" title="acmecse.plugins.services.LocationManager.LocationManager">LocationManager</a> | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L107">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#locationManager" title="acmecse.services.Dispatcher.Dispatcher.locationManager">
       
       
@@ -1763,7 +1897,10 @@ If no, then try to retrieve the resource from a connected (!) remote CSE.</td></
   <div class="functionHeader">
     
     <span class="py-defname">registrationManager</span>: <code><a href="acmecse.services.RegistrationManager.RegistrationManager.html" class="internal-link" title="acmecse.services.RegistrationManager.RegistrationManager">RegistrationManager</a></code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L86">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#registrationManager" title="acmecse.services.Dispatcher.Dispatcher.registrationManager">
       
       
@@ -1787,7 +1924,10 @@ If no, then try to retrieve the resource from a connected (!) remote CSE.</td></
   <div class="functionHeader">
     
     <span class="py-defname">remoteCSEManager</span>: <code><a href="acmecse.plugins.services.RemoteCSEManager.RemoteCSEManager.html" class="internal-link" title="acmecse.plugins.services.RemoteCSEManager.RemoteCSEManager">RemoteCSEManager</a> | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L113">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#remoteCSEManager" title="acmecse.services.Dispatcher.Dispatcher.remoteCSEManager">
       
       
@@ -1811,7 +1951,10 @@ If no, then try to retrieve the resource from a connected (!) remote CSE.</td></
   <div class="functionHeader">
     
     <span class="py-defname">requestManager</span>: <code><a href="acmecse.services.RequestManager.RequestManager.html" class="internal-link" title="acmecse.services.RequestManager.RequestManager">RequestManager</a></code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L98">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#requestManager" title="acmecse.services.Dispatcher.Dispatcher.requestManager">
       
       
@@ -1835,7 +1978,10 @@ If no, then try to retrieve the resource from a connected (!) remote CSE.</td></
   <div class="functionHeader">
     
     <span class="py-defname">scriptManager</span>: <code><a href="acmecse.runtime.ScriptManager.ScriptManager.html" class="internal-link" title="acmecse.runtime.ScriptManager.ScriptManager">ScriptManager</a></code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L104">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#scriptManager" title="acmecse.services.Dispatcher.Dispatcher.scriptManager">
       
       
@@ -1859,7 +2005,10 @@ If no, then try to retrieve the resource from a connected (!) remote CSE.</td></
   <div class="functionHeader">
     
     <span class="py-defname">security</span>: <code><a href="acmecse.services.SecurityManager.SecurityManager.html" class="internal-link" title="acmecse.services.SecurityManager.SecurityManager">SecurityManager</a></code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L95">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#security" title="acmecse.services.Dispatcher.Dispatcher.security">
       
       
@@ -1883,7 +2032,10 @@ If no, then try to retrieve the resource from a connected (!) remote CSE.</td></
   <div class="functionHeader">
     
     <span class="py-defname">semanticManager</span>: <code><a href="acmecse.plugins.services.SemanticManager.SemanticManager.html" class="internal-link" title="acmecse.plugins.services.SemanticManager.SemanticManager">SemanticManager</a> | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L110">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#semanticManager" title="acmecse.services.Dispatcher.Dispatcher.semanticManager">
       
       
@@ -1907,7 +2059,10 @@ If no, then try to retrieve the resource from a connected (!) remote CSE.</td></
   <div class="functionHeader">
     
     <span class="py-defname">storage</span>: <code><a href="acmecse.runtime.Storage.Storage.html" class="internal-link" title="acmecse.runtime.Storage.Storage">Storage</a></code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L89">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#storage" title="acmecse.services.Dispatcher.Dispatcher.storage">
       
       
@@ -1931,7 +2086,10 @@ If no, then try to retrieve the resource from a connected (!) remote CSE.</td></
   <div class="functionHeader">
     
     <span class="py-defname">validator</span>: <code><a href="acmecse.services.Validator.Validator.html" class="internal-link" title="acmecse.services.Validator.Validator">Validator</a></code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L101">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#validator" title="acmecse.services.Dispatcher.Dispatcher.validator">
       
       
@@ -1955,7 +2113,10 @@ If no, then try to retrieve the resource from a connected (!) remote CSE.</td></
   <div class="functionHeader">
     
     <span class="py-defname">sortDiscoveryResources</span> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L124">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#sortDiscoveryResources" title="acmecse.services.Dispatcher.Dispatcher.sortDiscoveryResources">
       
       
@@ -1980,7 +2141,10 @@ If no, then try to retrieve the resource from a connected (!) remote CSE.</td></
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_checkHybridID</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">id: <code>str</code></span>) -&gt; <code>tuple[<wbr></wbr>str, <wbr></wbr>str]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1914">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_checkHybridID" title="acmecse.services.Dispatcher.Dispatcher._checkHybridID">
       
       
@@ -2004,7 +2168,10 @@ If no, then try to retrieve the resource from a connected (!) remote CSE.</td></
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_childResourceTree</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resources: <code>list[<wbr></wbr><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a>]</code>, </span><span class="rst-sig-param">targetResource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a> | <a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1893">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_childResourceTree" title="acmecse.services.Dispatcher.Dispatcher._childResourceTree">
       
       
@@ -2028,8 +2195,11 @@ a <strong>new</strong> target resource instance as "children"</p><table class="f
   <div class="functionHeader">
     
     
-    <span class="py-keyword">def</span>&#160;<span class="py-defname">_discoverResources</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">rootResource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">level: <code>int</code>, </span><span class="rst-sig-param">fo: <code>int</code>, </span><span class="rst-sig-param">allLen: <code>int</code>, </span><span class="rst-sig-param">dcrs: <code>list[<wbr></wbr><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a>] | None</code> = None, </span><span class="rst-sig-param">filterCriteria: <code><a href="acmecse.etc.Types.FilterCriteria.html" class="internal-link" title="acmecse.etc.Types.FilterCriteria">FilterCriteria</a> | None</code> = None, </span><span class="rst-sig-param">permission: <code><a href="acmecse.etc.Types.Permission.html" class="internal-link" title="acmecse.etc.Types.Permission">Permission</a> | None</code> = <a href="acmecse.etc.Types.Permission.html#DISCOVERY" class="internal-link" title="acmecse.etc.Types.Permission.DISCOVERY">Permission.DISCOVERY</a></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a>]</code>:</span>
-    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_discoverResources</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">rootResource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">level: <code>int</code>, </span><span class="rst-sig-param">fo: <code>int</code>, </span><span class="rst-sig-param">allLen: <code>int</code>, </span><span class="rst-sig-param">dcrs: <code>list[<wbr></wbr><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a>] | None</code> = None, </span><span class="rst-sig-param">filterCriteria: <code><a href="acmecse.etc.Types.FilterCriteria.html" class="internal-link" title="acmecse.etc.Types.FilterCriteria">FilterCriteria</a> | None</code> = None, </span><span class="rst-sig-param">cfq: <code><a href="acmecse.helpers.JsonpathFilterQuery.FilterExpression.html" class="internal-link" title="acmecse.helpers.JsonpathFilterQuery.FilterExpression">FilterExpression</a> | None</code> = None, </span><span class="rst-sig-param">permission: <code><a href="acmecse.etc.Types.Permission.html" class="internal-link" title="acmecse.etc.Types.Permission">Permission</a> | None</code> = <a href="acmecse.etc.Types.Permission.html#DISCOVERY" class="internal-link" title="acmecse.etc.Types.Permission.DISCOVERY">Permission.DISCOVERY</a></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a>]</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L556">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_discoverResources" title="acmecse.services.Dispatcher.Dispatcher._discoverResources">
       
       
@@ -2038,7 +2208,7 @@ a <strong>new</strong> target resource instance as "children"</p><table class="f
   </div>
   <div class="docstring functionBody">
     
-    <div><p>Discover resources recursively. This is a helper function for discoverResources().</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">root<wbr></wbr>Resource:</span><code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The root resource for discovery.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator of the request.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">level:</span><code>int</code></td><td class="fieldArgDesc">The level of discovery.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">fo:</span><code>int</code></td><td class="fieldArgDesc">The filter operation.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">all<wbr></wbr>Len:</span><code>int</code></td><td class="fieldArgDesc">The length of all filter criteria.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dcrs:</span><code>list[<wbr></wbr><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a>] | None</code></td><td class="fieldArgDesc">The direct child resources of the root resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">filter<wbr></wbr>Criteria:</span><code><a href="acmecse.etc.Types.FilterCriteria.html" class="internal-link" title="acmecse.etc.Types.FilterCriteria">FilterCriteria</a> | None</code></td><td class="fieldArgDesc">The filter criteria.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">permission:</span><code><a href="acmecse.etc.Types.Permission.html" class="internal-link" title="acmecse.etc.Types.Permission">Permission</a> | None</code></td><td class="fieldArgDesc">The permission to use.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a>]</code></td><td class="fieldArgDesc">A list of discovered resources.</td></tr></table></div>
+    <div><p>Discover resources recursively. This is a helper function for discoverResources().</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">root<wbr></wbr>Resource:</span><code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The root resource for discovery.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator of the request.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">level:</span><code>int</code></td><td class="fieldArgDesc">The level of discovery.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">fo:</span><code>int</code></td><td class="fieldArgDesc">The filter operation.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">all<wbr></wbr>Len:</span><code>int</code></td><td class="fieldArgDesc">The length of all filter criteria.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dcrs:</span><code>list[<wbr></wbr><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a>] | None</code></td><td class="fieldArgDesc">The direct child resources of the root resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">filter<wbr></wbr>Criteria:</span><code><a href="acmecse.etc.Types.FilterCriteria.html" class="internal-link" title="acmecse.etc.Types.FilterCriteria">FilterCriteria</a> | None</code></td><td class="fieldArgDesc">The filter criteria.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">cfq:</span><code><a href="acmecse.helpers.JsonpathFilterQuery.FilterExpression.html" class="internal-link" title="acmecse.helpers.JsonpathFilterQuery.FilterExpression">FilterExpression</a> | None</code></td><td class="fieldArgDesc">The compiled content filter query.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">permission:</span><code><a href="acmecse.etc.Types.Permission.html" class="internal-link" title="acmecse.etc.Types.Permission">Permission</a> | None</code></td><td class="fieldArgDesc">The permission to use.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a>]</code></td><td class="fieldArgDesc">A list of discovered resources.</td></tr></table></div>
   </div>
 </div><div class="basemethod private">
   
@@ -2053,7 +2223,10 @@ a <strong>new</strong> target resource instance as "children"</p><table class="f
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_getFanoutPointResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">id: <code>str</code></span>) -&gt; <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a> | None</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1996">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_getFanoutPointResource" title="acmecse.services.Dispatcher.Dispatcher._getFanoutPointResource">
       
       
@@ -2077,7 +2250,10 @@ a <strong>new</strong> target resource instance as "children"</p><table class="f
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_getNotificationTargetSelfReferenceResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">id: <code>str</code></span>) -&gt; <code><a href="acmecse.resources.NTSR.NTSR.html" class="internal-link" title="acmecse.resources.NTSR.NTSR">NTSR</a> | None</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1981">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_getNotificationTargetSelfReferenceResource" title="acmecse.services.Dispatcher.Dispatcher._getNotificationTargetSelfReferenceResource">
       
       
@@ -2101,7 +2277,10 @@ a <strong>new</strong> target resource instance as "children"</p><table class="f
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_getPollingChannelURIResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">id: <code>str</code></span>) -&gt; <code><a href="acmecse.resources.PCH_PCU.PCH_PCU.html" class="internal-link" title="acmecse.resources.PCH_PCU.PCH_PCU">PCH_PCU</a> | None</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1953">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_getPollingChannelURIResource" title="acmecse.services.Dispatcher.Dispatcher._getPollingChannelURIResource">
       
       
@@ -2125,7 +2304,10 @@ a <strong>new</strong> target resource instance as "children"</p><table class="f
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_getVirtualResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">id: <code>str</code>, </span><span class="rst-sig-param">rn: <code>str | tuple[<wbr></wbr>str, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code></span>) -&gt; <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a> | None</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1931">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_getVirtualResource" title="acmecse.services.Dispatcher.Dispatcher._getVirtualResource">
       
       
@@ -2149,7 +2331,10 @@ a <strong>new</strong> target resource instance as "children"</p><table class="f
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_latestOldestResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">id: <code>str</code></span>) -&gt; <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a> | None</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1967">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_latestOldestResource" title="acmecse.services.Dispatcher.Dispatcher._latestOldestResource">
       
       
@@ -2172,8 +2357,11 @@ a <strong>new</strong> target resource instance as "children"</p><table class="f
   <div class="functionHeader">
     
     
-    <span class="py-keyword">def</span>&#160;<span class="py-defname">_matchResource</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">r: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">fo: <code>int</code>, </span><span class="rst-sig-param">allLen: <code>int</code>, </span><span class="rst-sig-param">filterCriteria: <code><a href="acmecse.etc.Types.FilterCriteria.html" class="internal-link" title="acmecse.etc.Types.FilterCriteria">FilterCriteria</a></code></span>) -&gt; <code>bool</code>:</span>
-    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_matchResource</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">r: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">fo: <code>int</code>, </span><span class="rst-sig-param">allLen: <code>int</code>, </span><span class="rst-sig-param">filterCriteria: <code><a href="acmecse.etc.Types.FilterCriteria.html" class="internal-link" title="acmecse.etc.Types.FilterCriteria">FilterCriteria</a></code>, </span><span class="rst-sig-param">cfq: <code><a href="acmecse.helpers.JsonpathFilterQuery.FilterExpression.html" class="internal-link" title="acmecse.helpers.JsonpathFilterQuery.FilterExpression">FilterExpression</a> | None</code> = None</span>) -&gt; <code>bool</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L620">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_matchResource" title="acmecse.services.Dispatcher.Dispatcher._matchResource">
       
       
@@ -2197,7 +2385,10 @@ a <strong>new</strong> target resource instance as "children"</p><table class="f
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_resourcesToURIList</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resources: <code>list[<wbr></wbr><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a>]</code>, </span><span class="rst-sig-param">drt: <code>int</code></span>) -&gt; <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1797">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_resourcesToURIList" title="acmecse.services.Dispatcher.Dispatcher._resourcesToURIList">
       
       
@@ -2221,7 +2412,10 @@ a <strong>new</strong> target resource instance as "children"</p><table class="f
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_resourceTreeReferences</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resources: <code>list[<wbr></wbr><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a>]</code>, </span><span class="rst-sig-param">targetResource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a> | <a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">drt: <code><a href="acmecse.etc.Types.DesiredIdentifierResultType.html" class="internal-link" title="acmecse.etc.Types.DesiredIdentifierResultType">DesiredIdentifierResultType</a> | None</code> = <a href="acmecse.etc.Types.DesiredIdentifierResultType.html#structured" class="internal-link" title="acmecse.etc.Types.DesiredIdentifierResultType.structured">DesiredIdentifierResultType.structured</a>, </span><span class="rst-sig-param">tp: <code>str | None</code> = <span class="rst-variable-quote">'</span><span class="rst-variable-string">m2m:rrl</span><span class="rst-variable-quote">'</span></span>) -&gt; <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a> | <a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Dispatcher.py#L1848">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_resourceTreeReferences" title="acmecse.services.Dispatcher.Dispatcher._resourceTreeReferences">
       
       
@@ -2236,7 +2430,7 @@ a <strong>new</strong> target resource instance as "children"</p><table class="f
 </div>
         </div>
       
-      </div>
+      </main>
     </div>
 
     <footer class="navbar navbar-default">
@@ -2246,7 +2440,7 @@ a <strong>new</strong> target resource instance as "children"</p><table class="f
     <div class="container-fluid">
       <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
     generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-      25.4.0 at 2026-06-18 12:03:37.
+      25.10.1 at 2026-08-25 13:25:20.
     </div>
     
     <script src="ajax.js" type="text/javascript"></script>

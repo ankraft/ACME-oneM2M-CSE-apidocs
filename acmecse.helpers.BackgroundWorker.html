@@ -7,7 +7,7 @@
   <head>
     
     <title>acmecse.helpers.BackgroundWorker</title>
-    <meta name="generator" content="pydoctor 25.4.0"> 
+    <meta name="generator" content="pydoctor 25.10.1"> 
         
     </meta>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -181,8 +181,31 @@
         
          
 
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="private">
         
-         
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_sleepTimeResolution" class="internal-link" title="acmecse.helpers.BackgroundWorker._sleepTimeResolution">_sleep<wbr></wbr>Time<wbr></wbr>Resolution</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_sleepTimeResolution10" class="internal-link" title="acmecse.helpers.BackgroundWorker._sleepTimeResolution10">_sleep<wbr></wbr>Time<wbr></wbr>Resolution10</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
 
         
          
@@ -267,6 +290,16 @@
         
 
         
+            <div class="itemName"><code><a href="acmecse.helpers.CredentialTools.html" class="internal-link" title="acmecse.helpers.CredentialTools"><wbr></wbr>Credential<wbr></wbr>Tools</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
             <div class="itemName"><code><a href="acmecse.helpers.EventManager.html" class="internal-link" title="acmecse.helpers.EventManager"><wbr></wbr>Event<wbr></wbr>Manager</a></code>
             </div>
         
@@ -278,6 +311,16 @@
 
         
             <div class="itemName"><code><a href="acmecse.helpers.interpreter.html" class="internal-link" title="acmecse.helpers.interpreter">interpreter</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.JsonpathFilterQuery.html" class="internal-link" title="acmecse.helpers.JsonpathFilterQuery"><wbr></wbr>Jsonpath<wbr></wbr>Filter<wbr></wbr>Query</a></code>
             </div>
         
 
@@ -358,6 +401,16 @@
 
         
             <div class="itemName"><code><a href="acmecse.helpers.PluginManager.html" class="internal-link" title="acmecse.helpers.PluginManager"><wbr></wbr>Plugin<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.helpers.PushoverClient.html" class="internal-link" title="acmecse.helpers.PushoverClient"><wbr></wbr>Pushover<wbr></wbr>Client</a></code>
             </div>
         
 
@@ -482,7 +535,7 @@
     
     <div class="container-fluid">
 
-      <div id="main" class="">
+      <main class="">
         
 
         
@@ -490,7 +543,7 @@
 
         <div class="page-header">
           <h1 class="module"><code><code><a href="index.html" class="internal-link">acmecse</a></code><wbr></wbr>.<code><a href="acmecse.helpers.html" class="internal-link" title="acmecse.helpers">helpers</a></code><wbr></wbr>.<code><a href="acmecse.helpers.BackgroundWorker.html" class="internal-link" title="acmecse.helpers.BackgroundWorker">BackgroundWorker</a></code></code></h1>
-          <div id="showPrivate">
+          <div id="show-private">
             <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
           </div>
         </div>
@@ -500,16 +553,15 @@
         </div>
 
         <div class="extrasDocstring">
-          
-          <p></p>
+          <a href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py" class="sourceLink">(source)</a>
         </div>
 
         <div class="moduleDocstring">
           <div><p>A pool for background workers, actors, and jobs.</p></div>
         </div>
 
-        <div id="splitTables">
-          <table class="children sortable" id="id206">
+        <div id="split-tables">
+          <table class="children sortable" id="id214">
   
   
   <tr class="class">
@@ -537,6 +589,16 @@
     <td>Function</td>
     <td><code><a href="#_utcTime" class="internal-link" title="acmecse.helpers.BackgroundWorker._utcTime">_utc<wbr></wbr>Time</a></code></td>
     <td>Return the current time's timestamp, but relative to UTC.</td>
+  </tr><tr class="variable private">
+    
+    <td>Variable</td>
+    <td><code><a href="#_sleepTimeResolution" class="internal-link" title="acmecse.helpers.BackgroundWorker._sleepTimeResolution">_sleep<wbr></wbr>Time<wbr></wbr>Resolution</a></code></td>
+    <td>Sleep time resolution for high latency in the background worker.</td>
+  </tr><tr class="variable private">
+    
+    <td>Variable</td>
+    <td><code><a href="#_sleepTimeResolution10" class="internal-link" title="acmecse.helpers.BackgroundWorker._sleepTimeResolution10">_sleep<wbr></wbr>Time<wbr></wbr>Resolution10</a></code></td>
+    <td>Sleep time resolution for less high latency in the background worker.</td>
   </tr>
 </table>
           
@@ -544,7 +606,7 @@
             
         </div>
 
-        <div id="childList">
+        <div id="child-list">
           <div class="basefunction private">
   
   
@@ -558,7 +620,10 @@
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_utcTime</span><span class="function-signature">() -&gt; <code>float</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L28">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_utcTime" title="acmecse.helpers.BackgroundWorker._utcTime">
       
       
@@ -569,10 +634,64 @@
     
     <div><p>Return the current time's timestamp, but relative to UTC.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>float</code></td><td class="fieldArgDesc">Float UTC-based timestamp</td></tr></table></div>
   </div>
+</div><div class="basevariable private">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker._sleepTimeResolution">
+    
+  </a>
+  <a name="_sleepTimeResolution">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_sleepTimeResolution</span>: <code>float</code> =
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L22">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#_sleepTimeResolution" title="acmecse.helpers.BackgroundWorker._sleepTimeResolution">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Sleep time resolution for high latency in the background worker.</p></div>
+    
+  </div>
+</div><div class="basevariable private">
+  
+  
+  <a name="acmecse.helpers.BackgroundWorker._sleepTimeResolution10">
+    
+  </a>
+  <a name="_sleepTimeResolution10">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_sleepTimeResolution10</span> =
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/helpers/BackgroundWorker.py#L25">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#_sleepTimeResolution10" title="acmecse.helpers.BackgroundWorker._sleepTimeResolution10">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Sleep time resolution for less high latency in the background worker.</p></div>
+    
+  </div>
 </div>
         </div>
       
-      </div>
+      </main>
     </div>
 
     <footer class="navbar navbar-default">
@@ -582,7 +701,7 @@
     <div class="container-fluid">
       <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
     generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-      25.4.0 at 2026-06-18 12:03:37.
+      25.10.1 at 2026-08-25 13:25:20.
     </div>
     
     <script src="ajax.js" type="text/javascript"></script>

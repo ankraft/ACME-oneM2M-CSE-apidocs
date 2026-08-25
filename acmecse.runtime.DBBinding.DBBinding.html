@@ -7,7 +7,7 @@
   <head>
     
     <title>acmecse.runtime.DBBinding.DBBinding</title>
-    <meta name="generator" content="pydoctor 25.4.0"> 
+    <meta name="generator" content="pydoctor 25.10.1"> 
         
     </meta>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -649,7 +649,7 @@
     
     <div class="container-fluid">
 
-      <div id="main" class="">
+      <main class="">
         
 
         
@@ -657,7 +657,7 @@
 
         <div class="page-header">
           <h1 class="class"><code><code><a href="index.html" class="internal-link">acmecse</a></code><wbr></wbr>.<code><a href="acmecse.runtime.html" class="internal-link" title="acmecse.runtime">runtime</a></code><wbr></wbr>.<code><a href="acmecse.runtime.DBBinding.html" class="internal-link" title="acmecse.runtime.DBBinding">DBBinding</a></code><wbr></wbr>.<code><a href="acmecse.runtime.DBBinding.DBBinding.html" class="internal-link" title="acmecse.runtime.DBBinding.DBBinding">DBBinding</a></code></code></h1>
-          <div id="showPrivate">
+          <div id="show-private">
             <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
           </div>
         </div>
@@ -667,16 +667,15 @@
         </div>
 
         <div class="extrasDocstring">
-          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">DBBinding</span>(ABC):</code></p><p>Known subclasses: <code><a href="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.html" class="internal-link">acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding</a></code>, <code><a href="acmecse.plugins.database.TinyDBBinding.TinyDBBinding.html" class="internal-link">acmecse.plugins.database.TinyDBBinding.TinyDBBinding</a></code></p>
-          <p><a href="classIndex.html#acmecse.runtime.DBBinding.DBBinding">View In Hierarchy</a></p>
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">DBBinding</span>(ABC): <a href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L19" class="sourceLink">(source)</a></code></p><p>Known subclasses: <code><a href="acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding.html" class="internal-link">acmecse.plugins.database.PostgreSQLBinding.PostgreSQLBinding</a></code>, <code><a href="acmecse.plugins.database.TinyDBBinding.TinyDBBinding.html" class="internal-link">acmecse.plugins.database.TinyDBBinding.TinyDBBinding</a></code></p><p><a href="classIndex.html#acmecse.runtime.DBBinding.DBBinding">View In Hierarchy</a></p>
         </div>
 
         <div class="moduleDocstring">
           <div><p>This abstract class defines the interface for database bindings.</p></div>
         </div>
 
-        <div id="splitTables">
-          <table class="children sortable" id="id623">
+        <div id="split-tables">
+          <table class="children sortable" id="id646">
   
   
   <tr class="method">
@@ -916,7 +915,7 @@
             
         </div>
 
-        <div id="childList">
+        <div id="child-list">
           <div class="basemethod">
   
   
@@ -930,7 +929,10 @@
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">addBatchNotification</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">batchRecord: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L322">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#addBatchNotification" title="acmecse.runtime.DBBinding.DBBinding.addBatchNotification">
       
       
@@ -954,7 +956,10 @@
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">addOriginator</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">originatorStructure: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">originator: <code>str</code></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L629">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#addOriginator" title="acmecse.runtime.DBBinding.DBBinding.addOriginator">
       
       
@@ -978,7 +983,10 @@
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">backupDB</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">dir: <code>str</code></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L41">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#backupDB" title="acmecse.runtime.DBBinding.DBBinding.backupDB">
       
       
@@ -1002,7 +1010,10 @@
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">closeDB</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L27">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#closeDB" title="acmecse.runtime.DBBinding.DBBinding.closeDB">
       
       
@@ -1026,7 +1037,10 @@
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">countBatchNotifications</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code>, </span><span class="rst-sig-param">nu: <code>str</code></span>) -&gt; <code>int</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L335">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#countBatchNotifications" title="acmecse.runtime.DBBinding.DBBinding.countBatchNotifications">
       
       
@@ -1050,7 +1064,10 @@
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">countResources</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>int</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L165">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#countResources" title="acmecse.runtime.DBBinding.DBBinding.countResources">
       
       
@@ -1074,7 +1091,10 @@
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">deleteIdentifier</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code>, </span><span class="rst-sig-param">srn: <code>str</code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L206">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#deleteIdentifier" title="acmecse.runtime.DBBinding.DBBinding.deleteIdentifier">
       
       
@@ -1098,7 +1118,10 @@
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">deleteRequests</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str | None</code> = None</span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L535">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#deleteRequests" title="acmecse.runtime.DBBinding.DBBinding.deleteRequests">
       
       
@@ -1122,7 +1145,10 @@
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">deleteResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L93">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#deleteResource" title="acmecse.runtime.DBBinding.DBBinding.deleteResource">
       
       
@@ -1146,7 +1172,10 @@
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">discoverResourcesByFilter</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">func: <code>Callable[<wbr></wbr>[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>], <wbr></wbr>bool]</code></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L130">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#discoverResourcesByFilter" title="acmecse.runtime.DBBinding.DBBinding.discoverResourcesByFilter">
       
       
@@ -1172,7 +1201,10 @@ to the result list.</p><table class="fieldTable"><tr class="fieldStart"><td clas
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">getActionRep</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code></span>) -&gt; <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a> | None</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L425">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#getActionRep" title="acmecse.runtime.DBBinding.DBBinding.getActionRep">
       
       
@@ -1196,7 +1228,10 @@ to the result list.</p><table class="fieldTable"><tr class="fieldStart"><td clas
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">getAllActionReprs</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L415">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#getAllActionReprs" title="acmecse.runtime.DBBinding.DBBinding.getAllActionReprs">
       
       
@@ -1220,7 +1255,10 @@ to the result list.</p><table class="fieldTable"><tr class="fieldStart"><td clas
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">getBatchNotifications</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code>, </span><span class="rst-sig-param">nu: <code>str</code></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L349">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#getBatchNotifications" title="acmecse.runtime.DBBinding.DBBinding.getBatchNotifications">
       
       
@@ -1244,7 +1282,10 @@ to the result list.</p><table class="fieldTable"><tr class="fieldStart"><td clas
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">getOriginator</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">originator: <code>str</code></span>) -&gt; <code>tuple[<wbr></wbr>str, <wbr></wbr><a href="acmecse.etc.Types.OriginatorType.html" class="internal-link" title="acmecse.etc.Types.OriginatorType">OriginatorType</a>] | None</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L616">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#getOriginator" title="acmecse.runtime.DBBinding.DBBinding.getOriginator">
       
       
@@ -1268,7 +1309,10 @@ to the result list.</p><table class="fieldTable"><tr class="fieldStart"><td clas
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">getRequests</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str | None</code> = None</span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L522">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#getRequests" title="acmecse.runtime.DBBinding.DBBinding.getRequests">
       
       
@@ -1292,7 +1336,10 @@ to the result list.</p><table class="fieldTable"><tr class="fieldStart"><td clas
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">getSchedule</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code></span>) -&gt; <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a> | None</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L559">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#getSchedule" title="acmecse.runtime.DBBinding.DBBinding.getSchedule">
       
       
@@ -1316,7 +1363,10 @@ to the result list.</p><table class="fieldTable"><tr class="fieldStart"><td clas
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">getSchedules</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L549">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#getSchedules" title="acmecse.runtime.DBBinding.DBBinding.getSchedules">
       
       
@@ -1340,7 +1390,10 @@ to the result list.</p><table class="fieldTable"><tr class="fieldStart"><td clas
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">hasResource</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str | None</code> = None, </span><span class="rst-sig-param">srn: <code>str | None</code> = None, </span><span class="rst-sig-param">ty: <code>int | None</code> = None</span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L145">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#hasResource" title="acmecse.runtime.DBBinding.DBBinding.hasResource">
       
       
@@ -1367,7 +1420,10 @@ resource ID, resource type.</p>
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">insertRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">req: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">ts: <code>float</code></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L498">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#insertRequest" title="acmecse.runtime.DBBinding.DBBinding.insertRequest">
       
       
@@ -1391,7 +1447,10 @@ resource ID, resource type.</p>
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">insertResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">ri: <code>str</code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L58">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#insertResource" title="acmecse.runtime.DBBinding.DBBinding.insertResource">
       
       
@@ -1415,7 +1474,10 @@ resource ID, resource type.</p>
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">purgeDB</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L34">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#purgeDB" title="acmecse.runtime.DBBinding.DBBinding.purgeDB">
       
       
@@ -1439,7 +1501,10 @@ resource ID, resource type.</p>
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">purgeStatistics</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L404">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#purgeStatistics" title="acmecse.runtime.DBBinding.DBBinding.purgeStatistics">
       
       
@@ -1463,7 +1528,10 @@ resource ID, resource type.</p>
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">removeActionRepr</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L479">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#removeActionRepr" title="acmecse.runtime.DBBinding.DBBinding.removeActionRepr">
       
       
@@ -1487,7 +1555,10 @@ resource ID, resource type.</p>
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">removeBatchNotifications</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code>, </span><span class="rst-sig-param">nu: <code>str</code></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L363">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#removeBatchNotifications" title="acmecse.runtime.DBBinding.DBBinding.removeBatchNotifications">
       
       
@@ -1511,7 +1582,10 @@ resource ID, resource type.</p>
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">removeChildResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code>, </span><span class="rst-sig-param">pi: <code>str</code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L245">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#removeChildResource" title="acmecse.runtime.DBBinding.DBBinding.removeChildResource">
       
       
@@ -1535,7 +1609,10 @@ resource ID, resource type.</p>
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">removeOldRequests</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">maxRequests: <code>int</code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L512">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#removeOldRequests" title="acmecse.runtime.DBBinding.DBBinding.removeOldRequests">
       
       
@@ -1559,7 +1636,10 @@ resource ID, resource type.</p>
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">removeOriginator</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">originator: <code>str</code></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L642">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#removeOriginator" title="acmecse.runtime.DBBinding.DBBinding.removeOriginator">
       
       
@@ -1583,7 +1663,10 @@ resource ID, resource type.</p>
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">removeSchedule</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L599">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#removeSchedule" title="acmecse.runtime.DBBinding.DBBinding.removeSchedule">
       
       
@@ -1607,7 +1690,10 @@ resource ID, resource type.</p>
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">removeSubscriptionRepr</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str</code></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L305">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#removeSubscriptionRepr" title="acmecse.runtime.DBBinding.DBBinding.removeSubscriptionRepr">
       
       
@@ -1631,7 +1717,10 @@ resource ID, resource type.</p>
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">searchActionsReprsForSubject</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">subjectRi: <code>str</code></span>) -&gt; <code>Sequence[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L438">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#searchActionsReprsForSubject" title="acmecse.runtime.DBBinding.DBBinding.searchActionsReprsForSubject">
       
       
@@ -1655,7 +1744,10 @@ resource ID, resource type.</p>
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">searchByFragment</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">dct: <code>dict</code></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L175">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#searchByFragment" title="acmecse.runtime.DBBinding.DBBinding.searchByFragment">
       
       
@@ -1679,7 +1771,10 @@ resource ID, resource type.</p>
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">searchChildResourceIDsByParentRIAndType</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pi: <code>str</code>, </span><span class="rst-sig-param">ty: <code><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a> | list[<wbr></wbr><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a>] | None</code> = None</span>) -&gt; <code>list[<wbr></wbr>str]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L256">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#searchChildResourceIDsByParentRIAndType" title="acmecse.runtime.DBBinding.DBBinding.searchChildResourceIDsByParentRIAndType">
       
       
@@ -1703,7 +1798,10 @@ resource ID, resource type.</p>
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">searchIdentifiers</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str | None</code> = None, </span><span class="rst-sig-param">srn: <code>str | None</code> = None</span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L217">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#searchIdentifiers" title="acmecse.runtime.DBBinding.DBBinding.searchIdentifiers">
       
       
@@ -1730,7 +1828,10 @@ is taken.</p>
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">searchResources</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str | None</code> = None, </span><span class="rst-sig-param">csi: <code>str | None</code> = None, </span><span class="rst-sig-param">srn: <code>str | None</code> = None, </span><span class="rst-sig-param">pi: <code>str | None</code> = None, </span><span class="rst-sig-param">ty: <code>int | None</code> = None, </span><span class="rst-sig-param">aei: <code>str | None</code> = None</span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L103">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#searchResources" title="acmecse.runtime.DBBinding.DBBinding.searchResources">
       
       
@@ -1758,7 +1859,10 @@ resource ID, CSE-ID, structured resource name, parent resource ID, resource type
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">searchSchedulesForParent</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pi: <code>str</code></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L572">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#searchSchedulesForParent" title="acmecse.runtime.DBBinding.DBBinding.searchSchedulesForParent">
       
       
@@ -1782,7 +1886,10 @@ resource ID, CSE-ID, structured resource name, parent resource ID, resource type
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">searchStatistics</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L381">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#searchStatistics" title="acmecse.runtime.DBBinding.DBBinding.searchStatistics">
       
       
@@ -1806,7 +1913,10 @@ resource ID, CSE-ID, structured resource name, parent resource ID, resource type
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">searchSubscriptionReprs</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ri: <code>str | None</code> = None, </span><span class="rst-sig-param">pi: <code>str | None</code> = None</span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>] | None</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L274">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#searchSubscriptionReprs" title="acmecse.runtime.DBBinding.DBBinding.searchSubscriptionReprs">
       
       
@@ -1832,7 +1942,10 @@ resource ID, CSE-ID, structured resource name, parent resource ID, resource type
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">updateActionRepr</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">actionRepr: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L466">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#updateActionRepr" title="acmecse.runtime.DBBinding.DBBinding.updateActionRepr">
       
       
@@ -1856,7 +1969,10 @@ resource ID, CSE-ID, structured resource name, parent resource ID, resource type
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">updateResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">ri: <code>str</code></span>) -&gt; <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L80">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#updateResource" title="acmecse.runtime.DBBinding.DBBinding.updateResource">
       
       
@@ -1880,7 +1996,10 @@ resource ID, CSE-ID, structured resource name, parent resource ID, resource type
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">upsertActionRepr</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">actionRepr: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">ri: <code>str</code></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L452">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#upsertActionRepr" title="acmecse.runtime.DBBinding.DBBinding.upsertActionRepr">
       
       
@@ -1904,7 +2023,10 @@ resource ID, CSE-ID, structured resource name, parent resource ID, resource type
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">upsertChildResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">childResource: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">ri: <code>str</code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L234">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#upsertChildResource" title="acmecse.runtime.DBBinding.DBBinding.upsertChildResource">
       
       
@@ -1928,7 +2050,10 @@ resource ID, CSE-ID, structured resource name, parent resource ID, resource type
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">upsertIdentifier</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">identifierMapping: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">structuredPathMapping: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">ri: <code>str</code>, </span><span class="rst-sig-param">srn: <code>str</code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L192">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#upsertIdentifier" title="acmecse.runtime.DBBinding.DBBinding.upsertIdentifier">
       
       
@@ -1953,7 +2078,10 @@ resource name into the structuredResourceNames DB.</p><table class="fieldTable">
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">upsertResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">ri: <code>str</code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L69">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#upsertResource" title="acmecse.runtime.DBBinding.DBBinding.upsertResource">
       
       
@@ -1977,7 +2105,10 @@ resource name into the structuredResourceNames DB.</p><table class="fieldTable">
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">upsertSchedule</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">schedule: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">ri: <code>str</code></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L585">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#upsertSchedule" title="acmecse.runtime.DBBinding.DBBinding.upsertSchedule">
       
       
@@ -2001,7 +2132,10 @@ resource name into the structuredResourceNames DB.</p><table class="fieldTable">
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">upsertStatistics</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">stats: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L391">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#upsertStatistics" title="acmecse.runtime.DBBinding.DBBinding.upsertStatistics">
       
       
@@ -2025,7 +2159,10 @@ resource name into the structuredResourceNames DB.</p><table class="fieldTable">
     
     <div><span class="decorator">@abstractmethod<br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">upsertSubscriptionRepr</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">subscription: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">ri: <code>str</code></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/DBBinding.py#L291">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#upsertSubscriptionRepr" title="acmecse.runtime.DBBinding.DBBinding.upsertSubscriptionRepr">
       
       
@@ -2039,7 +2176,7 @@ resource name into the structuredResourceNames DB.</p><table class="fieldTable">
 </div>
         </div>
       
-      </div>
+      </main>
     </div>
 
     <footer class="navbar navbar-default">
@@ -2049,7 +2186,7 @@ resource name into the structuredResourceNames DB.</p><table class="fieldTable">
     <div class="container-fluid">
       <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
     generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-      25.4.0 at 2026-06-18 12:03:37.
+      25.10.1 at 2026-08-25 13:25:20.
     </div>
     
     <script src="ajax.js" type="text/javascript"></script>

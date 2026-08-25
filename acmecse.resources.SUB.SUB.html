@@ -7,7 +7,7 @@
   <head>
     
     <title>acmecse.resources.SUB.SUB</title>
-    <meta name="generator" content="pydoctor 25.4.0"> 
+    <meta name="generator" content="pydoctor 25.10.1"> 
         
     </meta>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -1048,7 +1048,7 @@
     
     <div class="container-fluid">
 
-      <div id="main" class="">
+      <main class="">
         
 
         
@@ -1056,7 +1056,7 @@
 
         <div class="page-header">
           <h1 class="class"><code><code><a href="index.html" class="internal-link">acmecse</a></code><wbr></wbr>.<code><a href="acmecse.resources.html" class="internal-link" title="acmecse.resources">resources</a></code><wbr></wbr>.<code><a href="acmecse.resources.SUB.html" class="internal-link" title="acmecse.resources.SUB">SUB</a></code><wbr></wbr>.<code><a href="acmecse.resources.SUB.SUB.html" class="internal-link" title="acmecse.resources.SUB.SUB">SUB</a></code></code></h1>
-          <div id="showPrivate">
+          <div id="show-private">
             <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
           </div>
         </div>
@@ -1066,16 +1066,15 @@
         </div>
 
         <div class="extrasDocstring">
-          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">SUB</span>(<a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a>):</code></p><p>Constructor: <code><a href="acmecse.resources.Resource.Resource.html#__init__" class="internal-link" title="acmecse.resources.Resource.Resource.__init__">SUB(dct, create)</a></code></p>
-          <p><a href="classIndex.html#acmecse.resources.SUB.SUB">View In Hierarchy</a></p>
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">SUB</span>(<a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a>): <a href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/resources/SUB.py#L34" class="sourceLink">(source)</a></code></p><p>Constructor: <code><a href="acmecse.resources.Resource.Resource.html#__init__" class="internal-link" title="acmecse.resources.Resource.Resource.__init__">SUB(dct, create)</a></code></p><p><a href="classIndex.html#acmecse.resources.SUB.SUB">View In Hierarchy</a></p>
         </div>
 
         <div class="moduleDocstring">
           <div><p>Class for the &lt;subscription&gt; resource type.</p></div>
         </div>
 
-        <div id="splitTables">
-          <table class="children sortable" id="id577">
+        <div id="split-tables">
+          <table class="children sortable" id="id598">
   
   
   <tr class="method">
@@ -1149,7 +1148,7 @@
             <p class="inheritedFrom">
               Inherited from <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>:
             </p>
-            <table class="children sortable" id="id578">
+            <table class="children sortable" id="id599">
   
   
   <tr class="basemethod">
@@ -1519,7 +1518,7 @@
             
         </div>
 
-        <div id="childList">
+        <div id="child-list">
           <div class="basemethod">
   
   
@@ -1532,8 +1531,11 @@
   <div class="functionHeader">
     
     
-    <span class="py-keyword">def</span>&#160;<span class="py-defname">activate</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">parentResource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code></span>):</span>
-    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">activate</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">parentResource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | None</code> = None</span>):</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/resources/SUB.py#L59">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#activate" title="acmecse.resources.SUB.SUB.activate">
       
       
@@ -1546,7 +1548,7 @@
 <p>This is not always the case, e.g. when a resource object is just used temporarly.
 <strong>NO</strong> notification on activation/creation happens in this method!</p>
 <p>This method is implemented in sub-classes as well.</p>
-<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">parent<wbr></wbr>Resource:</span><code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The resource's parent resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The request's originator.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.etc.ResponseStatusCodes.BAD_REQUEST.html" class="internal-link" title="acmecse.etc.ResponseStatusCodes.BAD_REQUEST">BAD_REQUEST</a></code></td><td>In case of an invalid attribute.</td></tr></table></div>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">parent<wbr></wbr>Resource:</span><code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The resource's parent resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The request's originator.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | None</code></td><td class="fieldArgDesc">The CSERequest object. This is only be present in a real CREATE request.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.etc.ResponseStatusCodes.BAD_REQUEST.html" class="internal-link" title="acmecse.etc.ResponseStatusCodes.BAD_REQUEST">BAD_REQUEST</a></code></td><td>In case of an invalid attribute.</td></tr></table></div>
   </div>
 </div><div class="basemethod">
   
@@ -1561,7 +1563,10 @@
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">childWillBeAdded</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">childResource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/resources/SUB.py#L268">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#childWillBeAdded" title="acmecse.resources.SUB.SUB.childWillBeAdded">
       
       
@@ -1587,7 +1592,10 @@
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">deactivate</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">parentResource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/resources/SUB.py#L106">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#deactivate" title="acmecse.resources.SUB.SUB.deactivate">
       
       
@@ -1614,8 +1622,11 @@ A subscription check for deletion is performed.</p>
   <div class="functionHeader">
     
     
-    <span class="py-keyword">def</span>&#160;<span class="py-defname">update</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">dct: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a> | None</code> = None, </span><span class="rst-sig-param">originator: <code>str | None</code> = None, </span><span class="rst-sig-param">doValidateAttributes: <code>bool | None</code> = True</span>):</span>
-    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">update</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">dct: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a> | None</code> = None, </span><span class="rst-sig-param">originator: <code>str | None</code> = None, </span><span class="rst-sig-param">doValidateAttributes: <code>bool | None</code> = True, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | None</code> = None</span>):</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/resources/SUB.py#L113">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#update" title="acmecse.resources.SUB.SUB.update">
       
       
@@ -1631,7 +1642,7 @@ A subscription check for deletion is performed.</p>
 <p class="rst-admonition-title rst-first">Note</p>
 <p class="rst-last">This method updates the resource in the database. It should be called only after all other checks where performed.</p>
 </div>
-<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dct:</span><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a> | None</code></td><td class="fieldArgDesc">An optional JSON dictionary with the attributes to be updated.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str | None</code></td><td class="fieldArgDesc">The optional requests originator that let to the update of the resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">do<wbr></wbr>Validate<wbr></wbr>Attributes:</span><code>bool | None</code></td><td class="fieldArgDesc">If <em>True</em> optionally call the resource's <code><a href="#validate" class="internal-link" title="acmecse.resources.Resource.Resource.validate">validate()</a></code> method.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>CONTENTS_UNACCEPTABLE</code></td><td>In case of a resource mismatch.</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.etc.ResponseStatusCodes.BAD_REQUEST.html" class="internal-link" title="acmecse.etc.ResponseStatusCodes.BAD_REQUEST">BAD_REQUEST</a></code></td><td>In case of an invalid attribute.</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.etc.ResponseStatusCodes.INTERNAL_SERVER_ERROR.html" class="internal-link" title="acmecse.etc.ResponseStatusCodes.INTERNAL_SERVER_ERROR">INTERNAL_SERVER_ERROR</a></code></td><td>In case the parent resource coudln't be retrieved.</td></tr></table></div>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dct:</span><code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a> | None</code></td><td class="fieldArgDesc">An optional JSON dictionary with the attributes to be updated.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str | None</code></td><td class="fieldArgDesc">The optional requests originator that let to the update of the resource.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">do<wbr></wbr>Validate<wbr></wbr>Attributes:</span><code>bool | None</code></td><td class="fieldArgDesc">If <em>True</em> optionally call the resource's <code><a href="#validate" class="internal-link" title="acmecse.resources.Resource.Resource.validate">validate()</a></code> method.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | None</code></td><td class="fieldArgDesc">The CSERequest object. This is only be present in a real UPDATE request.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>CONTENTS_UNACCEPTABLE</code></td><td>In case of a resource mismatch.</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.etc.ResponseStatusCodes.BAD_REQUEST.html" class="internal-link" title="acmecse.etc.ResponseStatusCodes.BAD_REQUEST">BAD_REQUEST</a></code></td><td>In case of an invalid attribute.</td></tr><tr><td class="fieldArgContainer"><code><a href="acmecse.etc.ResponseStatusCodes.INTERNAL_SERVER_ERROR.html" class="internal-link" title="acmecse.etc.ResponseStatusCodes.INTERNAL_SERVER_ERROR">INTERNAL_SERVER_ERROR</a></code></td><td>In case the parent resource coudln't be retrieved.</td></tr></table></div>
   </div>
 </div><div class="basemethod">
   
@@ -1646,7 +1657,10 @@ A subscription check for deletion is performed.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">validate</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">originator: <code>str | None</code> = None, </span><span class="rst-sig-param">dct: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a> | None</code> = None, </span><span class="rst-sig-param">parentResource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a> | None</code> = None</span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/resources/SUB.py#L159">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#validate" title="acmecse.resources.SUB.SUB.validate">
       
       
@@ -1676,7 +1690,10 @@ A subscription check for deletion is performed.</p>
   <div class="functionHeader">
     
     <span class="py-defname">notificationManager</span>: <code><a href="acmecse.services.NotificationManager.NotificationManager.html" class="internal-link" title="acmecse.services.NotificationManager.NotificationManager">NotificationManager</a></code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/resources/SUB.py#L39">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#notificationManager" title="acmecse.resources.SUB.SUB.notificationManager">
       
       
@@ -1700,7 +1717,10 @@ A subscription check for deletion is performed.</p>
   <div class="functionHeader">
     
     <span class="py-defname">validator</span>: <code><a href="acmecse.services.Validator.Validator.html" class="internal-link" title="acmecse.services.Validator.Validator">Validator</a></code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/resources/SUB.py#L42">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#validator" title="acmecse.resources.SUB.SUB.validator">
       
       
@@ -1725,7 +1745,10 @@ A subscription check for deletion is performed.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_checkAllowedCHTY</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">parentResource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">chty: <code>list[<wbr></wbr><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a>]</code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/resources/SUB.py#L277">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_checkAllowedCHTY" title="acmecse.resources.SUB.SUB._checkAllowedCHTY">
       
       
@@ -1749,7 +1772,10 @@ A subscription check for deletion is performed.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_hasBlockingNET</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">net: <code>list[<wbr></wbr><a href="acmecse.etc.Types.NotificationEventType.html" class="internal-link" title="acmecse.etc.Types.NotificationEventType">NotificationEventType</a>]</code></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/resources/SUB.py#L292">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_hasBlockingNET" title="acmecse.resources.SUB.SUB._hasBlockingNET">
       
       
@@ -1774,7 +1800,10 @@ blocking notification event types.</p><table class="fieldTable"><tr class="field
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_hasDisallowedBlockingAttributes</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">dct: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/resources/SUB.py#L309">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_hasDisallowedBlockingAttributes" title="acmecse.resources.SUB.SUB._hasDisallowedBlockingAttributes">
       
       
@@ -1800,7 +1829,10 @@ are not allowed for the blocking Notification Event Types.</p><table class="fiel
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_hasDisallowedENCAttributes</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">dct: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></span>) -&gt; <code>bool</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/resources/SUB.py#L326">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_hasDisallowedENCAttributes" title="acmecse.resources.SUB.SUB._hasDisallowedENCAttributes">
       
       
@@ -1825,7 +1857,10 @@ Event Types.</p><table class="fieldTable"><tr class="fieldStart"><td class="fiel
   <div class="functionHeader">
     
     <span class="py-defname">_allowedENCAttributes</span>: <code>set[<wbr></wbr>str]</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/resources/SUB.py#L52">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_allowedENCAttributes" title="acmecse.resources.SUB.SUB._allowedENCAttributes">
       
       
@@ -1849,7 +1884,10 @@ Event Types.</p><table class="fieldTable"><tr class="fieldStart"><td class="fiel
   <div class="functionHeader">
     
     <span class="py-defname">_disallowedBlockingAttributes</span>: <code>list[<wbr></wbr>str]</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/resources/SUB.py#L45">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_disallowedBlockingAttributes" title="acmecse.resources.SUB.SUB._disallowedBlockingAttributes">
       
       
@@ -1864,7 +1902,7 @@ Event Types.</p><table class="fieldTable"><tr class="fieldStart"><td class="fiel
 </div>
         </div>
       
-      </div>
+      </main>
     </div>
 
     <footer class="navbar navbar-default">
@@ -1874,7 +1912,7 @@ Event Types.</p><table class="fieldTable"><tr class="fieldStart"><td class="fiel
     <div class="container-fluid">
       <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
     generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-      25.4.0 at 2026-06-18 12:03:37.
+      25.10.1 at 2026-08-25 13:25:20.
     </div>
     
     <script src="ajax.js" type="text/javascript"></script>

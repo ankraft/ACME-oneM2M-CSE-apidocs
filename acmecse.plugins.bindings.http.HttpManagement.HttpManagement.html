@@ -7,7 +7,7 @@
   <head>
     
     <title>acmecse.plugins.bindings.http.HttpManagement.HttpManagement</title>
-    <meta name="generator" content="pydoctor 25.4.0"> 
+    <meta name="generator" content="pydoctor 25.10.1"> 
         
     </meta>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -148,7 +148,77 @@
         
 
         
+            <div class="itemName"><code><a href="#handleManagementDelete" class="internal-link" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement.handleManagementDelete">handle<wbr></wbr>Management<wbr></wbr>Delete</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#handleManagementPost" class="internal-link" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement.handleManagementPost">handle<wbr></wbr>Management<wbr></wbr>Post</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#handleManagementPut" class="internal-link" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement.handleManagementPut">handle<wbr></wbr>Management<wbr></wbr>Put</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
             <div class="itemName"><code><a href="#startManagement" class="internal-link" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement.startManagement">start<wbr></wbr>Management</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_getConfig" class="internal-link" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement._getConfig">_get<wbr></wbr>Config</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_getCreds" class="internal-link" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement._getCreds">_get<wbr></wbr>Creds</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_getHelp" class="internal-link" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement._getHelp">_get<wbr></wbr>Help</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_response" class="internal-link" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement._response">_response</a></code>
             </div>
         
 
@@ -242,7 +312,7 @@
     
     <div class="container-fluid">
 
-      <div id="main" class="">
+      <main class="">
         
 
         
@@ -250,7 +320,7 @@
 
         <div class="page-header">
           <h1 class="class"><code><code><a href="index.html" class="internal-link">acmecse</a></code><wbr></wbr>.<code><a href="acmecse.plugins.html" class="internal-link" title="acmecse.plugins">plugins</a></code><wbr></wbr>.<code><a href="acmecse.plugins.bindings.html" class="internal-link" title="acmecse.plugins.bindings">bindings</a></code><wbr></wbr>.<code><a href="acmecse.plugins.bindings.http.html" class="internal-link" title="acmecse.plugins.bindings.http">http</a></code><wbr></wbr>.<code><a href="acmecse.plugins.bindings.http.HttpManagement.html" class="internal-link" title="acmecse.plugins.bindings.http.HttpManagement">HttpManagement</a></code><wbr></wbr>.<code><a href="acmecse.plugins.bindings.http.HttpManagement.HttpManagement.html" class="internal-link" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement">HttpManagement</a></code></code></h1>
-          <div id="showPrivate">
+          <div id="show-private">
             <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
           </div>
         </div>
@@ -260,8 +330,7 @@
         </div>
 
         <div class="extrasDocstring">
-          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">HttpManagement</span>:</code></p>
-          <p><a href="classIndex.html#acmecse.plugins.bindings.http.HttpManagement.HttpManagement">View In Hierarchy</a></p>
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">HttpManagement</span>: <a href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/bindings/http/HttpManagement.py#L26" class="sourceLink">(source)</a></code></p><p><a href="classIndex.html#acmecse.plugins.bindings.http.HttpManagement.HttpManagement">View In Hierarchy</a></p>
         </div>
 
         <div class="moduleDocstring">
@@ -272,8 +341,8 @@ The management endpoint will only be registered if the <code><a href="acmecse.pl
 </div>
         </div>
 
-        <div id="splitTables">
-          <table class="children sortable" id="id329">
+        <div id="split-tables">
+          <table class="children sortable" id="id350">
   
   
   <tr class="method">
@@ -289,6 +358,21 @@ The management endpoint will only be registered if the <code><a href="acmecse.pl
   </tr><tr class="method">
     
     <td>Method</td>
+    <td><code><a href="#handleManagementDelete" class="internal-link" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement.handleManagementDelete">handle<wbr></wbr>Management<wbr></wbr>Delete</a></code></td>
+    <td>Handle a management request. This is used to delete internal management data in the CSE.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#handleManagementPost" class="internal-link" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement.handleManagementPost">handle<wbr></wbr>Management<wbr></wbr>Post</a></code></td>
+    <td>Handle a management request. This is used to control the CSE.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#handleManagementPut" class="internal-link" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement.handleManagementPut">handle<wbr></wbr>Management<wbr></wbr>Put</a></code></td>
+    <td>Handle a management request. This is used to update internal management data in the CSE.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
     <td><code><a href="#startManagement" class="internal-link" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement.startManagement">start<wbr></wbr>Management</a></code></td>
     <td>Start the management plugin.</td>
   </tr><tr class="classvariable">
@@ -301,6 +385,26 @@ The management endpoint will only be registered if the <code><a href="acmecse.pl
     <td>Class Variable</td>
     <td><code><a href="#managementSupport" class="internal-link" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement.managementSupport">management<wbr></wbr>Support</a></code></td>
     <td>Injected <code><a href="acmecse.runtime.Management.ManagementSupport.html" class="internal-link" title="acmecse.runtime.Management.ManagementSupport">ManagementSupport</a></code> instance.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_getConfig" class="internal-link" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement._getConfig">_get<wbr></wbr>Config</a></code></td>
+    <td>Handle the config command. This is used to provide the current configuration of the CSE.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_getCreds" class="internal-link" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement._getCreds">_get<wbr></wbr>Creds</a></code></td>
+    <td>Handle the creds command. This is used to provide the current credentials of the CSE.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_getHelp" class="internal-link" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement._getHelp">_get<wbr></wbr>Help</a></code></td>
+    <td>Handle the help command. This is used to provide a list of available management commands.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_response" class="internal-link" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement._response">_response</a></code></td>
+    <td>Create a Flask Response object with the given response data, status code, and mimetype.</td>
   </tr>
 </table>
           
@@ -308,7 +412,7 @@ The management endpoint will only be registered if the <code><a href="acmecse.pl
             
         </div>
 
-        <div id="childList">
+        <div id="child-list">
           <div class="basemethod">
   
   
@@ -322,7 +426,10 @@ The management endpoint will only be registered if the <code><a href="acmecse.pl
     
     <div><span class="decorator">@<a href="#configure" class="internal-link" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement.configure">configure</a><br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">configure</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">config: <code><a href="acmecse.runtime.Configuration.Configuration.html" class="internal-link" title="acmecse.runtime.Configuration.Configuration">Configuration</a></code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/bindings/http/HttpManagement.py#L77">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#configure" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement.configure">
       
       
@@ -345,8 +452,11 @@ The management endpoint will only be registered if the <code><a href="acmecse.pl
   <div class="functionHeader">
     
     
-    <span class="py-keyword">def</span>&#160;<span class="py-defname">handleManagement</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">command: <code>str | None</code> = None, </span><span class="rst-sig-param">param: <code>str | None</code> = None</span>) -&gt; <code>Response</code>:</span>
-    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">handleManagement</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">command: <code>str | None</code> = None, </span><span class="rst-sig-param">param: <code>str | None</code> = None, </span><span class="rst-sig-param">subparam: <code>str | None</code> = None</span>) -&gt; <code>Response</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/bindings/http/HttpManagement.py#L103">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#handleManagement" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement.handleManagement">
       
       
@@ -355,7 +465,88 @@ The management endpoint will only be registered if the <code><a href="acmecse.pl
   </div>
   <div class="docstring functionBody">
     
-    <div><p>Handle a management request. This is used to control the CSE.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">command:</span><code>str | None</code></td><td class="fieldArgDesc">The management command to execute. If None, the request is rejected.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">param:</span><code>str | None</code></td><td class="fieldArgDesc">An optional parameter for the management command.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>Response</code></td><td class="fieldArgDesc">A response object.</td></tr></table></div>
+    <div><p>Handle a management request. This is used to control the CSE.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">command:</span><code>str | None</code></td><td class="fieldArgDesc">The management command to execute. If None, the request is rejected.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">param:</span><code>str | None</code></td><td class="fieldArgDesc">An optional parameter for the management command.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">subparam:</span><code>str | None</code></td><td class="fieldArgDesc">An optional sub-parameter for the management command.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>Response</code></td><td class="fieldArgDesc">A response object.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.bindings.http.HttpManagement.HttpManagement.handleManagementDelete">
+    
+  </a>
+  <a name="handleManagementDelete">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">handleManagementDelete</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">command: <code>str | None</code> = None, </span><span class="rst-sig-param">param: <code>str | None</code> = None, </span><span class="rst-sig-param">subparam: <code>str | None</code> = None</span>) -&gt; <code>Response</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/bindings/http/HttpManagement.py#L490">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#handleManagementDelete" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement.handleManagementDelete">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle a management request. This is used to delete internal management data in the CSE.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">command:</span><code>str | None</code></td><td class="fieldArgDesc">The management command to execute. If None, the request is rejected.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">param:</span><code>str | None</code></td><td class="fieldArgDesc">An optional parameter for the management command.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">subparam:</span><code>str | None</code></td><td class="fieldArgDesc">An optional sub-parameter for the management command.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>Response</code></td><td class="fieldArgDesc">A response object.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.bindings.http.HttpManagement.HttpManagement.handleManagementPost">
+    
+  </a>
+  <a name="handleManagementPost">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">handleManagementPost</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">command: <code>str | None</code> = None, </span><span class="rst-sig-param">param: <code>str | None</code> = None, </span><span class="rst-sig-param">subparam: <code>str | None</code> = None</span>) -&gt; <code>Response</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/bindings/http/HttpManagement.py#L349">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#handleManagementPost" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement.handleManagementPost">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle a management request. This is used to control the CSE.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">command:</span><code>str | None</code></td><td class="fieldArgDesc">The management command to execute. If None, the request is rejected.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">param:</span><code>str | None</code></td><td class="fieldArgDesc">An optional parameter for the management command.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">subparam:</span><code>str | None</code></td><td class="fieldArgDesc">An optional sub-parameter for the management command.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>Response</code></td><td class="fieldArgDesc">A response object.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.bindings.http.HttpManagement.HttpManagement.handleManagementPut">
+    
+  </a>
+  <a name="handleManagementPut">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">handleManagementPut</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">command: <code>str | None</code> = None, </span><span class="rst-sig-param">param: <code>str | None</code> = None, </span><span class="rst-sig-param">subparam: <code>str | None</code> = None</span>) -&gt; <code>Response</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/bindings/http/HttpManagement.py#L420">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#handleManagementPut" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement.handleManagementPut">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle a management request. This is used to update internal management data in the CSE.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">command:</span><code>str | None</code></td><td class="fieldArgDesc">The management command to execute. If None, the request is rejected.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">param:</span><code>str | None</code></td><td class="fieldArgDesc">An optional parameter for the management command.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">subparam:</span><code>str | None</code></td><td class="fieldArgDesc">An optional sub-parameter for the management command.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>Response</code></td><td class="fieldArgDesc">A response object.</td></tr></table></div>
   </div>
 </div><div class="basemethod">
   
@@ -370,7 +561,10 @@ The management endpoint will only be registered if the <code><a href="acmecse.pl
     
     <div><span class="decorator">@<a href="acmecse.helpers.PluginManager.html#start" class="internal-link" title="acmecse.helpers.PluginManager.start">start</a><br /></span></div>
     <span class="py-keyword">def</span>&#160;<span class="py-defname">startManagement</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/bindings/http/HttpManagement.py#L45">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#startManagement" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement.startManagement">
       
       
@@ -393,7 +587,10 @@ The management endpoint will only be registered if the <code><a href="acmecse.pl
   <div class="functionHeader">
     
     <span class="py-defname">httpServer</span>: <code><a href="acmecse.plugins.bindings.HttpServer.HttpServer.html" class="internal-link" title="acmecse.plugins.bindings.HttpServer.HttpServer">HttpServer</a></code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/bindings/http/HttpManagement.py#L39">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#httpServer" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement.httpServer">
       
       
@@ -417,7 +614,10 @@ The management endpoint will only be registered if the <code><a href="acmecse.pl
   <div class="functionHeader">
     
     <span class="py-defname">managementSupport</span>: <code><a href="acmecse.runtime.Management.ManagementSupport.html" class="internal-link" title="acmecse.runtime.Management.ManagementSupport">ManagementSupport</a></code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/bindings/http/HttpManagement.py#L42">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#managementSupport" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement.managementSupport">
       
       
@@ -429,10 +629,118 @@ The management endpoint will only be registered if the <code><a href="acmecse.pl
     <div><p>Injected <code><a href="acmecse.runtime.Management.ManagementSupport.html" class="internal-link" title="acmecse.runtime.Management.ManagementSupport">ManagementSupport</a></code> instance.</p></div>
     
   </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acmecse.plugins.bindings.http.HttpManagement.HttpManagement._getConfig">
+    
+  </a>
+  <a name="_getConfig">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_getConfig</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>Response</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/bindings/http/HttpManagement.py#L296">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#_getConfig" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement._getConfig">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle the config command. This is used to provide the current configuration of the CSE.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>Response</code></td><td class="fieldArgDesc">A response object with the current configuration.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acmecse.plugins.bindings.http.HttpManagement.HttpManagement._getCreds">
+    
+  </a>
+  <a name="_getCreds">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_getCreds</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">param: <code>str | None</code> = None, </span><span class="rst-sig-param">subparam: <code>str | None</code> = None</span>) -&gt; <code>Response</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/bindings/http/HttpManagement.py#L305">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#_getCreds" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement._getCreds">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle the creds command. This is used to provide the current credentials of the CSE.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">param:</span><code>str | None</code></td><td class="fieldArgDesc">An optional parameter for the management command.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">subparam:</span><code>str | None</code></td><td class="fieldArgDesc">An optional sub-parameter for the management command.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>Response</code></td><td class="fieldArgDesc">A response object with the current credentials.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acmecse.plugins.bindings.http.HttpManagement.HttpManagement._getHelp">
+    
+  </a>
+  <a name="_getHelp">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_getHelp</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>Response</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/bindings/http/HttpManagement.py#L267">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#_getHelp" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement._getHelp">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Handle the help command. This is used to provide a list of available management commands.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>Response</code></td><td class="fieldArgDesc">A response object with the help message.</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="acmecse.plugins.bindings.http.HttpManagement.HttpManagement._response">
+    
+  </a>
+  <a name="_response">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">_response</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">response: <code>Any</code>, </span><span class="rst-sig-param">status: <code>int</code> = 200, </span><span class="rst-sig-param">mimetype: <code>str</code> = <span class="rst-variable-quote">'</span><span class="rst-variable-string">application/json</span><span class="rst-variable-quote">'</span></span>) -&gt; <code>Response</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/bindings/http/HttpManagement.py#L88">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#_response" title="acmecse.plugins.bindings.http.HttpManagement.HttpManagement._response">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Create a Flask Response object with the given response data, status code, and mimetype.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">response:</span><code>Any</code></td><td class="fieldArgDesc">The response data to include in the response.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">status:</span><code>int</code></td><td class="fieldArgDesc">The HTTP status code for the response. Default is 200 (OK).</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">mimetype:</span><code>str</code></td><td class="fieldArgDesc">The MIME type of the response. Default is 'application/json'.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>Response</code></td><td class="fieldArgDesc">A Flask Response object.</td></tr></table></div>
+  </div>
 </div>
         </div>
       
-      </div>
+      </main>
     </div>
 
     <footer class="navbar navbar-default">
@@ -442,7 +750,7 @@ The management endpoint will only be registered if the <code><a href="acmecse.pl
     <div class="container-fluid">
       <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
     generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-      25.4.0 at 2026-06-18 12:03:37.
+      25.10.1 at 2026-08-25 13:25:20.
     </div>
     
     <script src="ajax.js" type="text/javascript"></script>

@@ -7,7 +7,7 @@
   <head>
     
     <title>acmecse.etc.Types.CSERequest</title>
-    <meta name="generator" content="pydoctor 25.4.0"> 
+    <meta name="generator" content="pydoctor 25.10.1"> 
         
     </meta>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -567,6 +567,16 @@
         
 
         
+            <div class="itemName"><code><a href="#_targetURL" class="internal-link" title="acmecse.etc.Types.CSERequest._targetURL">_target<wbr></wbr>URL</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
             <div class="itemName"><code><a href="#_ot" class="internal-link" title="acmecse.etc.Types.CSERequest._ot">_ot</a></code>
             </div>
         
@@ -691,6 +701,16 @@
 
         
             <div class="itemName"><code><a href="acmecse.etc.Types.ConsistencyStrategy.html" class="internal-link" title="acmecse.etc.Types.ConsistencyStrategy"><wbr></wbr>Consistency<wbr></wbr>Strategy</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.etc.Types.ContentFilterSyntax.html" class="internal-link" title="acmecse.etc.Types.ContentFilterSyntax"><wbr></wbr>Content<wbr></wbr>Filter<wbr></wbr>Syntax</a></code>
             </div>
         
 
@@ -1170,6 +1190,16 @@
         
 
         
+            <div class="itemName"><code><a href="acmecse.etc.Types.TriggerPurpose.html" class="internal-link" title="acmecse.etc.Types.TriggerPurpose"><wbr></wbr>Trigger<wbr></wbr>Purpose</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
             <div class="itemName"><code><a href="acmecse.etc.Types.TriggerStatus.html" class="internal-link" title="acmecse.etc.Types.TriggerStatus"><wbr></wbr>Trigger<wbr></wbr>Status</a></code>
             </div>
         
@@ -1626,6 +1656,26 @@
             </div>
         
 
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.etc.Types.html#_supportedContentSerializations" class="internal-link" title="acmecse.etc.Types._supportedContentSerializations">_supported<wbr></wbr>Content<wbr></wbr>Serializations</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.etc.Types.html#_supportedContentSerializationsWS" class="internal-link" title="acmecse.etc.Types._supportedContentSerializationsWS">_supported<wbr></wbr>Content<wbr></wbr>Serializations<wbr></wbr>WS</a></code>
+            </div>
+        
+
     </li>
 </ul> 
 
@@ -1645,7 +1695,7 @@
     
     <div class="container-fluid">
 
-      <div id="main" class="">
+      <main class="">
         
 
         
@@ -1653,7 +1703,7 @@
 
         <div class="page-header">
           <h1 class="class"><code><code><a href="index.html" class="internal-link">acmecse</a></code><wbr></wbr>.<code><a href="acmecse.etc.html" class="internal-link" title="acmecse.etc">etc</a></code><wbr></wbr>.<code><a href="acmecse.etc.Types.html" class="internal-link" title="acmecse.etc.Types">Types</a></code><wbr></wbr>.<code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></code></h1>
-          <div id="showPrivate">
+          <div id="show-private">
             <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
           </div>
         </div>
@@ -1663,16 +1713,15 @@
         </div>
 
         <div class="extrasDocstring">
-          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">CSERequest</span>:</code></p>
-          <p><a href="classIndex.html#acmecse.etc.Types.CSERequest">View In Hierarchy</a></p>
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">CSERequest</span>: <a href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2517" class="sourceLink">(source)</a></code></p><p><a href="classIndex.html#acmecse.etc.Types.CSERequest">View In Hierarchy</a></p>
         </div>
 
         <div class="moduleDocstring">
           <div><p>Structure that holds all the attributes for a Request (or a Response) to a CSE.</p></div>
         </div>
 
-        <div id="splitTables">
-          <table class="children sortable" id="id181">
+        <div id="split-tables">
+          <table class="children sortable" id="id189">
   
   
   <tr class="method">
@@ -1864,7 +1913,7 @@
     
     <td>Class Variable</td>
     <td><code><a href="#_directURL" class="internal-link" title="acmecse.etc.Types.CSERequest._directURL">_direct<wbr></wbr>URL</a></code></td>
-    <td>The direct URL of the request.</td>
+    <td>The direct URL of the request. Used by the <code><a href="acmecse.services.RequestManager.RequestManager.html#determineTargetDetails" class="internal-link" title="acmecse.services.RequestManager.RequestManager.determineTargetDetails">RequestManager.determineTargetDetails</a></code> method partly as a fallback.</td>
   </tr><tr class="classvariable private">
     
     <td>Class Variable</td>
@@ -1890,6 +1939,11 @@
     <td>Class Variable</td>
     <td><code><a href="#_rsetUTCts" class="internal-link" title="acmecse.etc.Types.CSERequest._rsetUTCts">_rset<wbr></wbr>UTCts</a></code></td>
     <td>Result Expiration Timestamp as UTC-based timestamp (internal).</td>
+  </tr><tr class="classvariable private">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#_targetURL" class="internal-link" title="acmecse.etc.Types.CSERequest._targetURL">_target<wbr></wbr>URL</a></code></td>
+    <td>The URL of the request, if available.</td>
   </tr><tr class="instancevariable private">
     
     <td>Instance Variable</td>
@@ -1902,7 +1956,7 @@
             
         </div>
 
-        <div id="childList">
+        <div id="child-list">
           <div class="basemethod">
   
   
@@ -1916,7 +1970,10 @@
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">__post_init__</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2522">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#__post_init__" title="acmecse.etc.Types.CSERequest.__post_init__">
       
       
@@ -1940,7 +1997,10 @@
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">convertToR1Target</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">targetRvi: <code>str</code></span>) -&gt; <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2739">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#convertToR1Target" title="acmecse.etc.Types.CSERequest.convertToR1Target">
       
       
@@ -1966,7 +2026,10 @@ release 1.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldN
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">fillOriginalRequest</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">update: <code>bool</code> = False</span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2685">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#fillOriginalRequest" title="acmecse.etc.Types.CSERequest.fillOriginalRequest">
       
       
@@ -1990,7 +2053,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">coapAccept</span>: <code><a href="acmecse.etc.Types.ContentSerializationType.html" class="internal-link" title="acmecse.etc.Types.ContentSerializationType">ContentSerializationType</a> | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2654">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#coapAccept" title="acmecse.etc.Types.CSERequest.coapAccept">
       
       
@@ -2014,7 +2080,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">credentials</span>: <code><a href="acmecse.etc.Types.RequestCredentials.html" class="internal-link" title="acmecse.etc.Types.RequestCredentials">RequestCredentials</a> | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2677">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#credentials" title="acmecse.etc.Types.CSERequest.credentials">
       
       
@@ -2038,7 +2107,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">csi</span>: <code>str | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2541">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#csi" title="acmecse.etc.Types.CSERequest.csi">
       
       
@@ -2062,7 +2134,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">ct</span>: <code><a href="acmecse.etc.Types.ContentSerializationType.html" class="internal-link" title="acmecse.etc.Types.ContentSerializationType">ContentSerializationType</a> | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2609">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#ct" title="acmecse.etc.Types.CSERequest.ct">
       
       
@@ -2086,7 +2161,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">ec</span>: <code><a href="acmecse.etc.Types.EventCategory.html" class="internal-link" title="acmecse.etc.Types.EventCategory">EventCategory</a> | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2612">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#ec" title="acmecse.etc.Types.CSERequest.ec">
       
       
@@ -2110,7 +2188,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">fc</span>: <code><a href="acmecse.etc.Types.FilterCriteria.html" class="internal-link" title="acmecse.etc.Types.FilterCriteria">FilterCriteria</a></code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2528">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#fc" title="acmecse.etc.Types.CSERequest.fc">
       
       
@@ -2134,7 +2215,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">httpAccept</span>: <code>list[<wbr></wbr>str] | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2647">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#httpAccept" title="acmecse.etc.Types.CSERequest.httpAccept">
       
       
@@ -2158,7 +2242,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">id</span>: <code>str | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2535">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#id" title="acmecse.etc.Types.CSERequest.id">
       
       
@@ -2182,7 +2269,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">ma</span>: <code>str | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2618">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#ma" title="acmecse.etc.Types.CSERequest.ma">
       
       
@@ -2206,7 +2296,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">oet</span>: <code>str | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2603">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#oet" title="acmecse.etc.Types.CSERequest.oet">
       
       
@@ -2230,7 +2323,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">op</span>: <code><a href="acmecse.etc.Types.Operation.html" class="internal-link" title="acmecse.etc.Types.Operation">Operation</a> | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2548">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#op" title="acmecse.etc.Types.CSERequest.op">
       
       
@@ -2254,7 +2350,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">originalData</span>: <code>bytes | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2628">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#originalData" title="acmecse.etc.Types.CSERequest.originalData">
       
       
@@ -2278,7 +2377,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">originalOriginator</span>: <code>str | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2554">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#originalOriginator" title="acmecse.etc.Types.CSERequest.originalOriginator">
       
       
@@ -2302,7 +2404,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">originator</span>: <code>str | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2551">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#originator" title="acmecse.etc.Types.CSERequest.originator">
       
       
@@ -2326,7 +2431,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">ot</span>: <code>str | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2600">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#ot" title="acmecse.etc.Types.CSERequest.ot">
       
       
@@ -2350,7 +2458,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">pc</span>: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a> | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2624">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#pc" title="acmecse.etc.Types.CSERequest.pc">
       
       
@@ -2374,7 +2485,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">rcn</span>: <code><a href="acmecse.etc.Types.ResultContentType.html" class="internal-link" title="acmecse.etc.Types.ResultContentType">ResultContentType</a> | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2573">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#rcn" title="acmecse.etc.Types.CSERequest.rcn">
       
       
@@ -2398,7 +2512,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">rp</span>: <code>str | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2579">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#rp" title="acmecse.etc.Types.CSERequest.rp">
       
       
@@ -2422,7 +2539,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">rq_authn</span>: <code>bool</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2680">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#rq_authn" title="acmecse.etc.Types.CSERequest.rq_authn">
       
       
@@ -2446,7 +2566,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">rqet</span>: <code>str | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2588">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#rqet" title="acmecse.etc.Types.CSERequest.rqet">
       
       
@@ -2470,7 +2593,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">rqi</span>: <code>str | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2560">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#rqi" title="acmecse.etc.Types.CSERequest.rqi">
       
       
@@ -2494,7 +2620,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">rset</span>: <code>str | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2594">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#rset" title="acmecse.etc.Types.CSERequest.rset">
       
       
@@ -2518,7 +2647,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">rtu</span>: <code>list[<wbr></wbr>str] | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2606">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#rtu" title="acmecse.etc.Types.CSERequest.rtu">
       
       
@@ -2542,7 +2674,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">rvi</span>: <code>str | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2563">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#rvi" title="acmecse.etc.Types.CSERequest.rvi">
       
       
@@ -2566,7 +2701,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">selectedAttributes</span>: <code>list[<wbr></wbr>str]</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2640">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#selectedAttributes" title="acmecse.etc.Types.CSERequest.selectedAttributes">
       
       
@@ -2590,7 +2728,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">spid</span>: <code>str | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2544">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#spid" title="acmecse.etc.Types.CSERequest.spid">
       
       
@@ -2614,7 +2755,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">sqi</span>: <code>bool | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2615">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#sqi" title="acmecse.etc.Types.CSERequest.sqi">
       
       
@@ -2638,7 +2782,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">srn</span>: <code>str | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2538">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#srn" title="acmecse.etc.Types.CSERequest.srn">
       
       
@@ -2662,7 +2809,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">to</span>: <code>str | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2532">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#to" title="acmecse.etc.Types.CSERequest.to">
       
       
@@ -2686,7 +2836,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">topElement</span>: <code>str | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2637">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#topElement" title="acmecse.etc.Types.CSERequest.topElement">
       
       
@@ -2710,7 +2863,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">ty</span>: <code><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a> | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2566">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#ty" title="acmecse.etc.Types.CSERequest.ty">
       
       
@@ -2734,7 +2890,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">vsi</span>: <code>str | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2585">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#vsi" title="acmecse.etc.Types.CSERequest.vsi">
       
       
@@ -2758,7 +2917,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">originalRequest</span>: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a> | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2631">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#originalRequest" title="acmecse.etc.Types.CSERequest.originalRequest">
       
       
@@ -2782,7 +2944,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">_attributeList</span>: <code>list[<wbr></wbr>str]</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2674">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_attributeList" title="acmecse.etc.Types.CSERequest._attributeList">
       
       
@@ -2806,7 +2971,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">_directURL</span>: <code>str | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2668">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_directURL" title="acmecse.etc.Types.CSERequest._directURL">
       
       
@@ -2815,7 +2983,7 @@ This overwrites the internal originalRequest attribute.</p></div>
   </div>
   <div class="functionBody">
     
-    <div><p>The direct URL of the request.</p></div>
+    <div><p>The direct URL of the request. Used by the <code><a href="acmecse.services.RequestManager.RequestManager.html#determineTargetDetails" class="internal-link" title="acmecse.services.RequestManager.RequestManager.determineTargetDetails">RequestManager.determineTargetDetails</a></code> method partly as a fallback.</p></div>
     
   </div>
 </div><div class="baseclassvariable private">
@@ -2830,7 +2998,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">_ma</span>: <code>float | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2621">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_ma" title="acmecse.etc.Types.CSERequest._ma">
       
       
@@ -2854,7 +3025,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">_outgoing</span>: <code>bool</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2662">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_outgoing" title="acmecse.etc.Types.CSERequest._outgoing">
       
       
@@ -2878,7 +3052,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">_rpts</span>: <code>str | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2582">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_rpts" title="acmecse.etc.Types.CSERequest._rpts">
       
       
@@ -2902,7 +3079,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">_rqetUTCts</span>: <code>float | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2591">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_rqetUTCts" title="acmecse.etc.Types.CSERequest._rqetUTCts">
       
       
@@ -2926,7 +3106,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">_rsetUTCts</span>: <code>float | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2597">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_rsetUTCts" title="acmecse.etc.Types.CSERequest._rsetUTCts">
       
       
@@ -2936,6 +3119,33 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionBody">
     
     <div><p>Result Expiration Timestamp as UTC-based timestamp (internal).</p></div>
+    
+  </div>
+</div><div class="baseclassvariable private">
+  
+  
+  <a name="acmecse.etc.Types.CSERequest._targetURL">
+    
+  </a>
+  <a name="_targetURL">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_targetURL</span>: <code>str | None</code> =
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2665">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#_targetURL" title="acmecse.etc.Types.CSERequest._targetURL">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>The URL of the request, if available.</p></div>
     
   </div>
 </div><div class="baseinstancevariable private">
@@ -2950,7 +3160,10 @@ This overwrites the internal originalRequest attribute.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">_ot</span>: <code>float | None</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/etc/Types.py#L2525">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_ot" title="acmecse.etc.Types.CSERequest._ot">
       
       
@@ -2965,7 +3178,7 @@ This overwrites the internal originalRequest attribute.</p></div>
 </div>
         </div>
       
-      </div>
+      </main>
     </div>
 
     <footer class="navbar navbar-default">
@@ -2975,7 +3188,7 @@ This overwrites the internal originalRequest attribute.</p></div>
     <div class="container-fluid">
       <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
     generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-      25.4.0 at 2026-06-18 12:03:37.
+      25.10.1 at 2026-08-25 13:25:20.
     </div>
     
     <script src="ajax.js" type="text/javascript"></script>

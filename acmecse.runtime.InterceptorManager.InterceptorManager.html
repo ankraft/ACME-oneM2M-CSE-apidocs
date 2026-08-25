@@ -7,7 +7,7 @@
   <head>
     
     <title>acmecse.runtime.InterceptorManager.InterceptorManager</title>
-    <meta name="generator" content="pydoctor 25.4.0"> 
+    <meta name="generator" content="pydoctor 25.10.1"> 
         
     </meta>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -158,7 +158,27 @@
         
 
         
+            <div class="itemName"><code><a href="#interceptRequestPostSending" class="internal-link" title="acmecse.runtime.InterceptorManager.InterceptorManager.interceptRequestPostSending">intercept<wbr></wbr>Request<wbr></wbr>Post<wbr></wbr>Sending</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
             <div class="itemName"><code><a href="#interceptRequestPreProcessing" class="internal-link" title="acmecse.runtime.InterceptorManager.InterceptorManager.interceptRequestPreProcessing">intercept<wbr></wbr>Request<wbr></wbr>Pre<wbr></wbr>Processing</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#interceptRequestPreSending" class="internal-link" title="acmecse.runtime.InterceptorManager.InterceptorManager.interceptRequestPreSending">intercept<wbr></wbr>Request<wbr></wbr>Pre<wbr></wbr>Sending</a></code>
             </div>
         
 
@@ -348,7 +368,7 @@
     
     <div class="container-fluid">
 
-      <div id="main" class="">
+      <main class="">
         
 
         
@@ -356,7 +376,7 @@
 
         <div class="page-header">
           <h1 class="class"><code><code><a href="index.html" class="internal-link">acmecse</a></code><wbr></wbr>.<code><a href="acmecse.runtime.html" class="internal-link" title="acmecse.runtime">runtime</a></code><wbr></wbr>.<code><a href="acmecse.runtime.InterceptorManager.html" class="internal-link" title="acmecse.runtime.InterceptorManager">InterceptorManager</a></code><wbr></wbr>.<code><a href="acmecse.runtime.InterceptorManager.InterceptorManager.html" class="internal-link" title="acmecse.runtime.InterceptorManager.InterceptorManager">InterceptorManager</a></code></code></h1>
-          <div id="showPrivate">
+          <div id="show-private">
             <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
           </div>
         </div>
@@ -366,8 +386,7 @@
         </div>
 
         <div class="extrasDocstring">
-          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">InterceptorManager</span>:</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="acmecse.runtime.InterceptorManager.InterceptorManager.__init__">InterceptorManager()</a></code></p>
-          <p><a href="classIndex.html#acmecse.runtime.InterceptorManager.InterceptorManager">View In Hierarchy</a></p>
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">InterceptorManager</span>: <a href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/InterceptorManager.py#L67" class="sourceLink">(source)</a></code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="acmecse.runtime.InterceptorManager.InterceptorManager.__init__">InterceptorManager()</a></code></p><p><a href="classIndex.html#acmecse.runtime.InterceptorManager.InterceptorManager">View In Hierarchy</a></p>
         </div>
 
         <div class="moduleDocstring">
@@ -377,8 +396,8 @@ It maintains a registry of all interceptor handlers and their metadata, and uses
 find and call the appropriate handlers for each request.</p></div>
         </div>
 
-        <div id="splitTables">
-          <table class="children sortable" id="id635">
+        <div id="split-tables">
+          <table class="children sortable" id="id658">
   
   
   <tr class="method">
@@ -399,8 +418,18 @@ find and call the appropriate handlers for each request.</p></div>
   </tr><tr class="method">
     
     <td>Method</td>
+    <td><code><a href="#interceptRequestPostSending" class="internal-link" title="acmecse.runtime.InterceptorManager.InterceptorManager.interceptRequestPostSending">intercept<wbr></wbr>Request<wbr></wbr>Post<wbr></wbr>Sending</a></code></td>
+    <td>Call the interceptor handlers for the REQUEST_POST_SENDING phase.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
     <td><code><a href="#interceptRequestPreProcessing" class="internal-link" title="acmecse.runtime.InterceptorManager.InterceptorManager.interceptRequestPreProcessing">intercept<wbr></wbr>Request<wbr></wbr>Pre<wbr></wbr>Processing</a></code></td>
     <td>Call the interceptor handlers for the REQUEST_PRE_PROCESSING phase.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#interceptRequestPreSending" class="internal-link" title="acmecse.runtime.InterceptorManager.InterceptorManager.interceptRequestPreSending">intercept<wbr></wbr>Request<wbr></wbr>Pre<wbr></wbr>Sending</a></code></td>
+    <td>Call the interceptor handlers for the REQUEST_PRE_SENDING phase.</td>
   </tr><tr class="method">
     
     <td>Method</td>
@@ -428,7 +457,7 @@ find and call the appropriate handlers for each request.</p></div>
             
         </div>
 
-        <div id="childList">
+        <div id="child-list">
           <div class="basemethod">
   
   
@@ -442,7 +471,10 @@ find and call the appropriate handlers for each request.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">__init__</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/InterceptorManager.py#L75">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#__init__" title="acmecse.runtime.InterceptorManager.InterceptorManager.__init__">
       
       
@@ -466,7 +498,10 @@ find and call the appropriate handlers for each request.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">interceptErrorResponse</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">result: <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/InterceptorManager.py#L150">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#interceptErrorResponse" title="acmecse.runtime.InterceptorManager.InterceptorManager.interceptErrorResponse">
       
       
@@ -490,7 +525,10 @@ find and call the appropriate handlers for each request.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">interceptRequestPostProcessing</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">result: <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/InterceptorManager.py#L118">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#interceptRequestPostProcessing" title="acmecse.runtime.InterceptorManager.InterceptorManager.interceptRequestPostProcessing">
       
       
@@ -500,6 +538,33 @@ find and call the appropriate handlers for each request.</p></div>
   <div class="docstring functionBody">
     
     <div><p>Call the interceptor handlers for the REQUEST_POST_PROCESSING phase.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">The incoming CSERequest object that is being processed.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">result:</span><code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code></td><td class="fieldArgDesc">The Result object that is the response to the request, which can be modified by the interceptor handlers.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.runtime.InterceptorManager.InterceptorManager.interceptRequestPostSending">
+    
+  </a>
+  <a name="interceptRequestPostSending">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">interceptRequestPostSending</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code>, </span><span class="rst-sig-param">result: <code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code></span>):</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/InterceptorManager.py#L139">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#interceptRequestPostSending" title="acmecse.runtime.InterceptorManager.InterceptorManager.interceptRequestPostSending">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Call the interceptor handlers for the REQUEST_POST_SENDING phase.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">The outgoing CSERequest object that is being sent to another entity.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">result:</span><code><a href="acmecse.etc.Types.Result.html" class="internal-link" title="acmecse.etc.Types.Result">Result</a></code></td><td class="fieldArgDesc">The Result object that is the response to the request, which can be modified by the interceptor handlers.</td></tr></table></div>
   </div>
 </div><div class="basemethod">
   
@@ -514,7 +579,10 @@ find and call the appropriate handlers for each request.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">interceptRequestPreProcessing</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/InterceptorManager.py#L108">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#interceptRequestPreProcessing" title="acmecse.runtime.InterceptorManager.InterceptorManager.interceptRequestPreProcessing">
       
       
@@ -524,6 +592,33 @@ find and call the appropriate handlers for each request.</p></div>
   <div class="docstring functionBody">
     
     <div><p>Call the interceptor handlers for the REQUEST_PRE_PROCESSING phase.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">The incoming CSERequest object that is being processed.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.runtime.InterceptorManager.InterceptorManager.interceptRequestPreSending">
+    
+  </a>
+  <a name="interceptRequestPreSending">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">interceptRequestPreSending</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></span>):</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/InterceptorManager.py#L129">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#interceptRequestPreSending" title="acmecse.runtime.InterceptorManager.InterceptorManager.interceptRequestPreSending">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Call the interceptor handlers for the REQUEST_PRE_SENDING phase.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></td><td class="fieldArgDesc">The outgoing CSERequest object that is being sent to another entity.</td></tr></table></div>
   </div>
 </div><div class="basemethod">
   
@@ -538,7 +633,10 @@ find and call the appropriate handlers for each request.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">register</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">interceptor: <code><a href="acmecse.runtime.InterceptorManager.Interceptor.html" class="internal-link" title="acmecse.runtime.InterceptorManager.Interceptor">Interceptor</a></code>, </span><span class="rst-sig-param">pluginName: <code>str</code></span>):</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/InterceptorManager.py#L93">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#register" title="acmecse.runtime.InterceptorManager.InterceptorManager.register">
       
       
@@ -566,7 +664,10 @@ decorated with @intercept.</td></tr><tr><td class="fieldArgContainer"><span clas
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_findHandlers</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">filter: <code><a href="acmecse.runtime.InterceptorManager.html#InterceptorFilter" class="internal-link" title="acmecse.runtime.InterceptorManager.InterceptorFilter">InterceptorFilter</a></code></span>) -&gt; <code>list</code>:</span>
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/InterceptorManager.py#L161">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_findHandlers" title="acmecse.runtime.InterceptorManager.InterceptorManager._findHandlers">
       
       
@@ -592,7 +693,10 @@ is registered.</p>
   <div class="functionHeader">
     
     <span class="py-defname">_cache</span>: <code>dict[<wbr></wbr><a href="acmecse.runtime.InterceptorManager.html#InterceptorFilter" class="internal-link" title="acmecse.runtime.InterceptorManager.InterceptorFilter">InterceptorFilter</a>, <wbr></wbr>list[<wbr></wbr><a href="acmecse.runtime.InterceptorManager.InterceptorHandlerInfo.html" class="internal-link" title="acmecse.runtime.InterceptorManager.InterceptorHandlerInfo">InterceptorHandlerInfo</a>]]</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/InterceptorManager.py#L85">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_cache" title="acmecse.runtime.InterceptorManager.InterceptorManager._cache">
       
       
@@ -619,7 +723,10 @@ The cache is invalidated whenever a new interceptor is registered.</p></div>
   <div class="functionHeader">
     
     <span class="py-defname">_registry</span>: <code>list[<wbr></wbr><a href="acmecse.runtime.InterceptorManager.InterceptorHandlerInfo.html" class="internal-link" title="acmecse.runtime.InterceptorManager.InterceptorHandlerInfo">InterceptorHandlerInfo</a>]</code> =
-    
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/runtime/InterceptorManager.py#L79">
+      
+      (source)
+    </a>
     <a class="headerLink" href="#_registry" title="acmecse.runtime.InterceptorManager.InterceptorManager._registry">
       
       
@@ -636,7 +743,7 @@ This registry is populated when interceptors are registered with the Interceptor
 </div>
         </div>
       
-      </div>
+      </main>
     </div>
 
     <footer class="navbar navbar-default">
@@ -646,7 +753,7 @@ This registry is populated when interceptors are registered with the Interceptor
     <div class="container-fluid">
       <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
     generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-      25.4.0 at 2026-06-18 12:03:37.
+      25.10.1 at 2026-08-25 13:25:20.
     </div>
     
     <script src="ajax.js" type="text/javascript"></script>
