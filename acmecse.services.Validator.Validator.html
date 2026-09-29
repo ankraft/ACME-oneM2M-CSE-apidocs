@@ -652,7 +652,37 @@
         
 
         
+            <div class="itemName"><code><a href="acmecse.services.Validator.html#_idcsrRegex" class="internal-link" title="acmecse.services.Validator._idcsrRegex">_idcsr<wbr></wbr>Regex</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
             <div class="itemName"><code><a href="acmecse.services.Validator.html#_idDomainRegex" class="internal-link" title="acmecse.services.Validator._idDomainRegex">_id<wbr></wbr>Domain<wbr></wbr>Regex</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.services.Validator.html#_originatorPatternCharsetRegex" class="internal-link" title="acmecse.services.Validator._originatorPatternCharsetRegex">_originator<wbr></wbr>Pattern<wbr></wbr>Charset<wbr></wbr>Regex</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.services.Validator.html#_originatorPatternWildcardRegex" class="internal-link" title="acmecse.services.Validator._originatorPatternWildcardRegex">_originator<wbr></wbr>Pattern<wbr></wbr>Wildcard<wbr></wbr>Regex</a></code>
             </div>
         
 
@@ -713,7 +743,7 @@
         </div>
 
         <div class="extrasDocstring">
-          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">Validator</span>: <a href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L101" class="sourceLink">(source)</a></code></p><p><a href="classIndex.html#acmecse.services.Validator.Validator">View In Hierarchy</a></p>
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">Validator</span>: <a href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L117" class="sourceLink">(source)</a></code></p><p><a href="classIndex.html#acmecse.services.Validator.Validator">View In Hierarchy</a></p>
         </div>
 
         <div class="moduleDocstring">
@@ -721,7 +751,7 @@
         </div>
 
         <div id="split-tables">
-          <table class="children sortable" id="id731">
+          <table class="children sortable" id="id735">
   
   
   <tr class="method">
@@ -823,7 +853,7 @@
     
     <td>Method</td>
     <td><code><a href="#hasFlexContainerContainerDefinition" class="internal-link" title="acmecse.services.Validator.Validator.hasFlexContainerContainerDefinition">has<wbr></wbr>Flex<wbr></wbr>Container<wbr></wbr>Container<wbr></wbr>Definition</a></code></td>
-    <td>Test whether a flexContainer specialization with a containerDefinition exists.</td>
+    <td>Test whether a flexContainer specialization with a containerDefinition exists. If <em>tpe</em> is provided, it, and its 'Annc' and 'Inst' variants, will be excluded from the search.</td>
   </tr><tr class="method">
     
     <td>Method</td>
@@ -950,7 +980,7 @@
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">addAttributePolicy</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">rtype: <code><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a> | str</code>, </span><span class="rst-sig-param">attr: <code>str</code>, </span><span class="rst-sig-param">attrPolicy: <code><a href="acmecse.etc.Types.AttributePolicy.html" class="internal-link" title="acmecse.etc.Types.AttributePolicy">AttributePolicy</a></code></span>):</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L671">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L695">
       
       (source)
     </a>
@@ -977,7 +1007,7 @@
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">addFlexContainerAttributePolicy</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">policy: <code><a href="acmecse.etc.Types.AttributePolicy.html" class="internal-link" title="acmecse.etc.Types.AttributePolicy">AttributePolicy</a></code></span>) -&gt; <code>bool</code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L565">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L581">
       
       (source)
     </a>
@@ -1008,7 +1038,7 @@ global dictionary.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">addFlexContainerSpecialization</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">typeShortname: <code>str</code>, </span><span class="rst-sig-param">cnd: <code>str</code>, </span><span class="rst-sig-param">lname: <code>str</code>, </span><span class="rst-sig-param">children: <code>list[<wbr></wbr>str]</code></span>) -&gt; <code>bool</code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L602">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L618">
       
       (source)
     </a>
@@ -1035,7 +1065,7 @@ global dictionary.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">clearAttributePolicies</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L784">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L808">
       
       (source)
     </a>
@@ -1062,7 +1092,7 @@ global dictionary.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">clearFlexContainerAttributes</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L596">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L612">
       
       (source)
     </a>
@@ -1089,7 +1119,7 @@ global dictionary.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">clearFlexContainerSpecializations</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L665">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L689">
       
       (source)
     </a>
@@ -1116,7 +1146,7 @@ global dictionary.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">convertIdentifierAttributeToScope</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">value: <code>Any</code>, </span><span class="rst-sig-param">typ: <code><a href="acmecse.etc.Types.BasicType.html" class="internal-link" title="acmecse.etc.Types.BasicType">BasicType</a></code>, </span><span class="rst-sig-param">policy: <code><a href="acmecse.etc.Types.AttributePolicy.html" class="internal-link" title="acmecse.etc.Types.AttributePolicy">AttributePolicy</a></code>, </span><span class="rst-sig-param">scope: <code><a href="acmecse.etc.Types.IdentifierScope.html" class="internal-link" title="acmecse.etc.Types.IdentifierScope">IdentifierScope</a> | None</code> = <a href="acmecse.etc.Types.IdentifierScope.html#SPRelative" class="internal-link" title="acmecse.etc.Types.IdentifierScope.SPRelative">IdentifierScope.SPRelative</a></span>) -&gt; <code>Any</code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L1240">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L1286">
       
       (source)
     </a>
@@ -1145,7 +1175,7 @@ This is a recursive function that is called for each attribute of a complex attr
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">convertIDsToScope</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">k: <code>str</code>, </span><span class="rst-sig-param">v: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">typ: <code><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a></code>, </span><span class="rst-sig-param">scope: <code><a href="acmecse.etc.Types.IdentifierScope.html" class="internal-link" title="acmecse.etc.Types.IdentifierScope">IdentifierScope</a></code></span>) -&gt; <code>Any</code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L1209">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L1255">
       
       (source)
     </a>
@@ -1174,7 +1204,7 @@ This is a recursive function that is called for each attribute of a complex attr
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">getAllAttributePolicies</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code><a href="acmecse.etc.Types.html#ResourceAttributePolicyDict" class="internal-link" title="acmecse.etc.Types.ResourceAttributePolicyDict">ResourceAttributePolicyDict</a></code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L775">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L799">
       
       (source)
     </a>
@@ -1201,7 +1231,7 @@ This is a recursive function that is called for each attribute of a complex attr
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">getAllFlexContainerSpecializations</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code><a href="acmecse.etc.Types.html#FlexContainerSpecializations" class="internal-link" title="acmecse.etc.Types.FlexContainerSpecializations">FlexContainerSpecializations</a></code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L632">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L649">
       
       (source)
     </a>
@@ -1228,7 +1258,7 @@ This is a recursive function that is called for each attribute of a complex attr
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">getAttributePoliciesByName</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">attr: <code>str</code></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.AttributePolicy.html" class="internal-link" title="acmecse.etc.Types.AttributePolicy">AttributePolicy</a>] | None</code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L719">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L743">
       
       (source)
     </a>
@@ -1255,7 +1285,7 @@ This is a recursive function that is called for each attribute of a complex attr
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">getAttributePolicy</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">rtype: <code><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a> | str</code>, </span><span class="rst-sig-param">attr: <code>str</code>, </span><span class="rst-sig-param">specific: <code>bool</code> = False</span>) -&gt; <code><a href="acmecse.etc.Types.AttributePolicy.html" class="internal-link" title="acmecse.etc.Types.AttributePolicy">AttributePolicy</a></code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L691">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L715">
       
       (source)
     </a>
@@ -1282,7 +1312,7 @@ This is a recursive function that is called for each attribute of a complex attr
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">getAttributeValueName</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">attr: <code>str</code>, </span><span class="rst-sig-param">value: <code>int</code>, </span><span class="rst-sig-param">rtype: <code><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a> | None</code> = None</span>) -&gt; <code>str</code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L802">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L826">
       
       (source)
     </a>
@@ -1312,7 +1342,7 @@ enumerations, where the value is a number and the name is a string.</p>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">getAttributeValueRepresentation</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">attr: <code>str</code>, </span><span class="rst-sig-param">resourceType: <code><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a></code>, </span><span class="rst-sig-param">withComments: <code>bool | None</code> = True</span>) -&gt; <code>str</code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L845">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L869">
       
       (source)
     </a>
@@ -1340,7 +1370,7 @@ the representation of an attribute where the value is not known yet.</p><table c
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">getComplexTypeAttributePolicies</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ctype: <code>str</code></span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.AttributePolicy.html" class="internal-link" title="acmecse.etc.Types.AttributePolicy">AttributePolicy</a>] | None</code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L760">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L784">
       
       (source)
     </a>
@@ -1367,7 +1397,7 @@ the representation of an attribute where the value is not known yet.</p><table c
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">getEnumInterpretation</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">rtype: <code><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a></code>, </span><span class="rst-sig-param">attr: <code>str</code>, </span><span class="rst-sig-param">value: <code>int</code></span>) -&gt; <code>str</code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L823">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L847">
       
       (source)
     </a>
@@ -1394,7 +1424,7 @@ the representation of an attribute where the value is not known yet.</p><table c
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">getFlexContainerAttributesFor</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">typeShortname: <code>str</code></span>) -&gt; <code><a href="acmecse.etc.Types.html#AttributePolicyDict" class="internal-link" title="acmecse.etc.Types.AttributePolicyDict">AttributePolicyDict</a></code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L585">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L601">
       
       (source)
     </a>
@@ -1421,7 +1451,7 @@ the representation of an attribute where the value is not known yet.</p><table c
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">getFlexContainerSpecialization</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">typeShortname: <code>str</code></span>) -&gt; <code>tuple[<wbr></wbr>str, <wbr></wbr>str, <wbr></wbr>list[<wbr></wbr>str]]</code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L620">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L637">
       
       (source)
     </a>
@@ -1449,7 +1479,7 @@ The tuple contains the containerDefinition, the long name, and the allowed child
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">getShortnameLongNameMapping</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>dict[<wbr></wbr>str, <wbr></wbr>str]</code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L790">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L814">
       
       (source)
     </a>
@@ -1475,8 +1505,8 @@ The tuple contains the containerDefinition, the long name, and the allowed child
   <div class="functionHeader">
     
     
-    <span class="py-keyword">def</span>&#160;<span class="py-defname">hasFlexContainerContainerDefinition</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">cnd: <code>str</code></span>) -&gt; <code>bool</code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L653">
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">hasFlexContainerContainerDefinition</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">cnd: <code>str</code>, </span><span class="rst-sig-param">tpe: <code>str | None</code> = None</span>) -&gt; <code>bool</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L670">
       
       (source)
     </a>
@@ -1488,7 +1518,8 @@ The tuple contains the containerDefinition, the long name, and the allowed child
   </div>
   <div class="docstring functionBody">
     
-    <div><p>Test whether a flexContainer specialization with a containerDefinition exists.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">cnd:</span><code>str</code></td><td class="fieldArgDesc">String, containerDefinition</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">Boolean, indicating existens.</td></tr></table></div>
+    <div><p>Test whether a flexContainer specialization with a containerDefinition exists.
+If <em>tpe</em> is provided, it, and its 'Annc' and 'Inst' variants, will be excluded from the search.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">cnd:</span><code>str</code></td><td class="fieldArgDesc">String, containerDefinition of the flexContainer specialization.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tpe:</span><code>str | None</code></td><td class="fieldArgDesc">Optional string, the type of the flexContainer specialization to exclude from the search.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">Boolean, indicating existens.</td></tr></table></div>
   </div>
 </div><div class="basemethod">
   
@@ -1503,7 +1534,7 @@ The tuple contains the containerDefinition, the long name, and the allowed child
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">hasFlexContainerSpecialization</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">typeShortname: <code>str</code></span>) -&gt; <code>bool</code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L641">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L658">
       
       (source)
     </a>
@@ -1530,7 +1561,7 @@ The tuple contains the containerDefinition, the long name, and the allowed child
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">initialize</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L109">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L125">
       
       (source)
     </a>
@@ -1557,7 +1588,7 @@ The tuple contains the containerDefinition, the long name, and the allowed child
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">isExtraResourceAttribute</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">attr: <code>str</code>, </span><span class="rst-sig-param">resource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></span>) -&gt; <code>bool</code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L531">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L547">
       
       (source)
     </a>
@@ -1585,7 +1616,7 @@ common, or resource attribute, nor an internal attribute.</p><table class="field
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">shutdown</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>bool</code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L114">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L130">
       
       (source)
     </a>
@@ -1612,7 +1643,7 @@ common, or resource attribute, nor an internal attribute.</p><table class="field
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">updateFlexContainerAttributes</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">additionalPolicies: <code><a href="acmecse.etc.Types.html#FlexContainerAttributes" class="internal-link" title="acmecse.etc.Types.FlexContainerAttributes">FlexContainerAttributes</a></code></span>) -&gt; <code>bool</code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L549">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L565">
       
       (source)
     </a>
@@ -1641,7 +1672,7 @@ of attribute policies for that type.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">validateAttribute</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">attribute: <code>str</code>, </span><span class="rst-sig-param">value: <code>Any</code>, </span><span class="rst-sig-param">attributeType: <code><a href="acmecse.etc.Types.BasicType.html" class="internal-link" title="acmecse.etc.Types.BasicType">BasicType</a> | None</code> = None, </span><span class="rst-sig-param">rtype: <code><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a> | None</code> = <a href="acmecse.etc.Types.ResourceTypes.html#ALL" class="internal-link" title="acmecse.etc.Types.ResourceTypes.ALL">ResourceTypes.ALL</a></span>) -&gt; <code>tuple[<wbr></wbr><a href="acmecse.etc.Types.BasicType.html" class="internal-link" title="acmecse.etc.Types.BasicType">BasicType</a>, <wbr></wbr>Any]</code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L333">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L349">
       
       (source)
     </a>
@@ -1668,7 +1699,7 @@ of attribute policies for that type.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">validateAttributes</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">typeShortname: <code>str</code>, </span><span class="rst-sig-param">ty: <code><a href="acmecse.etc.Types.ResourceTypes.html" class="internal-link" title="acmecse.etc.Types.ResourceTypes">ResourceTypes</a> | None</code> = <a href="acmecse.etc.Types.ResourceTypes.html#UNKNOWN" class="internal-link" title="acmecse.etc.Types.ResourceTypes.UNKNOWN">ResourceTypes.UNKNOWN</a>, </span><span class="rst-sig-param">attributes: <code><a href="acmecse.etc.Types.html#AttributePolicyDict" class="internal-link" title="acmecse.etc.Types.AttributePolicyDict">AttributePolicyDict</a> | None</code> = None, </span><span class="rst-sig-param">create: <code>bool | None</code> = True, </span><span class="rst-sig-param">createdInternally: <code>bool | None</code> = False, </span><span class="rst-sig-param">isAnnounced: <code>bool | None</code> = False, </span><span class="rst-sig-param">rvi: <code>str | None</code> = None</span>):</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L191">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L207">
       
       (source)
     </a>
@@ -1695,7 +1726,7 @@ of attribute policies for that type.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">validateCNF</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">value: <code>str</code></span>):</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L408">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L424">
       
       (source)
     </a>
@@ -1722,7 +1753,7 @@ of attribute policies for that type.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">validateCSICB</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">val: <code>str</code>, </span><span class="rst-sig-param">name: <code>str</code></span>):</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L420">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L436">
       
       (source)
     </a>
@@ -1749,7 +1780,7 @@ of attribute policies for that type.</p></div>
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">validateGeoLinePolygon</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">geo: <code>dict</code>, </span><span class="rst-sig-param">isPolygon: <code>bool | None</code> = False</span>) -&gt; <code>bool</code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L452">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L468">
       
       (source)
     </a>
@@ -1777,7 +1808,7 @@ A line or polygon is a list of lists of two or three floats.</p><table class="fi
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">validateGeoLocation</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">loc: <code>dict</code></span>) -&gt; <code>dict</code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L495">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L511">
       
       (source)
     </a>
@@ -1804,7 +1835,7 @@ A line or polygon is a list of lists of two or three floats.</p><table class="fi
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">validateGeoMultiLinePolygon</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">geo: <code>dict</code>, </span><span class="rst-sig-param">isPolygon: <code>bool | None</code> = False</span>) -&gt; <code>bool</code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L473">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L489">
       
       (source)
     </a>
@@ -1832,7 +1863,7 @@ A line or polygon is a list of list of lists of two or three floats.</p><table c
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">validateGeoPoint</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">geo: <code>dict</code></span>) -&gt; <code>bool</code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L435">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L451">
       
       (source)
     </a>
@@ -1859,7 +1890,7 @@ A line or polygon is a list of list of lists of two or three floats.</p><table c
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">validatePrimitiveContent</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">pc: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">elementName: <code>str</code></span>):</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L363">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L379">
       
       (source)
     </a>
@@ -1886,7 +1917,7 @@ A line or polygon is a list of list of lists of two or three floats.</p><table c
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">validatePvs</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">dct: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code></span>):</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L392">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L408">
       
       (source)
     </a>
@@ -1913,7 +1944,7 @@ A line or polygon is a list of list of lists of two or three floats.</p><table c
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">validateResourceShortname</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">cseRequest: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a></code></span>):</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L126">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L142">
       
       (source)
     </a>
@@ -1940,7 +1971,7 @@ A line or polygon is a list of list of lists of two or three floats.</p><table c
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">validateResourceUpdate</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">dct: <code><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a></code>, </span><span class="rst-sig-param">doValidateAttributes: <code>bool | None</code> = False, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | None</code> = None</span>):</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L158">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L174">
       
       (source)
     </a>
@@ -1971,7 +2002,7 @@ A line or polygon is a list of list of lists of two or three floats.</p><table c
   <div class="functionHeader">
     
     <span class="py-defname">importer</span>: <code><a href="acmecse.runtime.Importer.Importer.html" class="internal-link" title="acmecse.runtime.Importer.Importer">Importer</a></code> =
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L105">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L121">
       
       (source)
     </a>
@@ -1999,7 +2030,7 @@ A line or polygon is a list of list of lists of two or three floats.</p><table c
     
     
     <span class="py-keyword">def</span>&#160;<span class="py-defname">_validateType</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">dataType: <code><a href="acmecse.etc.Types.BasicType.html" class="internal-link" title="acmecse.etc.Types.BasicType">BasicType</a></code>, </span><span class="rst-sig-param">value: <code>Any</code>, </span><span class="rst-sig-param">convert: <code>bool | None</code> = False, </span><span class="rst-sig-param">policy: <code><a href="acmecse.etc.Types.AttributePolicy.html" class="internal-link" title="acmecse.etc.Types.AttributePolicy">AttributePolicy</a> | None</code> = None</span>) -&gt; <code>tuple[<wbr></wbr><a href="acmecse.etc.Types.BasicType.html" class="internal-link" title="acmecse.etc.Types.BasicType">BasicType</a>, <wbr></wbr>Any]</code>:</span>
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L962">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L986">
       
       (source)
     </a>
@@ -2027,7 +2058,7 @@ is an error.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">p
   <div class="functionHeader">
     
     <span class="py-defname">_ncNameDisallowedChars</span>: <code>tuple[<wbr></wbr>str, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code> =
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L954">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L978">
       
       (source)
     </a>
@@ -2054,7 +2085,7 @@ is an error.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">p
   <div class="functionHeader">
     
     <span class="py-defname">_tokenDisallowedChars</span>: <code>tuple[<wbr></wbr>str, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code> =
-    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L959">
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L983">
       
       (source)
     </a>
@@ -2082,7 +2113,7 @@ is an error.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">p
     <div class="container-fluid">
       <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
     generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-      25.10.1 at 2026-08-25 13:25:20.
+      25.10.1 at 2026-09-29 15:20:02.
     </div>
     
     <script src="ajax.js" type="text/javascript"></script>

@@ -207,7 +207,37 @@
         
 
         
+            <div class="itemName"><code><a href="#_idcsrRegex" class="internal-link" title="acmecse.services.Validator._idcsrRegex">_idcsr<wbr></wbr>Regex</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
             <div class="itemName"><code><a href="#_idDomainRegex" class="internal-link" title="acmecse.services.Validator._idDomainRegex">_id<wbr></wbr>Domain<wbr></wbr>Regex</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_originatorPatternCharsetRegex" class="internal-link" title="acmecse.services.Validator._originatorPatternCharsetRegex">_originator<wbr></wbr>Pattern<wbr></wbr>Charset<wbr></wbr>Regex</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_originatorPatternWildcardRegex" class="internal-link" title="acmecse.services.Validator._originatorPatternWildcardRegex">_originator<wbr></wbr>Pattern<wbr></wbr>Wildcard<wbr></wbr>Regex</a></code>
             </div>
         
 
@@ -368,7 +398,7 @@
         </div>
 
         <div id="split-tables">
-          <table class="children sortable" id="id730">
+          <table class="children sortable" id="id734">
   
   
   <tr class="class">
@@ -409,8 +439,23 @@
   </tr><tr class="variable private">
     
     <td>Variable</td>
+    <td><code><a href="#_idcsrRegex" class="internal-link" title="acmecse.services.Validator._idcsrRegex">_idcsr<wbr></wbr>Regex</a></code></td>
+    <td>resourceName grammar (TS-0004, Table 6.3.3-1): a letter or digit, followed by zero or more letters, digits, "-", ".", or "_". Used for IDCSR (rn, ri).</td>
+  </tr><tr class="variable private">
+    
+    <td>Variable</td>
     <td><code><a href="#_idDomainRegex" class="internal-link" title="acmecse.services.Validator._idDomainRegex">_id<wbr></wbr>Domain<wbr></wbr>Regex</a></code></td>
     <td>Compiled regular expression that matches a valid <a class="rst-external rst-reference" href="mailto:ID@domain.name" target="_top">ID@domain.name</a> format.</td>
+  </tr><tr class="variable private">
+    
+    <td>Variable</td>
+    <td><code><a href="#_originatorPatternCharsetRegex" class="internal-link" title="acmecse.services.Validator._originatorPatternCharsetRegex">_originator<wbr></wbr>Pattern<wbr></wbr>Charset<wbr></wbr>Regex</a></code></td>
+    <td>Compiled regular expression for the allowed characters in an originatorPattern value: the same unreserved character set as IDCSR/AEID/CSEID/SPID, plus "/" (segment separator) and "*" (wildcard).</td>
+  </tr><tr class="variable private">
+    
+    <td>Variable</td>
+    <td><code><a href="#_originatorPatternWildcardRegex" class="internal-link" title="acmecse.services.Validator._originatorPatternWildcardRegex">_originator<wbr></wbr>Pattern<wbr></wbr>Wildcard<wbr></wbr>Regex</a></code></td>
+    <td>Compiled regular expression that finds "*" wildcard characters in an originatorPattern value.</td>
   </tr><tr class="variable private">
     
     <td>Variable</td>
@@ -600,6 +645,35 @@
 </div><div class="basevariable private">
   
   
+  <a name="acmecse.services.Validator._idcsrRegex">
+    
+  </a>
+  <a name="_idcsrRegex">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_idcsrRegex</span> =
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L112">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#_idcsrRegex" title="acmecse.services.Validator._idcsrRegex">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>resourceName grammar (TS-0004, Table 6.3.3-1):
+a letter or digit, followed by zero or more letters, digits, "-", ".", or "_".
+Used for IDCSR (rn, ri).</p></div>
+    
+  </div>
+</div><div class="basevariable private">
+  
+  
   <a name="acmecse.services.Validator._idDomainRegex">
     
   </a>
@@ -622,6 +696,62 @@
   <div class="functionBody">
     
     <div><p>Compiled regular expression that matches a valid <a class="rst-external rst-reference" href="mailto:ID@domain.name" target="_top">ID@domain.name</a> format.</p></div>
+    
+  </div>
+</div><div class="basevariable private">
+  
+  
+  <a name="acmecse.services.Validator._originatorPatternCharsetRegex">
+    
+  </a>
+  <a name="_originatorPatternCharsetRegex">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_originatorPatternCharsetRegex</span> =
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L106">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#_originatorPatternCharsetRegex" title="acmecse.services.Validator._originatorPatternCharsetRegex">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Compiled regular expression for the allowed characters in an originatorPattern value:
+the same unreserved character set as IDCSR/AEID/CSEID/SPID, plus "/" (segment separator)
+and "*" (wildcard).</p></div>
+    
+  </div>
+</div><div class="basevariable private">
+  
+  
+  <a name="acmecse.services.Validator._originatorPatternWildcardRegex">
+    
+  </a>
+  <a name="_originatorPatternWildcardRegex">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_originatorPatternWildcardRegex</span> =
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/services/Validator.py#L102">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#_originatorPatternWildcardRegex" title="acmecse.services.Validator._originatorPatternWildcardRegex">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Compiled regular expression that finds "*" wildcard characters in an originatorPattern value.</p></div>
     
   </div>
 </div><div class="basevariable private">
@@ -691,7 +821,7 @@
     <div class="container-fluid">
       <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
     generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-      25.10.1 at 2026-08-25 13:25:20.
+      25.10.1 at 2026-09-29 15:20:02.
     </div>
     
     <script src="ajax.js" type="text/javascript"></script>

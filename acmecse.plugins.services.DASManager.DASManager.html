@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>acmecse.plugins.services.DASManager.DASManager</title>
+    <meta name="generator" content="pydoctor 25.10.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    <link rel="canonical" href="https://api.acmecse.net/acmecse.plugins.services.DASManager.DASManager.html" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="acmecse.plugins.services.DASManager.DASManager.html" class="internal-link" title="This class"><wbr></wbr>DASManager</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#consultDAS" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager.consultDAS">consult<wbr></wbr>DAS</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getACTRfromDAS" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager.getACTRfromDAS">get<wbr></wbr>ACTRfrom<wbr></wbr>DAS</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getDACIforResource" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager.getDACIforResource">get<wbr></wbr>DACIfor<wbr></wbr>Resource</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#restart" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager.restart">restart</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#retrieveACTRfromDAS" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager.retrieveACTRfromDAS">retrieve<wbr></wbr>ACTRfrom<wbr></wbr>DAS</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#start" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager.start">start</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#stop" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager.stop">stop</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dispatcher" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager.dispatcher">dispatcher</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#notification" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager.notification">notification</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="acmecse.plugins.services.DASManager.html" class="internal-link" title="The parent of this class"><wbr></wbr>DASManager</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="acmecse.plugins.services.DASManager.DASManager.html" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager"><wbr></wbr>DASManager</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <main class="">
+        
+
+        
+
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">acmecse</a></code><wbr></wbr>.<code><a href="acmecse.plugins.html" class="internal-link" title="acmecse.plugins">plugins</a></code><wbr></wbr>.<code><a href="acmecse.plugins.services.html" class="internal-link" title="acmecse.plugins.services">services</a></code><wbr></wbr>.<code><a href="acmecse.plugins.services.DASManager.html" class="internal-link" title="acmecse.plugins.services.DASManager">DASManager</a></code><wbr></wbr>.<code><a href="acmecse.plugins.services.DASManager.DASManager.html" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager">DASManager</a></code></code></h1>
+          <div id="show-private">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">DASManager</span>(object): <a href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/DASManager.py#L24" class="sourceLink">(source)</a></code></p><p><a href="classIndex.html#acmecse.plugins.services.DASManager.DASManager">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Dynamic Authorization Service (DAS) Manager plugin class.</p></div>
+        </div>
+
+        <div id="split-tables">
+          <table class="children sortable" id="id380">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#consultDAS" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager.consultDAS">consult<wbr></wbr>DAS</a></code></td>
+    <td>Consult the DAS for the given originator and resource at the specified URI.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getACTRfromDAS" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager.getACTRfromDAS">get<wbr></wbr>ACTRfrom<wbr></wbr>DAS</a></code></td>
+    <td>Consult the DAS for the given originator and resource at the specified URI.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getDACIforResource" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager.getDACIforResource">get<wbr></wbr>DACIfor<wbr></wbr>Resource</a></code></td>
+    <td>Get the list of DACI resource IDs for a given resource. If no DACI is found for a resource, the parent resources are also considered until a DACI is found or the CSEBase is reached.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#restart" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager.restart">restart</a></code></td>
+    <td>Restart the DASManager services.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#retrieveACTRfromDAS" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager.retrieveACTRfromDAS">retrieve<wbr></wbr>ACTRfrom<wbr></wbr>DAS</a></code></td>
+    <td>Retrieve the access control policy rules (ACRs) for a given resource and originator by consulting the DAS.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#start" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager.start">start</a></code></td>
+    <td>Initialize the DASManager.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#stop" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager.stop">stop</a></code></td>
+    <td>Shutdown the DASManager.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#dispatcher" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager.dispatcher">dispatcher</a></code></td>
+    <td>Injected Dispatcher instance.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#notification" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager.notification">notification</a></code></td>
+    <td>Injected NotificationManager instance.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="child-list">
+          <div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.services.DASManager.DASManager.consultDAS">
+    
+  </a>
+  <a name="consultDAS">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">consultDAS</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ae: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">resource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">proposedLifetime: <code>str | None</code> = None, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | None</code> = None</span>) -&gt; <code>bool</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/DASManager.py#L297">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#consultDAS" title="acmecse.plugins.services.DASManager.DASManager.consultDAS">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Consult the DAS for the given originator and resource at the specified URI.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ae:</span><code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The AE resource representing the DAS.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The resource to check.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator to check.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">proposed<wbr></wbr>Lifetime:</span><code>str | None</code></td><td class="fieldArgDesc">The proposed lifetime for the granted privileges. This is optional, but can be used to provide additional information to the DAS.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | None</code></td><td class="fieldArgDesc">The original request to check. This is optional, but can be used to provide additional information to the DAS.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">Boolean, True if access is granted by the DAS, False otherwise.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.services.DASManager.DASManager.getACTRfromDAS">
+    
+  </a>
+  <a name="getACTRfromDAS">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">getACTRfromDAS</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">ae: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">resource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">proposedLifetime: <code>str | None</code> = None, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | None</code> = None</span>) -&gt; <code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/DASManager.py#L211">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#getACTRfromDAS" title="acmecse.plugins.services.DASManager.DASManager.getACTRfromDAS">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Consult the DAS for the given originator and resource at the specified URI.</p>
+<p>Returns:</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ae:</span><code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The AE resource representing the DAS.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The resource to check.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator to check.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">proposed<wbr></wbr>Lifetime:</span><code>str | None</code></td><td class="fieldArgDesc">The proposed lifetime for the granted privileges. This is optional, but can be used to provide additional information to the DAS.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | None</code></td><td class="fieldArgDesc">The original request to check. This is optional, but can be used to provide additional information to the DAS.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr><a href="acmecse.etc.Types.html#JSON" class="internal-link" title="acmecse.etc.Types.JSON">JSON</a>]</code></td><td class="fieldArgDesc"><span class="undocumented">Undocumented</span></td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.services.DASManager.DASManager.getDACIforResource">
+    
+  </a>
+  <a name="getDACIforResource">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">getDACIforResource</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">resource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></span>) -&gt; <code>list[<wbr></wbr>str]</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/DASManager.py#L129">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#getDACIforResource" title="acmecse.plugins.services.DASManager.DASManager.getDACIforResource">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the list of DACI resource IDs for a given resource. If no DACI is found for a resource,
+the parent resources are also considered until a DACI is found or the CSEBase is reached.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The resource to get the DACI resource IDs for.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>list[<wbr></wbr>str]</code></td><td class="fieldArgDesc">A list of DACI resource IDs, or an empty list if no DACI is found in the resource's hierarchy.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.services.DASManager.DASManager.restart">
+    
+  </a>
+  <a name="restart">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#restart" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager.restart">restart</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">restart</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/DASManager.py#L55">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#restart" title="acmecse.plugins.services.DASManager.DASManager.restart">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Restart the DASManager services.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.services.DASManager.DASManager.retrieveACTRfromDAS">
+    
+  </a>
+  <a name="retrieveACTRfromDAS">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">retrieveACTRfromDAS</span><span class="function-signature long-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span>, </span><span class="rst-sig-param">daciRi: <code>str</code>, </span><span class="rst-sig-param">resource: <code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code>, </span><span class="rst-sig-param">originator: <code>str</code>, </span><span class="rst-sig-param">request: <code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | None</code> = None</span>) -&gt; <code>Generator[<wbr></wbr>dict, <wbr></wbr>None, <wbr></wbr>None]</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/DASManager.py#L155">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#retrieveACTRfromDAS" title="acmecse.plugins.services.DASManager.DASManager.retrieveACTRfromDAS">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Retrieve the access control policy rules (ACRs) for a given resource and originator by consulting the DAS.</p>
+<p>This is a generator function that yields the access control policy rules (ACRs). ACRs are retrieved from the DAS as needed.
+Each request to this function call may result in a call to a DAS server.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">daci<wbr></wbr>Ri:</span><code>str</code></td><td class="fieldArgDesc">The resource ID of the DAC instance.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">resource:</span><code><a href="acmecse.resources.Resource.Resource.html" class="internal-link" title="acmecse.resources.Resource.Resource">Resource</a></code></td><td class="fieldArgDesc">The resource to check.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">originator:</span><code>str</code></td><td class="fieldArgDesc">The originator to check.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">request:</span><code><a href="acmecse.etc.Types.CSERequest.html" class="internal-link" title="acmecse.etc.Types.CSERequest">CSERequest</a> | None</code></td><td class="fieldArgDesc">The original request to check. This is optional, but can be used to provide additional information to the DAS.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>Generator[<wbr></wbr>dict, <wbr></wbr>None, <wbr></wbr>None]</code></td><td class="fieldArgDesc"><span class="undocumented">Undocumented</span></td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Yields</td></tr><tr><td colspan="2">Each access control policy rule (ACTR) as a dictionary.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.services.DASManager.DASManager.start">
+    
+  </a>
+  <a name="start">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#start" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager.start">start</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">start</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>):</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/DASManager.py#L37">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#start" title="acmecse.plugins.services.DASManager.DASManager.start">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Initialize the DASManager.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="acmecse.plugins.services.DASManager.DASManager.stop">
+    
+  </a>
+  <a name="stop">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <div><span class="decorator">@<a href="#stop" class="internal-link" title="acmecse.plugins.services.DASManager.DASManager.stop">stop</a><br /></span></div>
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">stop</span><span class="function-signature">(<span class="rst-sig-param"><span class="rst-undocumented">self</span></span>) -&gt; <code>bool</code>:</span>
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/DASManager.py#L44">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#stop" title="acmecse.plugins.services.DASManager.DASManager.stop">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Shutdown the DASManager.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer"><code>bool</code></td><td class="fieldArgDesc">Boolean, always True.</td></tr></table></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.plugins.services.DASManager.DASManager.dispatcher">
+    
+  </a>
+  <a name="dispatcher">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dispatcher</span>: <code><a href="acmecse.services.Dispatcher.Dispatcher.html" class="internal-link" title="acmecse.services.Dispatcher.Dispatcher">Dispatcher</a></code> =
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/DASManager.py#L31">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#dispatcher" title="acmecse.plugins.services.DASManager.DASManager.dispatcher">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected Dispatcher instance.</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="acmecse.plugins.services.DASManager.DASManager.notification">
+    
+  </a>
+  <a name="notification">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">notification</span>: <code><a href="acmecse.services.NotificationManager.NotificationManager.html" class="internal-link" title="acmecse.services.NotificationManager.NotificationManager">NotificationManager</a></code> =
+    <a class="sourceLink" href="https://github.com/ankraft/ACME-oneM2M-CSE/tree/master/acmecse/plugins/services/DASManager.py#L34">
+      
+      (source)
+    </a>
+    <a class="headerLink" href="#notification" title="acmecse.plugins.services.DASManager.DASManager.notification">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>Injected NotificationManager instance.</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </main>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container-fluid">
+      <a href="index.html">API Documentation</a> for <a href="https://acmecse.net" class="projecthome">ACME oneM2M CSE</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      25.10.1 at 2026-09-29 15:20:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>
